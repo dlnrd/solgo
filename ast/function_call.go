@@ -561,5 +561,14 @@ func (f *FunctionCallOption) ToSource() string {
 }
 
 func (f *FunctionCall) ToSource() string {
-	return " FunctionCall"
+	code := ""
+	code += f.Expression.ToSource() + "("
+	for i, arg := range f.Arguments {
+		code += arg.ToSource()
+		if i != len(f.Arguments)-1 {
+			code += ", "
+		}
+	}
+	code += ")"
+	return code
 }

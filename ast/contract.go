@@ -478,7 +478,7 @@ func (c *Contract) Parse(unitCtx *parser.SourceUnitContext, ctx *parser.Contract
 func (c *Contract) ToSource() string {
 
 	code := ""
-	code += fmt.Sprintf("contract %s {\n", c.Name)
+	code += fmt.Sprintf("contract %s", c.Name)
 	for i, baseContract := range c.GetBaseContracts() {
 		if i == 0 {
 			code += fmt.Sprintf("is %s", baseContract.BaseName.Name)
@@ -489,7 +489,6 @@ func (c *Contract) ToSource() string {
 	code += " {\n"
 
 	for _, node := range c.GetNodes() {
-		fmt.Printf("Node: %s\n", node.GetType())
 		code += node.ToSource()
 	}
 	code += "}\n"

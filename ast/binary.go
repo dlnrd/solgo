@@ -432,5 +432,36 @@ func (a *BinaryOperation) ParseOr(
 }
 
 func (a *BinaryOperation) ToSource() string {
-	return ""
+	code := ""
+	code += a.LeftExpression.ToSource()
+	operator := ""
+	switch a.Operator {
+	case ast_pb.Operator_ADDITION:
+		operator = "+"
+	case ast_pb.Operator_SUBTRACTION:
+		operator = "-"
+	case ast_pb.Operator_MULTIPLICATION:
+		operator = "*"
+	case ast_pb.Operator_DIVISION:
+		operator = "/"
+	case ast_pb.Operator_MODULO:
+		operator = "%"
+	case ast_pb.Operator_EQUAL:
+		operator = "=="
+	case ast_pb.Operator_NOT_EQUAL:
+		operator = "!="
+	case ast_pb.Operator_GREATER_THAN:
+		operator = ">"
+	case ast_pb.Operator_GREATER_THAN_OR_EQUAL:
+		operator = ">="
+	case ast_pb.Operator_LESS_THAN:
+		operator = "<"
+	case ast_pb.Operator_LESS_THAN_OR_EQUAL:
+		operator = "<="
+	case ast_pb.Operator_OR:
+		operator = "||"
+	}
+	code += " " + operator + " "
+	code += a.RightExpression.ToSource()
+	return code
 }

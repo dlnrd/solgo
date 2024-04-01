@@ -429,5 +429,17 @@ func parseOperator(operator parser.IAssignOpContext) ast_pb.Operator {
 }
 
 func (a *Assignment) ToSource() string {
-	return " Assignment"
+	if a.Expression != nil {
+		return a.Expression.ToSource()
+	}
+	code := ""
+	if a.LeftExpression != nil {
+		code += a.LeftExpression.ToSource()
+	}
+	code += " = "
+	if a.RightExpression != nil {
+		code += a.RightExpression.ToSource()
+	}
+
+	return code
 }

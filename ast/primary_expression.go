@@ -675,8 +675,12 @@ func (p *PrimaryExpression) buildFunctionArgumentTypeDescription() *TypeDescript
 	}
 }
 
+// find out if this is the end of the chain
 func (p *PrimaryExpression) ToSource() string {
-	return " Primary ex"
+	if p.GetKind() == ast_pb.NodeType_NUMBER {
+		return p.Value
+	}
+	return p.Name
 }
 
 func (f *ForStatement) ToSource() string {

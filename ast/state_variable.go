@@ -377,10 +377,6 @@ func (v *StateVariableDeclaration) ToSource() string {
 	// 	fmt.Println(k)
 	// }
 
-	// only print state variables in global scope
-	if v.IsStateVariable() && v.Scope != 0 {
-		return ""
-	}
 	code := ""
 
 	if v.GetTypeName() != nil {

@@ -676,7 +676,7 @@ func (f *Function) getVirtualState(ctx *parser.FunctionDefinitionContext) bool {
 // TODO: alot to improve ehre
 func (f *Function) ToSource() string {
 	code := ""
-	code += fmt.Sprintf("%s %s(", f.VisibilityToCode(f.Visibility.String()), f.Name)
+	code += fmt.Sprintf("function %s %s(", f.Name, f.VisibilityToCode(f.Visibility.String()))
 	if f.GetParameters() != nil {
 		code += f.GetParameters().ToSource()
 	}
