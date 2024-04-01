@@ -557,5 +557,9 @@ func (f *FunctionCallOption) Parse(
 
 // ToSource
 func (f *FunctionCallOption) ToSource() string {
-	return ""
+	return " FunctionCallOption"
+}
+
+func (f *FunctionCall) ToSource() string {
+	return " FunctionCall"
 }

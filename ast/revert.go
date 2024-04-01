@@ -200,3 +200,7 @@ func (r *RevertStatement) Parse(
 	r.Expression = expression.Parse(unit, contractNode, fnNode, bodyNode, nil, r, r.GetId(), ctx.Expression())
 	return r
 }
+
+func (f *RevertStatement) ToSource() string {
+	return " RevertStatement"
+}

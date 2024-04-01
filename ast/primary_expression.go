@@ -676,5 +676,9 @@ func (p *PrimaryExpression) buildFunctionArgumentTypeDescription() *TypeDescript
 }
 
 func (p *PrimaryExpression) ToSource() string {
-	return ""
+	return " Primary ex"
+}
+
+func (f *ForStatement) ToSource() string {
+	return " ForStatement"
 }

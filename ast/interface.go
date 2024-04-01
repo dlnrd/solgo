@@ -450,3 +450,7 @@ func (l *Interface) Parse(unitCtx *parser.SourceUnitContext, ctx *parser.Interfa
 	unit.Nodes = append(unit.Nodes, interfaceNode)
 	unit.Contract = interfaceNode
 }
+
+func (f *Interface) ToSource() string {
+	return " Interface"
+}

@@ -495,3 +495,23 @@ func (c *Contract) ToSource() string {
 	code += "}\n"
 	return code
 }
+
+func (f *EnumDefinition) ToSource() string {
+	return " EnumDefinition"
+}
+
+func (f *ErrorDefinition) ToSource() string {
+	return " ErrorDefinition"
+}
+
+func (f *EventDefinition) ToSource() string {
+	return " EventDefinition"
+}
+
+func (f *Fallback) ToSource() string {
+	return " Fallback"
+}
+
+func (f *Receive) ToSource() string {
+	return " Receive"
+}

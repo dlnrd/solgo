@@ -202,3 +202,7 @@ func (f *ShiftOperation) Parse(
 
 	return f
 }
+
+func (f *ShiftOperation) ToSource() string {
+	return " ShiftOperation"
+}

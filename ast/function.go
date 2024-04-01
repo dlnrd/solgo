@@ -673,6 +673,23 @@ func (f *Function) getVirtualState(ctx *parser.FunctionDefinitionContext) bool {
 }
 
 // tosource
+// TODO: alot to improve ehre
 func (f *Function) ToSource() string {
-	return ""
+	code := ""
+	code += fmt.Sprintf("%s %s(", f.VisibilityToCode(f.Visibility.String()), f.Name)
+	if f.GetParameters() != nil {
+		code += f.GetParameters().ToSource()
+	}
+	code += ")"
+
+	if f.GetReturnParameters() != nil {
+		code += f.GetReturnParameters().ToSource()
+	}
+
+	code += " {\n"
+	if f.GetBody() != nil {
+		code += f.GetBody().ToSource()
+	}
+	code += "}\n"
+	return code
 }

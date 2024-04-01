@@ -411,5 +411,9 @@ func (b *BodyNode) parseStatements(
 }
 
 func (b *BodyNode) ToSource() string {
-	return ""
+	code := ""
+	for _, statement := range b.GetStatements() {
+		code += statement.ToSource()
+	}
+	return code
 }

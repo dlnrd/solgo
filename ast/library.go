@@ -450,3 +450,7 @@ func (l *Library) Parse(unitCtx *parser.SourceUnitContext, ctx *parser.LibraryDe
 	unit.Nodes = append(unit.Nodes, libraryNode)
 	unit.Contract = libraryNode
 }
+
+func (f *Library) ToSource() string {
+	return " Library"
+}

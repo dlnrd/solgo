@@ -171,3 +171,7 @@ func (u *UsingDirective) getLibraryName(identifierCtx parser.IIdentifierPathCont
 		}(),
 	}
 }
+
+func (f *UsingDirective) ToSource() string {
+	return " UsingDirective"
+}

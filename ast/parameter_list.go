@@ -184,6 +184,14 @@ func (p *ParameterList) ParseErrorParameters(unit *SourceUnit[Node[ast_pb.Source
 	}
 }
 
-func (f *ParameterList) ToSource() string {
-	return " ParameterList"
+func (p *ParameterList) ToSource() string {
+	code := ""
+	for i, parameter := range p.GetParameters() {
+		if i == len(p.GetParameters())-1 {
+			code += parameter.ToSource()
+			break
+		}
+		code += parameter.ToSource() + ", "
+	}
+	return code
 }

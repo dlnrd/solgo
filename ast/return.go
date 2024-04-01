@@ -181,3 +181,7 @@ func (r *ReturnStatement) Parse(
 
 	return r
 }
+
+func (f *ReturnStatement) ToSource() string {
+	return " ReturnStatement"
+}

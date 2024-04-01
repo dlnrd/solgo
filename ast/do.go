@@ -176,3 +176,7 @@ func (d *DoWhileStatement) Parse(
 
 	return d
 }
+
+func (f *DoWhileStatement) ToSource() string {
+	return " DoWhileStatement"
+}

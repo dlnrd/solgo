@@ -206,3 +206,7 @@ func (f *IndexRange) Parse(
 
 	return f
 }
+
+func (f *IndexRange) ToSource() string {
+	return " IndexRange"
+}

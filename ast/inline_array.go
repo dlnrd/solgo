@@ -255,3 +255,7 @@ func (f *InlineArray) buildTypeDescription() *TypeDescription {
 		TypeIdentifier: typeIdentifier,
 	}
 }
+
+func (f *InlineArray) ToSource() string {
+	return " InlineArray"
+}

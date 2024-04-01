@@ -318,3 +318,7 @@ func (i *IndexAccess) buildTypeDescription() *TypeDescription {
 		TypeIdentifier: typeIdentifier,
 	}
 }
+
+func (f *IndexAccess) ToSource() string {
+	return " IndexAccess"
+}

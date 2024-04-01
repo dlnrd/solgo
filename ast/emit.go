@@ -190,3 +190,7 @@ func (e *Emit) Parse(unit *SourceUnit[Node[ast_pb.SourceUnit]],
 	e.Expression = expression.Parse(unit, contractNode, fnNode, bodyNode, nil, e, e.GetId(), ctx.Expression())
 	return e
 }
+
+func (f *Emit) ToSource() string {
+	return " Emit"
+}
