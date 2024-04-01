@@ -111,6 +111,22 @@ func (b *ASTBuilder) ResolveReferences() []error {
 	return nil
 }
 
+// converts visibility to code string
+func (b *ASTBuilder) VisibilityToCode(visibility string) string {
+	switch visibility {
+	case "PUBLIC":
+		return "public"
+	case "INTERNAL":
+		return "internal"
+	case "EXTERNAL":
+		return "external"
+	case "PRIVATE":
+		return "private"
+	default:
+		return "not recognised visibility"
+	}
+}
+
 // ImportFromJSON imports the AST from a JSON byte array.
 // Note that parser content won't be imported. Only the results for future manipulation.
 func (b *ASTBuilder) ImportFromJSON(ctx context.Context, jsonBytes []byte) (*RootNode, error) {

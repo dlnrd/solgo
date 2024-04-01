@@ -475,6 +475,23 @@ func (c *Contract) Parse(unitCtx *parser.SourceUnitContext, ctx *parser.Contract
 	unit.Contract = contractNode
 }
 
-func (f *Contract) ToSource() string {
-	return " Contract"
+func (c *Contract) ToSource() string {
+
+	code := ""
+	code += fmt.Sprintf("contract %s {\n", c.Name)
+	for i, baseContract := range c.GetBaseContracts() {
+		if i == 0 {
+			code += fmt.Sprintf("is %s", baseContract.BaseName.Name)
+			continue
+		}
+		code += fmt.Sprintf(", %s", baseContract.BaseName.Name)
+	}
+	code += " {\n"
+
+	for _, node := range c.GetNodes() {
+		fmt.Printf("Node: %s\n", node.GetType())
+		code += node.ToSource()
+	}
+	code += "}\n"
+	return code
 }

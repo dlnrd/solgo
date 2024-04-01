@@ -370,6 +370,28 @@ func (b *ASTBuilder) EnterVariableDeclaration(ctx *parser.VariableDeclarationCon
 	child.ParseGlobalVariable(ctx)
 }
 
-func (f *StateVariableDeclaration) ToSource() string {
-	return " StateVariableDeclaration"
+// eg: uint256 public number;
+func (v *StateVariableDeclaration) ToSource() string {
+	// k, ok := v.ToProto().(*v3.TypedStruct)
+	// if ok {
+	// 	fmt.Println(k)
+	// }
+
+	// only print state variables in global scope
+	if v.IsStateVariable() && v.Scope != 0 {
+		return ""
+	}
+	code := ""
+
+	if v.GetTypeName() != nil {
+		code += v.GetTypeName().GetName()
+	}
+	code += " " + v.ASTBuilder.VisibilityToCode(v.GetVisibility().String()) + " " + v.GetName()
+
+	if v.GetInitialValue() != nil {
+		// need to handle tuple expressions
+		code += " = " + v.GetInitialValue().ToSource()
+	}
+	code += ";\n"
+	return code
 }
