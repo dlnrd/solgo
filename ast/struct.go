@@ -332,5 +332,9 @@ func (b *ASTBuilder) EnterStructDefinition(ctx *parser.StructDefinitionContext) 
 }
 
 func (f *StructDefinition) ToSource() string {
-	return " StructDefinition"
+	code := fmt.Sprintf("struct %s {\n", f.Name)
+	for _, member := range f.Members {
+		code += member.ToSource()
+	}
+	return code
 }

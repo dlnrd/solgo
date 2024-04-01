@@ -917,14 +917,14 @@ func (td TypeDescription) ToProto() *ast_pb.TypeDescription {
 	}
 }
 
-func (f *TypeName) ToSource() string {
-	return " TypeName"
+func (t *TypeName) ToSource() string {
+	return t.GetName()
 }
 
-func (f *TypeDescription) ToSource() string {
+func (td *TypeDescription) ToSource() string {
 	return " TypeDescription"
 }
 
-func (f *PathNode) ToSource() string {
+func (pn *PathNode) ToSource() string {
 	return " PathNode"
 }

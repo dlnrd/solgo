@@ -427,6 +427,6 @@ func (p *Parameter) getStorageLocationFromCtx(ctx *parser.ParameterDeclarationCo
 }
 
 func (f *Parameter) ToSource() string {
-
-	return " Parameter"
+	code := fmt.Sprintf("%s %s;\n", f.TypeName.ToSource(), f.GetName())
+	return code
 }
