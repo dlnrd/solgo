@@ -226,3 +226,7 @@ func (y *YulStatement) Parse(
 
 	return y
 }
+
+func (f *YulStatement) ToSource() string {
+	return " YulStatement"
+}

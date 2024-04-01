@@ -295,3 +295,14 @@ func (b *ASTBuilder) ExitSourceUnit(ctx *parser.SourceUnitContext) {
 	b.tree.AppendRootNodes(b.sourceUnits...)
 	b.tree.AppendGlobalNodes(b.globalDefinitions...)
 }
+
+func (s *SourceUnit[T]) ToSource() string {
+	code := ""
+	// for _, symbol := range s.ExportedSymbols {
+	// 	// symbolCode := fmt.Sprintf("export %s;\n", symbol.Name)
+	// }
+	for _, node := range s.Nodes {
+		code += node.ToSource()
+	}
+	return code
+}

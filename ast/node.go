@@ -10,6 +10,7 @@ type Node[T NodeType] interface {
 	GetTypeDescription() *TypeDescription
 	GetNodes() []Node[NodeType]
 	ToProto() T
+	ToSource() string
 	SetReferenceDescriptor(refId int64, refDesc *TypeDescription) bool
 }
 

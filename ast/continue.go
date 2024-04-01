@@ -85,3 +85,7 @@ func (b *ContinueStatement) Parse(
 	}
 	return b
 }
+
+func (f *ContinueStatement) ToSource() string {
+	return " ContinueStatement"
+}

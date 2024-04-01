@@ -117,3 +117,7 @@ func (m *MetaType) Parse(unit *SourceUnit[Node[ast_pb.SourceUnit]],
 
 	return m
 }
+
+func (f *MetaType) ToSource() string {
+	return " MetaType"
+}

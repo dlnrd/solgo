@@ -209,3 +209,7 @@ func (t *CatchStatement) Parse(
 
 	return t
 }
+
+func (c *CatchStatement) ToSource() string {
+	return ""
+}

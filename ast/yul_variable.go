@@ -227,3 +227,7 @@ func (y *YulVariable) Parse(
 
 	return y
 }
+
+func (f *YulVariable) ToSource() string {
+	return " YulVariable"
+}

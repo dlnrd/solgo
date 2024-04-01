@@ -2,6 +2,7 @@ package ast
 
 import (
 	"encoding/json"
+	"fmt"
 
 	ast_pb "github.com/unpackdev/protos/dist/go/ast"
 	"github.com/unpackdev/solgo/parser"
@@ -242,6 +243,7 @@ func (p *Parameter) ToProto() NodeType {
 	}
 
 	if p.GetTypeName() != nil {
+		fmt.Printf("%s %s", p.GetTypeName().GetName(), p.GetName())
 		toReturn.TypeName = p.GetTypeName().ToProto().(*ast_pb.TypeName)
 	}
 
@@ -422,4 +424,8 @@ func (p *Parameter) getStorageLocationFromCtx(ctx *parser.ParameterDeclarationCo
 	}
 
 	return ast_pb.StorageLocation_MEMORY
+}
+
+func (f *Parameter) ToSource() string {
+	return " Parameter"
 }

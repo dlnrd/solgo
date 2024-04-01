@@ -361,6 +361,7 @@ func (f *Function) ToProto() NodeType {
 		Signature:             f.GetSignature(),
 	}
 
+	fmt.Printf("function %s() %s {\n", f.Name, f.Visibility)
 	if f.GetTypeDescription() != nil {
 		proto.TypeDescription = f.GetTypeDescription().ToProto()
 	}
@@ -372,6 +373,7 @@ func (f *Function) ToProto() NodeType {
 	for _, override := range f.GetOverrides() {
 		proto.Overrides = append(proto.Overrides, override.ToProto().(*ast_pb.OverrideSpecifier))
 	}
+	// print out the source code of this function
 
 	return NewTypedStruct(&proto, "Function")
 }
@@ -668,4 +670,9 @@ func (f *Function) getVirtualState(ctx *parser.FunctionDefinitionContext) bool {
 	}
 
 	return false
+}
+
+// tosource
+func (f *Function) ToSource() string {
+	return ""
 }

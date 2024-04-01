@@ -409,3 +409,7 @@ func (b *BodyNode) parseStatements(
 		)
 	}
 }
+
+func (b *BodyNode) ToSource() string {
+	return ""
+}

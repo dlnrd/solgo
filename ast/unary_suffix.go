@@ -271,3 +271,7 @@ func (u *UnarySuffix) Parse(
 	u.TypeDescription = u.Expression.GetTypeDescription()
 	return u
 }
+
+func (f *UnarySuffix) ToSource() string {
+	return " UnarySuffix"
+}

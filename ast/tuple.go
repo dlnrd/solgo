@@ -256,3 +256,7 @@ func (t *TupleExpression) buildTypeDescription() *TypeDescription {
 		TypeIdentifier: typeIdentifier,
 	}
 }
+
+func (f *TupleExpression) ToSource() string {
+	return " TupleExpression"
+}

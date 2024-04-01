@@ -181,3 +181,7 @@ func (f *BitOrOperation) Parse(
 
 	return f
 }
+
+func (a *BitOrOperation) ToSource() string {
+	return ""
+}

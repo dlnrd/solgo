@@ -203,3 +203,7 @@ func parsePragmasForSourceUnit(
 
 	return filteredPragmas
 }
+
+func (f *Pragma) ToSource() string {
+	return " Pragma"
+}

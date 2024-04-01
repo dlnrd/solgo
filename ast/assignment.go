@@ -427,3 +427,7 @@ func parseOperator(operator parser.IAssignOpContext) ast_pb.Operator {
 		return ast_pb.Operator_O_DEFAULT
 	}
 }
+
+func (a *Assignment) ToSource() string {
+	return " Assignment"
+}

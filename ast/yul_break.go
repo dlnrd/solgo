@@ -90,3 +90,7 @@ func (y *YulBreakStatement) Parse(
 
 	return y
 }
+
+func (f *YulBreakStatement) ToSource() string {
+	return " YulBreakStatement"
+}

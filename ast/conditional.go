@@ -203,3 +203,7 @@ func (f *Conditional) Parse(
 
 	return f
 }
+
+func (f *Conditional) ToSource() string {
+	return ""
+}

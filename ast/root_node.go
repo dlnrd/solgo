@@ -228,3 +228,14 @@ func (r *RootNode) ToProto() *ast_pb.RootSourceUnit {
 		Comments:        comments,
 	}
 }
+
+func (f *RootNode) ToSource() string {
+	code := ""
+	for _, global := range f.Globals {
+		code += global.ToSource()
+	}
+	for _, sourceUnit := range f.SourceUnits {
+		code += sourceUnit.ToSource()
+	}
+	return code
+}

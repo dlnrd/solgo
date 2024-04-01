@@ -194,3 +194,7 @@ func (o *OverrideSpecifier) Parse(unit *SourceUnit[Node[ast_pb.SourceUnit]], fnN
 		}
 	}
 }
+
+func (f *OverridePath) ToSource() string {
+	return " OverridePath"
+}

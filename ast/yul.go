@@ -110,3 +110,7 @@ func (a *Yul) Parse(
 
 	return a
 }
+
+func (f *Yul) ToSource() string {
+	return " Yul"
+}

@@ -136,3 +136,7 @@ func (n *NewExpr) Parse(
 	n.TypeDescription = typeName.GetTypeDescription()
 	return n
 }
+
+func (f *NewExpr) ToSource() string {
+	return " NewExpr"
+}

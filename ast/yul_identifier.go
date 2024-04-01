@@ -67,3 +67,7 @@ func (y *YulIdentifier) ToProto() NodeType {
 
 	return NewTypedStruct(&toReturn, "YulIdentifier")
 }
+
+func (f *YulIdentifier) ToSource() string {
+	return " YulIdentifier"
+}

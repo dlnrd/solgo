@@ -90,3 +90,7 @@ func (y *YulContinueStatement) Parse(
 
 	return y
 }
+
+func (f *YulContinueStatement) ToSource() string {
+	return " YulContinueStatement"
+}

@@ -86,3 +86,7 @@ func (b *BreakStatement) Parse(
 	}
 	return b
 }
+
+func (b *BreakStatement) ToSource() string {
+	return ""
+}

@@ -89,3 +89,7 @@ func (y *YulLeaveStatement) Parse(
 
 	return y
 }
+
+func (f *YulLeaveStatement) ToSource() string {
+	return " YulLeaveStatement"
+}

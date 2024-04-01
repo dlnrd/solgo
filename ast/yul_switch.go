@@ -169,3 +169,7 @@ func (y *YulSwitchStatement) Parse(
 
 	return y
 }
+
+func (f *YulSwitchStatement) ToSource() string {
+	return " YulSwitchStatement"
+}

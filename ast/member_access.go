@@ -361,3 +361,7 @@ func (m *MemberAccessExpression) Parse(
 
 	return m
 }
+
+func (f *ASTBuilder) ToSource() string {
+	return " ASTBuilder"
+}

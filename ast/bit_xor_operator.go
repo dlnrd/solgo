@@ -199,3 +199,7 @@ func (f *BitXorOperation) Parse(
 
 	return f
 }
+
+func (f *BitXorOperation) ToSource() string {
+	return ""
+}

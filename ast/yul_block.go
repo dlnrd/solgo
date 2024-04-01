@@ -176,3 +176,7 @@ func (y *YulBlockStatement) Parse(
 
 	return y
 }
+
+func (f *YulBlockStatement) ToSource() string {
+	return " YulBlockStatement"
+}

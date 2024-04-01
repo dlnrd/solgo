@@ -223,3 +223,7 @@ func (v *VariableDeclaration) Parse(
 
 	v.currentVariables = append(v.currentVariables, v)
 }
+
+func (f *VariableDeclaration) ToSource() string {
+	return " VariableDeclaration"
+}

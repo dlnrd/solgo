@@ -255,3 +255,7 @@ func (y *YulFunctionCallStatement) Parse(
 
 	return y
 }
+
+func (f *YulFunctionCallStatement) ToSource() string {
+	return " YulFunctionCallStatement"
+}

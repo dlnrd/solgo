@@ -183,3 +183,7 @@ func (p *ParameterList) ParseErrorParameters(unit *SourceUnit[Node[ast_pb.Source
 		p.ParameterTypes = append(p.ParameterTypes, param.TypeName.TypeDescription)
 	}
 }
+
+func (f *ParameterList) ToSource() string {
+	return " ParameterList"
+}

@@ -261,3 +261,8 @@ func parseImportPathsForSourceUnit(
 
 	return filteredImports
 }
+
+// ToSource
+func (i *Import) ToSource() string {
+	return " Import"
+}

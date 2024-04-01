@@ -258,3 +258,7 @@ func (m *ModifierInvocation) Parse(
 		}
 	}
 }
+
+func (f *ModifierInvocation) ToSource() string {
+	return " ModifierInvocation"
+}

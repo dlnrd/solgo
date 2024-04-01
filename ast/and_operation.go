@@ -180,3 +180,7 @@ func (f *AndOperation) Parse(
 
 	return f
 }
+
+func (f *AndOperation) ToSource() string {
+	return " AndOperation"
+}

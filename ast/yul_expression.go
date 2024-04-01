@@ -205,3 +205,7 @@ func ParseYulExpression(
 
 	return nil
 }
+
+func (f *YulExpressionStatement) ToSource() string {
+	return " YulExpressionStatement"
+}

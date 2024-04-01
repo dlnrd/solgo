@@ -233,3 +233,7 @@ func (m *ModifierDefinition) ParseDefinition(
 	m.currentModifiers = append(m.currentModifiers, m)
 	return m
 }
+
+func (f *ModifierDefinition) ToSource() string {
+	return " ModifierDefinition"
+}

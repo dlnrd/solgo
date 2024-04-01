@@ -300,3 +300,7 @@ func (t *TryStatement) Parse(
 	t.ReturnParameters = returnParams
 	return t
 }
+
+func (f *TryStatement) ToSource() string {
+	return " TryStatement"
+}

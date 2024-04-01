@@ -225,9 +225,12 @@ func (s *StructDefinition) ToProto() NodeType {
 		TypeDescription:       s.GetTypeDescription().ToProto(),
 	}
 
+	fmt.Printf("%v {\n", s.GetName())
 	for _, member := range s.GetMembers() {
+		fmt.Printf("  %v %v\n", member.GetTypeName().GetName(), member.GetName())
 		proto.Members = append(proto.Members, member.ToProto().(*ast_pb.Parameter))
 	}
+	fmt.Printf("}\n")
 
 	return NewTypedStruct(&proto, "Struct")
 }
@@ -326,4 +329,8 @@ func (s *StructDefinition) ParseGlobal(
 func (b *ASTBuilder) EnterStructDefinition(ctx *parser.StructDefinitionContext) {
 	s := NewStructDefinition(b)
 	s.ParseGlobal(ctx)
+}
+
+func (f *StructDefinition) ToSource() string {
+	return " StructDefinition"
 }

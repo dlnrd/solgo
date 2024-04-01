@@ -916,3 +916,15 @@ func (td TypeDescription) ToProto() *ast_pb.TypeDescription {
 		TypeIdentifier: td.TypeIdentifier,
 	}
 }
+
+func (f *TypeName) ToSource() string {
+	return " TypeName"
+}
+
+func (f *TypeDescription) ToSource() string {
+	return " TypeDescription"
+}
+
+func (f *PathNode) ToSource() string {
+	return " PathNode"
+}

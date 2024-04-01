@@ -203,3 +203,7 @@ func (y *YulSwitchCaseStatement) Parse(
 
 	return y
 }
+
+func (f *YulSwitchCaseStatement) ToSource() string {
+	return " YulSwitchCaseStatement"
+}

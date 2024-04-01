@@ -430,3 +430,7 @@ func (a *BinaryOperation) ParseOr(
 
 	return a
 }
+
+func (a *BinaryOperation) ToSource() string {
+	return ""
+}

@@ -208,3 +208,7 @@ func (y *YulAssignment) Parse(
 
 	return y
 }
+
+func (f *YulAssignment) ToSource() string {
+	return " YulAssignment"
+}

@@ -249,3 +249,7 @@ func (b *ASTBuilder) EnterUserDefinedValueTypeDefinition(ctx *parser.UserDefined
 	child := NewUserDefinedValueTypeDefinition(b)
 	child.ParseGlobal(ctx)
 }
+
+func (f *UserDefinedValueTypeDefinition) ToSource() string {
+	return " UserDefinedValueTypeDefinition"
+}

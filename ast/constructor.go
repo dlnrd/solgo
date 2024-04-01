@@ -341,3 +341,7 @@ func (c *Constructor) getVisibilityFromCtx(ctx *parser.ConstructorDefinitionCont
 
 	return ast_pb.Visibility_INTERNAL
 }
+
+func (f *Constructor) ToSource() string {
+	return ""
+}

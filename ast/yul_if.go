@@ -203,3 +203,7 @@ func (y *YulIfStatement) Parse(
 
 	return y
 }
+
+func (f *YulIfStatement) ToSource() string {
+	return " YulIfStatement"
+}

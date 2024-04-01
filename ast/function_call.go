@@ -554,3 +554,8 @@ func (f *FunctionCallOption) Parse(
 
 	return f
 }
+
+// ToSource
+func (f *FunctionCallOption) ToSource() string {
+	return ""
+}

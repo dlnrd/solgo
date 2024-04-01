@@ -278,3 +278,7 @@ func (u *UnaryPrefix) Parse(
 
 	return u
 }
+
+func (f *UnaryPrefix) ToSource() string {
+	return " UnaryPrefix"
+}

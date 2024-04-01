@@ -369,3 +369,7 @@ func (b *ASTBuilder) EnterVariableDeclaration(ctx *parser.VariableDeclarationCon
 	child := NewStateVariableDeclaration(b)
 	child.ParseGlobalVariable(ctx)
 }
+
+func (f *StateVariableDeclaration) ToSource() string {
+	return " StateVariableDeclaration"
+}

@@ -344,13 +344,17 @@ func (c *Contract) ToProto() NodeType {
 		BaseContracts:           make([]*ast_pb.BaseContract, 0),
 	}
 
+	fmt.Printf("Contract %s", c.Name)
 	for _, baseContract := range c.GetBaseContracts() {
 		proto.BaseContracts = append(proto.BaseContracts, baseContract.ToProto())
+		fmt.Printf(", %s", baseContract.BaseName.Name)
 	}
+	fmt.Printf(" {\n")
 
 	for _, node := range c.GetNodes() {
 		proto.Nodes = append(proto.Nodes, node.ToProto().(*v3.TypedStruct))
 	}
+	fmt.Printf("}\n")
 
 	return NewTypedStruct(&proto, "Contract")
 }
@@ -469,4 +473,8 @@ func (c *Contract) Parse(unitCtx *parser.SourceUnitContext, ctx *parser.Contract
 
 	unit.Nodes = append(unit.Nodes, contractNode)
 	unit.Contract = contractNode
+}
+
+func (f *Contract) ToSource() string {
+	return " Contract"
 }

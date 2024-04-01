@@ -259,3 +259,7 @@ func (y *YulFunctionDefinition) Parse(
 
 	return y
 }
+
+func (f *YulFunctionDefinition) ToSource() string {
+	return " YulFunctionDefinition"
+}

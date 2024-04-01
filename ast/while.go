@@ -186,3 +186,7 @@ func (w *WhileStatement) Parse(
 
 	return w
 }
+
+func (f *WhileStatement) ToSource() string {
+	return " WhileStatement"
+}

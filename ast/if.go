@@ -197,3 +197,8 @@ func (i *IfStatement) Parse(
 
 	return i
 }
+
+// ToSource
+func (i *IfStatement) ToSource() string {
+	return " IfStatement"
+}

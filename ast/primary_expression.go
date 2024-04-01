@@ -674,3 +674,7 @@ func (p *PrimaryExpression) buildFunctionArgumentTypeDescription() *TypeDescript
 		TypeIdentifier: typeIdentifier,
 	}
 }
+
+func (p *PrimaryExpression) ToSource() string {
+	return ""
+}
