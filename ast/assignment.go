@@ -436,7 +436,43 @@ func (a *Assignment) ToSource() string {
 	if a.LeftExpression != nil {
 		code += a.LeftExpression.ToSource()
 	}
-	code += " = "
+
+	operator := ""
+	switch a.Operator {
+	case ast_pb.Operator_EQUAL:
+		operator = "="
+	case ast_pb.Operator_PLUS_EQUAL:
+		operator = "+="
+	case ast_pb.Operator_MINUS_EQUAL:
+		operator = "-="
+	case ast_pb.Operator_MUL_EQUAL:
+		operator = "*="
+	case ast_pb.Operator_DIVISION:
+		operator = "/="
+	case ast_pb.Operator_MOD_EQUAL:
+		operator = "%="
+	case ast_pb.Operator_AND_EQUAL:
+		operator = "&="
+	case ast_pb.Operator_OR_EQUAL:
+		operator = "|="
+	case ast_pb.Operator_XOR_EQUAL:
+		operator = "^="
+	case ast_pb.Operator_SHIFT_LEFT_EQUAL:
+		operator = "<<="
+	case ast_pb.Operator_SHIFT_RIGHT_EQUAL:
+		operator = ">>="
+	case ast_pb.Operator_BIT_AND_EQUAL:
+		operator = "&="
+	case ast_pb.Operator_BIT_OR_EQUAL:
+		operator = "|="
+	case ast_pb.Operator_BIT_XOR_EQUAL:
+		operator = "^="
+	case ast_pb.Operator_POW_EQUAL:
+		operator = "**="
+	default:
+		panic("unknown assignment operator")
+	}
+	code += " " + operator + " "
 	if a.RightExpression != nil {
 		code += a.RightExpression.ToSource()
 	}

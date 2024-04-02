@@ -286,7 +286,7 @@ func (f *ForStatement) ToSource() string {
 		code += f.GetBody().ToSource()
 	}
 
-	code += "}\n"
+	code += "}"
 
 	return code
 }
