@@ -689,23 +689,23 @@ func (f *Function) ToSource() string {
 
 	visibility := ""
 	if f.Visibility != ast_pb.Visibility_V_DEFAULT {
-		visibility = f.VisibilityToCode(f.Visibility.String())
+		visibility = " " + f.VisibilityToCode(f.Visibility.String())
 	}
 
 	virtual := ""
 	if f.Virtual {
-		virtual = "virtual"
+		virtual = " virtual"
 	}
 
 	// override
 
 	stateMutability := ""
 	if f.StateMutability != ast_pb.Mutability_M_DEFAULT {
-		stateMutability = f.StateMutabilityToCode(f.StateMutability.String())
+		stateMutability = " " + f.StateMutabilityToCode(f.StateMutability.String())
 	}
 
-	code += "function " + f.Name + "(" + parameters + ") "
-	code += strings.Join([]string{visibility, virtual, stateMutability}, " ")
+	code += "function " + f.Name + "(" + parameters + ")"
+	code += visibility + virtual + stateMutability
 
 	if f.GetReturnParameters() != nil {
 		code += " returns (" + f.GetReturnParameters().ToSource() + ")"
@@ -716,6 +716,5 @@ func (f *Function) ToSource() string {
 		code += f.GetBody().ToSource()
 	}
 	code += "}\n"
-	fmt.Println(f.TypeDescription)
 	return code
 }

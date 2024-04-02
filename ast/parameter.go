@@ -439,8 +439,5 @@ func (p *Parameter) ToSource() string {
 		code += " " + ident
 	}
 
-	// print toproto
-	// fmt.Printf("%+v", f.ToProto())
-
 	return code
 }
