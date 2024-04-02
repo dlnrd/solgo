@@ -263,3 +263,30 @@ func (f *ForStatement) Parse(
 
 	return f
 }
+
+// ToSource returns a string representation of the ForStatement node.
+func (f *ForStatement) ToSource() string {
+	code := "for ("
+
+	if f.GetInitialiser() != nil {
+		code += f.GetInitialiser().ToSource() + "; "
+	}
+
+	if f.GetCondition() != nil {
+		code += f.GetCondition().ToSource() + "; "
+	}
+
+	if f.GetClosure() != nil {
+		code += f.GetClosure().ToSource()
+	}
+
+	code += ") {\n"
+
+	if f.GetBody() != nil {
+		code += f.GetBody().ToSource()
+	}
+
+	code += "}\n"
+
+	return code
+}
