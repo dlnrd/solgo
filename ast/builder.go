@@ -127,6 +127,40 @@ func (b *ASTBuilder) VisibilityToCode(visibility string) string {
 	}
 }
 
+func (b *ASTBuilder) StateMutabilityToCode(stateMutability string) string {
+	switch stateMutability {
+	case "MUTABLE":
+		return "mutable"
+	case "IMMUTABLE":
+		return "immutable"
+	case "PURE":
+		return "pure"
+	case "VIEW":
+		return "view"
+	case "PAYABLE":
+		return "payable"
+	case "NONPAYABLE":
+		return "nonpayable"
+	default:
+		return "not recognised state mutability"
+	}
+}
+
+func (b *ASTBuilder) StorageLocationToCode(storageLocation string) string {
+	switch storageLocation {
+	case "DEFAULT":
+		return "default"
+	case "MEMORY":
+		return "memory"
+	case "STORAGE":
+		return "storage"
+	case "CALLDATA":
+		return "calldata"
+	default:
+		return "not recognised storage location"
+	}
+}
+
 // ImportFromJSON imports the AST from a JSON byte array.
 // Note that parser content won't be imported. Only the results for future manipulation.
 func (b *ASTBuilder) ImportFromJSON(ctx context.Context, jsonBytes []byte) (*RootNode, error) {

@@ -726,6 +726,7 @@ func (t *TypeName) Parse(unit *SourceUnit[Node[ast_pb.SourceUnit]], fnNode Node[
 		case *parser.PrimaryExpressionContext:
 			t.parsePrimaryExpression(unit, fnNode, parentNodeId, childCtx)
 		case *antlr.TerminalNodeImpl:
+			t.Name += childCtx.GetText()
 			continue
 		default:
 			expression := NewExpression(t.ASTBuilder)
