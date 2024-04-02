@@ -183,5 +183,8 @@ func (r *ReturnStatement) Parse(
 }
 
 func (f *ReturnStatement) ToSource() string {
-	return " ReturnStatement"
+	if f.Expression != nil {
+		return "return " + f.Expression.ToSource()
+	}
+	return "return"
 }
