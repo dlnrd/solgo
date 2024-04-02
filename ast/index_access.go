@@ -320,5 +320,7 @@ func (i *IndexAccess) buildTypeDescription() *TypeDescription {
 }
 
 func (f *IndexAccess) ToSource() string {
-	return " IndexAccess"
+	base := f.BaseExpression.ToSource()
+	index := f.IndexExpression.ToSource()
+	return fmt.Sprintf("%s[%s]", base, index)
 }
