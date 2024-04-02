@@ -363,5 +363,5 @@ func (m *MemberAccessExpression) Parse(
 }
 
 func (f *MemberAccessExpression) ToSource() string {
-	return " MemberAccessExpression"
+	return f.Expression.ToSource() + "." + f.MemberName
 }

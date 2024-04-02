@@ -682,7 +682,3 @@ func (p *PrimaryExpression) ToSource() string {
 	}
 	return p.Name
 }
-
-func (f *ForStatement) ToSource() string {
-	return " ForStatement"
-}
