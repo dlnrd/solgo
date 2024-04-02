@@ -183,6 +183,9 @@ func (d *Declaration) ParseVariableDeclaration(
 
 }
 
+// naive implementation, mising visibility, state mutability, and storage location
 func (f *Declaration) ToSource() string {
-	return " Declaration"
+	code := ""
+	code += f.TypeName.ToSource() + " " + f.Name
+	return code
 }

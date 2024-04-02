@@ -224,6 +224,13 @@ func (v *VariableDeclaration) Parse(
 	v.currentVariables = append(v.currentVariables, v)
 }
 
-func (f *VariableDeclaration) ToSource() string {
-	return " VariableDeclaration"
+func (v *VariableDeclaration) ToSource() string {
+	code := ""
+	for _, declaration := range v.GetDeclarations() {
+		code += declaration.ToSource()
+	}
+
+	code += " = "
+	code += v.GetInitialValue().ToSource()
+	return code
 }
