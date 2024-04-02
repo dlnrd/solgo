@@ -273,5 +273,20 @@ func (u *UnarySuffix) Parse(
 }
 
 func (f *UnarySuffix) ToSource() string {
-	return " UnarySuffix"
+	operator := ""
+	switch f.Operator {
+	case ast_pb.Operator_INCREMENT:
+		operator = "++"
+	case ast_pb.Operator_DECREMENT:
+		operator = "--"
+	case ast_pb.Operator_NOT:
+		operator = "!"
+	case ast_pb.Operator_BIT_NOT:
+		operator = "~"
+	case ast_pb.Operator_SUBTRACT:
+		operator = "-"
+	default:
+		panic("unknown unary operator")
+	}
+	return f.Expression.ToSource() + operator
 }
