@@ -149,7 +149,7 @@ func (b *ASTBuilder) StateMutabilityToCode(stateMutability string) string {
 func (b *ASTBuilder) StorageLocationToCode(storageLocation string) string {
 	switch storageLocation {
 	case "DEFAULT":
-		return "default"
+		return ""
 	case "MEMORY":
 		return "memory"
 	case "STORAGE":

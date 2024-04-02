@@ -423,11 +423,22 @@ func (p *Parameter) getStorageLocationFromCtx(ctx *parser.ParameterDeclarationCo
 		}
 	}
 
-	return ast_pb.StorageLocation_MEMORY
+	return ast_pb.StorageLocation_DEFAULT
 }
 
 func (p *Parameter) ToSource() string {
-	code := fmt.Sprintf("%s %s %s", p.TypeName.ToSource(), p.StorageLocationToCode(p.StorageLocation.String()), p.GetName())
+	typeName := p.TypeName.ToSource()
+	storage := p.StorageLocationToCode(p.StorageLocation.String())
+	ident := p.GetName()
+	code := ""
+	code += typeName
+	if storage != "" {
+		code += " " + storage
+	}
+	if ident != "" {
+		code += " " + ident
+	}
+
 	// print toproto
 	// fmt.Printf("%+v", f.ToProto())
 

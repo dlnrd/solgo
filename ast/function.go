@@ -674,16 +674,41 @@ func (f *Function) getVirtualState(ctx *parser.FunctionDefinitionContext) bool {
 
 // tosource
 // TODO: alot to improve ehre
+// function sumOfArray(uint256[] memory numbers) external pure returns (uint256) {
 func (f *Function) ToSource() string {
 	code := ""
-	code += fmt.Sprintf("function %s %s(", f.Name, f.VisibilityToCode(f.Visibility.String()))
+	parameters := ""
 	if f.GetParameters() != nil {
-		code += f.GetParameters().ToSource()
+		for i, param := range f.GetParameters().GetParameters() {
+			if i > 0 {
+				parameters += ", "
+			}
+			parameters += param.ToSource()
+		}
 	}
-	code += ")"
+
+	visibility := ""
+	if f.Visibility != ast_pb.Visibility_V_DEFAULT {
+		visibility = f.VisibilityToCode(f.Visibility.String())
+	}
+
+	virtual := ""
+	if f.Virtual {
+		virtual = "virtual"
+	}
+
+	// override
+
+	stateMutability := ""
+	if f.StateMutability != ast_pb.Mutability_M_DEFAULT {
+		stateMutability = f.StateMutabilityToCode(f.StateMutability.String())
+	}
+
+	code += "function " + f.Name + "(" + parameters + ") "
+	code += strings.Join([]string{visibility, virtual, stateMutability}, " ")
 
 	if f.GetReturnParameters() != nil {
-		code += f.GetReturnParameters().ToSource()
+		code += " returns (" + f.GetReturnParameters().ToSource() + ")"
 	}
 
 	code += " {\n"
@@ -691,5 +716,6 @@ func (f *Function) ToSource() string {
 		code += f.GetBody().ToSource()
 	}
 	code += "}\n"
+	fmt.Println(f.TypeDescription)
 	return code
 }
