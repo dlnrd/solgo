@@ -258,5 +258,14 @@ func (t *TupleExpression) buildTypeDescription() *TypeDescription {
 }
 
 func (f *TupleExpression) ToSource() string {
-	return " TupleExpression"
+	code := "("
+	for i, component := range f.GetComponents() {
+		if i == 0 {
+			code += component.ToSource()
+			continue
+		}
+		code += ", " + component.ToSource()
+	}
+	code += ")"
+	return code
 }

@@ -192,5 +192,15 @@ func (e *Emit) Parse(unit *SourceUnit[Node[ast_pb.SourceUnit]],
 }
 
 func (f *Emit) ToSource() string {
-	return " Emit"
+	code := "emit "
+	code += f.Expression.ToSource()
+	code += "("
+	for i, arg := range f.Arguments {
+		code += arg.ToSource()
+		if i < len(f.Arguments)-1 {
+			code += ", "
+		}
+	}
+	code += ")"
+	return code
 }
