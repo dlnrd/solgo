@@ -919,6 +919,9 @@ func (td TypeDescription) ToProto() *ast_pb.TypeDescription {
 }
 
 func (t *TypeName) ToSource() string {
+	if t.ValueType != nil {
+		return fmt.Sprintf("mapping(%s => %s)", t.KeyType.ToSource(), t.ValueType.ToSource())
+	}
 	return t.GetName()
 }
 
