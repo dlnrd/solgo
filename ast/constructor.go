@@ -343,5 +343,21 @@ func (c *Constructor) getVisibilityFromCtx(ctx *parser.ConstructorDefinitionCont
 }
 
 func (f *Constructor) ToSource() string {
-	return ""
+	code := "constructor("
+	code += f.GetParameters().ToSource()
+	code += ")"
+	// payable and visiibility
+	stateMutability := f.StateMutabilityToCode(f.StateMutability.String())
+	visibility := f.VisibilityToCode(f.Visibility.String())
+	if visibility != "" {
+		code += " " + visibility
+	}
+	if stateMutability != "" {
+		code += " " + stateMutability
+	}
+	code += " {\n"
+	code += f.GetBody().ToSource()
+	code += "}\n"
+
+	return code
 }
