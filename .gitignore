@@ -27,3 +27,5 @@ go.work
 solgo
 playground/*
 bin/*
+
+antlr/.antlr/*
