@@ -182,5 +182,13 @@ func (f *AndOperation) Parse(
 }
 
 func (f *AndOperation) ToSource() string {
-	return " AndOperation"
+	code := ""
+	for i, exp := range f.GetExpressions() {
+		code += exp.ToSource()
+		if i < len(f.GetExpressions())-1 {
+			code += " && "
+		}
+	}
+
+	return code
 }
