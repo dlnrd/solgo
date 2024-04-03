@@ -205,5 +205,10 @@ func (f *Conditional) Parse(
 }
 
 func (f *Conditional) ToSource() string {
-	return ""
+	code := ""
+	cond := f.Expressions[0].ToSource()
+	tBranch := f.Expressions[1].ToSource()
+	fBranch := f.Expressions[2].ToSource()
+	code += cond + " ? " + tBranch + " : " + fBranch
+	return code
 }
