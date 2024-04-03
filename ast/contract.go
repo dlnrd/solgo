@@ -479,9 +479,10 @@ func (c *Contract) ToSource() string {
 
 	code := ""
 	code += fmt.Sprintf("contract %s", c.Name)
+	// handle inheritance
 	for i, baseContract := range c.GetBaseContracts() {
 		if i == 0 {
-			code += fmt.Sprintf("is %s", baseContract.BaseName.Name)
+			code += fmt.Sprintf(" is %s", baseContract.BaseName.Name)
 			continue
 		}
 		code += fmt.Sprintf(", %s", baseContract.BaseName.Name)
