@@ -226,8 +226,18 @@ func (v *VariableDeclaration) Parse(
 
 func (v *VariableDeclaration) ToSource() string {
 	code := ""
-	for _, declaration := range v.GetDeclarations() {
-		code += declaration.ToSource()
+	if len(v.GetDeclarations()) == 1 {
+		code += v.GetDeclarations()[0].ToSource()
+	} else {
+		code += "("
+		for i, declaration := range v.GetDeclarations() {
+			if i == 0 {
+				code += declaration.ToSource()
+				continue
+			}
+			code += ", " + declaration.ToSource()
+		}
+		code += ")"
 	}
 
 	code += " = "
