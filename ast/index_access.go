@@ -1,8 +1,8 @@
 package ast
 
 import (
-	"encoding/json"
 	"fmt"
+	"github.com/goccy/go-json"
 	"regexp"
 	"strings"
 
@@ -38,7 +38,7 @@ func NewIndexAccess(b *ASTBuilder) *IndexAccess {
 // Here we are going to just do some magic stuff in order to figure out descriptions across the board...
 func (i *IndexAccess) SetReferenceDescriptor(refId int64, refDesc *TypeDescription) bool {
 	// It is usually only index expression that is affected, so for now fixing that one...
-	if i.IndexExpression.GetTypeDescription() != nil {
+	if i.IndexExpression != nil && i.IndexExpression.GetTypeDescription() != nil {
 		i.TypeDescriptions[0] = i.IndexExpression.GetTypeDescription()
 		i.TypeDescription = i.buildTypeDescription()
 		return true
@@ -245,15 +245,6 @@ func (i *IndexAccess) Parse(
 
 	expression := NewExpression(i.ASTBuilder)
 
-	i.IndexExpression = expression.Parse(
-		unit, contractNode, fnNode, bodyNode, vDeclar, i, i.GetId(), ctx.Expression(1),
-	)
-	i.TypeDescription = i.IndexExpression.GetTypeDescription()
-
-	i.TypeDescriptions = []*TypeDescription{
-		i.IndexExpression.GetTypeDescription(),
-	}
-
 	if ctx.Expression(0) != nil {
 		i.BaseExpression = expression.Parse(
 			unit, contractNode, fnNode, bodyNode, vDeclar, i, i.GetId(), ctx.Expression(0),
@@ -261,7 +252,19 @@ func (i *IndexAccess) Parse(
 		i.TypeDescriptions = append(i.TypeDescriptions, i.BaseExpression.GetTypeDescription())
 	}
 
-	if i.IndexExpression.GetTypeDescription() == nil || (i.BaseExpression != nil && i.BaseExpression.GetTypeDescription() == nil) {
+	if ctx.Expression(1) != nil {
+		i.IndexExpression = expression.Parse(
+			unit, contractNode, fnNode, bodyNode, vDeclar, i, i.GetId(), ctx.Expression(1),
+		)
+
+		i.TypeDescription = i.IndexExpression.GetTypeDescription()
+
+		i.TypeDescriptions = []*TypeDescription{
+			i.IndexExpression.GetTypeDescription(),
+		}
+	}
+
+	if i.IndexExpression != nil && i.IndexExpression.GetTypeDescription() == nil || (i.BaseExpression != nil && i.BaseExpression.GetTypeDescription() == nil) {
 		if refId, refTypeDescription := i.GetResolver().ResolveByNode(i, fmt.Sprintf("index_access_%d", i.Id)); refTypeDescription != nil {
 			i.ReferencedDeclaration = refId
 			i.TypeDescription = refTypeDescription

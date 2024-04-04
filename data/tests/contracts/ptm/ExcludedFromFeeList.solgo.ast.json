@@ -24,7 +24,8 @@
 					"parent_index": 194
 				},
 				"name": "Ownable",
-				"referenced_declaration": 88
+				"referenced_declaration": 88,
+				"contract_referenced_declaration": 0
 			}
 		}
 	],
@@ -33,7 +34,7 @@
 		{
 			"id": 192,
 			"name": "ExcludedFromFeeList",
-			"absolute_path": ""
+			"absolute_path": "Ptm.sol"
 		},
 		{
 			"id": 195,
@@ -41,7 +42,7 @@
 			"absolute_path": ""
 		}
 	],
-	"absolute_path": "",
+	"absolute_path": "Ptm.sol",
 	"name": "ExcludedFromFeeList",
 	"node_type": 1,
 	"nodes": [
@@ -117,7 +118,7 @@
 					"mutability": 1,
 					"type_name": {
 						"id": 199,
-						"node_type": 0,
+						"node_type": 30,
 						"src": {
 							"line": 67,
 							"column": 4,
@@ -127,7 +128,7 @@
 							"parent_index": 198
 						},
 						"key_type": {
-							"id": 200,
+							"id": 199,
 							"node_type": 30,
 							"src": {
 								"line": 67,
@@ -153,7 +154,7 @@
 							"parent_index": 199
 						},
 						"value_type": {
-							"id": 201,
+							"id": 199,
 							"node_type": 30,
 							"src": {
 								"line": 67,
@@ -187,7 +188,7 @@
 					"initial_value": null
 				},
 				{
-					"id": 203,
+					"id": 201,
 					"node_type": 57,
 					"src": {
 						"line": 69,
@@ -198,7 +199,7 @@
 						"parent_index": 194
 					},
 					"parameters": {
-						"id": 204,
+						"id": 202,
 						"node_type": 43,
 						"src": {
 							"line": 69,
@@ -206,11 +207,11 @@
 							"start": 1916,
 							"end": 1954,
 							"length": 39,
-							"parent_index": 203
+							"parent_index": 201
 						},
 						"parameters": [
 							{
-								"id": 205,
+								"id": 203,
 								"node_type": 44,
 								"src": {
 									"line": 69,
@@ -218,12 +219,12 @@
 									"start": 1938,
 									"end": 1952,
 									"length": 15,
-									"parent_index": 204
+									"parent_index": 202
 								},
-								"scope": 203,
+								"scope": 201,
 								"name": "account",
 								"type_name": {
-									"id": 206,
+									"id": 204,
 									"node_type": 30,
 									"src": {
 										"line": 69,
@@ -231,7 +232,7 @@
 										"start": 1938,
 										"end": 1944,
 										"length": 7,
-										"parent_index": 205
+										"parent_index": 203
 									},
 									"name": "address",
 									"state_mutability": 4,
@@ -260,12 +261,12 @@
 					"name": "ExcludedFromFee",
 					"anonymous": false,
 					"type_description": {
-						"type_identifier": "t_event\u0026_ExcludedFromFeeList_ExcludedFromFee_\u0026203",
+						"type_identifier": "t_event\u0026_ExcludedFromFeeList_ExcludedFromFee_\u0026201",
 						"type_string": "event ExcludedFromFeeList.ExcludedFromFee"
 					}
 				},
 				{
-					"id": 208,
+					"id": 206,
 					"node_type": 57,
 					"src": {
 						"line": 70,
@@ -276,7 +277,7 @@
 						"parent_index": 194
 					},
 					"parameters": {
-						"id": 209,
+						"id": 207,
 						"node_type": 43,
 						"src": {
 							"line": 70,
@@ -284,11 +285,11 @@
 							"start": 1960,
 							"end": 1996,
 							"length": 37,
-							"parent_index": 208
+							"parent_index": 206
 						},
 						"parameters": [
 							{
-								"id": 210,
+								"id": 208,
 								"node_type": 44,
 								"src": {
 									"line": 70,
@@ -296,12 +297,12 @@
 									"start": 1980,
 									"end": 1994,
 									"length": 15,
-									"parent_index": 209
+									"parent_index": 207
 								},
-								"scope": 208,
+								"scope": 206,
 								"name": "account",
 								"type_name": {
-									"id": 211,
+									"id": 209,
 									"node_type": 30,
 									"src": {
 										"line": 70,
@@ -309,7 +310,7 @@
 										"start": 1980,
 										"end": 1986,
 										"length": 7,
-										"parent_index": 210
+										"parent_index": 208
 									},
 									"name": "address",
 									"state_mutability": 4,
@@ -338,12 +339,12 @@
 					"name": "IncludedToFee",
 					"anonymous": false,
 					"type_description": {
-						"type_identifier": "t_event\u0026_ExcludedFromFeeList_IncludedToFee_\u0026208",
+						"type_identifier": "t_event\u0026_ExcludedFromFeeList_IncludedToFee_\u0026206",
 						"type_string": "event ExcludedFromFeeList.IncludedToFee"
 					}
 				},
 				{
-					"id": 213,
+					"id": 211,
 					"name": "isExcludedFromFee",
 					"node_type": 42,
 					"kind": 41,
@@ -361,10 +362,10 @@
 						"start": 2012,
 						"end": 2028,
 						"length": 17,
-						"parent_index": 213
+						"parent_index": 211
 					},
 					"body": {
-						"id": 220,
+						"id": 218,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -373,12 +374,12 @@
 							"start": 2074,
 							"end": 2124,
 							"length": 51,
-							"parent_index": 213
+							"parent_index": 211
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 221,
+								"id": 219,
 								"node_type": 47,
 								"src": {
 									"line": 73,
@@ -386,11 +387,11 @@
 									"start": 2084,
 									"end": 2118,
 									"length": 35,
-									"parent_index": 213
+									"parent_index": 211
 								},
-								"function_return_parameters": 213,
+								"function_return_parameters": 211,
 								"expression": {
-									"id": 222,
+									"id": 220,
 									"node_type": 22,
 									"src": {
 										"line": 73,
@@ -398,10 +399,31 @@
 										"start": 2091,
 										"end": 2117,
 										"length": 27,
-										"parent_index": 221
+										"parent_index": 219
 									},
 									"index_expression": {
-										"id": 223,
+										"id": 222,
+										"node_type": 16,
+										"src": {
+											"line": 73,
+											"column": 34,
+											"start": 2110,
+											"end": 2116,
+											"length": 7,
+											"parent_index": 220
+										},
+										"name": "account",
+										"type_description": {
+											"type_identifier": "t_address",
+											"type_string": "address"
+										},
+										"overloaded_declarations": [],
+										"referenced_declaration": 222,
+										"is_pure": false,
+										"text": "account"
+									},
+									"base_expression": {
+										"id": 221,
 										"node_type": 16,
 										"src": {
 											"line": 73,
@@ -409,7 +431,7 @@
 											"start": 2091,
 											"end": 2108,
 											"length": 18,
-											"parent_index": 222
+											"parent_index": 220
 										},
 										"name": "_isExcludedFromFee",
 										"type_description": {
@@ -418,41 +440,18 @@
 										},
 										"overloaded_declarations": [],
 										"referenced_declaration": 198,
-										"is_pure": false
-									},
-									"base_expression": {
-										"id": 224,
-										"node_type": 16,
-										"src": {
-											"line": 73,
-											"column": 34,
-											"start": 2110,
-											"end": 2116,
-											"length": 7,
-											"parent_index": 222
-										},
-										"name": "account",
-										"type_description": {
-											"type_identifier": "t_address",
-											"type_string": "address"
-										},
-										"overloaded_declarations": [],
-										"referenced_declaration": 224,
-										"is_pure": false
+										"is_pure": false,
+										"text": "_isExcludedFromFee"
 									},
 									"type_descriptions": [
-										{
-											"type_identifier": "t_mapping_$t_address_$t_bool$",
-											"type_string": "mapping(address=\u003ebool)"
-										},
 										{
 											"type_identifier": "t_address",
 											"type_string": "address"
 										}
 									],
 									"type_description": {
-										"type_identifier": "t_[_[$_t_mapping_$t_address_$t_bool$]$_t_address]$",
-										"type_string": "index[mapping(address=\u003ebool):address]"
+										"type_identifier": "t_[_[$_t_address]$",
+										"type_string": "index[address]"
 									}
 								}
 							}
@@ -465,7 +464,7 @@
 					"modifiers": [],
 					"overrides": [],
 					"parameters": {
-						"id": 214,
+						"id": 212,
 						"node_type": 43,
 						"src": {
 							"line": 72,
@@ -473,11 +472,11 @@
 							"start": 2030,
 							"end": 2044,
 							"length": 15,
-							"parent_index": 213
+							"parent_index": 211
 						},
 						"parameters": [
 							{
-								"id": 215,
+								"id": 213,
 								"node_type": 44,
 								"src": {
 									"line": 72,
@@ -485,12 +484,12 @@
 									"start": 2030,
 									"end": 2044,
 									"length": 15,
-									"parent_index": 214
+									"parent_index": 212
 								},
-								"scope": 213,
+								"scope": 211,
 								"name": "account",
 								"type_name": {
-									"id": 216,
+									"id": 214,
 									"node_type": 30,
 									"src": {
 										"line": 72,
@@ -498,7 +497,7 @@
 										"start": 2030,
 										"end": 2036,
 										"length": 7,
-										"parent_index": 215
+										"parent_index": 213
 									},
 									"name": "address",
 									"state_mutability": 4,
@@ -525,7 +524,7 @@
 						]
 					},
 					"return_parameters": {
-						"id": 217,
+						"id": 215,
 						"node_type": 43,
 						"src": {
 							"line": 72,
@@ -533,11 +532,11 @@
 							"start": 2068,
 							"end": 2071,
 							"length": 4,
-							"parent_index": 213
+							"parent_index": 211
 						},
 						"parameters": [
 							{
-								"id": 218,
+								"id": 216,
 								"node_type": 44,
 								"src": {
 									"line": 72,
@@ -545,12 +544,12 @@
 									"start": 2068,
 									"end": 2071,
 									"length": 4,
-									"parent_index": 217
+									"parent_index": 215
 								},
-								"scope": 213,
+								"scope": 211,
 								"name": "",
 								"type_name": {
-									"id": 219,
+									"id": 217,
 									"node_type": 30,
 									"src": {
 										"line": 72,
@@ -558,7 +557,7 @@
 										"start": 2068,
 										"end": 2071,
 										"length": 4,
-										"parent_index": 218
+										"parent_index": 216
 									},
 									"name": "bool",
 									"referenced_declaration": 0,
@@ -589,10 +588,11 @@
 					"type_description": {
 						"type_identifier": "t_function_$_t_address$",
 						"type_string": "function(address)"
-					}
+					},
+					"text": "functionisExcludedFromFee(addressaccount)publicviewreturns(bool){return_isExcludedFromFee[account];}"
 				},
 				{
-					"id": 226,
+					"id": 224,
 					"name": "excludeFromFee",
 					"node_type": 42,
 					"kind": 41,
@@ -610,10 +610,10 @@
 						"start": 2140,
 						"end": 2153,
 						"length": 14,
-						"parent_index": 226
+						"parent_index": 224
 					},
 					"body": {
-						"id": 233,
+						"id": 231,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -622,12 +622,12 @@
 							"start": 2189,
 							"end": 2278,
 							"length": 90,
-							"parent_index": 226
+							"parent_index": 224
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 234,
+								"id": 232,
 								"node_type": 27,
 								"src": {
 									"line": 77,
@@ -635,10 +635,10 @@
 									"start": 2199,
 									"end": 2233,
 									"length": 35,
-									"parent_index": 233
+									"parent_index": 231
 								},
 								"expression": {
-									"id": 235,
+									"id": 233,
 									"node_type": 27,
 									"src": {
 										"line": 77,
@@ -646,11 +646,11 @@
 										"start": 2199,
 										"end": 2232,
 										"length": 34,
-										"parent_index": 234
+										"parent_index": 232
 									},
 									"operator": 11,
 									"left_expression": {
-										"id": 236,
+										"id": 234,
 										"node_type": 22,
 										"src": {
 											"line": 77,
@@ -658,10 +658,31 @@
 											"start": 2199,
 											"end": 2225,
 											"length": 27,
-											"parent_index": 235
+											"parent_index": 233
 										},
 										"index_expression": {
-											"id": 237,
+											"id": 236,
+											"node_type": 16,
+											"src": {
+												"line": 77,
+												"column": 27,
+												"start": 2218,
+												"end": 2224,
+												"length": 7,
+												"parent_index": 234
+											},
+											"name": "account",
+											"type_description": {
+												"type_identifier": "t_address",
+												"type_string": "address"
+											},
+											"overloaded_declarations": [],
+											"referenced_declaration": 236,
+											"is_pure": false,
+											"text": "account"
+										},
+										"base_expression": {
+											"id": 235,
 											"node_type": 16,
 											"src": {
 												"line": 77,
@@ -669,7 +690,7 @@
 												"start": 2199,
 												"end": 2216,
 												"length": 18,
-												"parent_index": 236
+												"parent_index": 234
 											},
 											"name": "_isExcludedFromFee",
 											"type_description": {
@@ -678,45 +699,22 @@
 											},
 											"overloaded_declarations": [],
 											"referenced_declaration": 198,
-											"is_pure": false
-										},
-										"base_expression": {
-											"id": 238,
-											"node_type": 16,
-											"src": {
-												"line": 77,
-												"column": 27,
-												"start": 2218,
-												"end": 2224,
-												"length": 7,
-												"parent_index": 236
-											},
-											"name": "account",
-											"type_description": {
-												"type_identifier": "t_address",
-												"type_string": "address"
-											},
-											"overloaded_declarations": [],
-											"referenced_declaration": 238,
-											"is_pure": false
+											"is_pure": false,
+											"text": "_isExcludedFromFee"
 										},
 										"type_descriptions": [
-											{
-												"type_identifier": "t_mapping_$t_address_$t_bool$",
-												"type_string": "mapping(address=\u003ebool)"
-											},
 											{
 												"type_identifier": "t_address",
 												"type_string": "address"
 											}
 										],
 										"type_description": {
-											"type_identifier": "t_[_[$_t_mapping_$t_address_$t_bool$]$_t_address]$",
-											"type_string": "index[mapping(address=\u003ebool):address]"
+											"type_identifier": "t_[_[$_t_address]$",
+											"type_string": "index[address]"
 										}
 									},
 									"right_expression": {
-										"id": 239,
+										"id": 237,
 										"node_type": 17,
 										"kind": 61,
 										"value": "true",
@@ -727,7 +725,7 @@
 											"start": 2229,
 											"end": 2232,
 											"length": 4,
-											"parent_index": 235
+											"parent_index": 233
 										},
 										"type_description": {
 											"type_identifier": "t_bool",
@@ -735,20 +733,22 @@
 										},
 										"overloaded_declarations": [],
 										"referenced_declaration": 0,
-										"is_pure": true
+										"is_pure": true,
+										"text": "true"
 									},
 									"type_description": {
-										"type_identifier": "t_[_[$_t_mapping_$t_address_$t_bool$]$_t_address]$",
-										"type_string": "index[mapping(address=\u003ebool):address]"
+										"type_identifier": "t_[_[$_t_address]$",
+										"type_string": "index[address]"
 									}
 								},
 								"type_description": {
-									"type_identifier": "t_[_[$_t_mapping_$t_address_$t_bool$]$_t_address]$",
-									"type_string": "index[mapping(address=\u003ebool):address]"
-								}
+									"type_identifier": "t_[_[$_t_address]$",
+									"type_string": "index[address]"
+								},
+								"text": "_isExcludedFromFee[account]=true;"
 							},
 							{
-								"id": 240,
+								"id": 238,
 								"node_type": 64,
 								"src": {
 									"line": 78,
@@ -756,11 +756,11 @@
 									"start": 2243,
 									"end": 2272,
 									"length": 30,
-									"parent_index": 226
+									"parent_index": 224
 								},
 								"arguments": [
 									{
-										"id": 241,
+										"id": 239,
 										"node_type": 16,
 										"src": {
 											"line": 78,
@@ -768,7 +768,7 @@
 											"start": 2264,
 											"end": 2270,
 											"length": 7,
-											"parent_index": 240
+											"parent_index": 238
 										},
 										"name": "account",
 										"type_description": {
@@ -776,12 +776,13 @@
 											"type_string": "address"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 241,
-										"is_pure": false
+										"referenced_declaration": 239,
+										"is_pure": false,
+										"text": "account"
 									}
 								],
 								"expression": {
-									"id": 242,
+									"id": 240,
 									"node_type": 16,
 									"src": {
 										"line": 78,
@@ -789,16 +790,17 @@
 										"start": 2248,
 										"end": 2262,
 										"length": 15,
-										"parent_index": 240
+										"parent_index": 238
 									},
 									"name": "ExcludedFromFee",
 									"type_description": {
-										"type_identifier": "t_event\u0026_ExcludedFromFeeList_ExcludedFromFee_\u0026203",
+										"type_identifier": "t_event\u0026_ExcludedFromFeeList_ExcludedFromFee_\u0026201",
 										"type_string": "event ExcludedFromFeeList.ExcludedFromFee"
 									},
 									"overloaded_declarations": [],
-									"referenced_declaration": 203,
-									"is_pure": false
+									"referenced_declaration": 201,
+									"is_pure": false,
+									"text": "ExcludedFromFee"
 								}
 							}
 						]
@@ -809,7 +811,7 @@
 					"virtual": false,
 					"modifiers": [
 						{
-							"id": 230,
+							"id": 228,
 							"name": "onlyOwner",
 							"node_type": 72,
 							"kind": 72,
@@ -819,12 +821,12 @@
 								"start": 2179,
 								"end": 2187,
 								"length": 9,
-								"parent_index": 226
+								"parent_index": 224
 							},
 							"argument_types": [],
 							"arguments": [],
 							"modifier_name": {
-								"id": 231,
+								"id": 229,
 								"name": "onlyOwner",
 								"node_type": 0,
 								"src": {
@@ -833,14 +835,14 @@
 									"start": 2179,
 									"end": 2187,
 									"length": 9,
-									"parent_index": 230
+									"parent_index": 228
 								}
 							}
 						}
 					],
 					"overrides": [],
 					"parameters": {
-						"id": 227,
+						"id": 225,
 						"node_type": 43,
 						"src": {
 							"line": 76,
@@ -848,11 +850,11 @@
 							"start": 2155,
 							"end": 2169,
 							"length": 15,
-							"parent_index": 226
+							"parent_index": 224
 						},
 						"parameters": [
 							{
-								"id": 228,
+								"id": 226,
 								"node_type": 44,
 								"src": {
 									"line": 76,
@@ -860,12 +862,12 @@
 									"start": 2155,
 									"end": 2169,
 									"length": 15,
-									"parent_index": 227
+									"parent_index": 225
 								},
-								"scope": 226,
+								"scope": 224,
 								"name": "account",
 								"type_name": {
-									"id": 229,
+									"id": 227,
 									"node_type": 30,
 									"src": {
 										"line": 76,
@@ -873,7 +875,7 @@
 										"start": 2155,
 										"end": 2161,
 										"length": 7,
-										"parent_index": 228
+										"parent_index": 226
 									},
 									"name": "address",
 									"state_mutability": 4,
@@ -900,7 +902,7 @@
 						]
 					},
 					"return_parameters": {
-						"id": 232,
+						"id": 230,
 						"node_type": 43,
 						"src": {
 							"line": 76,
@@ -908,7 +910,7 @@
 							"start": 2131,
 							"end": 2278,
 							"length": 148,
-							"parent_index": 226
+							"parent_index": 224
 						},
 						"parameters": [],
 						"parameter_types": []
@@ -919,10 +921,11 @@
 					"type_description": {
 						"type_identifier": "t_function_$_t_address$",
 						"type_string": "function(address)"
-					}
+					},
+					"text": "functionexcludeFromFee(addressaccount)publiconlyOwner{_isExcludedFromFee[account]=true;emitExcludedFromFee(account);}"
 				},
 				{
-					"id": 244,
+					"id": 242,
 					"name": "includeInFee",
 					"node_type": 42,
 					"kind": 41,
@@ -940,10 +943,10 @@
 						"start": 2294,
 						"end": 2305,
 						"length": 12,
-						"parent_index": 244
+						"parent_index": 242
 					},
 					"body": {
-						"id": 251,
+						"id": 249,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -952,12 +955,12 @@
 							"start": 2341,
 							"end": 2429,
 							"length": 89,
-							"parent_index": 244
+							"parent_index": 242
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 252,
+								"id": 250,
 								"node_type": 27,
 								"src": {
 									"line": 82,
@@ -965,10 +968,10 @@
 									"start": 2351,
 									"end": 2386,
 									"length": 36,
-									"parent_index": 251
+									"parent_index": 249
 								},
 								"expression": {
-									"id": 253,
+									"id": 251,
 									"node_type": 27,
 									"src": {
 										"line": 82,
@@ -976,11 +979,11 @@
 										"start": 2351,
 										"end": 2385,
 										"length": 35,
-										"parent_index": 252
+										"parent_index": 250
 									},
 									"operator": 11,
 									"left_expression": {
-										"id": 254,
+										"id": 252,
 										"node_type": 22,
 										"src": {
 											"line": 82,
@@ -988,10 +991,31 @@
 											"start": 2351,
 											"end": 2377,
 											"length": 27,
-											"parent_index": 253
+											"parent_index": 251
 										},
 										"index_expression": {
-											"id": 255,
+											"id": 254,
+											"node_type": 16,
+											"src": {
+												"line": 82,
+												"column": 27,
+												"start": 2370,
+												"end": 2376,
+												"length": 7,
+												"parent_index": 252
+											},
+											"name": "account",
+											"type_description": {
+												"type_identifier": "t_address",
+												"type_string": "address"
+											},
+											"overloaded_declarations": [],
+											"referenced_declaration": 254,
+											"is_pure": false,
+											"text": "account"
+										},
+										"base_expression": {
+											"id": 253,
 											"node_type": 16,
 											"src": {
 												"line": 82,
@@ -999,7 +1023,7 @@
 												"start": 2351,
 												"end": 2368,
 												"length": 18,
-												"parent_index": 254
+												"parent_index": 252
 											},
 											"name": "_isExcludedFromFee",
 											"type_description": {
@@ -1008,45 +1032,22 @@
 											},
 											"overloaded_declarations": [],
 											"referenced_declaration": 198,
-											"is_pure": false
-										},
-										"base_expression": {
-											"id": 256,
-											"node_type": 16,
-											"src": {
-												"line": 82,
-												"column": 27,
-												"start": 2370,
-												"end": 2376,
-												"length": 7,
-												"parent_index": 254
-											},
-											"name": "account",
-											"type_description": {
-												"type_identifier": "t_address",
-												"type_string": "address"
-											},
-											"overloaded_declarations": [],
-											"referenced_declaration": 256,
-											"is_pure": false
+											"is_pure": false,
+											"text": "_isExcludedFromFee"
 										},
 										"type_descriptions": [
-											{
-												"type_identifier": "t_mapping_$t_address_$t_bool$",
-												"type_string": "mapping(address=\u003ebool)"
-											},
 											{
 												"type_identifier": "t_address",
 												"type_string": "address"
 											}
 										],
 										"type_description": {
-											"type_identifier": "t_[_[$_t_mapping_$t_address_$t_bool$]$_t_address]$",
-											"type_string": "index[mapping(address=\u003ebool):address]"
+											"type_identifier": "t_[_[$_t_address]$",
+											"type_string": "index[address]"
 										}
 									},
 									"right_expression": {
-										"id": 257,
+										"id": 255,
 										"node_type": 17,
 										"kind": 61,
 										"value": "false",
@@ -1057,7 +1058,7 @@
 											"start": 2381,
 											"end": 2385,
 											"length": 5,
-											"parent_index": 253
+											"parent_index": 251
 										},
 										"type_description": {
 											"type_identifier": "t_bool",
@@ -1065,20 +1066,22 @@
 										},
 										"overloaded_declarations": [],
 										"referenced_declaration": 0,
-										"is_pure": true
+										"is_pure": true,
+										"text": "false"
 									},
 									"type_description": {
-										"type_identifier": "t_[_[$_t_mapping_$t_address_$t_bool$]$_t_address]$",
-										"type_string": "index[mapping(address=\u003ebool):address]"
+										"type_identifier": "t_[_[$_t_address]$",
+										"type_string": "index[address]"
 									}
 								},
 								"type_description": {
-									"type_identifier": "t_[_[$_t_mapping_$t_address_$t_bool$]$_t_address]$",
-									"type_string": "index[mapping(address=\u003ebool):address]"
-								}
+									"type_identifier": "t_[_[$_t_address]$",
+									"type_string": "index[address]"
+								},
+								"text": "_isExcludedFromFee[account]=false;"
 							},
 							{
-								"id": 258,
+								"id": 256,
 								"node_type": 64,
 								"src": {
 									"line": 83,
@@ -1086,11 +1089,11 @@
 									"start": 2396,
 									"end": 2423,
 									"length": 28,
-									"parent_index": 244
+									"parent_index": 242
 								},
 								"arguments": [
 									{
-										"id": 259,
+										"id": 257,
 										"node_type": 16,
 										"src": {
 											"line": 83,
@@ -1098,7 +1101,7 @@
 											"start": 2415,
 											"end": 2421,
 											"length": 7,
-											"parent_index": 258
+											"parent_index": 256
 										},
 										"name": "account",
 										"type_description": {
@@ -1106,12 +1109,13 @@
 											"type_string": "address"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 259,
-										"is_pure": false
+										"referenced_declaration": 257,
+										"is_pure": false,
+										"text": "account"
 									}
 								],
 								"expression": {
-									"id": 260,
+									"id": 258,
 									"node_type": 16,
 									"src": {
 										"line": 83,
@@ -1119,16 +1123,17 @@
 										"start": 2401,
 										"end": 2413,
 										"length": 13,
-										"parent_index": 258
+										"parent_index": 256
 									},
 									"name": "IncludedToFee",
 									"type_description": {
-										"type_identifier": "t_event\u0026_ExcludedFromFeeList_IncludedToFee_\u0026208",
+										"type_identifier": "t_event\u0026_ExcludedFromFeeList_IncludedToFee_\u0026206",
 										"type_string": "event ExcludedFromFeeList.IncludedToFee"
 									},
 									"overloaded_declarations": [],
-									"referenced_declaration": 208,
-									"is_pure": false
+									"referenced_declaration": 206,
+									"is_pure": false,
+									"text": "IncludedToFee"
 								}
 							}
 						]
@@ -1139,7 +1144,7 @@
 					"virtual": false,
 					"modifiers": [
 						{
-							"id": 248,
+							"id": 246,
 							"name": "onlyOwner",
 							"node_type": 72,
 							"kind": 72,
@@ -1149,12 +1154,12 @@
 								"start": 2331,
 								"end": 2339,
 								"length": 9,
-								"parent_index": 244
+								"parent_index": 242
 							},
 							"argument_types": [],
 							"arguments": [],
 							"modifier_name": {
-								"id": 249,
+								"id": 247,
 								"name": "onlyOwner",
 								"node_type": 0,
 								"src": {
@@ -1163,14 +1168,14 @@
 									"start": 2331,
 									"end": 2339,
 									"length": 9,
-									"parent_index": 248
+									"parent_index": 246
 								}
 							}
 						}
 					],
 					"overrides": [],
 					"parameters": {
-						"id": 245,
+						"id": 243,
 						"node_type": 43,
 						"src": {
 							"line": 81,
@@ -1178,11 +1183,11 @@
 							"start": 2307,
 							"end": 2321,
 							"length": 15,
-							"parent_index": 244
+							"parent_index": 242
 						},
 						"parameters": [
 							{
-								"id": 246,
+								"id": 244,
 								"node_type": 44,
 								"src": {
 									"line": 81,
@@ -1190,12 +1195,12 @@
 									"start": 2307,
 									"end": 2321,
 									"length": 15,
-									"parent_index": 245
+									"parent_index": 243
 								},
-								"scope": 244,
+								"scope": 242,
 								"name": "account",
 								"type_name": {
-									"id": 247,
+									"id": 245,
 									"node_type": 30,
 									"src": {
 										"line": 81,
@@ -1203,7 +1208,7 @@
 										"start": 2307,
 										"end": 2313,
 										"length": 7,
-										"parent_index": 246
+										"parent_index": 244
 									},
 									"name": "address",
 									"state_mutability": 4,
@@ -1230,7 +1235,7 @@
 						]
 					},
 					"return_parameters": {
-						"id": 250,
+						"id": 248,
 						"node_type": 43,
 						"src": {
 							"line": 81,
@@ -1238,7 +1243,7 @@
 							"start": 2285,
 							"end": 2429,
 							"length": 145,
-							"parent_index": 244
+							"parent_index": 242
 						},
 						"parameters": [],
 						"parameter_types": []
@@ -1249,10 +1254,11 @@
 					"type_description": {
 						"type_identifier": "t_function_$_t_address$",
 						"type_string": "function(address)"
-					}
+					},
+					"text": "functionincludeInFee(addressaccount)publiconlyOwner{_isExcludedFromFee[account]=false;emitIncludedToFee(account);}"
 				},
 				{
-					"id": 262,
+					"id": 260,
 					"name": "excludeMultipleAccountsFromFee",
 					"node_type": 42,
 					"kind": 41,
@@ -1270,10 +1276,10 @@
 						"start": 2445,
 						"end": 2474,
 						"length": 30,
-						"parent_index": 262
+						"parent_index": 260
 					},
 					"body": {
-						"id": 269,
+						"id": 267,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -1282,12 +1288,12 @@
 							"start": 2536,
 							"end": 2752,
 							"length": 217,
-							"parent_index": 262
+							"parent_index": 260
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 270,
+								"id": 268,
 								"node_type": 44,
 								"src": {
 									"line": 89,
@@ -1295,25 +1301,25 @@
 									"start": 2546,
 									"end": 2584,
 									"length": 39,
-									"parent_index": 269
+									"parent_index": 267
 								},
 								"assignments": [
-									271
+									269
 								],
 								"declarations": [
 									{
-										"id": 271,
+										"id": 269,
 										"state_mutability": 1,
 										"name": "len",
 										"node_type": 44,
-										"scope": 269,
+										"scope": 267,
 										"src": {
 											"line": 89,
 											"column": 8,
 											"start": 2546,
 											"end": 2556,
 											"length": 11,
-											"parent_index": 270
+											"parent_index": 268
 										},
 										"name_location": {
 											"line": 89,
@@ -1321,12 +1327,12 @@
 											"start": 2554,
 											"end": 2556,
 											"length": 3,
-											"parent_index": 271
+											"parent_index": 269
 										},
 										"is_state_variable": false,
 										"storage_location": 1,
 										"type_name": {
-											"id": 272,
+											"id": 270,
 											"node_type": 30,
 											"src": {
 												"line": 89,
@@ -1334,7 +1340,7 @@
 												"start": 2546,
 												"end": 2552,
 												"length": 7,
-												"parent_index": 271
+												"parent_index": 269
 											},
 											"name": "uint256",
 											"referenced_declaration": 0,
@@ -1347,7 +1353,7 @@
 									}
 								],
 								"initial_value": {
-									"id": 273,
+									"id": 271,
 									"node_type": 24,
 									"kind": 24,
 									"src": {
@@ -1356,17 +1362,17 @@
 										"start": 2560,
 										"end": 2583,
 										"length": 24,
-										"parent_index": 270
+										"parent_index": 268
 									},
 									"argument_types": [
 										{
-											"type_identifier": "t_address",
-											"type_string": "address"
+											"type_identifier": "t_address_array",
+											"type_string": "address[]"
 										}
 									],
 									"arguments": [
 										{
-											"id": 276,
+											"id": 274,
 											"is_constant": false,
 											"is_l_value": false,
 											"is_pure": false,
@@ -1378,7 +1384,7 @@
 												"start": 2568,
 												"end": 2582,
 												"length": 15,
-												"parent_index": 273
+												"parent_index": 271
 											},
 											"member_location": {
 												"line": 89,
@@ -1386,10 +1392,10 @@
 												"start": 2577,
 												"end": 2582,
 												"length": 6,
-												"parent_index": 276
+												"parent_index": 274
 											},
 											"expression": {
-												"id": 277,
+												"id": 275,
 												"node_type": 16,
 												"src": {
 													"line": 89,
@@ -1397,27 +1403,29 @@
 													"start": 2568,
 													"end": 2575,
 													"length": 8,
-													"parent_index": 276
+													"parent_index": 274
 												},
 												"name": "accounts",
 												"type_description": {
-													"type_identifier": "t_address",
-													"type_string": "address"
+													"type_identifier": "t_address_array",
+													"type_string": "address[]"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 277,
-												"is_pure": false
+												"referenced_declaration": 275,
+												"is_pure": false,
+												"text": "accounts"
 											},
 											"member_name": "length",
 											"argument_types": [],
 											"type_description": {
-												"type_identifier": "t_address",
-												"type_string": "address"
-											}
+												"type_identifier": "t_address_array",
+												"type_string": "address[]"
+											},
+											"text": "accounts.length"
 										}
 									],
 									"expression": {
-										"id": 274,
+										"id": 272,
 										"node_type": 16,
 										"src": {
 											"line": 89,
@@ -1425,11 +1433,11 @@
 											"start": 2560,
 											"end": 2566,
 											"length": 7,
-											"parent_index": 273
+											"parent_index": 271
 										},
 										"name": "uint256",
 										"type_name": {
-											"id": 275,
+											"id": 273,
 											"node_type": 30,
 											"src": {
 												"line": 89,
@@ -1437,7 +1445,7 @@
 												"start": 2560,
 												"end": 2566,
 												"length": 7,
-												"parent_index": 274
+												"parent_index": 272
 											},
 											"name": "uint256",
 											"referenced_declaration": 0,
@@ -1458,16 +1466,17 @@
 												"type_identifier": "t_uint256",
 												"type_string": "uint256"
 											}
-										]
+										],
+										"text": "uint256"
 									},
 									"type_description": {
-										"type_identifier": "t_function_$_t_address$",
-										"type_string": "function(address)"
+										"type_identifier": "t_function_$_t_address_array$",
+										"type_string": "function(address[])"
 									}
 								}
 							},
 							{
-								"id": 278,
+								"id": 276,
 								"node_type": 79,
 								"src": {
 									"line": 90,
@@ -1475,10 +1484,10 @@
 									"start": 2594,
 									"end": 2746,
 									"length": 153,
-									"parent_index": 269
+									"parent_index": 267
 								},
 								"initialiser": {
-									"id": 279,
+									"id": 277,
 									"node_type": 44,
 									"src": {
 										"line": 90,
@@ -1486,25 +1495,25 @@
 										"start": 2599,
 										"end": 2612,
 										"length": 14,
-										"parent_index": 269
+										"parent_index": 267
 									},
 									"assignments": [
-										280
+										278
 									],
 									"declarations": [
 										{
-											"id": 280,
+											"id": 278,
 											"state_mutability": 1,
 											"name": "i",
 											"node_type": 44,
-											"scope": 269,
+											"scope": 267,
 											"src": {
 												"line": 90,
 												"column": 13,
 												"start": 2599,
 												"end": 2607,
 												"length": 9,
-												"parent_index": 279
+												"parent_index": 277
 											},
 											"name_location": {
 												"line": 90,
@@ -1512,12 +1521,12 @@
 												"start": 2607,
 												"end": 2607,
 												"length": 1,
-												"parent_index": 280
+												"parent_index": 278
 											},
 											"is_state_variable": false,
 											"storage_location": 1,
 											"type_name": {
-												"id": 281,
+												"id": 279,
 												"node_type": 30,
 												"src": {
 													"line": 90,
@@ -1525,7 +1534,7 @@
 													"start": 2599,
 													"end": 2605,
 													"length": 7,
-													"parent_index": 280
+													"parent_index": 278
 												},
 												"name": "uint256",
 												"referenced_declaration": 0,
@@ -1538,7 +1547,7 @@
 										}
 									],
 									"initial_value": {
-										"id": 282,
+										"id": 280,
 										"node_type": 17,
 										"kind": 49,
 										"value": "0",
@@ -1549,7 +1558,7 @@
 											"start": 2611,
 											"end": 2611,
 											"length": 1,
-											"parent_index": 279
+											"parent_index": 277
 										},
 										"type_description": {
 											"type_identifier": "t_rational_0_by_1",
@@ -1557,11 +1566,12 @@
 										},
 										"overloaded_declarations": [],
 										"referenced_declaration": 0,
-										"is_pure": true
+										"is_pure": true,
+										"text": "0"
 									}
 								},
 								"condition": {
-									"id": 283,
+									"id": 281,
 									"is_constant": false,
 									"is_pure": false,
 									"node_type": 19,
@@ -1571,11 +1581,11 @@
 										"start": 2614,
 										"end": 2620,
 										"length": 7,
-										"parent_index": 278
+										"parent_index": 276
 									},
 									"operator": 9,
 									"left_expression": {
-										"id": 284,
+										"id": 282,
 										"node_type": 16,
 										"src": {
 											"line": 90,
@@ -1583,7 +1593,7 @@
 											"start": 2614,
 											"end": 2614,
 											"length": 1,
-											"parent_index": 283
+											"parent_index": 281
 										},
 										"name": "i",
 										"type_description": {
@@ -1591,11 +1601,12 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 279,
-										"is_pure": false
+										"referenced_declaration": 277,
+										"is_pure": false,
+										"text": "i"
 									},
 									"right_expression": {
-										"id": 285,
+										"id": 283,
 										"node_type": 16,
 										"src": {
 											"line": 90,
@@ -1603,7 +1614,7 @@
 											"start": 2618,
 											"end": 2620,
 											"length": 3,
-											"parent_index": 283
+											"parent_index": 281
 										},
 										"name": "len",
 										"type_description": {
@@ -1611,8 +1622,9 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 270,
-										"is_pure": false
+										"referenced_declaration": 268,
+										"is_pure": false,
+										"text": "len"
 									},
 									"type_description": {
 										"type_identifier": "t_bool",
@@ -1621,7 +1633,7 @@
 								},
 								"closure": null,
 								"body": {
-									"id": 286,
+									"id": 284,
 									"node_type": 46,
 									"kind": 0,
 									"src": {
@@ -1630,12 +1642,12 @@
 										"start": 2625,
 										"end": 2746,
 										"length": 122,
-										"parent_index": 278
+										"parent_index": 276
 									},
 									"implemented": true,
 									"statements": [
 										{
-											"id": 287,
+											"id": 285,
 											"node_type": 27,
 											"src": {
 												"line": 91,
@@ -1643,10 +1655,10 @@
 												"start": 2639,
 												"end": 2677,
 												"length": 39,
-												"parent_index": 286
+												"parent_index": 284
 											},
 											"expression": {
-												"id": 288,
+												"id": 286,
 												"node_type": 27,
 												"src": {
 													"line": 91,
@@ -1654,11 +1666,11 @@
 													"start": 2639,
 													"end": 2676,
 													"length": 38,
-													"parent_index": 287
+													"parent_index": 285
 												},
 												"operator": 11,
 												"left_expression": {
-													"id": 289,
+													"id": 287,
 													"node_type": 22,
 													"src": {
 														"line": 91,
@@ -1666,10 +1678,74 @@
 														"start": 2639,
 														"end": 2669,
 														"length": 31,
-														"parent_index": 288
+														"parent_index": 286
 													},
 													"index_expression": {
-														"id": 290,
+														"id": 289,
+														"node_type": 22,
+														"src": {
+															"line": 91,
+															"column": 31,
+															"start": 2658,
+															"end": 2668,
+															"length": 11,
+															"parent_index": 287
+														},
+														"index_expression": {
+															"id": 291,
+															"node_type": 16,
+															"src": {
+																"line": 91,
+																"column": 40,
+																"start": 2667,
+																"end": 2667,
+																"length": 1,
+																"parent_index": 289
+															},
+															"name": "i",
+															"type_description": {
+																"type_identifier": "t_uint256",
+																"type_string": "uint256"
+															},
+															"overloaded_declarations": [],
+															"referenced_declaration": 277,
+															"is_pure": false,
+															"text": "i"
+														},
+														"base_expression": {
+															"id": 290,
+															"node_type": 16,
+															"src": {
+																"line": 91,
+																"column": 31,
+																"start": 2658,
+																"end": 2665,
+																"length": 8,
+																"parent_index": 289
+															},
+															"name": "accounts",
+															"type_description": {
+																"type_identifier": "t_address_array",
+																"type_string": "address[]"
+															},
+															"overloaded_declarations": [],
+															"referenced_declaration": 262,
+															"is_pure": false,
+															"text": "accounts"
+														},
+														"type_descriptions": [
+															{
+																"type_identifier": "t_uint256",
+																"type_string": "uint256"
+															}
+														],
+														"type_description": {
+															"type_identifier": "t_[_[$_t_uint256]$",
+															"type_string": "index[uint256]"
+														}
+													},
+													"base_expression": {
+														"id": 288,
 														"node_type": 16,
 														"src": {
 															"line": 91,
@@ -1677,7 +1753,7 @@
 															"start": 2639,
 															"end": 2656,
 															"length": 18,
-															"parent_index": 289
+															"parent_index": 287
 														},
 														"name": "_isExcludedFromFee",
 														"type_description": {
@@ -1686,91 +1762,22 @@
 														},
 														"overloaded_declarations": [],
 														"referenced_declaration": 198,
-														"is_pure": false
-													},
-													"base_expression": {
-														"id": 291,
-														"node_type": 22,
-														"src": {
-															"line": 91,
-															"column": 31,
-															"start": 2658,
-															"end": 2668,
-															"length": 11,
-															"parent_index": 289
-														},
-														"index_expression": {
-															"id": 292,
-															"node_type": 16,
-															"src": {
-																"line": 91,
-																"column": 31,
-																"start": 2658,
-																"end": 2665,
-																"length": 8,
-																"parent_index": 291
-															},
-															"name": "accounts",
-															"type_description": {
-																"type_identifier": "t_address",
-																"type_string": "address"
-															},
-															"overloaded_declarations": [],
-															"referenced_declaration": 264,
-															"is_pure": false
-														},
-														"base_expression": {
-															"id": 293,
-															"node_type": 16,
-															"src": {
-																"line": 91,
-																"column": 40,
-																"start": 2667,
-																"end": 2667,
-																"length": 1,
-																"parent_index": 291
-															},
-															"name": "i",
-															"type_description": {
-																"type_identifier": "t_uint256",
-																"type_string": "uint256"
-															},
-															"overloaded_declarations": [],
-															"referenced_declaration": 279,
-															"is_pure": false
-														},
-														"type_descriptions": [
-															{
-																"type_identifier": "t_address",
-																"type_string": "address"
-															},
-															{
-																"type_identifier": "t_uint256",
-																"type_string": "uint256"
-															}
-														],
-														"type_description": {
-															"type_identifier": "t_[_[$_t_address]$_t_uint256]$",
-															"type_string": "index[address:uint256]"
-														}
+														"is_pure": false,
+														"text": "_isExcludedFromFee"
 													},
 													"type_descriptions": [
 														{
-															"type_identifier": "t_mapping_$t_address_$t_bool$",
-															"type_string": "mapping(address=\u003ebool)"
-														},
-														{
-															"type_identifier": "t_[_[$_t_address]$_t_uint256]$",
-															"type_string": "index[address:uint256]"
+															"type_identifier": "t_[_[$_t_uint256]$",
+															"type_string": "index[uint256]"
 														}
 													],
 													"type_description": {
-														"type_identifier": "t_[_[$_t_mapping_$t_address_$t_bool$]$_t_[_[$_t_address]$_t_uint256]$",
-														"type_string": "index[mapping(address=\u003ebool):index[address:uint256]]"
+														"type_identifier": "t_[_[$_t_[_[$_t_uint256]$",
+														"type_string": "index[index[uint256]]"
 													}
 												},
 												"right_expression": {
-													"id": 294,
+													"id": 292,
 													"node_type": 17,
 													"kind": 61,
 													"value": "true",
@@ -1781,7 +1788,7 @@
 														"start": 2673,
 														"end": 2676,
 														"length": 4,
-														"parent_index": 288
+														"parent_index": 286
 													},
 													"type_description": {
 														"type_identifier": "t_bool",
@@ -1789,20 +1796,22 @@
 													},
 													"overloaded_declarations": [],
 													"referenced_declaration": 0,
-													"is_pure": true
+													"is_pure": true,
+													"text": "true"
 												},
 												"type_description": {
-													"type_identifier": "t_[_[$_t_mapping_$t_address_$t_bool$]$_t_[_[$_t_address]$_t_uint256]$",
-													"type_string": "index[mapping(address=\u003ebool):index[address:uint256]]"
+													"type_identifier": "t_[_[$_t_[_[$_t_uint256]$",
+													"type_string": "index[index[uint256]]"
 												}
 											},
 											"type_description": {
-												"type_identifier": "t_[_[$_t_mapping_$t_address_$t_bool$]$_t_[_[$_t_address]$_t_uint256]$",
-												"type_string": "index[mapping(address=\u003ebool):index[address:uint256]]"
-											}
+												"type_identifier": "t_[_[$_t_[_[$_t_uint256]$",
+												"type_string": "index[index[uint256]]"
+											},
+											"text": "_isExcludedFromFee[accounts[i]]=true;"
 										},
 										{
-											"id": 295,
+											"id": 293,
 											"node_type": 59,
 											"kind": 0,
 											"src": {
@@ -1816,7 +1825,7 @@
 											"implemented": false,
 											"statements": [
 												{
-													"id": 296,
+													"id": 294,
 													"node_type": 18,
 													"kind": 104,
 													"src": {
@@ -1825,7 +1834,7 @@
 														"start": 2719,
 														"end": 2721,
 														"length": 3,
-														"parent_index": 278
+														"parent_index": 276
 													},
 													"operator": 27,
 													"prefix": false,
@@ -1834,7 +1843,7 @@
 													"is_pure": false,
 													"l_value_requested": false,
 													"expression": {
-														"id": 297,
+														"id": 295,
 														"node_type": 16,
 														"src": {
 															"line": 93,
@@ -1842,7 +1851,7 @@
 															"start": 2721,
 															"end": 2721,
 															"length": 1,
-															"parent_index": 296
+															"parent_index": 294
 														},
 														"name": "i",
 														"type_description": {
@@ -1850,8 +1859,9 @@
 															"type_string": "uint256"
 														},
 														"overloaded_declarations": [],
-														"referenced_declaration": 279,
-														"is_pure": false
+														"referenced_declaration": 277,
+														"is_pure": false,
+														"text": "i"
 													},
 													"type_description": {
 														"type_identifier": "t_uint256",
@@ -1871,7 +1881,7 @@
 					"virtual": false,
 					"modifiers": [
 						{
-							"id": 266,
+							"id": 264,
 							"name": "onlyOwner",
 							"node_type": 72,
 							"kind": 72,
@@ -1881,12 +1891,12 @@
 								"start": 2526,
 								"end": 2534,
 								"length": 9,
-								"parent_index": 262
+								"parent_index": 260
 							},
 							"argument_types": [],
 							"arguments": [],
 							"modifier_name": {
-								"id": 267,
+								"id": 265,
 								"name": "onlyOwner",
 								"node_type": 0,
 								"src": {
@@ -1895,14 +1905,14 @@
 									"start": 2526,
 									"end": 2534,
 									"length": 9,
-									"parent_index": 266
+									"parent_index": 264
 								}
 							}
 						}
 					],
 					"overrides": [],
 					"parameters": {
-						"id": 263,
+						"id": 261,
 						"node_type": 43,
 						"src": {
 							"line": 87,
@@ -1910,11 +1920,11 @@
 							"start": 2485,
 							"end": 2511,
 							"length": 27,
-							"parent_index": 262
+							"parent_index": 260
 						},
 						"parameters": [
 							{
-								"id": 264,
+								"id": 262,
 								"node_type": 44,
 								"src": {
 									"line": 87,
@@ -1922,46 +1932,46 @@
 									"start": 2485,
 									"end": 2511,
 									"length": 27,
-									"parent_index": 263
+									"parent_index": 261
 								},
-								"scope": 262,
+								"scope": 260,
 								"name": "accounts",
 								"type_name": {
-									"id": 265,
-									"node_type": 16,
+									"id": 263,
+									"node_type": 30,
 									"src": {
 										"line": 87,
 										"column": 8,
 										"start": 2485,
-										"end": 2491,
-										"length": 7,
-										"parent_index": 264
+										"end": 2493,
+										"length": 9,
+										"parent_index": 262
 									},
-									"name": "address",
+									"name": "address[]",
 									"referenced_declaration": 0,
 									"type_description": {
-										"type_identifier": "t_address",
-										"type_string": "address"
+										"type_identifier": "t_address_array",
+										"type_string": "address[]"
 									}
 								},
 								"storage_location": 4,
 								"visibility": 1,
-								"state_mutability": 4,
+								"state_mutability": 1,
 								"type_description": {
-									"type_identifier": "t_address",
-									"type_string": "address"
+									"type_identifier": "t_address_array",
+									"type_string": "address[]"
 								}
 							}
 						],
 						"parameter_types": [
 							{
-								"type_identifier": "t_address",
-								"type_string": "address"
+								"type_identifier": "t_address_array",
+								"type_string": "address[]"
 							}
 						]
 					},
 					"return_parameters": {
-						"id": 268,
+						"id": 266,
 						"node_type": 43,
 						"src": {
 							"line": 86,
@@ -1969,18 +1979,19 @@
 							"start": 2436,
 							"end": 2752,
 							"length": 317,
-							"parent_index": 262
+							"parent_index": 260
 						},
 						"parameters": [],
 						"parameter_types": []
 					},
-					"signature_raw": "excludeMultipleAccountsFromFee(address)",
-					"signature": "d5dc70e0",
+					"signature_raw": "excludeMultipleAccountsFromFee(address[])",
+					"signature": "44a00cb5",
 					"scope": 194,
 					"type_description": {
-						"type_identifier": "t_function_$_t_address$",
-						"type_string": "function(address)"
-					}
+						"type_identifier": "t_function_$_t_address_array$",
+						"type_string": "function(address[])"
+					},
+					"text": "functionexcludeMultipleAccountsFromFee(address[]calldataaccounts)publiconlyOwner{uint256len=uint256(accounts.length);for(uint256i=0;i\u003clen;){_isExcludedFromFee[accounts[i]]=true;unchecked{++i;}}}"
 				}
 			],
 			"linearized_base_contracts": [
@@ -2011,7 +2022,8 @@
 							"parent_index": 194
 						},
 						"name": "Ownable",
-						"referenced_declaration": 88
+						"referenced_declaration": 88,
+						"contract_referenced_declaration": 0
 					}
 				}
 			],

@@ -1,7 +1,7 @@
 package ast
 
 import (
-	"encoding/json"
+	"github.com/goccy/go-json"
 	"reflect"
 
 	"github.com/antlr4-go/antlr/v4"
@@ -318,6 +318,10 @@ func (b *BodyNode) ParseUncheckedBlock(
 	}
 
 	return b
+}
+
+func (b *BodyNode) ToString() string {
+	return ""
 }
 
 // parseStatements is a helper function for the ParseBlock and ParseUncheckedBlock methods.

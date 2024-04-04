@@ -6,10 +6,10 @@
 		{
 			"id": 2924,
 			"name": "IBeaconUpgradeable",
-			"absolute_path": "/home/cortex/github/txpull/solgo/data/tests/contracts/10x3b07A1A5de80f9b22DE0EC6C44C6E59DDc1C5f41/IBeaconUpgradeable.sol"
+			"absolute_path": "IBeaconUpgradeable.sol"
 		}
 	],
-	"absolute_path": "/home/cortex/github/txpull/solgo/data/tests/contracts/10x3b07A1A5de80f9b22DE0EC6C44C6E59DDc1C5f41/IBeaconUpgradeable.sol",
+	"absolute_path": "IBeaconUpgradeable.sol",
 	"name": "IBeaconUpgradeable",
 	"node_type": 1,
 	"nodes": [
@@ -229,7 +229,8 @@
 					"type_description": {
 						"type_identifier": "t_function_$_t_address$",
 						"type_string": "function(address)"
-					}
+					},
+					"text": "functionimplementation()externalviewreturns(address);"
 				}
 			],
 			"linearized_base_contracts": [

@@ -6,10 +6,10 @@
 		{
 			"id": 2174,
 			"name": "ISturdyIncentivesController",
-			"absolute_path": ""
+			"absolute_path": "FRAX3CRVLevSwap.sol"
 		}
 	],
-	"absolute_path": "",
+	"absolute_path": "FRAX3CRVLevSwap.sol",
 	"name": "ISturdyIncentivesController",
 	"node_type": 1,
 	"nodes": [
@@ -934,7 +934,8 @@
 					"type_description": {
 						"type_identifier": "t_function_$_t_address$",
 						"type_string": "function(address)"
-					}
+					},
+					"text": "functiongetAssetData(addressasset)externalviewreturns(uint256,uint256,uint256);"
 				},
 				{
 					"id": 2226,
@@ -1096,13 +1097,14 @@
 						"parameters": [],
 						"parameter_types": []
 					},
-					"signature_raw": "setClaimer(address, address)",
-					"signature": "903478f1",
+					"signature_raw": "setClaimer(address,address)",
+					"signature": "f5cf673b",
 					"scope": 2177,
 					"type_description": {
 						"type_identifier": "t_function_$_t_address$_t_address$",
 						"type_string": "function(address,address)"
-					}
+					},
+					"text": "functionsetClaimer(addressuser,addressclaimer)externalpayable;"
 				},
 				{
 					"id": 2235,
@@ -1272,7 +1274,8 @@
 					"type_description": {
 						"type_identifier": "t_function_$_t_address$",
 						"type_string": "function(address)"
-					}
+					},
+					"text": "functiongetClaimer(addressuser)externalviewreturns(address);"
 				},
 				{
 					"id": 2244,
@@ -1343,28 +1346,28 @@
 								"name": "assets",
 								"type_name": {
 									"id": 2247,
-									"node_type": 16,
+									"node_type": 30,
 									"src": {
 										"line": 1067,
 										"column": 27,
 										"start": 46555,
-										"end": 46561,
-										"length": 7,
+										"end": 46563,
+										"length": 9,
 										"parent_index": 2246
 									},
-									"name": "address",
+									"name": "address[]",
 									"referenced_declaration": 0,
 									"type_description": {
-										"type_identifier": "t_address",
-										"type_string": "address"
+										"type_identifier": "t_address_array",
+										"type_string": "address[]"
 									}
 								},
 								"storage_location": 4,
 								"visibility": 1,
-								"state_mutability": 4,
+								"state_mutability": 1,
 								"type_description": {
-									"type_identifier": "t_address",
-									"type_string": "address"
+									"type_identifier": "t_address_array",
+									"type_string": "address[]"
 								}
 							},
 							{
@@ -1382,39 +1385,39 @@
 								"name": "emissionsPerSecond",
 								"type_name": {
 									"id": 2249,
-									"node_type": 16,
+									"node_type": 30,
 									"src": {
 										"line": 1067,
 										"column": 54,
 										"start": 46582,
-										"end": 46588,
-										"length": 7,
+										"end": 46590,
+										"length": 9,
 										"parent_index": 2248
 									},
-									"name": "uint256",
+									"name": "uint256[]",
 									"referenced_declaration": 0,
 									"type_description": {
-										"type_identifier": "t_uint256",
-										"type_string": "uint256"
+										"type_identifier": "t_uint256_array",
+										"type_string": "uint256[]"
 									}
 								},
 								"storage_location": 4,
 								"visibility": 1,
 								"state_mutability": 1,
 								"type_description": {
-									"type_identifier": "t_uint256",
-									"type_string": "uint256"
+									"type_identifier": "t_uint256_array",
+									"type_string": "uint256[]"
 								}
 							}
 						],
 						"parameter_types": [
 							{
-								"type_identifier": "t_address",
-								"type_string": "address"
+								"type_identifier": "t_address_array",
+								"type_string": "address[]"
 							},
 							{
-								"type_identifier": "t_uint256",
-								"type_string": "uint256"
+								"type_identifier": "t_uint256_array",
+								"type_string": "uint256[]"
 							}
 						]
 					},
@@ -1432,13 +1435,14 @@
 						"parameters": [],
 						"parameter_types": []
 					},
-					"signature_raw": "configureAssets(address, uint256)",
-					"signature": "407b5d84",
+					"signature_raw": "configureAssets(address[],uint256[])",
+					"signature": "79f171b2",
 					"scope": 2177,
 					"type_description": {
-						"type_identifier": "t_function_$_t_address$_t_uint256$",
-						"type_string": "function(address,uint256)"
-					}
+						"type_identifier": "t_function_$_t_address_array$_t_uint256_array$",
+						"type_string": "function(address[],uint256[])"
+					},
+					"text": "functionconfigureAssets(address[]calldataassets,uint256[]calldataemissionsPerSecond)externalpayable;"
 				},
 				{
 					"id": 2253,
@@ -1642,13 +1646,14 @@
 						"parameters": [],
 						"parameter_types": []
 					},
-					"signature_raw": "handleAction(address, uint256, uint256)",
-					"signature": "af219a31",
+					"signature_raw": "handleAction(address,uint256,uint256)",
+					"signature": "31873e2e",
 					"scope": 2177,
 					"type_description": {
 						"type_identifier": "t_function_$_t_address$_t_uint256$_t_uint256$",
 						"type_string": "function(address,uint256,uint256)"
-					}
+					},
+					"text": "functionhandleAction(addressuser,uint256totalSupply,uint256userBalance)external;"
 				},
 				{
 					"id": 2264,
@@ -1719,28 +1724,28 @@
 								"name": "assets",
 								"type_name": {
 									"id": 2267,
-									"node_type": 16,
+									"node_type": 30,
 									"src": {
 										"line": 1088,
 										"column": 29,
 										"start": 47253,
-										"end": 47259,
-										"length": 7,
+										"end": 47261,
+										"length": 9,
 										"parent_index": 2266
 									},
-									"name": "address",
+									"name": "address[]",
 									"referenced_declaration": 0,
 									"type_description": {
-										"type_identifier": "t_address",
-										"type_string": "address"
+										"type_identifier": "t_address_array",
+										"type_string": "address[]"
 									}
 								},
 								"storage_location": 4,
 								"visibility": 1,
-								"state_mutability": 4,
+								"state_mutability": 1,
 								"type_description": {
-									"type_identifier": "t_address",
-									"type_string": "address"
+									"type_identifier": "t_address_array",
+									"type_string": "address[]"
 								}
 							},
 							{
@@ -1786,8 +1791,8 @@
 						],
 						"parameter_types": [
 							{
-								"type_identifier": "t_address",
-								"type_string": "address"
+								"type_identifier": "t_address_array",
+								"type_string": "address[]"
 							},
 							{
 								"type_identifier": "t_address",
@@ -1854,13 +1859,14 @@
 							}
 						]
 					},
-					"signature_raw": "getRewardsBalance(address, address)",
-					"signature": "f05d98fa",
+					"signature_raw": "getRewardsBalance(address[],address)",
+					"signature": "8b599f26",
 					"scope": 2177,
 					"type_description": {
-						"type_identifier": "t_function_$_t_address$_t_address$",
-						"type_string": "function(address,address)"
-					}
+						"type_identifier": "t_function_$_t_address_array$_t_address$",
+						"type_string": "function(address[],address)"
+					},
+					"text": "functiongetRewardsBalance(address[]calldataassets,addressuser)externalviewreturns(uint256);"
 				},
 				{
 					"id": 2275,
@@ -1931,28 +1937,28 @@
 								"name": "assets",
 								"type_name": {
 									"id": 2278,
-									"node_type": 16,
+									"node_type": 30,
 									"src": {
 										"line": 1100,
 										"column": 4,
 										"start": 47624,
-										"end": 47630,
-										"length": 7,
+										"end": 47632,
+										"length": 9,
 										"parent_index": 2277
 									},
-									"name": "address",
+									"name": "address[]",
 									"referenced_declaration": 0,
 									"type_description": {
-										"type_identifier": "t_address",
-										"type_string": "address"
+										"type_identifier": "t_address_array",
+										"type_string": "address[]"
 									}
 								},
 								"storage_location": 4,
 								"visibility": 1,
-								"state_mutability": 4,
+								"state_mutability": 1,
 								"type_description": {
-									"type_identifier": "t_address",
-									"type_string": "address"
+									"type_identifier": "t_address_array",
+									"type_string": "address[]"
 								}
 							},
 							{
@@ -2037,8 +2043,8 @@
 						],
 						"parameter_types": [
 							{
-								"type_identifier": "t_address",
-								"type_string": "address"
+								"type_identifier": "t_address_array",
+								"type_string": "address[]"
 							},
 							{
 								"type_identifier": "t_uint256",
@@ -2109,13 +2115,14 @@
 							}
 						]
 					},
-					"signature_raw": "claimRewards(address, uint256, address)",
-					"signature": "024303bb",
+					"signature_raw": "claimRewards(address[],uint256,address)",
+					"signature": "3111e7b3",
 					"scope": 2177,
 					"type_description": {
-						"type_identifier": "t_function_$_t_address$_t_uint256$_t_address$",
-						"type_string": "function(address,uint256,address)"
-					}
+						"type_identifier": "t_function_$_t_address_array$_t_uint256$_t_address$",
+						"type_string": "function(address[],uint256,address)"
+					},
+					"text": "functionclaimRewards(address[]calldataassets,uint256amount,addressto)externalreturns(uint256);"
 				},
 				{
 					"id": 2288,
@@ -2186,28 +2193,28 @@
 								"name": "assets",
 								"type_name": {
 									"id": 2291,
-									"node_type": 16,
+									"node_type": 30,
 									"src": {
 										"line": 1114,
 										"column": 4,
 										"start": 48177,
-										"end": 48183,
-										"length": 7,
+										"end": 48185,
+										"length": 9,
 										"parent_index": 2290
 									},
-									"name": "address",
+									"name": "address[]",
 									"referenced_declaration": 0,
 									"type_description": {
-										"type_identifier": "t_address",
-										"type_string": "address"
+										"type_identifier": "t_address_array",
+										"type_string": "address[]"
 									}
 								},
 								"storage_location": 4,
 								"visibility": 1,
-								"state_mutability": 4,
+								"state_mutability": 1,
 								"type_description": {
-									"type_identifier": "t_address",
-									"type_string": "address"
+									"type_identifier": "t_address_array",
+									"type_string": "address[]"
 								}
 							},
 							{
@@ -2332,8 +2339,8 @@
 						],
 						"parameter_types": [
 							{
-								"type_identifier": "t_address",
-								"type_string": "address"
+								"type_identifier": "t_address_array",
+								"type_string": "address[]"
 							},
 							{
 								"type_identifier": "t_uint256",
@@ -2408,13 +2415,14 @@
 							}
 						]
 					},
-					"signature_raw": "claimRewardsOnBehalf(address, uint256, address, address)",
-					"signature": "ff80e62c",
+					"signature_raw": "claimRewardsOnBehalf(address[],uint256,address,address)",
+					"signature": "6d34b96e",
 					"scope": 2177,
 					"type_description": {
-						"type_identifier": "t_function_$_t_address$_t_uint256$_t_address$_t_address$",
-						"type_string": "function(address,uint256,address,address)"
-					}
+						"type_identifier": "t_function_$_t_address_array$_t_uint256$_t_address$_t_address$",
+						"type_string": "function(address[],uint256,address,address)"
+					},
+					"text": "functionclaimRewardsOnBehalf(address[]calldataassets,uint256amount,addressuser,addressto)externalreturns(uint256);"
 				},
 				{
 					"id": 2303,
@@ -2583,7 +2591,8 @@
 					"type_description": {
 						"type_identifier": "t_function_$_t_address$",
 						"type_string": "function(address)"
-					}
+					},
+					"text": "functiongetUserUnclaimedRewards(addressuser)externalviewreturns(uint256);"
 				},
 				{
 					"id": 2312,
@@ -2790,13 +2799,14 @@
 							}
 						]
 					},
-					"signature_raw": "getUserAssetData(address, address)",
-					"signature": "5b9502d0",
+					"signature_raw": "getUserAssetData(address,address)",
+					"signature": "3373ee4c",
 					"scope": 2177,
 					"type_description": {
 						"type_identifier": "t_function_$_t_address$_t_address$",
 						"type_string": "function(address,address)"
-					}
+					},
+					"text": "functiongetUserAssetData(addressuser,addressasset)externalviewreturns(uint256);"
 				},
 				{
 					"id": 2323,
@@ -2966,7 +2976,8 @@
 					"type_description": {
 						"type_identifier": "t_function_$_t_address$",
 						"type_string": "function(address)"
-					}
+					},
+					"text": "functionREWARD_TOKEN()externalviewreturns(address);"
 				},
 				{
 					"id": 2332,
@@ -3134,7 +3145,8 @@
 					"type_description": {
 						"type_identifier": "t_function_$_t_uint8$",
 						"type_string": "function(uint8)"
-					}
+					},
+					"text": "functionPRECISION()externalviewreturns(uint8);"
 				},
 				{
 					"id": 2341,
@@ -3302,7 +3314,8 @@
 					"type_description": {
 						"type_identifier": "t_function_$_t_uint256$",
 						"type_string": "function(uint256)"
-					}
+					},
+					"text": "functionDISTRIBUTION_END()externalviewreturns(uint256);"
 				}
 			],
 			"linearized_base_contracts": [

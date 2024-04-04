@@ -1,20 +1,20 @@
 {
-	"id": 1299,
+	"id": 1292,
 	"base_contracts": [],
 	"license": "MIT",
 	"exported_symbols": [
 		{
-			"id": 1299,
+			"id": 1292,
 			"name": "SafeERC20",
-			"absolute_path": ""
+			"absolute_path": "Token.sol"
 		}
 	],
-	"absolute_path": "",
+	"absolute_path": "Token.sol",
 	"name": "SafeERC20",
 	"node_type": 1,
 	"nodes": [
 		{
-			"id": 1300,
+			"id": 1293,
 			"name": "SafeERC20",
 			"node_type": 35,
 			"src": {
@@ -23,7 +23,7 @@
 				"start": 24849,
 				"end": 28118,
 				"length": 3270,
-				"parent_index": 1299
+				"parent_index": 1292
 			},
 			"name_location": {
 				"line": 740,
@@ -31,14 +31,14 @@
 				"start": 24857,
 				"end": 24865,
 				"length": 9,
-				"parent_index": 1300
+				"parent_index": 1293
 			},
 			"abstract": false,
 			"kind": 37,
 			"fully_implemented": true,
 			"nodes": [
 				{
-					"id": 1302,
+					"id": 1295,
 					"node_type": 51,
 					"src": {
 						"line": 741,
@@ -46,14 +46,14 @@
 						"start": 24873,
 						"end": 24898,
 						"length": 26,
-						"parent_index": 1300
+						"parent_index": 1293
 					},
 					"type_description": {
 						"type_identifier": "t_address",
 						"type_string": "address"
 					},
 					"type_name": {
-						"id": 1304,
+						"id": 1297,
 						"node_type": 30,
 						"src": {
 							"line": 741,
@@ -61,7 +61,7 @@
 							"start": 24891,
 							"end": 24897,
 							"length": 7,
-							"parent_index": 1302
+							"parent_index": 1295
 						},
 						"name": "address",
 						"state_mutability": 4,
@@ -72,7 +72,7 @@
 						}
 					},
 					"library_name": {
-						"id": 1303,
+						"id": 1296,
 						"node_type": 52,
 						"src": {
 							"line": 741,
@@ -80,14 +80,14 @@
 							"start": 24879,
 							"end": 24885,
 							"length": 7,
-							"parent_index": 1302
+							"parent_index": 1295
 						},
 						"name": "Address",
-						"referenced_declaration": 1017
+						"referenced_declaration": 1010
 					}
 				},
 				{
-					"id": 1306,
+					"id": 1299,
 					"name": "safeTransfer",
 					"node_type": 42,
 					"kind": 41,
@@ -97,7 +97,7 @@
 						"start": 24905,
 						"end": 25109,
 						"length": 205,
-						"parent_index": 1300
+						"parent_index": 1293
 					},
 					"name_location": {
 						"line": 743,
@@ -105,10 +105,10 @@
 						"start": 24914,
 						"end": 24925,
 						"length": 12,
-						"parent_index": 1306
+						"parent_index": 1299
 					},
 					"body": {
-						"id": 1316,
+						"id": 1309,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -117,12 +117,12 @@
 							"start": 25007,
 							"end": 25109,
 							"length": 103,
-							"parent_index": 1306
+							"parent_index": 1299
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 1317,
+								"id": 1310,
 								"node_type": 24,
 								"kind": 24,
 								"src": {
@@ -131,7 +131,7 @@
 									"start": 25017,
 									"end": 25102,
 									"length": 86,
-									"parent_index": 1316
+									"parent_index": 1309
 								},
 								"argument_types": [
 									{
@@ -145,7 +145,7 @@
 								],
 								"arguments": [
 									{
-										"id": 1319,
+										"id": 1312,
 										"node_type": 16,
 										"src": {
 											"line": 748,
@@ -153,7 +153,7 @@
 											"start": 25037,
 											"end": 25041,
 											"length": 5,
-											"parent_index": 1317
+											"parent_index": 1310
 										},
 										"name": "token",
 										"type_description": {
@@ -161,11 +161,12 @@
 											"type_string": "contract IERC20"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 1319,
-										"is_pure": false
+										"referenced_declaration": 1312,
+										"is_pure": false,
+										"text": "token"
 									},
 									{
-										"id": 1320,
+										"id": 1313,
 										"node_type": 24,
 										"kind": 24,
 										"src": {
@@ -174,7 +175,7 @@
 											"start": 25044,
 											"end": 25101,
 											"length": 58,
-											"parent_index": 1317
+											"parent_index": 1310
 										},
 										"argument_types": [
 											{
@@ -192,7 +193,7 @@
 										],
 										"arguments": [
 											{
-												"id": 1323,
+												"id": 1316,
 												"is_constant": false,
 												"is_l_value": false,
 												"is_pure": false,
@@ -204,7 +205,7 @@
 													"start": 25067,
 													"end": 25089,
 													"length": 23,
-													"parent_index": 1320
+													"parent_index": 1313
 												},
 												"member_location": {
 													"line": 748,
@@ -212,10 +213,10 @@
 													"start": 25082,
 													"end": 25089,
 													"length": 8,
-													"parent_index": 1323
+													"parent_index": 1316
 												},
 												"expression": {
-													"id": 1324,
+													"id": 1317,
 													"is_constant": false,
 													"is_l_value": false,
 													"is_pure": false,
@@ -227,7 +228,7 @@
 														"start": 25067,
 														"end": 25080,
 														"length": 14,
-														"parent_index": 1323
+														"parent_index": 1316
 													},
 													"member_location": {
 														"line": 748,
@@ -235,10 +236,10 @@
 														"start": 25073,
 														"end": 25080,
 														"length": 8,
-														"parent_index": 1324
+														"parent_index": 1317
 													},
 													"expression": {
-														"id": 1325,
+														"id": 1318,
 														"node_type": 16,
 														"src": {
 															"line": 748,
@@ -246,7 +247,7 @@
 															"start": 25067,
 															"end": 25071,
 															"length": 5,
-															"parent_index": 1324
+															"parent_index": 1317
 														},
 														"name": "token",
 														"type_description": {
@@ -254,25 +255,28 @@
 															"type_string": "contract IERC20"
 														},
 														"overloaded_declarations": [],
-														"referenced_declaration": 1325,
-														"is_pure": false
+														"referenced_declaration": 1318,
+														"is_pure": false,
+														"text": "token"
 													},
 													"member_name": "transfer",
 													"argument_types": [],
 													"type_description": {
 														"type_identifier": "t_contract$_IERC20_$347",
 														"type_string": "contract IERC20"
-													}
+													},
+													"text": "token.transfer"
 												},
 												"member_name": "selector",
 												"argument_types": [],
 												"type_description": {
 													"type_identifier": "t_contract$_IERC20_$347",
 													"type_string": "contract IERC20"
-												}
+												},
+												"text": "token.transfer.selector"
 											},
 											{
-												"id": 1326,
+												"id": 1319,
 												"node_type": 16,
 												"src": {
 													"line": 748,
@@ -280,7 +284,7 @@
 													"start": 25092,
 													"end": 25093,
 													"length": 2,
-													"parent_index": 1320
+													"parent_index": 1313
 												},
 												"name": "to",
 												"type_description": {
@@ -288,17 +292,18 @@
 													"type_string": "address"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 1326,
+												"referenced_declaration": 1319,
 												"is_pure": false,
 												"argument_types": [
 													{
 														"type_identifier": "t_contract$_IERC20_$347",
 														"type_string": "contract IERC20"
 													}
-												]
+												],
+												"text": "to"
 											},
 											{
-												"id": 1327,
+												"id": 1320,
 												"node_type": 16,
 												"src": {
 													"line": 748,
@@ -306,7 +311,7 @@
 													"start": 25096,
 													"end": 25100,
 													"length": 5,
-													"parent_index": 1320
+													"parent_index": 1313
 												},
 												"name": "value",
 												"type_description": {
@@ -314,7 +319,7 @@
 													"type_string": "uint256"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 1327,
+												"referenced_declaration": 1320,
 												"is_pure": false,
 												"argument_types": [
 													{
@@ -325,11 +330,12 @@
 														"type_identifier": "t_address",
 														"type_string": "address"
 													}
-												]
+												],
+												"text": "value"
 											}
 										],
 										"expression": {
-											"id": 1321,
+											"id": 1314,
 											"is_constant": false,
 											"is_l_value": false,
 											"is_pure": false,
@@ -341,7 +347,7 @@
 												"start": 25044,
 												"end": 25065,
 												"length": 22,
-												"parent_index": 1320
+												"parent_index": 1313
 											},
 											"member_location": {
 												"line": 748,
@@ -349,10 +355,10 @@
 												"start": 25048,
 												"end": 25065,
 												"length": 18,
-												"parent_index": 1321
+												"parent_index": 1314
 											},
 											"expression": {
-												"id": 1322,
+												"id": 1315,
 												"node_type": 16,
 												"src": {
 													"line": 748,
@@ -360,7 +366,7 @@
 													"start": 25044,
 													"end": 25046,
 													"length": 3,
-													"parent_index": 1321
+													"parent_index": 1314
 												},
 												"name": "abi",
 												"type_description": {
@@ -369,14 +375,16 @@
 												},
 												"overloaded_declarations": [],
 												"referenced_declaration": 0,
-												"is_pure": false
+												"is_pure": false,
+												"text": "abi"
 											},
 											"member_name": "encodeWithSelector",
 											"argument_types": [],
 											"type_description": {
 												"type_identifier": "t_magic_abi",
 												"type_string": "abi"
-											}
+											},
+											"text": "abi.encodeWithSelector"
 										},
 										"type_description": {
 											"type_identifier": "t_function_$_t_address$_t_address$_t_uint256$",
@@ -385,7 +393,7 @@
 									}
 								],
 								"expression": {
-									"id": 1318,
+									"id": 1311,
 									"node_type": 16,
 									"src": {
 										"line": 748,
@@ -393,7 +401,7 @@
 										"start": 25017,
 										"end": 25035,
 										"length": 19,
-										"parent_index": 1317
+										"parent_index": 1310
 									},
 									"name": "_callOptionalReturn",
 									"type_description": {
@@ -402,7 +410,8 @@
 									},
 									"overloaded_declarations": [],
 									"referenced_declaration": 0,
-									"is_pure": false
+									"is_pure": false,
+									"text": "_callOptionalReturn"
 								},
 								"type_description": {
 									"type_identifier": "t_function_$_t_address$_t_function_$_t_address$_t_address$_t_uint256$",
@@ -418,7 +427,7 @@
 					"modifiers": [],
 					"overrides": [],
 					"parameters": {
-						"id": 1307,
+						"id": 1300,
 						"node_type": 43,
 						"src": {
 							"line": 744,
@@ -426,11 +435,11 @@
 							"start": 24936,
 							"end": 24990,
 							"length": 55,
-							"parent_index": 1306
+							"parent_index": 1299
 						},
 						"parameters": [
 							{
-								"id": 1308,
+								"id": 1301,
 								"node_type": 44,
 								"src": {
 									"line": 744,
@@ -438,12 +447,12 @@
 									"start": 24936,
 									"end": 24947,
 									"length": 12,
-									"parent_index": 1307
+									"parent_index": 1300
 								},
-								"scope": 1306,
+								"scope": 1299,
 								"name": "token",
 								"type_name": {
-									"id": 1309,
+									"id": 1302,
 									"node_type": 69,
 									"src": {
 										"line": 744,
@@ -451,10 +460,10 @@
 										"start": 24936,
 										"end": 24941,
 										"length": 6,
-										"parent_index": 1308
+										"parent_index": 1301
 									},
 									"path_node": {
-										"id": 1310,
+										"id": 1303,
 										"name": "IERC20",
 										"node_type": 52,
 										"referenced_declaration": 347,
@@ -464,7 +473,7 @@
 											"start": 24936,
 											"end": 24941,
 											"length": 6,
-											"parent_index": 1309
+											"parent_index": 1302
 										},
 										"name_location": {
 											"line": 744,
@@ -472,7 +481,7 @@
 											"start": 24936,
 											"end": 24941,
 											"length": 6,
-											"parent_index": 1309
+											"parent_index": 1302
 										}
 									},
 									"referenced_declaration": 347,
@@ -490,7 +499,7 @@
 								}
 							},
 							{
-								"id": 1311,
+								"id": 1304,
 								"node_type": 44,
 								"src": {
 									"line": 745,
@@ -498,12 +507,12 @@
 									"start": 24958,
 									"end": 24967,
 									"length": 10,
-									"parent_index": 1307
+									"parent_index": 1300
 								},
-								"scope": 1306,
+								"scope": 1299,
 								"name": "to",
 								"type_name": {
-									"id": 1312,
+									"id": 1305,
 									"node_type": 30,
 									"src": {
 										"line": 745,
@@ -511,7 +520,7 @@
 										"start": 24958,
 										"end": 24964,
 										"length": 7,
-										"parent_index": 1311
+										"parent_index": 1304
 									},
 									"name": "address",
 									"state_mutability": 4,
@@ -530,7 +539,7 @@
 								}
 							},
 							{
-								"id": 1313,
+								"id": 1306,
 								"node_type": 44,
 								"src": {
 									"line": 746,
@@ -538,12 +547,12 @@
 									"start": 24978,
 									"end": 24990,
 									"length": 13,
-									"parent_index": 1307
+									"parent_index": 1300
 								},
-								"scope": 1306,
+								"scope": 1299,
 								"name": "value",
 								"type_name": {
-									"id": 1314,
+									"id": 1307,
 									"node_type": 30,
 									"src": {
 										"line": 746,
@@ -551,7 +560,7 @@
 										"start": 24978,
 										"end": 24984,
 										"length": 7,
-										"parent_index": 1313
+										"parent_index": 1306
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -585,7 +594,7 @@
 						]
 					},
 					"return_parameters": {
-						"id": 1315,
+						"id": 1308,
 						"node_type": 43,
 						"src": {
 							"line": 743,
@@ -593,21 +602,22 @@
 							"start": 24905,
 							"end": 25109,
 							"length": 205,
-							"parent_index": 1306
+							"parent_index": 1299
 						},
 						"parameters": [],
 						"parameter_types": []
 					},
-					"signature_raw": "safeTransfer(, address, uint256)",
-					"signature": "8d2f8c29",
-					"scope": 1300,
+					"signature_raw": "safeTransfer(,address,uint256)",
+					"signature": "d6e935fe",
+					"scope": 1293,
 					"type_description": {
 						"type_identifier": "t_function_$_t_contract$_IERC20_$347$_t_address$_t_uint256$",
 						"type_string": "function(contract IERC20,address,uint256)"
-					}
+					},
+					"text": "functionsafeTransfer(IERC20token,addressto,uint256value)internal{_callOptionalReturn(token,abi.encodeWithSelector(token.transfer.selector,to,value));}"
 				},
 				{
-					"id": 1329,
+					"id": 1322,
 					"name": "safeTransferFrom",
 					"node_type": 42,
 					"kind": 41,
@@ -617,7 +627,7 @@
 						"start": 25116,
 						"end": 25356,
 						"length": 241,
-						"parent_index": 1300
+						"parent_index": 1293
 					},
 					"name_location": {
 						"line": 751,
@@ -625,10 +635,10 @@
 						"start": 25125,
 						"end": 25140,
 						"length": 16,
-						"parent_index": 1329
+						"parent_index": 1322
 					},
 					"body": {
-						"id": 1341,
+						"id": 1334,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -637,12 +647,12 @@
 							"start": 25244,
 							"end": 25356,
 							"length": 113,
-							"parent_index": 1329
+							"parent_index": 1322
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 1342,
+								"id": 1335,
 								"node_type": 24,
 								"kind": 24,
 								"src": {
@@ -651,7 +661,7 @@
 									"start": 25254,
 									"end": 25349,
 									"length": 96,
-									"parent_index": 1341
+									"parent_index": 1334
 								},
 								"argument_types": [
 									{
@@ -665,7 +675,7 @@
 								],
 								"arguments": [
 									{
-										"id": 1344,
+										"id": 1337,
 										"node_type": 16,
 										"src": {
 											"line": 757,
@@ -673,7 +683,7 @@
 											"start": 25274,
 											"end": 25278,
 											"length": 5,
-											"parent_index": 1342
+											"parent_index": 1335
 										},
 										"name": "token",
 										"type_description": {
@@ -681,11 +691,12 @@
 											"type_string": "contract IERC20"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 1344,
-										"is_pure": false
+										"referenced_declaration": 1337,
+										"is_pure": false,
+										"text": "token"
 									},
 									{
-										"id": 1345,
+										"id": 1338,
 										"node_type": 24,
 										"kind": 24,
 										"src": {
@@ -694,7 +705,7 @@
 											"start": 25281,
 											"end": 25348,
 											"length": 68,
-											"parent_index": 1342
+											"parent_index": 1335
 										},
 										"argument_types": [
 											{
@@ -716,7 +727,7 @@
 										],
 										"arguments": [
 											{
-												"id": 1348,
+												"id": 1341,
 												"is_constant": false,
 												"is_l_value": false,
 												"is_pure": false,
@@ -728,7 +739,7 @@
 													"start": 25304,
 													"end": 25330,
 													"length": 27,
-													"parent_index": 1345
+													"parent_index": 1338
 												},
 												"member_location": {
 													"line": 757,
@@ -736,10 +747,10 @@
 													"start": 25323,
 													"end": 25330,
 													"length": 8,
-													"parent_index": 1348
+													"parent_index": 1341
 												},
 												"expression": {
-													"id": 1349,
+													"id": 1342,
 													"is_constant": false,
 													"is_l_value": false,
 													"is_pure": false,
@@ -751,7 +762,7 @@
 														"start": 25304,
 														"end": 25321,
 														"length": 18,
-														"parent_index": 1348
+														"parent_index": 1341
 													},
 													"member_location": {
 														"line": 757,
@@ -759,10 +770,10 @@
 														"start": 25310,
 														"end": 25321,
 														"length": 12,
-														"parent_index": 1349
+														"parent_index": 1342
 													},
 													"expression": {
-														"id": 1350,
+														"id": 1343,
 														"node_type": 16,
 														"src": {
 															"line": 757,
@@ -770,7 +781,7 @@
 															"start": 25304,
 															"end": 25308,
 															"length": 5,
-															"parent_index": 1349
+															"parent_index": 1342
 														},
 														"name": "token",
 														"type_description": {
@@ -778,25 +789,28 @@
 															"type_string": "contract IERC20"
 														},
 														"overloaded_declarations": [],
-														"referenced_declaration": 1350,
-														"is_pure": false
+														"referenced_declaration": 1343,
+														"is_pure": false,
+														"text": "token"
 													},
 													"member_name": "transferFrom",
 													"argument_types": [],
 													"type_description": {
 														"type_identifier": "t_contract$_IERC20_$347",
 														"type_string": "contract IERC20"
-													}
+													},
+													"text": "token.transferFrom"
 												},
 												"member_name": "selector",
 												"argument_types": [],
 												"type_description": {
 													"type_identifier": "t_contract$_IERC20_$347",
 													"type_string": "contract IERC20"
-												}
+												},
+												"text": "token.transferFrom.selector"
 											},
 											{
-												"id": 1351,
+												"id": 1344,
 												"node_type": 16,
 												"src": {
 													"line": 757,
@@ -804,7 +818,7 @@
 													"start": 25333,
 													"end": 25336,
 													"length": 4,
-													"parent_index": 1345
+													"parent_index": 1338
 												},
 												"name": "from",
 												"type_description": {
@@ -812,17 +826,18 @@
 													"type_string": "address"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 1351,
+												"referenced_declaration": 1344,
 												"is_pure": false,
 												"argument_types": [
 													{
 														"type_identifier": "t_contract$_IERC20_$347",
 														"type_string": "contract IERC20"
 													}
-												]
+												],
+												"text": "from"
 											},
 											{
-												"id": 1352,
+												"id": 1345,
 												"node_type": 16,
 												"src": {
 													"line": 757,
@@ -830,7 +845,7 @@
 													"start": 25339,
 													"end": 25340,
 													"length": 2,
-													"parent_index": 1345
+													"parent_index": 1338
 												},
 												"name": "to",
 												"type_description": {
@@ -838,7 +853,7 @@
 													"type_string": "address"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 1352,
+												"referenced_declaration": 1345,
 												"is_pure": false,
 												"argument_types": [
 													{
@@ -849,10 +864,11 @@
 														"type_identifier": "t_address",
 														"type_string": "address"
 													}
-												]
+												],
+												"text": "to"
 											},
 											{
-												"id": 1353,
+												"id": 1346,
 												"node_type": 16,
 												"src": {
 													"line": 757,
@@ -860,7 +876,7 @@
 													"start": 25343,
 													"end": 25347,
 													"length": 5,
-													"parent_index": 1345
+													"parent_index": 1338
 												},
 												"name": "value",
 												"type_description": {
@@ -868,7 +884,7 @@
 													"type_string": "uint256"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 1353,
+												"referenced_declaration": 1346,
 												"is_pure": false,
 												"argument_types": [
 													{
@@ -883,11 +899,12 @@
 														"type_identifier": "t_address",
 														"type_string": "address"
 													}
-												]
+												],
+												"text": "value"
 											}
 										],
 										"expression": {
-											"id": 1346,
+											"id": 1339,
 											"is_constant": false,
 											"is_l_value": false,
 											"is_pure": false,
@@ -899,7 +916,7 @@
 												"start": 25281,
 												"end": 25302,
 												"length": 22,
-												"parent_index": 1345
+												"parent_index": 1338
 											},
 											"member_location": {
 												"line": 757,
@@ -907,10 +924,10 @@
 												"start": 25285,
 												"end": 25302,
 												"length": 18,
-												"parent_index": 1346
+												"parent_index": 1339
 											},
 											"expression": {
-												"id": 1347,
+												"id": 1340,
 												"node_type": 16,
 												"src": {
 													"line": 757,
@@ -918,7 +935,7 @@
 													"start": 25281,
 													"end": 25283,
 													"length": 3,
-													"parent_index": 1346
+													"parent_index": 1339
 												},
 												"name": "abi",
 												"type_description": {
@@ -927,14 +944,16 @@
 												},
 												"overloaded_declarations": [],
 												"referenced_declaration": 0,
-												"is_pure": false
+												"is_pure": false,
+												"text": "abi"
 											},
 											"member_name": "encodeWithSelector",
 											"argument_types": [],
 											"type_description": {
 												"type_identifier": "t_magic_abi",
 												"type_string": "abi"
-											}
+											},
+											"text": "abi.encodeWithSelector"
 										},
 										"type_description": {
 											"type_identifier": "t_function_$_t_address$_t_address$_t_address$_t_uint256$",
@@ -943,7 +962,7 @@
 									}
 								],
 								"expression": {
-									"id": 1343,
+									"id": 1336,
 									"node_type": 16,
 									"src": {
 										"line": 757,
@@ -951,7 +970,7 @@
 										"start": 25254,
 										"end": 25272,
 										"length": 19,
-										"parent_index": 1342
+										"parent_index": 1335
 									},
 									"name": "_callOptionalReturn",
 									"type_description": {
@@ -960,7 +979,8 @@
 									},
 									"overloaded_declarations": [],
 									"referenced_declaration": 0,
-									"is_pure": false
+									"is_pure": false,
+									"text": "_callOptionalReturn"
 								},
 								"type_description": {
 									"type_identifier": "t_function_$_t_address$_t_function_$_t_address$_t_address$_t_address$_t_uint256$",
@@ -976,7 +996,7 @@
 					"modifiers": [],
 					"overrides": [],
 					"parameters": {
-						"id": 1330,
+						"id": 1323,
 						"node_type": 43,
 						"src": {
 							"line": 752,
@@ -984,11 +1004,11 @@
 							"start": 25151,
 							"end": 25227,
 							"length": 77,
-							"parent_index": 1329
+							"parent_index": 1322
 						},
 						"parameters": [
 							{
-								"id": 1331,
+								"id": 1324,
 								"node_type": 44,
 								"src": {
 									"line": 752,
@@ -996,12 +1016,12 @@
 									"start": 25151,
 									"end": 25162,
 									"length": 12,
-									"parent_index": 1330
+									"parent_index": 1323
 								},
-								"scope": 1329,
+								"scope": 1322,
 								"name": "token",
 								"type_name": {
-									"id": 1332,
+									"id": 1325,
 									"node_type": 69,
 									"src": {
 										"line": 752,
@@ -1009,10 +1029,10 @@
 										"start": 25151,
 										"end": 25156,
 										"length": 6,
-										"parent_index": 1331
+										"parent_index": 1324
 									},
 									"path_node": {
-										"id": 1333,
+										"id": 1326,
 										"name": "IERC20",
 										"node_type": 52,
 										"referenced_declaration": 347,
@@ -1022,7 +1042,7 @@
 											"start": 25151,
 											"end": 25156,
 											"length": 6,
-											"parent_index": 1332
+											"parent_index": 1325
 										},
 										"name_location": {
 											"line": 752,
@@ -1030,7 +1050,7 @@
 											"start": 25151,
 											"end": 25156,
 											"length": 6,
-											"parent_index": 1332
+											"parent_index": 1325
 										}
 									},
 									"referenced_declaration": 347,
@@ -1048,7 +1068,7 @@
 								}
 							},
 							{
-								"id": 1334,
+								"id": 1327,
 								"node_type": 44,
 								"src": {
 									"line": 753,
@@ -1056,12 +1076,12 @@
 									"start": 25173,
 									"end": 25184,
 									"length": 12,
-									"parent_index": 1330
+									"parent_index": 1323
 								},
-								"scope": 1329,
+								"scope": 1322,
 								"name": "from",
 								"type_name": {
-									"id": 1335,
+									"id": 1328,
 									"node_type": 30,
 									"src": {
 										"line": 753,
@@ -1069,7 +1089,7 @@
 										"start": 25173,
 										"end": 25179,
 										"length": 7,
-										"parent_index": 1334
+										"parent_index": 1327
 									},
 									"name": "address",
 									"state_mutability": 4,
@@ -1088,7 +1108,7 @@
 								}
 							},
 							{
-								"id": 1336,
+								"id": 1329,
 								"node_type": 44,
 								"src": {
 									"line": 754,
@@ -1096,12 +1116,12 @@
 									"start": 25195,
 									"end": 25204,
 									"length": 10,
-									"parent_index": 1330
+									"parent_index": 1323
 								},
-								"scope": 1329,
+								"scope": 1322,
 								"name": "to",
 								"type_name": {
-									"id": 1337,
+									"id": 1330,
 									"node_type": 30,
 									"src": {
 										"line": 754,
@@ -1109,7 +1129,7 @@
 										"start": 25195,
 										"end": 25201,
 										"length": 7,
-										"parent_index": 1336
+										"parent_index": 1329
 									},
 									"name": "address",
 									"state_mutability": 4,
@@ -1128,7 +1148,7 @@
 								}
 							},
 							{
-								"id": 1338,
+								"id": 1331,
 								"node_type": 44,
 								"src": {
 									"line": 755,
@@ -1136,12 +1156,12 @@
 									"start": 25215,
 									"end": 25227,
 									"length": 13,
-									"parent_index": 1330
+									"parent_index": 1323
 								},
-								"scope": 1329,
+								"scope": 1322,
 								"name": "value",
 								"type_name": {
-									"id": 1339,
+									"id": 1332,
 									"node_type": 30,
 									"src": {
 										"line": 755,
@@ -1149,7 +1169,7 @@
 										"start": 25215,
 										"end": 25221,
 										"length": 7,
-										"parent_index": 1338
+										"parent_index": 1331
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -1187,7 +1207,7 @@
 						]
 					},
 					"return_parameters": {
-						"id": 1340,
+						"id": 1333,
 						"node_type": 43,
 						"src": {
 							"line": 751,
@@ -1195,21 +1215,22 @@
 							"start": 25116,
 							"end": 25356,
 							"length": 241,
-							"parent_index": 1329
+							"parent_index": 1322
 						},
 						"parameters": [],
 						"parameter_types": []
 					},
-					"signature_raw": "safeTransferFrom(, address, address, uint256)",
-					"signature": "d9098537",
-					"scope": 1300,
+					"signature_raw": "safeTransferFrom(,address,address,uint256)",
+					"signature": "d0e2343c",
+					"scope": 1293,
 					"type_description": {
 						"type_identifier": "t_function_$_t_contract$_IERC20_$347$_t_address$_t_address$_t_uint256$",
 						"type_string": "function(contract IERC20,address,address,uint256)"
-					}
+					},
+					"text": "functionsafeTransferFrom(IERC20token,addressfrom,addressto,uint256value)internal{_callOptionalReturn(token,abi.encodeWithSelector(token.transferFrom.selector,from,to,value));}"
 				},
 				{
-					"id": 1355,
+					"id": 1348,
 					"name": "safeApprove",
 					"node_type": 42,
 					"kind": 41,
@@ -1219,7 +1240,7 @@
 						"start": 25617,
 						"end": 26219,
 						"length": 603,
-						"parent_index": 1300
+						"parent_index": 1293
 					},
 					"name_location": {
 						"line": 767,
@@ -1227,10 +1248,10 @@
 						"start": 25626,
 						"end": 25636,
 						"length": 11,
-						"parent_index": 1355
+						"parent_index": 1348
 					},
 					"body": {
-						"id": 1365,
+						"id": 1358,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -1239,12 +1260,12 @@
 							"start": 25723,
 							"end": 26219,
 							"length": 497,
-							"parent_index": 1355
+							"parent_index": 1348
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 1366,
+								"id": 1359,
 								"node_type": 24,
 								"kind": 24,
 								"src": {
@@ -1253,7 +1274,7 @@
 									"start": 25950,
 									"end": 26112,
 									"length": 163,
-									"parent_index": 1365
+									"parent_index": 1358
 								},
 								"argument_types": [
 									{
@@ -1267,7 +1288,7 @@
 								],
 								"arguments": [
 									{
-										"id": 1368,
+										"id": 1361,
 										"is_constant": false,
 										"is_pure": false,
 										"node_type": 19,
@@ -1277,11 +1298,11 @@
 											"start": 25971,
 											"end": 26032,
 											"length": 62,
-											"parent_index": 1366
+											"parent_index": 1359
 										},
 										"operator": 33,
 										"left_expression": {
-											"id": 1369,
+											"id": 1362,
 											"node_type": 60,
 											"src": {
 												"line": 776,
@@ -1289,13 +1310,13 @@
 												"start": 25971,
 												"end": 25982,
 												"length": 12,
-												"parent_index": 1368
+												"parent_index": 1361
 											},
 											"is_constant": false,
 											"is_pure": false,
 											"components": [
 												{
-													"id": 1370,
+													"id": 1363,
 													"is_constant": false,
 													"is_pure": false,
 													"node_type": 19,
@@ -1305,11 +1326,11 @@
 														"start": 25972,
 														"end": 25981,
 														"length": 10,
-														"parent_index": 1369
+														"parent_index": 1362
 													},
 													"operator": 11,
 													"left_expression": {
-														"id": 1371,
+														"id": 1364,
 														"node_type": 16,
 														"src": {
 															"line": 776,
@@ -1317,7 +1338,7 @@
 															"start": 25972,
 															"end": 25976,
 															"length": 5,
-															"parent_index": 1370
+															"parent_index": 1363
 														},
 														"name": "value",
 														"type_description": {
@@ -1325,11 +1346,12 @@
 															"type_string": "uint256"
 														},
 														"overloaded_declarations": [],
-														"referenced_declaration": 1371,
-														"is_pure": false
+														"referenced_declaration": 1364,
+														"is_pure": false,
+														"text": "value"
 													},
 													"right_expression": {
-														"id": 1372,
+														"id": 1365,
 														"node_type": 17,
 														"kind": 49,
 														"value": "0",
@@ -1340,7 +1362,7 @@
 															"start": 25981,
 															"end": 25981,
 															"length": 1,
-															"parent_index": 1370
+															"parent_index": 1363
 														},
 														"type_description": {
 															"type_identifier": "t_rational_0_by_1",
@@ -1348,7 +1370,8 @@
 														},
 														"overloaded_declarations": [],
 														"referenced_declaration": 0,
-														"is_pure": true
+														"is_pure": true,
+														"text": "0"
 													},
 													"type_description": {
 														"type_identifier": "t_bool",
@@ -1362,7 +1385,7 @@
 											}
 										},
 										"right_expression": {
-											"id": 1373,
+											"id": 1366,
 											"node_type": 60,
 											"src": {
 												"line": 776,
@@ -1370,13 +1393,13 @@
 												"start": 25987,
 												"end": 26032,
 												"length": 46,
-												"parent_index": 1368
+												"parent_index": 1361
 											},
 											"is_constant": false,
 											"is_pure": false,
 											"components": [
 												{
-													"id": 1374,
+													"id": 1367,
 													"is_constant": false,
 													"is_pure": false,
 													"node_type": 19,
@@ -1386,11 +1409,11 @@
 														"start": 25988,
 														"end": 26031,
 														"length": 44,
-														"parent_index": 1373
+														"parent_index": 1366
 													},
 													"operator": 11,
 													"left_expression": {
-														"id": 1375,
+														"id": 1368,
 														"node_type": 24,
 														"kind": 24,
 														"src": {
@@ -1399,7 +1422,7 @@
 															"start": 25988,
 															"end": 26026,
 															"length": 39,
-															"parent_index": 1374
+															"parent_index": 1367
 														},
 														"argument_types": [
 															{
@@ -1413,7 +1436,7 @@
 														],
 														"arguments": [
 															{
-																"id": 1378,
+																"id": 1371,
 																"node_type": 24,
 																"kind": 24,
 																"src": {
@@ -1422,17 +1445,17 @@
 																	"start": 26004,
 																	"end": 26016,
 																	"length": 13,
-																	"parent_index": 1375
+																	"parent_index": 1368
 																},
 																"argument_types": [
 																	{
-																		"type_identifier": "t_contract$_SafeERC20_$1299",
+																		"type_identifier": "t_contract$_SafeERC20_$1292",
 																		"type_string": "contract SafeERC20"
 																	}
 																],
 																"arguments": [
 																	{
-																		"id": 1381,
+																		"id": 1374,
 																		"node_type": 16,
 																		"src": {
 																			"line": 776,
@@ -1440,20 +1463,21 @@
 																			"start": 26012,
 																			"end": 26015,
 																			"length": 4,
-																			"parent_index": 1378
+																			"parent_index": 1371
 																		},
 																		"name": "this",
 																		"type_description": {
-																			"type_identifier": "t_contract$_SafeERC20_$1299",
+																			"type_identifier": "t_contract$_SafeERC20_$1292",
 																			"type_string": "contract SafeERC20"
 																		},
 																		"overloaded_declarations": [],
 																		"referenced_declaration": 0,
-																		"is_pure": false
+																		"is_pure": false,
+																		"text": "this"
 																	}
 																],
 																"expression": {
-																	"id": 1379,
+																	"id": 1372,
 																	"node_type": 16,
 																	"src": {
 																		"line": 776,
@@ -1461,11 +1485,11 @@
 																		"start": 26004,
 																		"end": 26010,
 																		"length": 7,
-																		"parent_index": 1378
+																		"parent_index": 1371
 																	},
 																	"name": "address",
 																	"type_name": {
-																		"id": 1380,
+																		"id": 1373,
 																		"node_type": 30,
 																		"src": {
 																			"line": 776,
@@ -1473,7 +1497,7 @@
 																			"start": 26004,
 																			"end": 26010,
 																			"length": 7,
-																			"parent_index": 1379
+																			"parent_index": 1372
 																		},
 																		"name": "address",
 																		"state_mutability": 4,
@@ -1495,7 +1519,8 @@
 																			"type_identifier": "t_address",
 																			"type_string": "address"
 																		}
-																	]
+																	],
+																	"text": "address"
 																},
 																"type_description": {
 																	"type_identifier": "t_function_$_t_address$",
@@ -1503,7 +1528,7 @@
 																}
 															},
 															{
-																"id": 1382,
+																"id": 1375,
 																"node_type": 16,
 																"src": {
 																	"line": 776,
@@ -1511,7 +1536,7 @@
 																	"start": 26019,
 																	"end": 26025,
 																	"length": 7,
-																	"parent_index": 1375
+																	"parent_index": 1368
 																},
 																"name": "spender",
 																"type_description": {
@@ -1519,18 +1544,19 @@
 																	"type_string": "address"
 																},
 																"overloaded_declarations": [],
-																"referenced_declaration": 1382,
+																"referenced_declaration": 1375,
 																"is_pure": false,
 																"argument_types": [
 																	{
 																		"type_identifier": "t_function_$_t_address$",
 																		"type_string": "function(address)"
 																	}
-																]
+																],
+																"text": "spender"
 															}
 														],
 														"expression": {
-															"id": 1376,
+															"id": 1369,
 															"is_constant": false,
 															"is_l_value": false,
 															"is_pure": false,
@@ -1542,7 +1568,7 @@
 																"start": 25988,
 																"end": 26002,
 																"length": 15,
-																"parent_index": 1375
+																"parent_index": 1368
 															},
 															"member_location": {
 																"line": 776,
@@ -1550,10 +1576,10 @@
 																"start": 25994,
 																"end": 26002,
 																"length": 9,
-																"parent_index": 1376
+																"parent_index": 1369
 															},
 															"expression": {
-																"id": 1377,
+																"id": 1370,
 																"node_type": 16,
 																"src": {
 																	"line": 776,
@@ -1561,7 +1587,7 @@
 																	"start": 25988,
 																	"end": 25992,
 																	"length": 5,
-																	"parent_index": 1376
+																	"parent_index": 1369
 																},
 																"name": "token",
 																"type_description": {
@@ -1569,15 +1595,17 @@
 																	"type_string": "contract IERC20"
 																},
 																"overloaded_declarations": [],
-																"referenced_declaration": 1377,
-																"is_pure": false
+																"referenced_declaration": 1370,
+																"is_pure": false,
+																"text": "token"
 															},
 															"member_name": "allowance",
 															"argument_types": [],
 															"type_description": {
 																"type_identifier": "t_contract$_IERC20_$347",
 																"type_string": "contract IERC20"
-															}
+															},
+															"text": "token.allowance"
 														},
 														"type_description": {
 															"type_identifier": "t_function_$_t_function_$_t_address$_t_address$",
@@ -1585,7 +1613,7 @@
 														}
 													},
 													"right_expression": {
-														"id": 1383,
+														"id": 1376,
 														"node_type": 17,
 														"kind": 49,
 														"value": "0",
@@ -1596,7 +1624,7 @@
 															"start": 26031,
 															"end": 26031,
 															"length": 1,
-															"parent_index": 1374
+															"parent_index": 1367
 														},
 														"type_description": {
 															"type_identifier": "t_rational_0_by_1",
@@ -1604,7 +1632,8 @@
 														},
 														"overloaded_declarations": [],
 														"referenced_declaration": 0,
-														"is_pure": true
+														"is_pure": true,
+														"text": "0"
 													},
 													"type_description": {
 														"type_identifier": "t_bool",
@@ -1623,7 +1652,7 @@
 										}
 									},
 									{
-										"id": 1384,
+										"id": 1377,
 										"node_type": 17,
 										"kind": 50,
 										"value": "SafeERC20: approve from non-zero to non-zero allowance",
@@ -1634,7 +1663,7 @@
 											"start": 26047,
 											"end": 26102,
 											"length": 56,
-											"parent_index": 1366
+											"parent_index": 1359
 										},
 										"type_description": {
 											"type_identifier": "t_string_literal",
@@ -1648,11 +1677,12 @@
 												"type_identifier": "t_tuple_$_t_bool$",
 												"type_string": "tuple(bool)"
 											}
-										]
+										],
+										"text": "\"SafeERC20: approve from non-zero to non-zero allowance\""
 									}
 								],
 								"expression": {
-									"id": 1367,
+									"id": 1360,
 									"node_type": 16,
 									"src": {
 										"line": 775,
@@ -1660,7 +1690,7 @@
 										"start": 25950,
 										"end": 25956,
 										"length": 7,
-										"parent_index": 1366
+										"parent_index": 1359
 									},
 									"name": "require",
 									"type_description": {
@@ -1669,7 +1699,8 @@
 									},
 									"overloaded_declarations": [],
 									"referenced_declaration": 0,
-									"is_pure": true
+									"is_pure": true,
+									"text": "require"
 								},
 								"type_description": {
 									"type_identifier": "t_function_$_t_tuple_$_t_bool$_t_string_literal$",
@@ -1677,7 +1708,7 @@
 								}
 							},
 							{
-								"id": 1385,
+								"id": 1378,
 								"node_type": 24,
 								"kind": 24,
 								"src": {
@@ -1686,7 +1717,7 @@
 									"start": 26123,
 									"end": 26212,
 									"length": 90,
-									"parent_index": 1365
+									"parent_index": 1358
 								},
 								"argument_types": [
 									{
@@ -1700,7 +1731,7 @@
 								],
 								"arguments": [
 									{
-										"id": 1387,
+										"id": 1380,
 										"node_type": 16,
 										"src": {
 											"line": 779,
@@ -1708,7 +1739,7 @@
 											"start": 26143,
 											"end": 26147,
 											"length": 5,
-											"parent_index": 1385
+											"parent_index": 1378
 										},
 										"name": "token",
 										"type_description": {
@@ -1716,11 +1747,12 @@
 											"type_string": "contract IERC20"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 1387,
-										"is_pure": false
+										"referenced_declaration": 1380,
+										"is_pure": false,
+										"text": "token"
 									},
 									{
-										"id": 1388,
+										"id": 1381,
 										"node_type": 24,
 										"kind": 24,
 										"src": {
@@ -1729,7 +1761,7 @@
 											"start": 26150,
 											"end": 26211,
 											"length": 62,
-											"parent_index": 1385
+											"parent_index": 1378
 										},
 										"argument_types": [
 											{
@@ -1747,7 +1779,7 @@
 										],
 										"arguments": [
 											{
-												"id": 1391,
+												"id": 1384,
 												"is_constant": false,
 												"is_l_value": false,
 												"is_pure": false,
@@ -1759,7 +1791,7 @@
 													"start": 26173,
 													"end": 26194,
 													"length": 22,
-													"parent_index": 1388
+													"parent_index": 1381
 												},
 												"member_location": {
 													"line": 779,
@@ -1767,10 +1799,10 @@
 													"start": 26187,
 													"end": 26194,
 													"length": 8,
-													"parent_index": 1391
+													"parent_index": 1384
 												},
 												"expression": {
-													"id": 1392,
+													"id": 1385,
 													"is_constant": false,
 													"is_l_value": false,
 													"is_pure": false,
@@ -1782,7 +1814,7 @@
 														"start": 26173,
 														"end": 26185,
 														"length": 13,
-														"parent_index": 1391
+														"parent_index": 1384
 													},
 													"member_location": {
 														"line": 779,
@@ -1790,10 +1822,10 @@
 														"start": 26179,
 														"end": 26185,
 														"length": 7,
-														"parent_index": 1392
+														"parent_index": 1385
 													},
 													"expression": {
-														"id": 1393,
+														"id": 1386,
 														"node_type": 16,
 														"src": {
 															"line": 779,
@@ -1801,7 +1833,7 @@
 															"start": 26173,
 															"end": 26177,
 															"length": 5,
-															"parent_index": 1392
+															"parent_index": 1385
 														},
 														"name": "token",
 														"type_description": {
@@ -1809,25 +1841,28 @@
 															"type_string": "contract IERC20"
 														},
 														"overloaded_declarations": [],
-														"referenced_declaration": 1393,
-														"is_pure": false
+														"referenced_declaration": 1386,
+														"is_pure": false,
+														"text": "token"
 													},
 													"member_name": "approve",
 													"argument_types": [],
 													"type_description": {
 														"type_identifier": "t_contract$_IERC20_$347",
 														"type_string": "contract IERC20"
-													}
+													},
+													"text": "token.approve"
 												},
 												"member_name": "selector",
 												"argument_types": [],
 												"type_description": {
 													"type_identifier": "t_contract$_IERC20_$347",
 													"type_string": "contract IERC20"
-												}
+												},
+												"text": "token.approve.selector"
 											},
 											{
-												"id": 1394,
+												"id": 1387,
 												"node_type": 16,
 												"src": {
 													"line": 779,
@@ -1835,7 +1870,7 @@
 													"start": 26197,
 													"end": 26203,
 													"length": 7,
-													"parent_index": 1388
+													"parent_index": 1381
 												},
 												"name": "spender",
 												"type_description": {
@@ -1843,17 +1878,18 @@
 													"type_string": "address"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 1394,
+												"referenced_declaration": 1387,
 												"is_pure": false,
 												"argument_types": [
 													{
 														"type_identifier": "t_contract$_IERC20_$347",
 														"type_string": "contract IERC20"
 													}
-												]
+												],
+												"text": "spender"
 											},
 											{
-												"id": 1395,
+												"id": 1388,
 												"node_type": 16,
 												"src": {
 													"line": 779,
@@ -1861,7 +1897,7 @@
 													"start": 26206,
 													"end": 26210,
 													"length": 5,
-													"parent_index": 1388
+													"parent_index": 1381
 												},
 												"name": "value",
 												"type_description": {
@@ -1869,7 +1905,7 @@
 													"type_string": "uint256"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 1395,
+												"referenced_declaration": 1388,
 												"is_pure": false,
 												"argument_types": [
 													{
@@ -1880,11 +1916,12 @@
 														"type_identifier": "t_address",
 														"type_string": "address"
 													}
-												]
+												],
+												"text": "value"
 											}
 										],
 										"expression": {
-											"id": 1389,
+											"id": 1382,
 											"is_constant": false,
 											"is_l_value": false,
 											"is_pure": false,
@@ -1896,7 +1933,7 @@
 												"start": 26150,
 												"end": 26171,
 												"length": 22,
-												"parent_index": 1388
+												"parent_index": 1381
 											},
 											"member_location": {
 												"line": 779,
@@ -1904,10 +1941,10 @@
 												"start": 26154,
 												"end": 26171,
 												"length": 18,
-												"parent_index": 1389
+												"parent_index": 1382
 											},
 											"expression": {
-												"id": 1390,
+												"id": 1383,
 												"node_type": 16,
 												"src": {
 													"line": 779,
@@ -1915,7 +1952,7 @@
 													"start": 26150,
 													"end": 26152,
 													"length": 3,
-													"parent_index": 1389
+													"parent_index": 1382
 												},
 												"name": "abi",
 												"type_description": {
@@ -1924,14 +1961,16 @@
 												},
 												"overloaded_declarations": [],
 												"referenced_declaration": 0,
-												"is_pure": false
+												"is_pure": false,
+												"text": "abi"
 											},
 											"member_name": "encodeWithSelector",
 											"argument_types": [],
 											"type_description": {
 												"type_identifier": "t_magic_abi",
 												"type_string": "abi"
-											}
+											},
+											"text": "abi.encodeWithSelector"
 										},
 										"type_description": {
 											"type_identifier": "t_function_$_t_address$_t_address$_t_uint256$",
@@ -1940,7 +1979,7 @@
 									}
 								],
 								"expression": {
-									"id": 1386,
+									"id": 1379,
 									"node_type": 16,
 									"src": {
 										"line": 779,
@@ -1948,7 +1987,7 @@
 										"start": 26123,
 										"end": 26141,
 										"length": 19,
-										"parent_index": 1385
+										"parent_index": 1378
 									},
 									"name": "_callOptionalReturn",
 									"type_description": {
@@ -1957,7 +1996,8 @@
 									},
 									"overloaded_declarations": [],
 									"referenced_declaration": 0,
-									"is_pure": false
+									"is_pure": false,
+									"text": "_callOptionalReturn"
 								},
 								"type_description": {
 									"type_identifier": "t_function_$_t_address$_t_function_$_t_address$_t_address$_t_uint256$",
@@ -1973,7 +2013,7 @@
 					"modifiers": [],
 					"overrides": [],
 					"parameters": {
-						"id": 1356,
+						"id": 1349,
 						"node_type": 43,
 						"src": {
 							"line": 768,
@@ -1981,11 +2021,11 @@
 							"start": 25647,
 							"end": 25706,
 							"length": 60,
-							"parent_index": 1355
+							"parent_index": 1348
 						},
 						"parameters": [
 							{
-								"id": 1357,
+								"id": 1350,
 								"node_type": 44,
 								"src": {
 									"line": 768,
@@ -1993,12 +2033,12 @@
 									"start": 25647,
 									"end": 25658,
 									"length": 12,
-									"parent_index": 1356
+									"parent_index": 1349
 								},
-								"scope": 1355,
+								"scope": 1348,
 								"name": "token",
 								"type_name": {
-									"id": 1358,
+									"id": 1351,
 									"node_type": 69,
 									"src": {
 										"line": 768,
@@ -2006,10 +2046,10 @@
 										"start": 25647,
 										"end": 25652,
 										"length": 6,
-										"parent_index": 1357
+										"parent_index": 1350
 									},
 									"path_node": {
-										"id": 1359,
+										"id": 1352,
 										"name": "IERC20",
 										"node_type": 52,
 										"referenced_declaration": 347,
@@ -2019,7 +2059,7 @@
 											"start": 25647,
 											"end": 25652,
 											"length": 6,
-											"parent_index": 1358
+											"parent_index": 1351
 										},
 										"name_location": {
 											"line": 768,
@@ -2027,7 +2067,7 @@
 											"start": 25647,
 											"end": 25652,
 											"length": 6,
-											"parent_index": 1358
+											"parent_index": 1351
 										}
 									},
 									"referenced_declaration": 347,
@@ -2045,7 +2085,7 @@
 								}
 							},
 							{
-								"id": 1360,
+								"id": 1353,
 								"node_type": 44,
 								"src": {
 									"line": 769,
@@ -2053,12 +2093,12 @@
 									"start": 25669,
 									"end": 25683,
 									"length": 15,
-									"parent_index": 1356
+									"parent_index": 1349
 								},
-								"scope": 1355,
+								"scope": 1348,
 								"name": "spender",
 								"type_name": {
-									"id": 1361,
+									"id": 1354,
 									"node_type": 30,
 									"src": {
 										"line": 769,
@@ -2066,7 +2106,7 @@
 										"start": 25669,
 										"end": 25675,
 										"length": 7,
-										"parent_index": 1360
+										"parent_index": 1353
 									},
 									"name": "address",
 									"state_mutability": 4,
@@ -2085,7 +2125,7 @@
 								}
 							},
 							{
-								"id": 1362,
+								"id": 1355,
 								"node_type": 44,
 								"src": {
 									"line": 770,
@@ -2093,12 +2133,12 @@
 									"start": 25694,
 									"end": 25706,
 									"length": 13,
-									"parent_index": 1356
+									"parent_index": 1349
 								},
-								"scope": 1355,
+								"scope": 1348,
 								"name": "value",
 								"type_name": {
-									"id": 1363,
+									"id": 1356,
 									"node_type": 30,
 									"src": {
 										"line": 770,
@@ -2106,7 +2146,7 @@
 										"start": 25694,
 										"end": 25700,
 										"length": 7,
-										"parent_index": 1362
+										"parent_index": 1355
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -2140,7 +2180,7 @@
 						]
 					},
 					"return_parameters": {
-						"id": 1364,
+						"id": 1357,
 						"node_type": 43,
 						"src": {
 							"line": 767,
@@ -2148,21 +2188,22 @@
 							"start": 25617,
 							"end": 26219,
 							"length": 603,
-							"parent_index": 1355
+							"parent_index": 1348
 						},
 						"parameters": [],
 						"parameter_types": []
 					},
-					"signature_raw": "safeApprove(, address, uint256)",
-					"signature": "11e8fd6d",
-					"scope": 1300,
+					"signature_raw": "safeApprove(,address,uint256)",
+					"signature": "75a98b8a",
+					"scope": 1293,
 					"type_description": {
 						"type_identifier": "t_function_$_t_contract$_IERC20_$347$_t_address$_t_uint256$",
 						"type_string": "function(contract IERC20,address,uint256)"
-					}
+					},
+					"text": "functionsafeApprove(IERC20token,addressspender,uint256value)internal{require((value==0)||(token.allowance(address(this),spender)==0),\"SafeERC20: approve from non-zero to non-zero allowance\");_callOptionalReturn(token,abi.encodeWithSelector(token.approve.selector,spender,value));}"
 				},
 				{
-					"id": 1397,
+					"id": 1390,
 					"name": "safeIncreaseAllowance",
 					"node_type": 42,
 					"kind": 41,
@@ -2172,7 +2213,7 @@
 						"start": 26226,
 						"end": 26535,
 						"length": 310,
-						"parent_index": 1300
+						"parent_index": 1293
 					},
 					"name_location": {
 						"line": 782,
@@ -2180,10 +2221,10 @@
 						"start": 26235,
 						"end": 26255,
 						"length": 21,
-						"parent_index": 1397
+						"parent_index": 1390
 					},
 					"body": {
-						"id": 1407,
+						"id": 1400,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -2192,12 +2233,12 @@
 							"start": 26342,
 							"end": 26535,
 							"length": 194,
-							"parent_index": 1397
+							"parent_index": 1390
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 1408,
+								"id": 1401,
 								"node_type": 44,
 								"src": {
 									"line": 787,
@@ -2205,25 +2246,25 @@
 									"start": 26352,
 									"end": 26422,
 									"length": 71,
-									"parent_index": 1407
+									"parent_index": 1400
 								},
 								"assignments": [
-									1409
+									1402
 								],
 								"declarations": [
 									{
-										"id": 1409,
+										"id": 1402,
 										"state_mutability": 1,
 										"name": "newAllowance",
 										"node_type": 44,
-										"scope": 1407,
+										"scope": 1400,
 										"src": {
 											"line": 787,
 											"column": 8,
 											"start": 26352,
 											"end": 26371,
 											"length": 20,
-											"parent_index": 1408
+											"parent_index": 1401
 										},
 										"name_location": {
 											"line": 787,
@@ -2231,12 +2272,12 @@
 											"start": 26360,
 											"end": 26371,
 											"length": 12,
-											"parent_index": 1409
+											"parent_index": 1402
 										},
 										"is_state_variable": false,
 										"storage_location": 1,
 										"type_name": {
-											"id": 1410,
+											"id": 1403,
 											"node_type": 30,
 											"src": {
 												"line": 787,
@@ -2244,7 +2285,7 @@
 												"start": 26352,
 												"end": 26358,
 												"length": 7,
-												"parent_index": 1409
+												"parent_index": 1402
 											},
 											"name": "uint256",
 											"referenced_declaration": 0,
@@ -2257,7 +2298,7 @@
 									}
 								],
 								"initial_value": {
-									"id": 1411,
+									"id": 1404,
 									"is_constant": false,
 									"is_pure": false,
 									"node_type": 19,
@@ -2267,11 +2308,11 @@
 										"start": 26375,
 										"end": 26421,
 										"length": 47,
-										"parent_index": 1408
+										"parent_index": 1401
 									},
 									"operator": 1,
 									"left_expression": {
-										"id": 1412,
+										"id": 1405,
 										"node_type": 24,
 										"kind": 24,
 										"src": {
@@ -2280,7 +2321,7 @@
 											"start": 26375,
 											"end": 26413,
 											"length": 39,
-											"parent_index": 1408
+											"parent_index": 1401
 										},
 										"argument_types": [
 											{
@@ -2294,7 +2335,7 @@
 										],
 										"arguments": [
 											{
-												"id": 1415,
+												"id": 1408,
 												"node_type": 24,
 												"kind": 24,
 												"src": {
@@ -2303,17 +2344,17 @@
 													"start": 26391,
 													"end": 26403,
 													"length": 13,
-													"parent_index": 1412
+													"parent_index": 1405
 												},
 												"argument_types": [
 													{
-														"type_identifier": "t_contract$_SafeERC20_$1299",
+														"type_identifier": "t_contract$_SafeERC20_$1292",
 														"type_string": "contract SafeERC20"
 													}
 												],
 												"arguments": [
 													{
-														"id": 1418,
+														"id": 1411,
 														"node_type": 16,
 														"src": {
 															"line": 787,
@@ -2321,20 +2362,21 @@
 															"start": 26399,
 															"end": 26402,
 															"length": 4,
-															"parent_index": 1415
+															"parent_index": 1408
 														},
 														"name": "this",
 														"type_description": {
-															"type_identifier": "t_contract$_SafeERC20_$1299",
+															"type_identifier": "t_contract$_SafeERC20_$1292",
 															"type_string": "contract SafeERC20"
 														},
 														"overloaded_declarations": [],
 														"referenced_declaration": 0,
-														"is_pure": false
+														"is_pure": false,
+														"text": "this"
 													}
 												],
 												"expression": {
-													"id": 1416,
+													"id": 1409,
 													"node_type": 16,
 													"src": {
 														"line": 787,
@@ -2342,11 +2384,11 @@
 														"start": 26391,
 														"end": 26397,
 														"length": 7,
-														"parent_index": 1415
+														"parent_index": 1408
 													},
 													"name": "address",
 													"type_name": {
-														"id": 1417,
+														"id": 1410,
 														"node_type": 30,
 														"src": {
 															"line": 787,
@@ -2354,7 +2396,7 @@
 															"start": 26391,
 															"end": 26397,
 															"length": 7,
-															"parent_index": 1416
+															"parent_index": 1409
 														},
 														"name": "address",
 														"state_mutability": 4,
@@ -2376,7 +2418,8 @@
 															"type_identifier": "t_address",
 															"type_string": "address"
 														}
-													]
+													],
+													"text": "address"
 												},
 												"type_description": {
 													"type_identifier": "t_function_$_t_address$",
@@ -2384,7 +2427,7 @@
 												}
 											},
 											{
-												"id": 1419,
+												"id": 1412,
 												"node_type": 16,
 												"src": {
 													"line": 787,
@@ -2392,7 +2435,7 @@
 													"start": 26406,
 													"end": 26412,
 													"length": 7,
-													"parent_index": 1412
+													"parent_index": 1405
 												},
 												"name": "spender",
 												"type_description": {
@@ -2400,18 +2443,19 @@
 													"type_string": "address"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 1419,
+												"referenced_declaration": 1412,
 												"is_pure": false,
 												"argument_types": [
 													{
 														"type_identifier": "t_function_$_t_address$",
 														"type_string": "function(address)"
 													}
-												]
+												],
+												"text": "spender"
 											}
 										],
 										"expression": {
-											"id": 1413,
+											"id": 1406,
 											"is_constant": false,
 											"is_l_value": false,
 											"is_pure": false,
@@ -2423,7 +2467,7 @@
 												"start": 26375,
 												"end": 26389,
 												"length": 15,
-												"parent_index": 1412
+												"parent_index": 1405
 											},
 											"member_location": {
 												"line": 787,
@@ -2431,10 +2475,10 @@
 												"start": 26381,
 												"end": 26389,
 												"length": 9,
-												"parent_index": 1413
+												"parent_index": 1406
 											},
 											"expression": {
-												"id": 1414,
+												"id": 1407,
 												"node_type": 16,
 												"src": {
 													"line": 787,
@@ -2442,7 +2486,7 @@
 													"start": 26375,
 													"end": 26379,
 													"length": 5,
-													"parent_index": 1413
+													"parent_index": 1406
 												},
 												"name": "token",
 												"type_description": {
@@ -2450,15 +2494,17 @@
 													"type_string": "contract IERC20"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 1414,
-												"is_pure": false
+												"referenced_declaration": 1407,
+												"is_pure": false,
+												"text": "token"
 											},
 											"member_name": "allowance",
 											"argument_types": [],
 											"type_description": {
 												"type_identifier": "t_contract$_IERC20_$347",
 												"type_string": "contract IERC20"
-											}
+											},
+											"text": "token.allowance"
 										},
 										"type_description": {
 											"type_identifier": "t_function_$_t_function_$_t_address$_t_address$",
@@ -2466,7 +2512,7 @@
 										}
 									},
 									"right_expression": {
-										"id": 1420,
+										"id": 1413,
 										"node_type": 16,
 										"src": {
 											"line": 787,
@@ -2474,7 +2520,7 @@
 											"start": 26417,
 											"end": 26421,
 											"length": 5,
-											"parent_index": 1411
+											"parent_index": 1404
 										},
 										"name": "value",
 										"type_description": {
@@ -2482,8 +2528,9 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 1420,
-										"is_pure": false
+										"referenced_declaration": 1413,
+										"is_pure": false,
+										"text": "value"
 									},
 									"type_description": {
 										"type_identifier": "t_function_$_t_function_$_t_address$_t_address$",
@@ -2492,7 +2539,7 @@
 								}
 							},
 							{
-								"id": 1421,
+								"id": 1414,
 								"node_type": 24,
 								"kind": 24,
 								"src": {
@@ -2501,7 +2548,7 @@
 									"start": 26432,
 									"end": 26528,
 									"length": 97,
-									"parent_index": 1407
+									"parent_index": 1400
 								},
 								"argument_types": [
 									{
@@ -2515,7 +2562,7 @@
 								],
 								"arguments": [
 									{
-										"id": 1423,
+										"id": 1416,
 										"node_type": 16,
 										"src": {
 											"line": 788,
@@ -2523,7 +2570,7 @@
 											"start": 26452,
 											"end": 26456,
 											"length": 5,
-											"parent_index": 1421
+											"parent_index": 1414
 										},
 										"name": "token",
 										"type_description": {
@@ -2531,11 +2578,12 @@
 											"type_string": "contract IERC20"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 1423,
-										"is_pure": false
+										"referenced_declaration": 1416,
+										"is_pure": false,
+										"text": "token"
 									},
 									{
-										"id": 1424,
+										"id": 1417,
 										"node_type": 24,
 										"kind": 24,
 										"src": {
@@ -2544,7 +2592,7 @@
 											"start": 26459,
 											"end": 26527,
 											"length": 69,
-											"parent_index": 1421
+											"parent_index": 1414
 										},
 										"argument_types": [
 											{
@@ -2562,7 +2610,7 @@
 										],
 										"arguments": [
 											{
-												"id": 1427,
+												"id": 1420,
 												"is_constant": false,
 												"is_l_value": false,
 												"is_pure": false,
@@ -2574,7 +2622,7 @@
 													"start": 26482,
 													"end": 26503,
 													"length": 22,
-													"parent_index": 1424
+													"parent_index": 1417
 												},
 												"member_location": {
 													"line": 788,
@@ -2582,10 +2630,10 @@
 													"start": 26496,
 													"end": 26503,
 													"length": 8,
-													"parent_index": 1427
+													"parent_index": 1420
 												},
 												"expression": {
-													"id": 1428,
+													"id": 1421,
 													"is_constant": false,
 													"is_l_value": false,
 													"is_pure": false,
@@ -2597,7 +2645,7 @@
 														"start": 26482,
 														"end": 26494,
 														"length": 13,
-														"parent_index": 1427
+														"parent_index": 1420
 													},
 													"member_location": {
 														"line": 788,
@@ -2605,10 +2653,10 @@
 														"start": 26488,
 														"end": 26494,
 														"length": 7,
-														"parent_index": 1428
+														"parent_index": 1421
 													},
 													"expression": {
-														"id": 1429,
+														"id": 1422,
 														"node_type": 16,
 														"src": {
 															"line": 788,
@@ -2616,7 +2664,7 @@
 															"start": 26482,
 															"end": 26486,
 															"length": 5,
-															"parent_index": 1428
+															"parent_index": 1421
 														},
 														"name": "token",
 														"type_description": {
@@ -2624,25 +2672,28 @@
 															"type_string": "contract IERC20"
 														},
 														"overloaded_declarations": [],
-														"referenced_declaration": 1429,
-														"is_pure": false
+														"referenced_declaration": 1422,
+														"is_pure": false,
+														"text": "token"
 													},
 													"member_name": "approve",
 													"argument_types": [],
 													"type_description": {
 														"type_identifier": "t_contract$_IERC20_$347",
 														"type_string": "contract IERC20"
-													}
+													},
+													"text": "token.approve"
 												},
 												"member_name": "selector",
 												"argument_types": [],
 												"type_description": {
 													"type_identifier": "t_contract$_IERC20_$347",
 													"type_string": "contract IERC20"
-												}
+												},
+												"text": "token.approve.selector"
 											},
 											{
-												"id": 1430,
+												"id": 1423,
 												"node_type": 16,
 												"src": {
 													"line": 788,
@@ -2650,7 +2701,7 @@
 													"start": 26506,
 													"end": 26512,
 													"length": 7,
-													"parent_index": 1424
+													"parent_index": 1417
 												},
 												"name": "spender",
 												"type_description": {
@@ -2658,17 +2709,18 @@
 													"type_string": "address"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 1430,
+												"referenced_declaration": 1423,
 												"is_pure": false,
 												"argument_types": [
 													{
 														"type_identifier": "t_contract$_IERC20_$347",
 														"type_string": "contract IERC20"
 													}
-												]
+												],
+												"text": "spender"
 											},
 											{
-												"id": 1431,
+												"id": 1424,
 												"node_type": 16,
 												"src": {
 													"line": 788,
@@ -2676,7 +2728,7 @@
 													"start": 26515,
 													"end": 26526,
 													"length": 12,
-													"parent_index": 1424
+													"parent_index": 1417
 												},
 												"name": "newAllowance",
 												"type_description": {
@@ -2684,7 +2736,7 @@
 													"type_string": "uint256"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 1408,
+												"referenced_declaration": 1401,
 												"is_pure": false,
 												"argument_types": [
 													{
@@ -2695,11 +2747,12 @@
 														"type_identifier": "t_address",
 														"type_string": "address"
 													}
-												]
+												],
+												"text": "newAllowance"
 											}
 										],
 										"expression": {
-											"id": 1425,
+											"id": 1418,
 											"is_constant": false,
 											"is_l_value": false,
 											"is_pure": false,
@@ -2711,7 +2764,7 @@
 												"start": 26459,
 												"end": 26480,
 												"length": 22,
-												"parent_index": 1424
+												"parent_index": 1417
 											},
 											"member_location": {
 												"line": 788,
@@ -2719,10 +2772,10 @@
 												"start": 26463,
 												"end": 26480,
 												"length": 18,
-												"parent_index": 1425
+												"parent_index": 1418
 											},
 											"expression": {
-												"id": 1426,
+												"id": 1419,
 												"node_type": 16,
 												"src": {
 													"line": 788,
@@ -2730,7 +2783,7 @@
 													"start": 26459,
 													"end": 26461,
 													"length": 3,
-													"parent_index": 1425
+													"parent_index": 1418
 												},
 												"name": "abi",
 												"type_description": {
@@ -2739,14 +2792,16 @@
 												},
 												"overloaded_declarations": [],
 												"referenced_declaration": 0,
-												"is_pure": false
+												"is_pure": false,
+												"text": "abi"
 											},
 											"member_name": "encodeWithSelector",
 											"argument_types": [],
 											"type_description": {
 												"type_identifier": "t_magic_abi",
 												"type_string": "abi"
-											}
+											},
+											"text": "abi.encodeWithSelector"
 										},
 										"type_description": {
 											"type_identifier": "t_function_$_t_address$_t_address$_t_uint256$",
@@ -2755,7 +2810,7 @@
 									}
 								],
 								"expression": {
-									"id": 1422,
+									"id": 1415,
 									"node_type": 16,
 									"src": {
 										"line": 788,
@@ -2763,7 +2818,7 @@
 										"start": 26432,
 										"end": 26450,
 										"length": 19,
-										"parent_index": 1421
+										"parent_index": 1414
 									},
 									"name": "_callOptionalReturn",
 									"type_description": {
@@ -2772,7 +2827,8 @@
 									},
 									"overloaded_declarations": [],
 									"referenced_declaration": 0,
-									"is_pure": false
+									"is_pure": false,
+									"text": "_callOptionalReturn"
 								},
 								"type_description": {
 									"type_identifier": "t_function_$_t_address$_t_function_$_t_address$_t_address$_t_uint256$",
@@ -2788,7 +2844,7 @@
 					"modifiers": [],
 					"overrides": [],
 					"parameters": {
-						"id": 1398,
+						"id": 1391,
 						"node_type": 43,
 						"src": {
 							"line": 783,
@@ -2796,11 +2852,11 @@
 							"start": 26266,
 							"end": 26325,
 							"length": 60,
-							"parent_index": 1397
+							"parent_index": 1390
 						},
 						"parameters": [
 							{
-								"id": 1399,
+								"id": 1392,
 								"node_type": 44,
 								"src": {
 									"line": 783,
@@ -2808,12 +2864,12 @@
 									"start": 26266,
 									"end": 26277,
 									"length": 12,
-									"parent_index": 1398
+									"parent_index": 1391
 								},
-								"scope": 1397,
+								"scope": 1390,
 								"name": "token",
 								"type_name": {
-									"id": 1400,
+									"id": 1393,
 									"node_type": 69,
 									"src": {
 										"line": 783,
@@ -2821,10 +2877,10 @@
 										"start": 26266,
 										"end": 26271,
 										"length": 6,
-										"parent_index": 1399
+										"parent_index": 1392
 									},
 									"path_node": {
-										"id": 1401,
+										"id": 1394,
 										"name": "IERC20",
 										"node_type": 52,
 										"referenced_declaration": 347,
@@ -2834,7 +2890,7 @@
 											"start": 26266,
 											"end": 26271,
 											"length": 6,
-											"parent_index": 1400
+											"parent_index": 1393
 										},
 										"name_location": {
 											"line": 783,
@@ -2842,7 +2898,7 @@
 											"start": 26266,
 											"end": 26271,
 											"length": 6,
-											"parent_index": 1400
+											"parent_index": 1393
 										}
 									},
 									"referenced_declaration": 347,
@@ -2860,7 +2916,7 @@
 								}
 							},
 							{
-								"id": 1402,
+								"id": 1395,
 								"node_type": 44,
 								"src": {
 									"line": 784,
@@ -2868,12 +2924,12 @@
 									"start": 26288,
 									"end": 26302,
 									"length": 15,
-									"parent_index": 1398
+									"parent_index": 1391
 								},
-								"scope": 1397,
+								"scope": 1390,
 								"name": "spender",
 								"type_name": {
-									"id": 1403,
+									"id": 1396,
 									"node_type": 30,
 									"src": {
 										"line": 784,
@@ -2881,7 +2937,7 @@
 										"start": 26288,
 										"end": 26294,
 										"length": 7,
-										"parent_index": 1402
+										"parent_index": 1395
 									},
 									"name": "address",
 									"state_mutability": 4,
@@ -2900,7 +2956,7 @@
 								}
 							},
 							{
-								"id": 1404,
+								"id": 1397,
 								"node_type": 44,
 								"src": {
 									"line": 785,
@@ -2908,12 +2964,12 @@
 									"start": 26313,
 									"end": 26325,
 									"length": 13,
-									"parent_index": 1398
+									"parent_index": 1391
 								},
-								"scope": 1397,
+								"scope": 1390,
 								"name": "value",
 								"type_name": {
-									"id": 1405,
+									"id": 1398,
 									"node_type": 30,
 									"src": {
 										"line": 785,
@@ -2921,7 +2977,7 @@
 										"start": 26313,
 										"end": 26319,
 										"length": 7,
-										"parent_index": 1404
+										"parent_index": 1397
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -2955,7 +3011,7 @@
 						]
 					},
 					"return_parameters": {
-						"id": 1406,
+						"id": 1399,
 						"node_type": 43,
 						"src": {
 							"line": 782,
@@ -2963,21 +3019,22 @@
 							"start": 26226,
 							"end": 26535,
 							"length": 310,
-							"parent_index": 1397
+							"parent_index": 1390
 						},
 						"parameters": [],
 						"parameter_types": []
 					},
-					"signature_raw": "safeIncreaseAllowance(, address, uint256)",
-					"signature": "d5ee8724",
-					"scope": 1300,
+					"signature_raw": "safeIncreaseAllowance(,address,uint256)",
+					"signature": "8d3df938",
+					"scope": 1293,
 					"type_description": {
 						"type_identifier": "t_function_$_t_contract$_IERC20_$347$_t_address$_t_uint256$",
 						"type_string": "function(contract IERC20,address,uint256)"
-					}
+					},
+					"text": "functionsafeIncreaseAllowance(IERC20token,addressspender,uint256value)internal{uint256newAllowance=token.allowance(address(this),spender)+value;_callOptionalReturn(token,abi.encodeWithSelector(token.approve.selector,spender,newAllowance));}"
 				},
 				{
-					"id": 1433,
+					"id": 1426,
 					"name": "safeDecreaseAllowance",
 					"node_type": 42,
 					"kind": 41,
@@ -2987,7 +3044,7 @@
 						"start": 26542,
 						"end": 27027,
 						"length": 486,
-						"parent_index": 1300
+						"parent_index": 1293
 					},
 					"name_location": {
 						"line": 791,
@@ -2995,10 +3052,10 @@
 						"start": 26551,
 						"end": 26571,
 						"length": 21,
-						"parent_index": 1433
+						"parent_index": 1426
 					},
 					"body": {
-						"id": 1443,
+						"id": 1436,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -3007,12 +3064,12 @@
 							"start": 26658,
 							"end": 27027,
 							"length": 370,
-							"parent_index": 1433
+							"parent_index": 1426
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 1444,
+								"id": 1437,
 								"node_type": 59,
 								"kind": 0,
 								"src": {
@@ -3021,12 +3078,12 @@
 									"start": 26668,
 									"end": 27021,
 									"length": 354,
-									"parent_index": 1300
+									"parent_index": 1293
 								},
 								"implemented": false,
 								"statements": [
 									{
-										"id": 1445,
+										"id": 1438,
 										"node_type": 44,
 										"src": {
 											"line": 797,
@@ -3034,25 +3091,25 @@
 											"start": 26692,
 											"end": 26754,
 											"length": 63,
-											"parent_index": 1444
+											"parent_index": 1437
 										},
 										"assignments": [
-											1446
+											1439
 										],
 										"declarations": [
 											{
-												"id": 1446,
+												"id": 1439,
 												"state_mutability": 1,
 												"name": "oldAllowance",
 												"node_type": 44,
-												"scope": 1444,
+												"scope": 1437,
 												"src": {
 													"line": 797,
 													"column": 12,
 													"start": 26692,
 													"end": 26711,
 													"length": 20,
-													"parent_index": 1445
+													"parent_index": 1438
 												},
 												"name_location": {
 													"line": 797,
@@ -3060,12 +3117,12 @@
 													"start": 26700,
 													"end": 26711,
 													"length": 12,
-													"parent_index": 1446
+													"parent_index": 1439
 												},
 												"is_state_variable": false,
 												"storage_location": 1,
 												"type_name": {
-													"id": 1447,
+													"id": 1440,
 													"node_type": 30,
 													"src": {
 														"line": 797,
@@ -3073,7 +3130,7 @@
 														"start": 26692,
 														"end": 26698,
 														"length": 7,
-														"parent_index": 1446
+														"parent_index": 1439
 													},
 													"name": "uint256",
 													"referenced_declaration": 0,
@@ -3086,7 +3143,7 @@
 											}
 										],
 										"initial_value": {
-											"id": 1448,
+											"id": 1441,
 											"node_type": 24,
 											"kind": 24,
 											"src": {
@@ -3095,7 +3152,7 @@
 												"start": 26715,
 												"end": 26753,
 												"length": 39,
-												"parent_index": 1445
+												"parent_index": 1438
 											},
 											"argument_types": [
 												{
@@ -3109,7 +3166,7 @@
 											],
 											"arguments": [
 												{
-													"id": 1451,
+													"id": 1444,
 													"node_type": 24,
 													"kind": 24,
 													"src": {
@@ -3118,17 +3175,17 @@
 														"start": 26731,
 														"end": 26743,
 														"length": 13,
-														"parent_index": 1448
+														"parent_index": 1441
 													},
 													"argument_types": [
 														{
-															"type_identifier": "t_contract$_SafeERC20_$1299",
+															"type_identifier": "t_contract$_SafeERC20_$1292",
 															"type_string": "contract SafeERC20"
 														}
 													],
 													"arguments": [
 														{
-															"id": 1454,
+															"id": 1447,
 															"node_type": 16,
 															"src": {
 																"line": 797,
@@ -3136,20 +3193,21 @@
 																"start": 26739,
 																"end": 26742,
 																"length": 4,
-																"parent_index": 1451
+																"parent_index": 1444
 															},
 															"name": "this",
 															"type_description": {
-																"type_identifier": "t_contract$_SafeERC20_$1299",
+																"type_identifier": "t_contract$_SafeERC20_$1292",
 																"type_string": "contract SafeERC20"
 															},
 															"overloaded_declarations": [],
 															"referenced_declaration": 0,
-															"is_pure": false
+															"is_pure": false,
+															"text": "this"
 														}
 													],
 													"expression": {
-														"id": 1452,
+														"id": 1445,
 														"node_type": 16,
 														"src": {
 															"line": 797,
@@ -3157,11 +3215,11 @@
 															"start": 26731,
 															"end": 26737,
 															"length": 7,
-															"parent_index": 1451
+															"parent_index": 1444
 														},
 														"name": "address",
 														"type_name": {
-															"id": 1453,
+															"id": 1446,
 															"node_type": 30,
 															"src": {
 																"line": 797,
@@ -3169,7 +3227,7 @@
 																"start": 26731,
 																"end": 26737,
 																"length": 7,
-																"parent_index": 1452
+																"parent_index": 1445
 															},
 															"name": "address",
 															"state_mutability": 4,
@@ -3191,7 +3249,8 @@
 																"type_identifier": "t_address",
 																"type_string": "address"
 															}
-														]
+														],
+														"text": "address"
 													},
 													"type_description": {
 														"type_identifier": "t_function_$_t_address$",
@@ -3199,7 +3258,7 @@
 													}
 												},
 												{
-													"id": 1455,
+													"id": 1448,
 													"node_type": 16,
 													"src": {
 														"line": 797,
@@ -3207,7 +3266,7 @@
 														"start": 26746,
 														"end": 26752,
 														"length": 7,
-														"parent_index": 1448
+														"parent_index": 1441
 													},
 													"name": "spender",
 													"type_description": {
@@ -3215,18 +3274,19 @@
 														"type_string": "address"
 													},
 													"overloaded_declarations": [],
-													"referenced_declaration": 1455,
+													"referenced_declaration": 1448,
 													"is_pure": false,
 													"argument_types": [
 														{
 															"type_identifier": "t_function_$_t_address$",
 															"type_string": "function(address)"
 														}
-													]
+													],
+													"text": "spender"
 												}
 											],
 											"expression": {
-												"id": 1449,
+												"id": 1442,
 												"is_constant": false,
 												"is_l_value": false,
 												"is_pure": false,
@@ -3238,7 +3298,7 @@
 													"start": 26715,
 													"end": 26729,
 													"length": 15,
-													"parent_index": 1448
+													"parent_index": 1441
 												},
 												"member_location": {
 													"line": 797,
@@ -3246,10 +3306,10 @@
 													"start": 26721,
 													"end": 26729,
 													"length": 9,
-													"parent_index": 1449
+													"parent_index": 1442
 												},
 												"expression": {
-													"id": 1450,
+													"id": 1443,
 													"node_type": 16,
 													"src": {
 														"line": 797,
@@ -3257,7 +3317,7 @@
 														"start": 26715,
 														"end": 26719,
 														"length": 5,
-														"parent_index": 1449
+														"parent_index": 1442
 													},
 													"name": "token",
 													"type_description": {
@@ -3265,15 +3325,17 @@
 														"type_string": "contract IERC20"
 													},
 													"overloaded_declarations": [],
-													"referenced_declaration": 1450,
-													"is_pure": false
+													"referenced_declaration": 1443,
+													"is_pure": false,
+													"text": "token"
 												},
 												"member_name": "allowance",
 												"argument_types": [],
 												"type_description": {
 													"type_identifier": "t_contract$_IERC20_$347",
 													"type_string": "contract IERC20"
-												}
+												},
+												"text": "token.allowance"
 											},
 											"type_description": {
 												"type_identifier": "t_function_$_t_function_$_t_address$_t_address$",
@@ -3282,7 +3344,7 @@
 										}
 									},
 									{
-										"id": 1456,
+										"id": 1449,
 										"node_type": 24,
 										"kind": 24,
 										"src": {
@@ -3291,7 +3353,7 @@
 											"start": 26768,
 											"end": 26842,
 											"length": 75,
-											"parent_index": 1444
+											"parent_index": 1437
 										},
 										"argument_types": [
 											{
@@ -3305,7 +3367,7 @@
 										],
 										"arguments": [
 											{
-												"id": 1458,
+												"id": 1451,
 												"is_constant": false,
 												"is_pure": false,
 												"node_type": 19,
@@ -3315,11 +3377,11 @@
 													"start": 26776,
 													"end": 26796,
 													"length": 21,
-													"parent_index": 1456
+													"parent_index": 1449
 												},
 												"operator": 8,
 												"left_expression": {
-													"id": 1459,
+													"id": 1452,
 													"node_type": 16,
 													"src": {
 														"line": 798,
@@ -3327,7 +3389,7 @@
 														"start": 26776,
 														"end": 26787,
 														"length": 12,
-														"parent_index": 1458
+														"parent_index": 1451
 													},
 													"name": "oldAllowance",
 													"type_description": {
@@ -3335,11 +3397,12 @@
 														"type_string": "uint256"
 													},
 													"overloaded_declarations": [],
-													"referenced_declaration": 1445,
-													"is_pure": false
+													"referenced_declaration": 1438,
+													"is_pure": false,
+													"text": "oldAllowance"
 												},
 												"right_expression": {
-													"id": 1460,
+													"id": 1453,
 													"node_type": 16,
 													"src": {
 														"line": 798,
@@ -3347,7 +3410,7 @@
 														"start": 26792,
 														"end": 26796,
 														"length": 5,
-														"parent_index": 1458
+														"parent_index": 1451
 													},
 													"name": "value",
 													"type_description": {
@@ -3355,8 +3418,9 @@
 														"type_string": "uint256"
 													},
 													"overloaded_declarations": [],
-													"referenced_declaration": 1460,
-													"is_pure": false
+													"referenced_declaration": 1453,
+													"is_pure": false,
+													"text": "value"
 												},
 												"type_description": {
 													"type_identifier": "t_bool",
@@ -3364,7 +3428,7 @@
 												}
 											},
 											{
-												"id": 1461,
+												"id": 1454,
 												"node_type": 17,
 												"kind": 50,
 												"value": "SafeERC20: decreased allowance below zero",
@@ -3375,7 +3439,7 @@
 													"start": 26799,
 													"end": 26841,
 													"length": 43,
-													"parent_index": 1456
+													"parent_index": 1449
 												},
 												"type_description": {
 													"type_identifier": "t_string_literal",
@@ -3389,11 +3453,12 @@
 														"type_identifier": "t_bool",
 														"type_string": "bool"
 													}
-												]
+												],
+												"text": "\"SafeERC20: decreased allowance below zero\""
 											}
 										],
 										"expression": {
-											"id": 1457,
+											"id": 1450,
 											"node_type": 16,
 											"src": {
 												"line": 798,
@@ -3401,7 +3466,7 @@
 												"start": 26768,
 												"end": 26774,
 												"length": 7,
-												"parent_index": 1456
+												"parent_index": 1449
 											},
 											"name": "require",
 											"type_description": {
@@ -3410,7 +3475,8 @@
 											},
 											"overloaded_declarations": [],
 											"referenced_declaration": 0,
-											"is_pure": true
+											"is_pure": true,
+											"text": "require"
 										},
 										"type_description": {
 											"type_identifier": "t_function_$_t_bool$_t_string_literal$",
@@ -3418,7 +3484,7 @@
 										}
 									},
 									{
-										"id": 1462,
+										"id": 1455,
 										"node_type": 44,
 										"src": {
 											"line": 799,
@@ -3426,25 +3492,25 @@
 											"start": 26857,
 											"end": 26900,
 											"length": 44,
-											"parent_index": 1444
+											"parent_index": 1437
 										},
 										"assignments": [
-											1463
+											1456
 										],
 										"declarations": [
 											{
-												"id": 1463,
+												"id": 1456,
 												"state_mutability": 1,
 												"name": "newAllowance",
 												"node_type": 44,
-												"scope": 1444,
+												"scope": 1437,
 												"src": {
 													"line": 799,
 													"column": 12,
 													"start": 26857,
 													"end": 26876,
 													"length": 20,
-													"parent_index": 1462
+													"parent_index": 1455
 												},
 												"name_location": {
 													"line": 799,
@@ -3452,12 +3518,12 @@
 													"start": 26865,
 													"end": 26876,
 													"length": 12,
-													"parent_index": 1463
+													"parent_index": 1456
 												},
 												"is_state_variable": false,
 												"storage_location": 1,
 												"type_name": {
-													"id": 1464,
+													"id": 1457,
 													"node_type": 30,
 													"src": {
 														"line": 799,
@@ -3465,7 +3531,7 @@
 														"start": 26857,
 														"end": 26863,
 														"length": 7,
-														"parent_index": 1463
+														"parent_index": 1456
 													},
 													"name": "uint256",
 													"referenced_declaration": 0,
@@ -3478,7 +3544,7 @@
 											}
 										],
 										"initial_value": {
-											"id": 1465,
+											"id": 1458,
 											"is_constant": false,
 											"is_pure": false,
 											"node_type": 19,
@@ -3488,11 +3554,11 @@
 												"start": 26880,
 												"end": 26899,
 												"length": 20,
-												"parent_index": 1462
+												"parent_index": 1455
 											},
 											"operator": 2,
 											"left_expression": {
-												"id": 1466,
+												"id": 1459,
 												"node_type": 16,
 												"src": {
 													"line": 799,
@@ -3500,7 +3566,7 @@
 													"start": 26880,
 													"end": 26891,
 													"length": 12,
-													"parent_index": 1465
+													"parent_index": 1458
 												},
 												"name": "oldAllowance",
 												"type_description": {
@@ -3508,11 +3574,12 @@
 													"type_string": "uint256"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 1445,
-												"is_pure": false
+												"referenced_declaration": 1438,
+												"is_pure": false,
+												"text": "oldAllowance"
 											},
 											"right_expression": {
-												"id": 1467,
+												"id": 1460,
 												"node_type": 16,
 												"src": {
 													"line": 799,
@@ -3520,7 +3587,7 @@
 													"start": 26895,
 													"end": 26899,
 													"length": 5,
-													"parent_index": 1465
+													"parent_index": 1458
 												},
 												"name": "value",
 												"type_description": {
@@ -3528,8 +3595,9 @@
 													"type_string": "uint256"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 1467,
-												"is_pure": false
+												"referenced_declaration": 1460,
+												"is_pure": false,
+												"text": "value"
 											},
 											"type_description": {
 												"type_identifier": "t_uint256",
@@ -3538,7 +3606,7 @@
 										}
 									},
 									{
-										"id": 1468,
+										"id": 1461,
 										"node_type": 24,
 										"kind": 24,
 										"src": {
@@ -3547,7 +3615,7 @@
 											"start": 26914,
 											"end": 27010,
 											"length": 97,
-											"parent_index": 1444
+											"parent_index": 1437
 										},
 										"argument_types": [
 											{
@@ -3561,7 +3629,7 @@
 										],
 										"arguments": [
 											{
-												"id": 1470,
+												"id": 1463,
 												"node_type": 16,
 												"src": {
 													"line": 800,
@@ -3569,7 +3637,7 @@
 													"start": 26934,
 													"end": 26938,
 													"length": 5,
-													"parent_index": 1468
+													"parent_index": 1461
 												},
 												"name": "token",
 												"type_description": {
@@ -3577,11 +3645,12 @@
 													"type_string": "contract IERC20"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 1470,
-												"is_pure": false
+												"referenced_declaration": 1463,
+												"is_pure": false,
+												"text": "token"
 											},
 											{
-												"id": 1471,
+												"id": 1464,
 												"node_type": 24,
 												"kind": 24,
 												"src": {
@@ -3590,7 +3659,7 @@
 													"start": 26941,
 													"end": 27009,
 													"length": 69,
-													"parent_index": 1468
+													"parent_index": 1461
 												},
 												"argument_types": [
 													{
@@ -3608,7 +3677,7 @@
 												],
 												"arguments": [
 													{
-														"id": 1474,
+														"id": 1467,
 														"is_constant": false,
 														"is_l_value": false,
 														"is_pure": false,
@@ -3620,7 +3689,7 @@
 															"start": 26964,
 															"end": 26985,
 															"length": 22,
-															"parent_index": 1471
+															"parent_index": 1464
 														},
 														"member_location": {
 															"line": 800,
@@ -3628,10 +3697,10 @@
 															"start": 26978,
 															"end": 26985,
 															"length": 8,
-															"parent_index": 1474
+															"parent_index": 1467
 														},
 														"expression": {
-															"id": 1475,
+															"id": 1468,
 															"is_constant": false,
 															"is_l_value": false,
 															"is_pure": false,
@@ -3643,7 +3712,7 @@
 																"start": 26964,
 																"end": 26976,
 																"length": 13,
-																"parent_index": 1474
+																"parent_index": 1467
 															},
 															"member_location": {
 																"line": 800,
@@ -3651,10 +3720,10 @@
 																"start": 26970,
 																"end": 26976,
 																"length": 7,
-																"parent_index": 1475
+																"parent_index": 1468
 															},
 															"expression": {
-																"id": 1476,
+																"id": 1469,
 																"node_type": 16,
 																"src": {
 																	"line": 800,
@@ -3662,7 +3731,7 @@
 																	"start": 26964,
 																	"end": 26968,
 																	"length": 5,
-																	"parent_index": 1475
+																	"parent_index": 1468
 																},
 																"name": "token",
 																"type_description": {
@@ -3670,25 +3739,28 @@
 																	"type_string": "contract IERC20"
 																},
 																"overloaded_declarations": [],
-																"referenced_declaration": 1476,
-																"is_pure": false
+																"referenced_declaration": 1469,
+																"is_pure": false,
+																"text": "token"
 															},
 															"member_name": "approve",
 															"argument_types": [],
 															"type_description": {
 																"type_identifier": "t_contract$_IERC20_$347",
 																"type_string": "contract IERC20"
-															}
+															},
+															"text": "token.approve"
 														},
 														"member_name": "selector",
 														"argument_types": [],
 														"type_description": {
 															"type_identifier": "t_contract$_IERC20_$347",
 															"type_string": "contract IERC20"
-														}
+														},
+														"text": "token.approve.selector"
 													},
 													{
-														"id": 1477,
+														"id": 1470,
 														"node_type": 16,
 														"src": {
 															"line": 800,
@@ -3696,7 +3768,7 @@
 															"start": 26988,
 															"end": 26994,
 															"length": 7,
-															"parent_index": 1471
+															"parent_index": 1464
 														},
 														"name": "spender",
 														"type_description": {
@@ -3704,17 +3776,18 @@
 															"type_string": "address"
 														},
 														"overloaded_declarations": [],
-														"referenced_declaration": 1477,
+														"referenced_declaration": 1470,
 														"is_pure": false,
 														"argument_types": [
 															{
 																"type_identifier": "t_contract$_IERC20_$347",
 																"type_string": "contract IERC20"
 															}
-														]
+														],
+														"text": "spender"
 													},
 													{
-														"id": 1478,
+														"id": 1471,
 														"node_type": 16,
 														"src": {
 															"line": 800,
@@ -3722,7 +3795,7 @@
 															"start": 26997,
 															"end": 27008,
 															"length": 12,
-															"parent_index": 1471
+															"parent_index": 1464
 														},
 														"name": "newAllowance",
 														"type_description": {
@@ -3730,7 +3803,7 @@
 															"type_string": "uint256"
 														},
 														"overloaded_declarations": [],
-														"referenced_declaration": 1462,
+														"referenced_declaration": 1455,
 														"is_pure": false,
 														"argument_types": [
 															{
@@ -3741,11 +3814,12 @@
 																"type_identifier": "t_address",
 																"type_string": "address"
 															}
-														]
+														],
+														"text": "newAllowance"
 													}
 												],
 												"expression": {
-													"id": 1472,
+													"id": 1465,
 													"is_constant": false,
 													"is_l_value": false,
 													"is_pure": false,
@@ -3757,7 +3831,7 @@
 														"start": 26941,
 														"end": 26962,
 														"length": 22,
-														"parent_index": 1471
+														"parent_index": 1464
 													},
 													"member_location": {
 														"line": 800,
@@ -3765,10 +3839,10 @@
 														"start": 26945,
 														"end": 26962,
 														"length": 18,
-														"parent_index": 1472
+														"parent_index": 1465
 													},
 													"expression": {
-														"id": 1473,
+														"id": 1466,
 														"node_type": 16,
 														"src": {
 															"line": 800,
@@ -3776,7 +3850,7 @@
 															"start": 26941,
 															"end": 26943,
 															"length": 3,
-															"parent_index": 1472
+															"parent_index": 1465
 														},
 														"name": "abi",
 														"type_description": {
@@ -3785,14 +3859,16 @@
 														},
 														"overloaded_declarations": [],
 														"referenced_declaration": 0,
-														"is_pure": false
+														"is_pure": false,
+														"text": "abi"
 													},
 													"member_name": "encodeWithSelector",
 													"argument_types": [],
 													"type_description": {
 														"type_identifier": "t_magic_abi",
 														"type_string": "abi"
-													}
+													},
+													"text": "abi.encodeWithSelector"
 												},
 												"type_description": {
 													"type_identifier": "t_function_$_t_address$_t_address$_t_uint256$",
@@ -3801,7 +3877,7 @@
 											}
 										],
 										"expression": {
-											"id": 1469,
+											"id": 1462,
 											"node_type": 16,
 											"src": {
 												"line": 800,
@@ -3809,7 +3885,7 @@
 												"start": 26914,
 												"end": 26932,
 												"length": 19,
-												"parent_index": 1468
+												"parent_index": 1461
 											},
 											"name": "_callOptionalReturn",
 											"type_description": {
@@ -3818,7 +3894,8 @@
 											},
 											"overloaded_declarations": [],
 											"referenced_declaration": 0,
-											"is_pure": false
+											"is_pure": false,
+											"text": "_callOptionalReturn"
 										},
 										"type_description": {
 											"type_identifier": "t_function_$_t_address$_t_function_$_t_address$_t_address$_t_uint256$",
@@ -3836,7 +3913,7 @@
 					"modifiers": [],
 					"overrides": [],
 					"parameters": {
-						"id": 1434,
+						"id": 1427,
 						"node_type": 43,
 						"src": {
 							"line": 792,
@@ -3844,11 +3921,11 @@
 							"start": 26582,
 							"end": 26641,
 							"length": 60,
-							"parent_index": 1433
+							"parent_index": 1426
 						},
 						"parameters": [
 							{
-								"id": 1435,
+								"id": 1428,
 								"node_type": 44,
 								"src": {
 									"line": 792,
@@ -3856,12 +3933,12 @@
 									"start": 26582,
 									"end": 26593,
 									"length": 12,
-									"parent_index": 1434
+									"parent_index": 1427
 								},
-								"scope": 1433,
+								"scope": 1426,
 								"name": "token",
 								"type_name": {
-									"id": 1436,
+									"id": 1429,
 									"node_type": 69,
 									"src": {
 										"line": 792,
@@ -3869,10 +3946,10 @@
 										"start": 26582,
 										"end": 26587,
 										"length": 6,
-										"parent_index": 1435
+										"parent_index": 1428
 									},
 									"path_node": {
-										"id": 1437,
+										"id": 1430,
 										"name": "IERC20",
 										"node_type": 52,
 										"referenced_declaration": 347,
@@ -3882,7 +3959,7 @@
 											"start": 26582,
 											"end": 26587,
 											"length": 6,
-											"parent_index": 1436
+											"parent_index": 1429
 										},
 										"name_location": {
 											"line": 792,
@@ -3890,7 +3967,7 @@
 											"start": 26582,
 											"end": 26587,
 											"length": 6,
-											"parent_index": 1436
+											"parent_index": 1429
 										}
 									},
 									"referenced_declaration": 347,
@@ -3908,7 +3985,7 @@
 								}
 							},
 							{
-								"id": 1438,
+								"id": 1431,
 								"node_type": 44,
 								"src": {
 									"line": 793,
@@ -3916,12 +3993,12 @@
 									"start": 26604,
 									"end": 26618,
 									"length": 15,
-									"parent_index": 1434
+									"parent_index": 1427
 								},
-								"scope": 1433,
+								"scope": 1426,
 								"name": "spender",
 								"type_name": {
-									"id": 1439,
+									"id": 1432,
 									"node_type": 30,
 									"src": {
 										"line": 793,
@@ -3929,7 +4006,7 @@
 										"start": 26604,
 										"end": 26610,
 										"length": 7,
-										"parent_index": 1438
+										"parent_index": 1431
 									},
 									"name": "address",
 									"state_mutability": 4,
@@ -3948,7 +4025,7 @@
 								}
 							},
 							{
-								"id": 1440,
+								"id": 1433,
 								"node_type": 44,
 								"src": {
 									"line": 794,
@@ -3956,12 +4033,12 @@
 									"start": 26629,
 									"end": 26641,
 									"length": 13,
-									"parent_index": 1434
+									"parent_index": 1427
 								},
-								"scope": 1433,
+								"scope": 1426,
 								"name": "value",
 								"type_name": {
-									"id": 1441,
+									"id": 1434,
 									"node_type": 30,
 									"src": {
 										"line": 794,
@@ -3969,7 +4046,7 @@
 										"start": 26629,
 										"end": 26635,
 										"length": 7,
-										"parent_index": 1440
+										"parent_index": 1433
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -4003,7 +4080,7 @@
 						]
 					},
 					"return_parameters": {
-						"id": 1442,
+						"id": 1435,
 						"node_type": 43,
 						"src": {
 							"line": 791,
@@ -4011,21 +4088,22 @@
 							"start": 26542,
 							"end": 27027,
 							"length": 486,
-							"parent_index": 1433
+							"parent_index": 1426
 						},
 						"parameters": [],
 						"parameter_types": []
 					},
-					"signature_raw": "safeDecreaseAllowance(, address, uint256)",
-					"signature": "dd6a69b1",
-					"scope": 1300,
+					"signature_raw": "safeDecreaseAllowance(,address,uint256)",
+					"signature": "d9cb6425",
+					"scope": 1293,
 					"type_description": {
 						"type_identifier": "t_function_$_t_contract$_IERC20_$347$_t_address$_t_uint256$",
 						"type_string": "function(contract IERC20,address,uint256)"
-					}
+					},
+					"text": "functionsafeDecreaseAllowance(IERC20token,addressspender,uint256value)internal{unchecked{uint256oldAllowance=token.allowance(address(this),spender);require(oldAllowance\u003e=value,\"SafeERC20: decreased allowance below zero\");uint256newAllowance=oldAllowance-value;_callOptionalReturn(token,abi.encodeWithSelector(token.approve.selector,spender,newAllowance));}}"
 				},
 				{
-					"id": 1480,
+					"id": 1473,
 					"name": "_callOptionalReturn",
 					"node_type": 42,
 					"kind": 41,
@@ -4035,7 +4113,7 @@
 						"start": 27411,
 						"end": 28116,
 						"length": 706,
-						"parent_index": 1300
+						"parent_index": 1293
 					},
 					"name_location": {
 						"line": 810,
@@ -4043,10 +4121,10 @@
 						"start": 27420,
 						"end": 27438,
 						"length": 19,
-						"parent_index": 1480
+						"parent_index": 1473
 					},
 					"body": {
-						"id": 1488,
+						"id": 1481,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -4055,12 +4133,12 @@
 							"start": 27481,
 							"end": 28116,
 							"length": 636,
-							"parent_index": 1480
+							"parent_index": 1473
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 1489,
+								"id": 1482,
 								"node_type": 44,
 								"src": {
 									"line": 815,
@@ -4068,25 +4146,25 @@
 									"start": 27830,
 									"end": 27925,
 									"length": 96,
-									"parent_index": 1488
+									"parent_index": 1481
 								},
 								"assignments": [
-									1490
+									1483
 								],
 								"declarations": [
 									{
-										"id": 1490,
+										"id": 1483,
 										"state_mutability": 1,
 										"name": "returndata",
 										"node_type": 44,
-										"scope": 1488,
+										"scope": 1481,
 										"src": {
 											"line": 815,
 											"column": 8,
 											"start": 27830,
 											"end": 27852,
 											"length": 23,
-											"parent_index": 1489
+											"parent_index": 1482
 										},
 										"name_location": {
 											"line": 815,
@@ -4094,12 +4172,12 @@
 											"start": 27843,
 											"end": 27852,
 											"length": 10,
-											"parent_index": 1490
+											"parent_index": 1483
 										},
 										"is_state_variable": false,
 										"storage_location": 2,
 										"type_name": {
-											"id": 1491,
+											"id": 1484,
 											"node_type": 30,
 											"src": {
 												"line": 815,
@@ -4107,7 +4185,7 @@
 												"start": 27830,
 												"end": 27834,
 												"length": 5,
-												"parent_index": 1490
+												"parent_index": 1483
 											},
 											"name": "bytes",
 											"referenced_declaration": 0,
@@ -4120,7 +4198,7 @@
 									}
 								],
 								"initial_value": {
-									"id": 1492,
+									"id": 1485,
 									"node_type": 24,
 									"kind": 24,
 									"src": {
@@ -4129,7 +4207,7 @@
 										"start": 27856,
 										"end": 27924,
 										"length": 69,
-										"parent_index": 1489
+										"parent_index": 1482
 									},
 									"argument_types": [
 										{
@@ -4143,7 +4221,7 @@
 									],
 									"arguments": [
 										{
-											"id": 1498,
+											"id": 1491,
 											"node_type": 16,
 											"src": {
 												"line": 815,
@@ -4151,7 +4229,7 @@
 												"start": 27884,
 												"end": 27887,
 												"length": 4,
-												"parent_index": 1492
+												"parent_index": 1485
 											},
 											"name": "data",
 											"type_description": {
@@ -4159,11 +4237,12 @@
 												"type_string": "bytes"
 											},
 											"overloaded_declarations": [],
-											"referenced_declaration": 1498,
-											"is_pure": false
+											"referenced_declaration": 1491,
+											"is_pure": false,
+											"text": "data"
 										},
 										{
-											"id": 1499,
+											"id": 1492,
 											"node_type": 17,
 											"kind": 50,
 											"value": "SafeERC20: low-level call failed",
@@ -4174,7 +4253,7 @@
 												"start": 27890,
 												"end": 27923,
 												"length": 34,
-												"parent_index": 1492
+												"parent_index": 1485
 											},
 											"type_description": {
 												"type_identifier": "t_string_literal",
@@ -4188,11 +4267,12 @@
 													"type_identifier": "t_bytes",
 													"type_string": "bytes"
 												}
-											]
+											],
+											"text": "\"SafeERC20: low-level call failed\""
 										}
 									],
 									"expression": {
-										"id": 1493,
+										"id": 1486,
 										"is_constant": false,
 										"is_l_value": false,
 										"is_pure": false,
@@ -4204,7 +4284,7 @@
 											"start": 27856,
 											"end": 27882,
 											"length": 27,
-											"parent_index": 1492
+											"parent_index": 1485
 										},
 										"member_location": {
 											"line": 815,
@@ -4212,10 +4292,10 @@
 											"start": 27871,
 											"end": 27882,
 											"length": 12,
-											"parent_index": 1493
+											"parent_index": 1486
 										},
 										"expression": {
-											"id": 1494,
+											"id": 1487,
 											"node_type": 24,
 											"kind": 24,
 											"src": {
@@ -4224,7 +4304,7 @@
 												"start": 27856,
 												"end": 27869,
 												"length": 14,
-												"parent_index": 1493
+												"parent_index": 1486
 											},
 											"argument_types": [
 												{
@@ -4234,7 +4314,7 @@
 											],
 											"arguments": [
 												{
-													"id": 1497,
+													"id": 1490,
 													"node_type": 16,
 													"src": {
 														"line": 815,
@@ -4242,7 +4322,7 @@
 														"start": 27864,
 														"end": 27868,
 														"length": 5,
-														"parent_index": 1494
+														"parent_index": 1487
 													},
 													"name": "token",
 													"type_description": {
@@ -4250,12 +4330,13 @@
 														"type_string": "contract IERC20"
 													},
 													"overloaded_declarations": [],
-													"referenced_declaration": 1497,
-													"is_pure": false
+													"referenced_declaration": 1490,
+													"is_pure": false,
+													"text": "token"
 												}
 											],
 											"expression": {
-												"id": 1495,
+												"id": 1488,
 												"node_type": 16,
 												"src": {
 													"line": 815,
@@ -4263,11 +4344,11 @@
 													"start": 27856,
 													"end": 27862,
 													"length": 7,
-													"parent_index": 1494
+													"parent_index": 1487
 												},
 												"name": "address",
 												"type_name": {
-													"id": 1496,
+													"id": 1489,
 													"node_type": 30,
 													"src": {
 														"line": 815,
@@ -4275,7 +4356,7 @@
 														"start": 27856,
 														"end": 27862,
 														"length": 7,
-														"parent_index": 1495
+														"parent_index": 1488
 													},
 													"name": "address",
 													"state_mutability": 4,
@@ -4297,7 +4378,8 @@
 														"type_identifier": "t_address",
 														"type_string": "address"
 													}
-												]
+												],
+												"text": "address"
 											},
 											"type_description": {
 												"type_identifier": "t_function_$_t_address$",
@@ -4309,7 +4391,8 @@
 										"type_description": {
 											"type_identifier": "t_function_$_t_address$",
 											"type_string": "function(address)"
-										}
+										},
+										"text": "address(token).functionCall"
 									},
 									"type_description": {
 										"type_identifier": "t_function_$_t_bytes$_t_string_literal$",
@@ -4318,7 +4401,7 @@
 								}
 							},
 							{
-								"id": 1500,
+								"id": 1493,
 								"node_type": 48,
 								"src": {
 									"line": 816,
@@ -4326,10 +4409,10 @@
 									"start": 27935,
 									"end": 28110,
 									"length": 176,
-									"parent_index": 1488
+									"parent_index": 1481
 								},
 								"condition": {
-									"id": 1501,
+									"id": 1494,
 									"is_constant": false,
 									"is_pure": false,
 									"node_type": 19,
@@ -4339,11 +4422,11 @@
 										"start": 27939,
 										"end": 27959,
 										"length": 21,
-										"parent_index": 1500
+										"parent_index": 1493
 									},
 									"operator": 7,
 									"left_expression": {
-										"id": 1502,
+										"id": 1495,
 										"is_constant": false,
 										"is_l_value": false,
 										"is_pure": false,
@@ -4355,7 +4438,7 @@
 											"start": 27939,
 											"end": 27955,
 											"length": 17,
-											"parent_index": 1501
+											"parent_index": 1494
 										},
 										"member_location": {
 											"line": 816,
@@ -4363,10 +4446,10 @@
 											"start": 27950,
 											"end": 27955,
 											"length": 6,
-											"parent_index": 1502
+											"parent_index": 1495
 										},
 										"expression": {
-											"id": 1503,
+											"id": 1496,
 											"node_type": 16,
 											"src": {
 												"line": 816,
@@ -4374,7 +4457,7 @@
 												"start": 27939,
 												"end": 27948,
 												"length": 10,
-												"parent_index": 1502
+												"parent_index": 1495
 											},
 											"name": "returndata",
 											"type_description": {
@@ -4382,18 +4465,20 @@
 												"type_string": "bytes"
 											},
 											"overloaded_declarations": [],
-											"referenced_declaration": 1489,
-											"is_pure": false
+											"referenced_declaration": 1482,
+											"is_pure": false,
+											"text": "returndata"
 										},
 										"member_name": "length",
 										"argument_types": [],
 										"type_description": {
 											"type_identifier": "t_bytes",
 											"type_string": "bytes"
-										}
+										},
+										"text": "returndata.length"
 									},
 									"right_expression": {
-										"id": 1504,
+										"id": 1497,
 										"node_type": 17,
 										"kind": 49,
 										"value": "0",
@@ -4404,7 +4489,7 @@
 											"start": 27959,
 											"end": 27959,
 											"length": 1,
-											"parent_index": 1501
+											"parent_index": 1494
 										},
 										"type_description": {
 											"type_identifier": "t_rational_0_by_1",
@@ -4412,7 +4497,8 @@
 										},
 										"overloaded_declarations": [],
 										"referenced_declaration": 0,
-										"is_pure": true
+										"is_pure": true,
+										"text": "0"
 									},
 									"type_description": {
 										"type_identifier": "t_bool",
@@ -4420,7 +4506,7 @@
 									}
 								},
 								"body": {
-									"id": 1505,
+									"id": 1498,
 									"node_type": 46,
 									"kind": 0,
 									"src": {
@@ -4429,12 +4515,12 @@
 										"start": 27962,
 										"end": 28110,
 										"length": 149,
-										"parent_index": 1480
+										"parent_index": 1473
 									},
 									"implemented": true,
 									"statements": [
 										{
-											"id": 1506,
+											"id": 1499,
 											"node_type": 24,
 											"kind": 24,
 											"src": {
@@ -4443,7 +4529,7 @@
 												"start": 28015,
 												"end": 28099,
 												"length": 85,
-												"parent_index": 1505
+												"parent_index": 1498
 											},
 											"argument_types": [
 												{
@@ -4457,7 +4543,7 @@
 											],
 											"arguments": [
 												{
-													"id": 1508,
+													"id": 1501,
 													"node_type": 24,
 													"kind": 24,
 													"src": {
@@ -4466,7 +4552,7 @@
 														"start": 28023,
 														"end": 28052,
 														"length": 30,
-														"parent_index": 1506
+														"parent_index": 1499
 													},
 													"argument_types": [
 														{
@@ -4480,7 +4566,7 @@
 													],
 													"arguments": [
 														{
-															"id": 1511,
+															"id": 1504,
 															"node_type": 16,
 															"src": {
 																"line": 818,
@@ -4488,7 +4574,7 @@
 																"start": 28034,
 																"end": 28043,
 																"length": 10,
-																"parent_index": 1508
+																"parent_index": 1501
 															},
 															"name": "returndata",
 															"type_description": {
@@ -4497,10 +4583,11 @@
 															},
 															"overloaded_declarations": [],
 															"referenced_declaration": 0,
-															"is_pure": false
+															"is_pure": false,
+															"text": "returndata"
 														},
 														{
-															"id": 1512,
+															"id": 1505,
 															"node_type": 60,
 															"src": {
 																"line": 818,
@@ -4508,13 +4595,13 @@
 																"start": 28046,
 																"end": 28051,
 																"length": 6,
-																"parent_index": 1508
+																"parent_index": 1501
 															},
 															"is_constant": false,
 															"is_pure": false,
 															"components": [
 																{
-																	"id": 1513,
+																	"id": 1506,
 																	"node_type": 16,
 																	"src": {
 																		"line": 818,
@@ -4522,11 +4609,11 @@
 																		"start": 28047,
 																		"end": 28050,
 																		"length": 4,
-																		"parent_index": 1512
+																		"parent_index": 1505
 																	},
 																	"name": "bool",
 																	"type_name": {
-																		"id": 1514,
+																		"id": 1507,
 																		"node_type": 30,
 																		"src": {
 																			"line": 818,
@@ -4534,7 +4621,7 @@
 																			"start": 28047,
 																			"end": 28050,
 																			"length": 4,
-																			"parent_index": 1513
+																			"parent_index": 1506
 																		},
 																		"name": "bool",
 																		"referenced_declaration": 0,
@@ -4549,7 +4636,8 @@
 																	},
 																	"overloaded_declarations": [],
 																	"referenced_declaration": 0,
-																	"is_pure": false
+																	"is_pure": false,
+																	"text": "bool"
 																}
 															],
 															"type_description": {
@@ -4559,7 +4647,7 @@
 														}
 													],
 													"expression": {
-														"id": 1509,
+														"id": 1502,
 														"is_constant": false,
 														"is_l_value": false,
 														"is_pure": false,
@@ -4571,7 +4659,7 @@
 															"start": 28023,
 															"end": 28032,
 															"length": 10,
-															"parent_index": 1508
+															"parent_index": 1501
 														},
 														"member_location": {
 															"line": 818,
@@ -4579,10 +4667,10 @@
 															"start": 28027,
 															"end": 28032,
 															"length": 6,
-															"parent_index": 1509
+															"parent_index": 1502
 														},
 														"expression": {
-															"id": 1510,
+															"id": 1503,
 															"node_type": 16,
 															"src": {
 																"line": 818,
@@ -4590,7 +4678,7 @@
 																"start": 28023,
 																"end": 28025,
 																"length": 3,
-																"parent_index": 1509
+																"parent_index": 1502
 															},
 															"name": "abi",
 															"type_description": {
@@ -4599,14 +4687,16 @@
 															},
 															"overloaded_declarations": [],
 															"referenced_declaration": 0,
-															"is_pure": false
+															"is_pure": false,
+															"text": "abi"
 														},
 														"member_name": "decode",
 														"argument_types": [],
 														"type_description": {
 															"type_identifier": "t_magic_abi",
 															"type_string": "abi"
-														}
+														},
+														"text": "abi.decode"
 													},
 													"type_description": {
 														"type_identifier": "t_function_$_t_function_$_t_tuple_$_t_bool$",
@@ -4614,7 +4704,7 @@
 													}
 												},
 												{
-													"id": 1515,
+													"id": 1508,
 													"node_type": 17,
 													"kind": 50,
 													"value": "SafeERC20: ERC20 operation did not succeed",
@@ -4625,7 +4715,7 @@
 														"start": 28055,
 														"end": 28098,
 														"length": 44,
-														"parent_index": 1506
+														"parent_index": 1499
 													},
 													"type_description": {
 														"type_identifier": "t_string_literal",
@@ -4639,11 +4729,12 @@
 															"type_identifier": "t_function_$_t_function_$_t_tuple_$_t_bool$",
 															"type_string": "function(function(),tuple(bool))"
 														}
-													]
+													],
+													"text": "\"SafeERC20: ERC20 operation did not succeed\""
 												}
 											],
 											"expression": {
-												"id": 1507,
+												"id": 1500,
 												"node_type": 16,
 												"src": {
 													"line": 818,
@@ -4651,7 +4742,7 @@
 													"start": 28015,
 													"end": 28021,
 													"length": 7,
-													"parent_index": 1506
+													"parent_index": 1499
 												},
 												"name": "require",
 												"type_description": {
@@ -4660,7 +4751,8 @@
 												},
 												"overloaded_declarations": [],
 												"referenced_declaration": 0,
-												"is_pure": true
+												"is_pure": true,
+												"text": "require"
 											},
 											"type_description": {
 												"type_identifier": "t_function_$_t_function_$_t_function_$_t_tuple_$_t_bool$_t_string_literal$",
@@ -4679,7 +4771,7 @@
 					"modifiers": [],
 					"overrides": [],
 					"parameters": {
-						"id": 1481,
+						"id": 1474,
 						"node_type": 43,
 						"src": {
 							"line": 810,
@@ -4687,11 +4779,11 @@
 							"start": 27440,
 							"end": 27470,
 							"length": 31,
-							"parent_index": 1480
+							"parent_index": 1473
 						},
 						"parameters": [
 							{
-								"id": 1482,
+								"id": 1475,
 								"node_type": 44,
 								"src": {
 									"line": 810,
@@ -4699,12 +4791,12 @@
 									"start": 27440,
 									"end": 27451,
 									"length": 12,
-									"parent_index": 1481
+									"parent_index": 1474
 								},
-								"scope": 1480,
+								"scope": 1473,
 								"name": "token",
 								"type_name": {
-									"id": 1483,
+									"id": 1476,
 									"node_type": 69,
 									"src": {
 										"line": 810,
@@ -4712,10 +4804,10 @@
 										"start": 27440,
 										"end": 27445,
 										"length": 6,
-										"parent_index": 1482
+										"parent_index": 1475
 									},
 									"path_node": {
-										"id": 1484,
+										"id": 1477,
 										"name": "IERC20",
 										"node_type": 52,
 										"referenced_declaration": 347,
@@ -4725,7 +4817,7 @@
 											"start": 27440,
 											"end": 27445,
 											"length": 6,
-											"parent_index": 1483
+											"parent_index": 1476
 										},
 										"name_location": {
 											"line": 810,
@@ -4733,7 +4825,7 @@
 											"start": 27440,
 											"end": 27445,
 											"length": 6,
-											"parent_index": 1483
+											"parent_index": 1476
 										}
 									},
 									"referenced_declaration": 347,
@@ -4751,7 +4843,7 @@
 								}
 							},
 							{
-								"id": 1485,
+								"id": 1478,
 								"node_type": 44,
 								"src": {
 									"line": 810,
@@ -4759,12 +4851,12 @@
 									"start": 27454,
 									"end": 27470,
 									"length": 17,
-									"parent_index": 1481
+									"parent_index": 1474
 								},
-								"scope": 1480,
+								"scope": 1473,
 								"name": "data",
 								"type_name": {
-									"id": 1486,
+									"id": 1479,
 									"node_type": 30,
 									"src": {
 										"line": 810,
@@ -4772,7 +4864,7 @@
 										"start": 27454,
 										"end": 27458,
 										"length": 5,
-										"parent_index": 1485
+										"parent_index": 1478
 									},
 									"name": "bytes",
 									"referenced_declaration": 0,
@@ -4802,7 +4894,7 @@
 						]
 					},
 					"return_parameters": {
-						"id": 1487,
+						"id": 1480,
 						"node_type": 43,
 						"src": {
 							"line": 810,
@@ -4810,22 +4902,23 @@
 							"start": 27411,
 							"end": 28116,
 							"length": 706,
-							"parent_index": 1480
+							"parent_index": 1473
 						},
 						"parameters": [],
 						"parameter_types": []
 					},
-					"signature_raw": "_callOptionalReturn(, bytes)",
-					"signature": "50effced",
-					"scope": 1300,
+					"signature_raw": "_callOptionalReturn(,bytes)",
+					"signature": "8a35aadd",
+					"scope": 1293,
 					"type_description": {
 						"type_identifier": "t_function_$_t_contract$_IERC20_$347$_t_bytes$",
 						"type_string": "function(contract IERC20,bytes)"
-					}
+					},
+					"text": "function_callOptionalReturn(IERC20token,bytesmemorydata)private{bytesmemoryreturndata=address(token).functionCall(data,\"SafeERC20: low-level call failed\");if(returndata.length\u003e0){require(abi.decode(returndata,(bool)),\"SafeERC20: ERC20 operation did not succeed\");}}"
 				}
 			],
 			"linearized_base_contracts": [
-				1300
+				1293
 			],
 			"base_contracts": [],
 			"contract_dependencies": []

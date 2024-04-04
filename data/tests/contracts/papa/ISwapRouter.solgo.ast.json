@@ -6,10 +6,10 @@
 		{
 			"id": 119,
 			"name": "ISwapRouter",
-			"absolute_path": ""
+			"absolute_path": "Token.sol"
 		}
 	],
-	"absolute_path": "",
+	"absolute_path": "Token.sol",
 	"name": "ISwapRouter",
 	"node_type": 1,
 	"nodes": [
@@ -229,7 +229,8 @@
 					"type_description": {
 						"type_identifier": "t_function_$_t_address$",
 						"type_string": "function(address)"
-					}
+					},
+					"text": "functionfactory()externalpurereturns(address);"
 				},
 				{
 					"id": 132,
@@ -378,28 +379,28 @@
 								"name": "path",
 								"type_name": {
 									"id": 139,
-									"node_type": 16,
+									"node_type": 30,
 									"src": {
 										"line": 38,
 										"column": 8,
 										"start": 1182,
-										"end": 1188,
-										"length": 7,
+										"end": 1190,
+										"length": 9,
 										"parent_index": 138
 									},
-									"name": "address",
+									"name": "address[]",
 									"referenced_declaration": 0,
 									"type_description": {
-										"type_identifier": "t_address",
-										"type_string": "address"
+										"type_identifier": "t_address_array",
+										"type_string": "address[]"
 									}
 								},
 								"storage_location": 4,
 								"visibility": 1,
-								"state_mutability": 4,
+								"state_mutability": 1,
 								"type_description": {
-									"type_identifier": "t_address",
-									"type_string": "address"
+									"type_identifier": "t_address_array",
+									"type_string": "address[]"
 								}
 							},
 							{
@@ -492,8 +493,8 @@
 								"type_string": "uint256"
 							},
 							{
-								"type_identifier": "t_address",
-								"type_string": "address"
+								"type_identifier": "t_address_array",
+								"type_string": "address[]"
 							},
 							{
 								"type_identifier": "t_address",
@@ -519,13 +520,14 @@
 						"parameters": [],
 						"parameter_types": []
 					},
-					"signature_raw": "swapExactTokensForTokensSupportingFeeOnTransferTokens(uint, uint, address, address, uint)",
-					"signature": "57614bd1",
+					"signature_raw": "swapExactTokensForTokensSupportingFeeOnTransferTokens(uint,uint,address[],address,uint)",
+					"signature": "69fb89e8",
 					"scope": 121,
 					"type_description": {
-						"type_identifier": "t_function_$_t_uint256$_t_uint256$_t_address$_t_address$_t_uint256$",
-						"type_string": "function(uint256,uint256,address,address,uint256)"
-					}
+						"type_identifier": "t_function_$_t_uint256$_t_uint256$_t_address_array$_t_address$_t_uint256$",
+						"type_string": "function(uint256,uint256,address[],address,uint256)"
+					},
+					"text": "functionswapExactTokensForTokensSupportingFeeOnTransferTokens(uintamountIn,uintamountOutMin,address[]calldatapath,addressto,uintdeadline)external;"
 				},
 				{
 					"id": 147,
@@ -1077,13 +1079,14 @@
 							}
 						]
 					},
-					"signature_raw": "addLiquidity(address, address, uint, uint, uint, uint, address, uint)",
-					"signature": "b0a5b69b",
+					"signature_raw": "addLiquidity(address,address,uint,uint,uint,uint,address,uint)",
+					"signature": "dd83139f",
 					"scope": 121,
 					"type_description": {
 						"type_identifier": "t_function_$_t_address$_t_address$_t_uint256$_t_uint256$_t_uint256$_t_uint256$_t_address$_t_uint256$",
 						"type_string": "function(address,address,uint256,uint256,uint256,uint256,address,uint256)"
-					}
+					},
+					"text": "functionaddLiquidity(addresstokenA,addresstokenB,uintamountADesired,uintamountBDesired,uintamountAMin,uintamountBMin,addressto,uintdeadline)externalreturns(uintamountA,uintamountB,uintliquidity);"
 				}
 			],
 			"linearized_base_contracts": [

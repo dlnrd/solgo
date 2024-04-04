@@ -6,7 +6,7 @@
 [![PkgGoDev](https://pkg.go.dev/badge/github.com/unpackdev/solgo)](https://pkg.go.dev/github.com/unpackdev/solgo)
 [![Discord](https://img.shields.io/discord/1109929011896909875.svg)](https://discord.gg/PdHVbuTQRX)
 
-# Solidity Parser and Analyzer in Go
+# Ethereum and Solidity Toolkit in Go: Parser and Analyzer
 
 **SolGo** - a robust tool crafted in Go, designed to dissect and analyze Solidity's source code.
 
@@ -16,15 +16,17 @@ This project is ideal for those diving into data analysis, construction of robus
 
 ## Solidity Version Support
 
-**Currently Solidity versions equal or higher to 0.6.0 are supported.**
+**Currently, Solidity versions equal or higher to 0.6.0 are supported.**
 
 Older versions may or may not work due to changes in syntax that is not currently supported by the grammar file. In the future, we have plans to support all versions of Solidity.
 
 ## Disclaimer
 
 Please be aware that this project is still under active development. While it is approaching a state suitable for production use, there may still be undiscovered issues or limitations. Over the next few months, extensive testing will be conducted to evaluate its performance and stability. Additional tests and documentation will also be added during this phase.
+Additionally, most of the interfaces will stay as is, however, there could be architectural changes that may break your build in the future. I'll try to change as less as possible and notify everyone about the change in release notes.
 
 Once I am confident that the project is fully ready for production, this disclaimer will be removed. Until then, please use the software with caution and report any potential issues or feedback to help improve its quality.
+
 
 ## Documentation
 
@@ -33,6 +35,12 @@ The SolGo basic documentation is hosted on GitHub, ensuring it's always up-to-da
 ## Getting Started
 
 Detailed examples of how to install and use this package can be found in the [Usage](https://github.com/unpackdev/solgo/wiki/Getting-Started) section.
+
+### Need help?
+
+Want to use this library but have issues, questions or just want to join the wagon and follow the ride?
+
+You can join our [Discord](https://discord.com/invite/PdHVbuTQRX) server.
 
 ## Solidity Language Grammar
 
@@ -67,6 +75,14 @@ Makes no sense to rewrite all of that hard work just to be written in Go. Theref
 - **Solidity Compiler Detection & Compilation:** SolGo intelligently identifies the Solidity version employed for contract compilation. This not only streamlines the process of determining the compiler version but also equips users with the capability to seamlessly compile contracts.
 - **Security Audit Package**: Prioritizing security, SolGo has incorporated an `audit` package. This specialized package leverages [Slither](https://github.com/crytic/slither)'s sophisticated algorithms to scrutinize and pinpoint potential vulnerabilities in Solidity smart contracts, ensuring robust protection against adversarial threats.
 - **Contract Bytecode Validation:** Enhanced `validation` package ensures the integrity and authenticity of contract bytecode. By comparing the bytecode of a deployed contract with the expected bytecode generated from its source code, SolGo can detect any discrepancies or potential tampering. This feature is crucial for verifying that a deployed contract's bytecode corresponds accurately to its source code, providing an added layer of security and trust for developers and users alike.
+
+## External Projects / Extensions
+
+List of the projects that use SolGo:
+
+- [Inspector](https://github.com/unpackdev/inspector) - Tool for downloading, managing and inspecting smart contracts for Ethereum-based chains.
+
+If you wish to add your repository to the list, make sure to submit new PR :)
 
 ## Contributing
 

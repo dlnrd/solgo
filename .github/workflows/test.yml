@@ -7,6 +7,7 @@ jobs:
       SOLC_SWITCH_GITHUB_TOKEN: ${{ secrets.SOLC_SWITCH_GITHUB_TOKEN }}
       FULL_NODE_TEST_URL: ${{ secrets.FULL_NODE_TEST_URL }}
       ARCHIVE_NODE_TEST_URL: ${{ secrets.ARCHIVE_NODE_TEST_URL }}
+      ETHERSCAN_API_KEYS: ${{ secrets.ETHERSCAN_API_KEYS }}
     steps:
       - name: Checkout Source
         uses: actions/checkout@v3
@@ -14,7 +15,7 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v4
         with:
-          go-version: '1.19'
+          go-version: '1.22'
 
       - name: Checkout submodules
         run: make submodules

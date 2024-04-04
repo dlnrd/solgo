@@ -3,10 +3,10 @@ package ast
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/goccy/go-json"
 
 	ast_pb "github.com/unpackdev/protos/dist/go/ast"
 	"github.com/unpackdev/solgo/parser"
-	"github.com/unpackdev/solgo/utils"
 )
 
 // Parameter represents a parameter node in the abstract syntax tree.
@@ -41,11 +41,6 @@ func NewParameter(b *ASTBuilder) *Parameter {
 
 // SetReferenceDescriptor sets the reference descriptors of the Parameter node.
 func (p *Parameter) SetReferenceDescriptor(refId int64, refDesc *TypeDescription) bool {
-
-	if p.GetName() == "L" {
-		utils.DumpNodeWithExit(p)
-	}
-
 	return false
 }
 
@@ -331,6 +326,14 @@ func (p *Parameter) ParseEventParameter(unit *SourceUnit[Node[ast_pb.SourceUnit]
 	p.TypeName = typeName
 	p.TypeDescription = typeName.GetTypeDescription()
 	p.currentVariables = append(p.currentVariables, p)
+
+	if p.TypeDescription == nil {
+		if refId, refTypeDescription := p.GetResolver().ResolveByNode(typeName, typeName.Name); refTypeDescription != nil {
+			typeName.ReferencedDeclaration = refId
+			typeName.TypeDescription = refTypeDescription
+			p.TypeDescription = typeName.GetTypeDescription()
+		}
+	}
 }
 
 // ParseStructParameter parses the struct parameter context and populates the Parameter fields for struct members.
@@ -370,6 +373,13 @@ func (p *Parameter) ParseStructParameter(unit *SourceUnit[Node[ast_pb.SourceUnit
 	p.TypeDescription = typeName.GetTypeDescription()
 	p.currentVariables = append(p.currentVariables, p)
 
+	if p.TypeDescription == nil {
+		if refId, refTypeDescription := p.GetResolver().ResolveByNode(typeName, typeName.Name); refTypeDescription != nil {
+			typeName.ReferencedDeclaration = refId
+			typeName.TypeDescription = refTypeDescription
+			p.TypeDescription = typeName.GetTypeDescription()
+		}
+	}
 }
 
 // ParseErrorParameter parses the error parameter context and populates the Parameter fields for error definitions.
@@ -407,6 +417,14 @@ func (p *Parameter) ParseErrorParameter(unit *SourceUnit[Node[ast_pb.SourceUnit]
 	p.TypeName = typeName
 	p.TypeDescription = typeName.GetTypeDescription()
 	p.currentVariables = append(p.currentVariables, p)
+
+	if p.TypeDescription == nil {
+		if refId, refTypeDescription := p.GetResolver().ResolveByNode(typeName, typeName.Name); refTypeDescription != nil {
+			typeName.ReferencedDeclaration = refId
+			typeName.TypeDescription = refTypeDescription
+			p.TypeDescription = typeName.GetTypeDescription()
+		}
+	}
 }
 
 // getStorageLocationFromCtx extracts the storage location information from the parameter declaration context.

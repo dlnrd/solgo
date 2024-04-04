@@ -13,25 +13,27 @@ import (
 )
 
 func TestNewBlockHeaderSubscriber(t *testing.T) {
+	t.Skip("Skipping New Block Subscriber tests as they require a node to be running...")
+
 	client, err := clients.NewClientPool(context.Background(), &clients.Options{
 		Nodes: []clients.Node{
 			{
-				Group:                   "bsc",
-				Type:                    "fullnode",
-				FailoverGroup:           "bsc",
-				FailoverType:            "archive",
-				NetworkId:               56,
-				Endpoint:                os.Getenv("FULL_NODE_TEST_URL"),
-				ConcurrentClientsNumber: 2,
+				Group:             "bsc",
+				Type:              "fullnode",
+				FailoverGroup:     "bsc",
+				FailoverType:      "archive",
+				NetworkId:         56,
+				Endpoint:          os.Getenv("FULL_NODE_TEST_URL"),
+				ConcurrentClients: 2,
 			},
 			{
-				Group:                   "bsc",
-				Type:                    "archive",
-				FailoverGroup:           "bsc",
-				FailoverType:            "fullnode",
-				NetworkId:               56,
-				Endpoint:                os.Getenv("ARCHIVE_NODE_TEST_URL"),
-				ConcurrentClientsNumber: 1,
+				Group:             "bsc",
+				Type:              "archive",
+				FailoverGroup:     "bsc",
+				FailoverType:      "fullnode",
+				NetworkId:         56,
+				Endpoint:          os.Getenv("ARCHIVE_NODE_TEST_URL"),
+				ConcurrentClients: 1,
 			},
 		},
 	})
@@ -112,25 +114,27 @@ func TestNewBlockHeaderSubscriber(t *testing.T) {
 }
 
 func TestNewBlockSubscriber(t *testing.T) {
+	t.Skip("Skipping New Block Subscriber tests as they require a node to be running...")
+
 	client, err := clients.NewClientPool(context.Background(), &clients.Options{
 		Nodes: []clients.Node{
 			{
-				Group:                   "bsc",
-				Type:                    "fullnode",
-				FailoverGroup:           "bsc",
-				FailoverType:            "archive",
-				NetworkId:               56,
-				Endpoint:                os.Getenv("FULL_NODE_TEST_URL"),
-				ConcurrentClientsNumber: 2,
+				Group:             "bsc",
+				Type:              "fullnode",
+				FailoverGroup:     "bsc",
+				FailoverType:      "archive",
+				NetworkId:         56,
+				Endpoint:          os.Getenv("FULL_NODE_TEST_URL"),
+				ConcurrentClients: 2,
 			},
 			{
-				Group:                   "bsc",
-				Type:                    "archive",
-				FailoverGroup:           "bsc",
-				FailoverType:            "fullnode",
-				NetworkId:               56,
-				Endpoint:                os.Getenv("ARCHIVE_NODE_TEST_URL"),
-				ConcurrentClientsNumber: 1,
+				Group:             "bsc",
+				Type:              "archive",
+				FailoverGroup:     "bsc",
+				FailoverType:      "fullnode",
+				NetworkId:         56,
+				Endpoint:          os.Getenv("ARCHIVE_NODE_TEST_URL"),
+				ConcurrentClients: 1,
 			},
 		},
 	})

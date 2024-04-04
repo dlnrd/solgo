@@ -6,10 +6,10 @@
 		{
 			"id": 1221,
 			"name": "IPool",
-			"absolute_path": "/home/cortex/github/txpull/solgo/data/tests/contracts/sushixswap/IPool.sol"
+			"absolute_path": "IPool.sol"
 		}
 	],
-	"absolute_path": "/home/cortex/github/txpull/solgo/data/tests/contracts/sushixswap/IPool.sol",
+	"absolute_path": "IPool.sol",
 	"name": "IPool",
 	"node_type": 1,
 	"nodes": [
@@ -226,7 +226,8 @@
 					"type_description": {
 						"type_identifier": "t_function_$_t_bytes$",
 						"type_string": "function(bytes)"
-					}
+					},
+					"text": "functionswap(bytescalldatadata)externalreturns(uint256finalAmountOut);"
 				},
 				{
 					"id": 1282,
@@ -394,7 +395,8 @@
 					"type_description": {
 						"type_identifier": "t_function_$_t_bytes$",
 						"type_string": "function(bytes)"
-					}
+					},
+					"text": "functionflashSwap(bytescalldatadata)externalreturns(uint256finalAmountOut);"
 				},
 				{
 					"id": 1291,
@@ -562,7 +564,8 @@
 					"type_description": {
 						"type_identifier": "t_function_$_t_bytes$",
 						"type_string": "function(bytes)"
-					}
+					},
+					"text": "functionmint(bytescalldatadata)externalreturns(uint256liquidity);"
 				},
 				{
 					"id": 1300,
@@ -697,11 +700,11 @@
 										"line": 591,
 										"column": 17,
 										"start": 20884,
-										"end": 20894,
-										"length": 11,
+										"end": 20896,
+										"length": 13,
 										"parent_index": 1305
 									},
-									"name": "TokenAmount",
+									"name": "TokenAmount[]",
 									"path_node": {
 										"id": 1307,
 										"name": "TokenAmount",
@@ -714,21 +717,36 @@
 											"end": 20894,
 											"length": 11,
 											"parent_index": 1306
+										},
+										"name_location": {
+											"line": 591,
+											"column": 17,
+											"start": 20884,
+											"end": 20894,
+											"length": 11,
+											"parent_index": 1306
 										}
 									},
-									"referenced_declaration": 4497,
+									"referenced_declaration": 4511,
 									"type_description": {
-										"type_identifier": "t_struct$_Global_TokenAmount_$4497",
+										"type_identifier": "t_struct$_Global_TokenAmount_$4511",
 										"type_string": "struct Global.TokenAmount"
 									}
 								},
 								"storage_location": 2,
 								"visibility": 1,
-								"state_mutability": 1
+								"state_mutability": 1,
+								"type_description": {
+									"type_identifier": "t_TokenAmount_array",
+									"type_string": "TokenAmount[]"
+								}
 							}
 						],
 						"parameter_types": [
-							null
+							{
+								"type_identifier": "t_TokenAmount_array",
+								"type_string": "TokenAmount[]"
+							}
 						]
 					},
 					"signature_raw": "burn(bytes)",
@@ -737,7 +755,8 @@
 					"type_description": {
 						"type_identifier": "t_function_$_t_bytes$",
 						"type_string": "function(bytes)"
-					}
+					},
+					"text": "functionburn(bytescalldatadata)externalreturns(TokenAmount[]memorywithdrawnAmounts);"
 				},
 				{
 					"id": 1310,
@@ -905,7 +924,8 @@
 					"type_description": {
 						"type_identifier": "t_function_$_t_bytes$",
 						"type_string": "function(bytes)"
-					}
+					},
+					"text": "functionburnSingle(bytescalldatadata)externalreturns(uint256amountOut);"
 				},
 				{
 					"id": 1319,
@@ -1073,7 +1093,8 @@
 					"type_description": {
 						"type_identifier": "t_function_$_t_bytes32$",
 						"type_string": "function(bytes32)"
-					}
+					},
+					"text": "functionpoolIdentifier()externalpurereturns(bytes32);"
 				},
 				{
 					"id": 1328,
@@ -1144,35 +1165,35 @@
 								"name": "",
 								"type_name": {
 									"id": 1331,
-									"node_type": 16,
+									"node_type": 30,
 									"src": {
 										"line": 605,
 										"column": 48,
 										"start": 21533,
-										"end": 21539,
-										"length": 7,
+										"end": 21541,
+										"length": 9,
 										"parent_index": 1330
 									},
-									"name": "address",
+									"name": "address[]",
 									"referenced_declaration": 0,
 									"type_description": {
-										"type_identifier": "t_address",
-										"type_string": "address"
+										"type_identifier": "t_address_array",
+										"type_string": "address[]"
 									}
 								},
 								"storage_location": 2,
 								"visibility": 1,
-								"state_mutability": 4,
+								"state_mutability": 1,
 								"type_description": {
-									"type_identifier": "t_address",
-									"type_string": "address"
+									"type_identifier": "t_address_array",
+									"type_string": "address[]"
 								}
 							}
 						],
 						"parameter_types": [
 							{
-								"type_identifier": "t_address",
-								"type_string": "address"
+								"type_identifier": "t_address_array",
+								"type_string": "address[]"
 							}
 						]
 					},
@@ -1203,45 +1224,46 @@
 								"name": "",
 								"type_name": {
 									"id": 1334,
-									"node_type": 16,
+									"node_type": 30,
 									"src": {
 										"line": 605,
 										"column": 48,
 										"start": 21533,
-										"end": 21539,
-										"length": 7,
+										"end": 21541,
+										"length": 9,
 										"parent_index": 1333
 									},
-									"name": "address",
+									"name": "address[]",
 									"referenced_declaration": 0,
 									"type_description": {
-										"type_identifier": "t_address",
-										"type_string": "address"
+										"type_identifier": "t_address_array",
+										"type_string": "address[]"
 									}
 								},
 								"storage_location": 2,
 								"visibility": 1,
-								"state_mutability": 4,
+								"state_mutability": 1,
 								"type_description": {
-									"type_identifier": "t_address",
-									"type_string": "address"
+									"type_identifier": "t_address_array",
+									"type_string": "address[]"
 								}
 							}
 						],
 						"parameter_types": [
 							{
-								"type_identifier": "t_address",
-								"type_string": "address"
+								"type_identifier": "t_address_array",
+								"type_string": "address[]"
 							}
 						]
 					},
-					"signature_raw": "getAssets(address)",
-					"signature": "742978da",
+					"signature_raw": "getAssets(address[])",
+					"signature": "d91a2683",
 					"scope": 1271,
 					"type_description": {
-						"type_identifier": "t_function_$_t_address$",
-						"type_string": "function(address)"
-					}
+						"type_identifier": "t_function_$_t_address_array$",
+						"type_string": "function(address[])"
+					},
+					"text": "functiongetAssets()externalviewreturns(address[]memory);"
 				},
 				{
 					"id": 1337,
@@ -1409,7 +1431,8 @@
 					"type_description": {
 						"type_identifier": "t_function_$_t_bytes$",
 						"type_string": "function(bytes)"
-					}
+					},
+					"text": "functiongetAmountOut(bytescalldatadata)externalviewreturns(uint256finalAmountOut);"
 				},
 				{
 					"id": 1346,
@@ -1577,7 +1600,8 @@
 					"type_description": {
 						"type_identifier": "t_function_$_t_bytes$",
 						"type_string": "function(bytes)"
-					}
+					},
+					"text": "functiongetAmountIn(bytescalldatadata)externalviewreturns(uint256finalAmountIn);"
 				},
 				{
 					"id": 1355,

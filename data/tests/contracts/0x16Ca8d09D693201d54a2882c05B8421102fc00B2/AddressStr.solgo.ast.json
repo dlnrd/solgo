@@ -6,10 +6,10 @@
 		{
 			"id": 245,
 			"name": "AddressStr",
-			"absolute_path": ""
+			"absolute_path": "Contract.sol"
 		}
 	],
-	"absolute_path": "",
+	"absolute_path": "Contract.sol",
 	"name": "AddressStr",
 	"node_type": 1,
 	"nodes": [
@@ -192,7 +192,8 @@
 											},
 											"overloaded_declarations": [],
 											"referenced_declaration": 263,
-											"is_pure": false
+											"is_pure": false,
+											"text": "account"
 										}
 									],
 									"expression": {
@@ -236,14 +237,16 @@
 											},
 											"overloaded_declarations": [],
 											"referenced_declaration": 0,
-											"is_pure": false
+											"is_pure": false,
+											"text": "abi"
 										},
 										"member_name": "encodePacked",
 										"argument_types": [],
 										"type_description": {
 											"type_identifier": "t_magic_abi",
 											"type_string": "abi"
-										}
+										},
+										"text": "abi.encodePacked"
 									},
 									"type_description": {
 										"type_identifier": "t_function_$_t_address$",
@@ -331,7 +334,8 @@
 									},
 									"overloaded_declarations": [],
 									"referenced_declaration": 0,
-									"is_pure": true
+									"is_pure": true,
+									"text": "\"0123456789abcdef\""
 								}
 							},
 							{
@@ -447,7 +451,8 @@
 												},
 												"overloaded_declarations": [],
 												"referenced_declaration": 0,
-												"is_pure": true
+												"is_pure": true,
+												"text": "2"
 											},
 											"right_expression": {
 												"id": 276,
@@ -504,14 +509,16 @@
 														},
 														"overloaded_declarations": [],
 														"referenced_declaration": 257,
-														"is_pure": false
+														"is_pure": false,
+														"text": "data"
 													},
 													"member_name": "length",
 													"argument_types": [],
 													"type_description": {
 														"type_identifier": "t_bytes",
 														"type_string": "bytes"
-													}
+													},
+													"text": "data.length"
 												},
 												"right_expression": {
 													"id": 279,
@@ -533,7 +540,8 @@
 													},
 													"overloaded_declarations": [],
 													"referenced_declaration": 0,
-													"is_pure": true
+													"is_pure": true,
+													"text": "2"
 												},
 												"type_description": {
 													"type_identifier": "t_bytes",
@@ -622,26 +630,6 @@
 											"parent_index": 281
 										},
 										"index_expression": {
-											"id": 283,
-											"node_type": 16,
-											"src": {
-												"line": 73,
-												"column": 8,
-												"start": 2486,
-												"end": 2488,
-												"length": 3,
-												"parent_index": 282
-											},
-											"name": "str",
-											"type_description": {
-												"type_identifier": "t_bytes",
-												"type_string": "bytes"
-											},
-											"overloaded_declarations": [],
-											"referenced_declaration": 268,
-											"is_pure": false
-										},
-										"base_expression": {
 											"id": 284,
 											"node_type": 17,
 											"kind": 49,
@@ -661,21 +649,39 @@
 											},
 											"overloaded_declarations": [],
 											"referenced_declaration": 0,
-											"is_pure": true
+											"is_pure": true,
+											"text": "0"
 										},
-										"type_descriptions": [
-											{
+										"base_expression": {
+											"id": 283,
+											"node_type": 16,
+											"src": {
+												"line": 73,
+												"column": 8,
+												"start": 2486,
+												"end": 2488,
+												"length": 3,
+												"parent_index": 282
+											},
+											"name": "str",
+											"type_description": {
 												"type_identifier": "t_bytes",
 												"type_string": "bytes"
 											},
+											"overloaded_declarations": [],
+											"referenced_declaration": 268,
+											"is_pure": false,
+											"text": "str"
+										},
+										"type_descriptions": [
 											{
 												"type_identifier": "t_rational_0_by_1",
 												"type_string": "int_const 0"
 											}
 										],
 										"type_description": {
-											"type_identifier": "t_[_[$_t_bytes]$_t_rational_0_by_1]$",
-											"type_string": "index[bytes:int_const 0]"
+											"type_identifier": "t_[_[$_t_rational_0_by_1]$",
+											"type_string": "index[int_const 0]"
 										}
 									},
 									"right_expression": {
@@ -698,17 +704,19 @@
 										},
 										"overloaded_declarations": [],
 										"referenced_declaration": 0,
-										"is_pure": true
+										"is_pure": true,
+										"text": "\"0\""
 									},
 									"type_description": {
-										"type_identifier": "t_[_[$_t_bytes]$_t_rational_0_by_1]$",
-										"type_string": "index[bytes:int_const 0]"
+										"type_identifier": "t_[_[$_t_rational_0_by_1]$",
+										"type_string": "index[int_const 0]"
 									}
 								},
 								"type_description": {
-									"type_identifier": "t_[_[$_t_bytes]$_t_rational_0_by_1]$",
-									"type_string": "index[bytes:int_const 0]"
-								}
+									"type_identifier": "t_[_[$_t_rational_0_by_1]$",
+									"type_string": "index[int_const 0]"
+								},
+								"text": "str[0]=\"0\";"
 							},
 							{
 								"id": 286,
@@ -745,26 +753,6 @@
 											"parent_index": 287
 										},
 										"index_expression": {
-											"id": 289,
-											"node_type": 16,
-											"src": {
-												"line": 74,
-												"column": 8,
-												"start": 2508,
-												"end": 2510,
-												"length": 3,
-												"parent_index": 288
-											},
-											"name": "str",
-											"type_description": {
-												"type_identifier": "t_bytes",
-												"type_string": "bytes"
-											},
-											"overloaded_declarations": [],
-											"referenced_declaration": 268,
-											"is_pure": false
-										},
-										"base_expression": {
 											"id": 290,
 											"node_type": 17,
 											"kind": 49,
@@ -784,21 +772,39 @@
 											},
 											"overloaded_declarations": [],
 											"referenced_declaration": 0,
-											"is_pure": true
+											"is_pure": true,
+											"text": "1"
 										},
-										"type_descriptions": [
-											{
+										"base_expression": {
+											"id": 289,
+											"node_type": 16,
+											"src": {
+												"line": 74,
+												"column": 8,
+												"start": 2508,
+												"end": 2510,
+												"length": 3,
+												"parent_index": 288
+											},
+											"name": "str",
+											"type_description": {
 												"type_identifier": "t_bytes",
 												"type_string": "bytes"
 											},
+											"overloaded_declarations": [],
+											"referenced_declaration": 268,
+											"is_pure": false,
+											"text": "str"
+										},
+										"type_descriptions": [
 											{
 												"type_identifier": "t_rational_1_by_1",
 												"type_string": "int_const 1"
 											}
 										],
 										"type_description": {
-											"type_identifier": "t_[_[$_t_bytes]$_t_rational_1_by_1]$",
-											"type_string": "index[bytes:int_const 1]"
+											"type_identifier": "t_[_[$_t_rational_1_by_1]$",
+											"type_string": "index[int_const 1]"
 										}
 									},
 									"right_expression": {
@@ -821,17 +827,19 @@
 										},
 										"overloaded_declarations": [],
 										"referenced_declaration": 0,
-										"is_pure": true
+										"is_pure": true,
+										"text": "\"x\""
 									},
 									"type_description": {
-										"type_identifier": "t_[_[$_t_bytes]$_t_rational_1_by_1]$",
-										"type_string": "index[bytes:int_const 1]"
+										"type_identifier": "t_[_[$_t_rational_1_by_1]$",
+										"type_string": "index[int_const 1]"
 									}
 								},
 								"type_description": {
-									"type_identifier": "t_[_[$_t_bytes]$_t_rational_1_by_1]$",
-									"type_string": "index[bytes:int_const 1]"
-								}
+									"type_identifier": "t_[_[$_t_rational_1_by_1]$",
+									"type_string": "index[int_const 1]"
+								},
+								"text": "str[1]=\"x\";"
 							},
 							{
 								"id": 292,
@@ -924,7 +932,8 @@
 										},
 										"overloaded_declarations": [],
 										"referenced_declaration": 0,
-										"is_pure": true
+										"is_pure": true,
+										"text": "0"
 									}
 								},
 								"condition": {
@@ -959,7 +968,8 @@
 										},
 										"overloaded_declarations": [],
 										"referenced_declaration": 293,
-										"is_pure": false
+										"is_pure": false,
+										"text": "i"
 									},
 									"right_expression": {
 										"id": 299,
@@ -1002,14 +1012,16 @@
 											},
 											"overloaded_declarations": [],
 											"referenced_declaration": 257,
-											"is_pure": false
+											"is_pure": false,
+											"text": "data"
 										},
 										"member_name": "length",
 										"argument_types": [],
 										"type_description": {
 											"type_identifier": "t_bytes",
 											"type_string": "bytes"
-										}
+										},
+										"text": "data.length"
 									},
 									"type_description": {
 										"type_identifier": "t_bool",
@@ -1047,7 +1059,8 @@
 										},
 										"overloaded_declarations": [],
 										"referenced_declaration": 293,
-										"is_pure": false
+										"is_pure": false,
+										"text": "i"
 									},
 									"type_description": {
 										"type_identifier": "t_uint256",
@@ -1108,26 +1121,6 @@
 														"parent_index": 305
 													},
 													"index_expression": {
-														"id": 307,
-														"node_type": 16,
-														"src": {
-															"line": 76,
-															"column": 12,
-															"start": 2583,
-															"end": 2585,
-															"length": 3,
-															"parent_index": 306
-														},
-														"name": "str",
-														"type_description": {
-															"type_identifier": "t_bytes",
-															"type_string": "bytes"
-														},
-														"overloaded_declarations": [],
-														"referenced_declaration": 268,
-														"is_pure": false
-													},
-													"base_expression": {
 														"id": 308,
 														"is_constant": false,
 														"is_pure": false,
@@ -1161,7 +1154,8 @@
 															},
 															"overloaded_declarations": [],
 															"referenced_declaration": 0,
-															"is_pure": true
+															"is_pure": true,
+															"text": "2"
 														},
 														"right_expression": {
 															"id": 310,
@@ -1195,7 +1189,8 @@
 																},
 																"overloaded_declarations": [],
 																"referenced_declaration": 293,
-																"is_pure": false
+																"is_pure": false,
+																"text": "i"
 															},
 															"right_expression": {
 																"id": 312,
@@ -1217,7 +1212,8 @@
 																},
 																"overloaded_declarations": [],
 																"referenced_declaration": 0,
-																"is_pure": true
+																"is_pure": true,
+																"text": "2"
 															},
 															"type_description": {
 																"type_identifier": "t_uint256",
@@ -1229,19 +1225,36 @@
 															"type_string": "int_const 2"
 														}
 													},
-													"type_descriptions": [
-														{
+													"base_expression": {
+														"id": 307,
+														"node_type": 16,
+														"src": {
+															"line": 76,
+															"column": 12,
+															"start": 2583,
+															"end": 2585,
+															"length": 3,
+															"parent_index": 306
+														},
+														"name": "str",
+														"type_description": {
 															"type_identifier": "t_bytes",
 															"type_string": "bytes"
 														},
+														"overloaded_declarations": [],
+														"referenced_declaration": 268,
+														"is_pure": false,
+														"text": "str"
+													},
+													"type_descriptions": [
 														{
 															"type_identifier": "t_rational_2_by_1",
 															"type_string": "int_const 2"
 														}
 													],
 													"type_description": {
-														"type_identifier": "t_[_[$_t_bytes]$_t_rational_2_by_1]$",
-														"type_string": "index[bytes:int_const 2]"
+														"type_identifier": "t_[_[$_t_rational_2_by_1]$",
+														"type_string": "index[int_const 2]"
 													}
 												},
 												"right_expression": {
@@ -1256,26 +1269,6 @@
 														"parent_index": 305
 													},
 													"index_expression": {
-														"id": 314,
-														"node_type": 16,
-														"src": {
-															"line": 76,
-															"column": 25,
-															"start": 2596,
-															"end": 2603,
-															"length": 8,
-															"parent_index": 313
-														},
-														"name": "alphabet",
-														"type_description": {
-															"type_identifier": "t_bytes",
-															"type_string": "bytes"
-														},
-														"overloaded_declarations": [],
-														"referenced_declaration": 264,
-														"is_pure": false
-													},
-													"base_expression": {
 														"id": 315,
 														"node_type": 24,
 														"kind": 24,
@@ -1338,26 +1331,6 @@
 																					"parent_index": 322
 																				},
 																				"index_expression": {
-																					"id": 324,
-																					"node_type": 16,
-																					"src": {
-																						"line": 76,
-																						"column": 45,
-																						"start": 2616,
-																						"end": 2619,
-																						"length": 4,
-																						"parent_index": 323
-																					},
-																					"name": "data",
-																					"type_description": {
-																						"type_identifier": "t_bytes",
-																						"type_string": "bytes"
-																					},
-																					"overloaded_declarations": [],
-																					"referenced_declaration": 257,
-																					"is_pure": false
-																				},
-																				"base_expression": {
 																					"id": 325,
 																					"node_type": 16,
 																					"src": {
@@ -1375,21 +1348,39 @@
 																					},
 																					"overloaded_declarations": [],
 																					"referenced_declaration": 293,
-																					"is_pure": false
+																					"is_pure": false,
+																					"text": "i"
 																				},
-																				"type_descriptions": [
-																					{
+																				"base_expression": {
+																					"id": 324,
+																					"node_type": 16,
+																					"src": {
+																						"line": 76,
+																						"column": 45,
+																						"start": 2616,
+																						"end": 2619,
+																						"length": 4,
+																						"parent_index": 323
+																					},
+																					"name": "data",
+																					"type_description": {
 																						"type_identifier": "t_bytes",
 																						"type_string": "bytes"
 																					},
+																					"overloaded_declarations": [],
+																					"referenced_declaration": 257,
+																					"is_pure": false,
+																					"text": "data"
+																				},
+																				"type_descriptions": [
 																					{
 																						"type_identifier": "t_uint256",
 																						"type_string": "uint256"
 																					}
 																				],
 																				"type_description": {
-																					"type_identifier": "t_[_[$_t_bytes]$_t_uint256]$",
-																					"type_string": "index[bytes:uint256]"
+																					"type_identifier": "t_[_[$_t_uint256]$",
+																					"type_string": "index[uint256]"
 																				}
 																			},
 																			{
@@ -1412,13 +1403,14 @@
 																				},
 																				"overloaded_declarations": [],
 																				"referenced_declaration": 0,
-																				"is_pure": true
+																				"is_pure": true,
+																				"text": "4"
 																			}
 																		],
 																		"type_descriptions": [
 																			{
-																				"type_identifier": "t_[_[$_t_bytes]$_t_uint256]$",
-																				"type_string": "index[bytes:uint256]"
+																				"type_identifier": "t_[_[$_t_uint256]$",
+																				"type_string": "index[uint256]"
 																			},
 																			{
 																				"type_identifier": "t_rational_4_by_1",
@@ -1473,7 +1465,8 @@
 																			"type_identifier": "t_uint8",
 																			"type_string": "uint8"
 																		}
-																	]
+																	],
+																	"text": "uint8"
 																},
 																"type_description": {
 																	"type_identifier": "t_function_$_t_rational_4_by_1$",
@@ -1523,37 +1516,56 @@
 																	"type_identifier": "t_uint256",
 																	"type_string": "uint256"
 																}
-															]
+															],
+															"text": "uint"
 														},
 														"type_description": {
 															"type_identifier": "t_function_$_t_function_$_t_rational_4_by_1$",
 															"type_string": "function(function(int_const 4))"
 														}
 													},
-													"type_descriptions": [
-														{
+													"base_expression": {
+														"id": 314,
+														"node_type": 16,
+														"src": {
+															"line": 76,
+															"column": 25,
+															"start": 2596,
+															"end": 2603,
+															"length": 8,
+															"parent_index": 313
+														},
+														"name": "alphabet",
+														"type_description": {
 															"type_identifier": "t_bytes",
 															"type_string": "bytes"
 														},
+														"overloaded_declarations": [],
+														"referenced_declaration": 264,
+														"is_pure": false,
+														"text": "alphabet"
+													},
+													"type_descriptions": [
 														{
 															"type_identifier": "t_function_$_t_function_$_t_rational_4_by_1$",
 															"type_string": "function(function(int_const 4))"
 														}
 													],
 													"type_description": {
-														"type_identifier": "t_[_[$_t_bytes]$_t_function_$_t_function_$_t_rational_4_by_1$",
-														"type_string": "index[bytes:function(function(int_const 4))]"
+														"type_identifier": "t_[_[$_t_function_$_t_function_$_t_rational_4_by_1$",
+														"type_string": "index[function(function(int_const 4))]"
 													}
 												},
 												"type_description": {
-													"type_identifier": "t_[_[$_t_bytes]$_t_rational_2_by_1]$",
-													"type_string": "index[bytes:int_const 2]"
+													"type_identifier": "t_[_[$_t_rational_2_by_1]$",
+													"type_string": "index[int_const 2]"
 												}
 											},
 											"type_description": {
-												"type_identifier": "t_[_[$_t_bytes]$_t_rational_2_by_1]$",
-												"type_string": "index[bytes:int_const 2]"
-											}
+												"type_identifier": "t_[_[$_t_rational_2_by_1]$",
+												"type_string": "index[int_const 2]"
+											},
+											"text": "str[2+i*2]=alphabet[uint(uint8(data[i]\u003e\u003e4))];"
 										},
 										{
 											"id": 327,
@@ -1590,26 +1602,6 @@
 														"parent_index": 328
 													},
 													"index_expression": {
-														"id": 330,
-														"node_type": 16,
-														"src": {
-															"line": 77,
-															"column": 12,
-															"start": 2645,
-															"end": 2647,
-															"length": 3,
-															"parent_index": 329
-														},
-														"name": "str",
-														"type_description": {
-															"type_identifier": "t_bytes",
-															"type_string": "bytes"
-														},
-														"overloaded_declarations": [],
-														"referenced_declaration": 268,
-														"is_pure": false
-													},
-													"base_expression": {
 														"id": 331,
 														"is_constant": false,
 														"is_pure": false,
@@ -1643,7 +1635,8 @@
 															},
 															"overloaded_declarations": [],
 															"referenced_declaration": 0,
-															"is_pure": true
+															"is_pure": true,
+															"text": "3"
 														},
 														"right_expression": {
 															"id": 333,
@@ -1677,7 +1670,8 @@
 																},
 																"overloaded_declarations": [],
 																"referenced_declaration": 293,
-																"is_pure": false
+																"is_pure": false,
+																"text": "i"
 															},
 															"right_expression": {
 																"id": 335,
@@ -1699,7 +1693,8 @@
 																},
 																"overloaded_declarations": [],
 																"referenced_declaration": 0,
-																"is_pure": true
+																"is_pure": true,
+																"text": "2"
 															},
 															"type_description": {
 																"type_identifier": "t_uint256",
@@ -1711,19 +1706,36 @@
 															"type_string": "int_const 3"
 														}
 													},
-													"type_descriptions": [
-														{
+													"base_expression": {
+														"id": 330,
+														"node_type": 16,
+														"src": {
+															"line": 77,
+															"column": 12,
+															"start": 2645,
+															"end": 2647,
+															"length": 3,
+															"parent_index": 329
+														},
+														"name": "str",
+														"type_description": {
 															"type_identifier": "t_bytes",
 															"type_string": "bytes"
 														},
+														"overloaded_declarations": [],
+														"referenced_declaration": 268,
+														"is_pure": false,
+														"text": "str"
+													},
+													"type_descriptions": [
 														{
 															"type_identifier": "t_rational_3_by_1",
 															"type_string": "int_const 3"
 														}
 													],
 													"type_description": {
-														"type_identifier": "t_[_[$_t_bytes]$_t_rational_3_by_1]$",
-														"type_string": "index[bytes:int_const 3]"
+														"type_identifier": "t_[_[$_t_rational_3_by_1]$",
+														"type_string": "index[int_const 3]"
 													}
 												},
 												"right_expression": {
@@ -1738,26 +1750,6 @@
 														"parent_index": 328
 													},
 													"index_expression": {
-														"id": 337,
-														"node_type": 16,
-														"src": {
-															"line": 77,
-															"column": 25,
-															"start": 2658,
-															"end": 2665,
-															"length": 8,
-															"parent_index": 336
-														},
-														"name": "alphabet",
-														"type_description": {
-															"type_identifier": "t_bytes",
-															"type_string": "bytes"
-														},
-														"overloaded_declarations": [],
-														"referenced_declaration": 264,
-														"is_pure": false
-													},
-													"base_expression": {
 														"id": 338,
 														"node_type": 24,
 														"kind": 24,
@@ -1771,8 +1763,8 @@
 														},
 														"argument_types": [
 															{
-																"type_identifier": "t_function_$_t_[_[$_t_bytes]$_t_uint256]$",
-																"type_string": "function(index[bytes:uint256])"
+																"type_identifier": "t_function_$_t_[_[$_t_uint256]$",
+																"type_string": "function(index[uint256])"
 															}
 														],
 														"arguments": [
@@ -1790,8 +1782,8 @@
 																},
 																"argument_types": [
 																	{
-																		"type_identifier": "t_[_[$_t_bytes]$_t_uint256]$",
-																		"type_string": "index[bytes:uint256]"
+																		"type_identifier": "t_[_[$_t_uint256]$",
+																		"type_string": "index[uint256]"
 																	}
 																],
 																"arguments": [
@@ -1819,26 +1811,6 @@
 																					"parent_index": 345
 																				},
 																				"index_expression": {
-																					"id": 347,
-																					"node_type": 16,
-																					"src": {
-																						"line": 77,
-																						"column": 45,
-																						"start": 2678,
-																						"end": 2681,
-																						"length": 4,
-																						"parent_index": 346
-																					},
-																					"name": "data",
-																					"type_description": {
-																						"type_identifier": "t_bytes",
-																						"type_string": "bytes"
-																					},
-																					"overloaded_declarations": [],
-																					"referenced_declaration": 257,
-																					"is_pure": false
-																				},
-																				"base_expression": {
 																					"id": 348,
 																					"node_type": 16,
 																					"src": {
@@ -1856,21 +1828,39 @@
 																					},
 																					"overloaded_declarations": [],
 																					"referenced_declaration": 293,
-																					"is_pure": false
+																					"is_pure": false,
+																					"text": "i"
 																				},
-																				"type_descriptions": [
-																					{
+																				"base_expression": {
+																					"id": 347,
+																					"node_type": 16,
+																					"src": {
+																						"line": 77,
+																						"column": 45,
+																						"start": 2678,
+																						"end": 2681,
+																						"length": 4,
+																						"parent_index": 346
+																					},
+																					"name": "data",
+																					"type_description": {
 																						"type_identifier": "t_bytes",
 																						"type_string": "bytes"
 																					},
+																					"overloaded_declarations": [],
+																					"referenced_declaration": 257,
+																					"is_pure": false,
+																					"text": "data"
+																				},
+																				"type_descriptions": [
 																					{
 																						"type_identifier": "t_uint256",
 																						"type_string": "uint256"
 																					}
 																				],
 																				"type_description": {
-																					"type_identifier": "t_[_[$_t_bytes]$_t_uint256]$",
-																					"type_string": "index[bytes:uint256]"
+																					"type_identifier": "t_[_[$_t_uint256]$",
+																					"type_string": "index[uint256]"
 																				}
 																			},
 																			{
@@ -1893,13 +1883,14 @@
 																				},
 																				"overloaded_declarations": [],
 																				"referenced_declaration": 0,
-																				"is_pure": true
+																				"is_pure": true,
+																				"text": "0x0f"
 																			}
 																		],
 																		"type_descriptions": [
 																			{
-																				"type_identifier": "t_[_[$_t_bytes]$_t_uint256]$",
-																				"type_string": "index[bytes:uint256]"
+																				"type_identifier": "t_[_[$_t_uint256]$",
+																				"type_string": "index[uint256]"
 																			},
 																			{
 																				"type_identifier": "t_rational_0_by_1",
@@ -1950,11 +1941,12 @@
 																			"type_identifier": "t_uint8",
 																			"type_string": "uint8"
 																		}
-																	]
+																	],
+																	"text": "uint8"
 																},
 																"type_description": {
-																	"type_identifier": "t_function_$_t_[_[$_t_bytes]$_t_uint256]$",
-																	"type_string": "function(index[bytes:uint256])"
+																	"type_identifier": "t_function_$_t_[_[$_t_uint256]$",
+																	"type_string": "function(index[uint256])"
 																}
 															}
 														],
@@ -2000,37 +1992,56 @@
 																	"type_identifier": "t_uint256",
 																	"type_string": "uint256"
 																}
-															]
+															],
+															"text": "uint"
 														},
 														"type_description": {
-															"type_identifier": "t_function_$_t_function_$_t_[_[$_t_bytes]$_t_uint256]$",
-															"type_string": "function(function(index[bytes:uint256]))"
+															"type_identifier": "t_function_$_t_function_$_t_[_[$_t_uint256]$",
+															"type_string": "function(function(index[uint256]))"
 														}
 													},
-													"type_descriptions": [
-														{
+													"base_expression": {
+														"id": 337,
+														"node_type": 16,
+														"src": {
+															"line": 77,
+															"column": 25,
+															"start": 2658,
+															"end": 2665,
+															"length": 8,
+															"parent_index": 336
+														},
+														"name": "alphabet",
+														"type_description": {
 															"type_identifier": "t_bytes",
 															"type_string": "bytes"
 														},
+														"overloaded_declarations": [],
+														"referenced_declaration": 264,
+														"is_pure": false,
+														"text": "alphabet"
+													},
+													"type_descriptions": [
 														{
-															"type_identifier": "t_function_$_t_function_$_t_[_[$_t_bytes]$_t_uint256]$",
-															"type_string": "function(function(index[bytes:uint256]))"
+															"type_identifier": "t_function_$_t_function_$_t_[_[$_t_uint256]$",
+															"type_string": "function(function(index[uint256]))"
 														}
 													],
 													"type_description": {
-														"type_identifier": "t_[_[$_t_bytes]$_t_function_$_t_function_$_t_[_[$_t_bytes]$_t_uint256]$",
-														"type_string": "index[bytes:function(function(index[bytes:uint256]))]"
+														"type_identifier": "t_[_[$_t_function_$_t_function_$_t_[_[$_t_uint256]$",
+														"type_string": "index[function(function(index[uint256]))]"
 													}
 												},
 												"type_description": {
-													"type_identifier": "t_[_[$_t_bytes]$_t_rational_3_by_1]$",
-													"type_string": "index[bytes:int_const 3]"
+													"type_identifier": "t_[_[$_t_rational_3_by_1]$",
+													"type_string": "index[int_const 3]"
 												}
 											},
 											"type_description": {
-												"type_identifier": "t_[_[$_t_bytes]$_t_rational_3_by_1]$",
-												"type_string": "index[bytes:int_const 3]"
-											}
+												"type_identifier": "t_[_[$_t_rational_3_by_1]$",
+												"type_string": "index[int_const 3]"
+											},
+											"text": "str[3+i*2]=alphabet[uint(uint8(data[i]\u00260x0f))];"
 										}
 									]
 								}
@@ -2084,7 +2095,8 @@
 											},
 											"overloaded_declarations": [],
 											"referenced_declaration": 268,
-											"is_pure": false
+											"is_pure": false,
+											"text": "str"
 										}
 									],
 									"expression": {
@@ -2129,7 +2141,8 @@
 												"type_identifier": "t_string",
 												"type_string": "string"
 											}
-										]
+										],
+										"text": "string"
 									},
 									"type_description": {
 										"type_identifier": "t_function_$_t_bytes$",
@@ -2270,7 +2283,8 @@
 					"type_description": {
 						"type_identifier": "t_function_$_t_address$",
 						"type_string": "function(address)"
-					}
+					},
+					"text": "functiontoString(addressaccount)internalpurereturns(stringmemory){bytesmemorydata=abi.encodePacked(account);bytesmemoryalphabet=\"0123456789abcdef\";bytesmemorystr=newbytes(2+data.length*2);str[0]=\"0\";str[1]=\"x\";for(uinti=0;i\u003cdata.length;i++){str[2+i*2]=alphabet[uint(uint8(data[i]\u003e\u003e4))];str[3+i*2]=alphabet[uint(uint8(data[i]\u00260x0f))];}returnstring(str);}"
 				}
 			],
 			"linearized_base_contracts": [

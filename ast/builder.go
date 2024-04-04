@@ -3,7 +3,7 @@ package ast
 import (
 	"bytes"
 	"context"
-	"encoding/json"
+	"github.com/goccy/go-json"
 
 	ast_pb "github.com/unpackdev/protos/dist/go/ast"
 	"github.com/unpackdev/solgo"
@@ -192,4 +192,6 @@ func (b *ASTBuilder) GarbageCollect() {
 	b.globalDefinitions = nil
 	b.currentImports = nil
 	b.currentUserDefinedVariables = nil
+	b.comments = nil
+	b.commentsParsed = false
 }

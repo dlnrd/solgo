@@ -1,8 +1,8 @@
 {
-	"id": 2814,
+	"id": 2789,
 	"base_contracts": [
 		{
-			"id": 2817,
+			"id": 2792,
 			"node_type": 62,
 			"src": {
 				"line": 1151,
@@ -10,10 +10,10 @@
 				"start": 35123,
 				"end": 35129,
 				"length": 7,
-				"parent_index": 2816
+				"parent_index": 2791
 			},
 			"base_name": {
-				"id": 2818,
+				"id": 2793,
 				"node_type": 52,
 				"src": {
 					"line": 1151,
@@ -21,14 +21,15 @@
 					"start": 35123,
 					"end": 35129,
 					"length": 7,
-					"parent_index": 2816
+					"parent_index": 2791
 				},
 				"name": "Ownable",
-				"referenced_declaration": 88
+				"referenced_declaration": 88,
+				"contract_referenced_declaration": 0
 			}
 		},
 		{
-			"id": 2819,
+			"id": 2794,
 			"node_type": 62,
 			"src": {
 				"line": 1151,
@@ -36,10 +37,10 @@
 				"start": 35132,
 				"end": 35142,
 				"length": 11,
-				"parent_index": 2816
+				"parent_index": 2791
 			},
 			"base_name": {
-				"id": 2820,
+				"id": 2795,
 				"node_type": 52,
 				"src": {
 					"line": 1151,
@@ -47,14 +48,15 @@
 					"start": 35132,
 					"end": 35142,
 					"length": 11,
-					"parent_index": 2816
+					"parent_index": 2791
 				},
 				"name": "DexBaseUSDT",
-				"referenced_declaration": 2218
+				"referenced_declaration": 2193,
+				"contract_referenced_declaration": 0
 			}
 		},
 		{
-			"id": 2821,
+			"id": 2796,
 			"node_type": 62,
 			"src": {
 				"line": 1151,
@@ -62,10 +64,10 @@
 				"start": 35145,
 				"end": 35149,
 				"length": 5,
-				"parent_index": 2816
+				"parent_index": 2791
 			},
 			"base_name": {
-				"id": 2822,
+				"id": 2797,
 				"node_type": 52,
 				"src": {
 					"line": 1151,
@@ -73,42 +75,43 @@
 					"start": 35145,
 					"end": 35149,
 					"length": 5,
-					"parent_index": 2816
+					"parent_index": 2791
 				},
 				"name": "ERC20",
-				"referenced_declaration": 408
+				"referenced_declaration": 406,
+				"contract_referenced_declaration": 0
 			}
 		}
 	],
 	"license": "AGPL-3.0-only",
 	"exported_symbols": [
 		{
-			"id": 2814,
+			"id": 2789,
 			"name": "LiquidityFeeUSDT",
-			"absolute_path": ""
+			"absolute_path": "Ptm.sol"
 		},
 		{
-			"id": 2817,
+			"id": 2792,
 			"name": "Ownable",
 			"absolute_path": ""
 		},
 		{
-			"id": 2819,
+			"id": 2794,
 			"name": "DexBaseUSDT",
 			"absolute_path": ""
 		},
 		{
-			"id": 2821,
+			"id": 2796,
 			"name": "ERC20",
 			"absolute_path": ""
 		}
 	],
-	"absolute_path": "",
+	"absolute_path": "Ptm.sol",
 	"name": "LiquidityFeeUSDT",
 	"node_type": 1,
 	"nodes": [
 		{
-			"id": 2815,
+			"id": 2790,
 			"node_type": 10,
 			"src": {
 				"line": 6,
@@ -116,7 +119,7 @@
 				"start": 108,
 				"end": 132,
 				"length": 25,
-				"parent_index": 2814
+				"parent_index": 2789
 			},
 			"literals": [
 				"pragma",
@@ -132,7 +135,7 @@
 			"text": "pragma solidity \u003e=0.8.16;"
 		},
 		{
-			"id": 2816,
+			"id": 2791,
 			"name": "LiquidityFeeUSDT",
 			"node_type": 35,
 			"src": {
@@ -141,7 +144,7 @@
 				"start": 35085,
 				"end": 38977,
 				"length": 3893,
-				"parent_index": 2814
+				"parent_index": 2789
 			},
 			"name_location": {
 				"line": 1151,
@@ -149,14 +152,14 @@
 				"start": 35103,
 				"end": 35118,
 				"length": 16,
-				"parent_index": 2816
+				"parent_index": 2791
 			},
 			"abstract": false,
 			"kind": 36,
 			"fully_implemented": true,
 			"nodes": [
 				{
-					"id": 2824,
+					"id": 2799,
 					"name": "swapAndLiquifyEnabled",
 					"is_constant": false,
 					"is_state_variable": true,
@@ -167,9 +170,9 @@
 						"start": 35157,
 						"end": 35197,
 						"length": 41,
-						"parent_index": 2816
+						"parent_index": 2791
 					},
-					"scope": 2816,
+					"scope": 2791,
 					"type_description": {
 						"type_identifier": "t_bool",
 						"type_string": "bool"
@@ -178,7 +181,7 @@
 					"storage_location": 1,
 					"mutability": 1,
 					"type_name": {
-						"id": 2825,
+						"id": 2800,
 						"node_type": 30,
 						"src": {
 							"line": 1152,
@@ -186,7 +189,7 @@
 							"start": 35157,
 							"end": 35160,
 							"length": 4,
-							"parent_index": 2824
+							"parent_index": 2799
 						},
 						"name": "bool",
 						"referenced_declaration": 0,
@@ -196,7 +199,7 @@
 						}
 					},
 					"initial_value": {
-						"id": 2826,
+						"id": 2801,
 						"node_type": 17,
 						"kind": 61,
 						"value": "true",
@@ -207,7 +210,7 @@
 							"start": 35193,
 							"end": 35196,
 							"length": 4,
-							"parent_index": 2824
+							"parent_index": 2799
 						},
 						"type_description": {
 							"type_identifier": "t_bool",
@@ -215,11 +218,12 @@
 						},
 						"overloaded_declarations": [],
 						"referenced_declaration": 0,
-						"is_pure": true
+						"is_pure": true,
+						"text": "true"
 					}
 				},
 				{
-					"id": 2828,
+					"id": 2803,
 					"name": "numTokensSellToAddToLiquidity",
 					"is_constant": false,
 					"is_state_variable": true,
@@ -230,9 +234,9 @@
 						"start": 35203,
 						"end": 35258,
 						"length": 56,
-						"parent_index": 2816
+						"parent_index": 2791
 					},
-					"scope": 2816,
+					"scope": 2791,
 					"type_description": {
 						"type_identifier": "t_rational_1_by_1",
 						"type_string": "int_const 1"
@@ -241,7 +245,7 @@
 					"storage_location": 1,
 					"mutability": 1,
 					"type_name": {
-						"id": 2829,
+						"id": 2804,
 						"node_type": 30,
 						"src": {
 							"line": 1153,
@@ -249,7 +253,7 @@
 							"start": 35203,
 							"end": 35209,
 							"length": 7,
-							"parent_index": 2828
+							"parent_index": 2803
 						},
 						"name": "uint256",
 						"referenced_declaration": 0,
@@ -259,7 +263,7 @@
 						}
 					},
 					"initial_value": {
-						"id": 2830,
+						"id": 2805,
 						"is_constant": false,
 						"is_pure": false,
 						"node_type": 19,
@@ -269,11 +273,11 @@
 							"start": 35250,
 							"end": 35257,
 							"length": 8,
-							"parent_index": 2828
+							"parent_index": 2803
 						},
 						"operator": 3,
 						"left_expression": {
-							"id": 2831,
+							"id": 2806,
 							"node_type": 17,
 							"kind": 49,
 							"value": "1",
@@ -284,7 +288,7 @@
 								"start": 35250,
 								"end": 35250,
 								"length": 1,
-								"parent_index": 2830
+								"parent_index": 2805
 							},
 							"type_description": {
 								"type_identifier": "t_rational_1_by_1",
@@ -292,10 +296,11 @@
 							},
 							"overloaded_declarations": [],
 							"referenced_declaration": 0,
-							"is_pure": true
+							"is_pure": true,
+							"text": "1"
 						},
 						"right_expression": {
-							"id": 2832,
+							"id": 2807,
 							"node_type": 17,
 							"kind": 49,
 							"value": "1e28",
@@ -306,7 +311,7 @@
 								"start": 35254,
 								"end": 35257,
 								"length": 4,
-								"parent_index": 2830
+								"parent_index": 2805
 							},
 							"type_description": {
 								"type_identifier": "t_rational_0_by_1",
@@ -314,7 +319,8 @@
 							},
 							"overloaded_declarations": [],
 							"referenced_declaration": 0,
-							"is_pure": true
+							"is_pure": true,
+							"text": "1e28"
 						},
 						"type_description": {
 							"type_identifier": "t_rational_1_by_1",
@@ -323,7 +329,7 @@
 					}
 				},
 				{
-					"id": 2834,
+					"id": 2809,
 					"name": "lpRec",
 					"is_constant": false,
 					"is_state_variable": true,
@@ -334,9 +340,9 @@
 						"start": 35264,
 						"end": 35329,
 						"length": 66,
-						"parent_index": 2816
+						"parent_index": 2791
 					},
-					"scope": 2816,
+					"scope": 2791,
 					"type_description": {
 						"type_identifier": "t_rational_0_by_1",
 						"type_string": "int_const 0x714675834Fc80Ff85f892840d7940496C52b1BA8"
@@ -345,7 +351,7 @@
 					"storage_location": 1,
 					"mutability": 1,
 					"type_name": {
-						"id": 2835,
+						"id": 2810,
 						"node_type": 30,
 						"src": {
 							"line": 1154,
@@ -353,7 +359,7 @@
 							"start": 35264,
 							"end": 35270,
 							"length": 7,
-							"parent_index": 2834
+							"parent_index": 2809
 						},
 						"name": "address",
 						"state_mutability": 4,
@@ -364,7 +370,7 @@
 						}
 					},
 					"initial_value": {
-						"id": 2836,
+						"id": 2811,
 						"node_type": 17,
 						"kind": 49,
 						"value": "0x714675834Fc80Ff85f892840d7940496C52b1BA8",
@@ -375,7 +381,7 @@
 							"start": 35287,
 							"end": 35328,
 							"length": 42,
-							"parent_index": 2834
+							"parent_index": 2809
 						},
 						"type_description": {
 							"type_identifier": "t_rational_0_by_1",
@@ -383,11 +389,12 @@
 						},
 						"overloaded_declarations": [],
 						"referenced_declaration": 0,
-						"is_pure": true
+						"is_pure": true,
+						"text": "0x714675834Fc80Ff85f892840d7940496C52b1BA8"
 					}
 				},
 				{
-					"id": 2838,
+					"id": 2813,
 					"node_type": 57,
 					"src": {
 						"line": 1156,
@@ -395,10 +402,10 @@
 						"start": 35336,
 						"end": 35397,
 						"length": 62,
-						"parent_index": 2816
+						"parent_index": 2791
 					},
 					"parameters": {
-						"id": 2839,
+						"id": 2814,
 						"node_type": 43,
 						"src": {
 							"line": 1156,
@@ -406,11 +413,11 @@
 							"start": 35336,
 							"end": 35397,
 							"length": 62,
-							"parent_index": 2838
+							"parent_index": 2813
 						},
 						"parameters": [
 							{
-								"id": 2840,
+								"id": 2815,
 								"node_type": 44,
 								"src": {
 									"line": 1156,
@@ -418,12 +425,12 @@
 									"start": 35369,
 									"end": 35395,
 									"length": 27,
-									"parent_index": 2839
+									"parent_index": 2814
 								},
-								"scope": 2838,
+								"scope": 2813,
 								"name": "minTokensBeforeSwap",
 								"type_name": {
-									"id": 2841,
+									"id": 2816,
 									"node_type": 30,
 									"src": {
 										"line": 1156,
@@ -431,7 +438,7 @@
 										"start": 35369,
 										"end": 35375,
 										"length": 7,
-										"parent_index": 2840
+										"parent_index": 2815
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -459,12 +466,12 @@
 					"name": "MinTokensBeforeSwapUpdated",
 					"anonymous": false,
 					"type_description": {
-						"type_identifier": "t_event\u0026_LiquidityFeeUSDT_MinTokensBeforeSwapUpdated_\u00262838",
+						"type_identifier": "t_event\u0026_LiquidityFeeUSDT_MinTokensBeforeSwapUpdated_\u00262813",
 						"type_string": "event LiquidityFeeUSDT.MinTokensBeforeSwapUpdated"
 					}
 				},
 				{
-					"id": 2843,
+					"id": 2818,
 					"node_type": 57,
 					"src": {
 						"line": 1157,
@@ -472,10 +479,10 @@
 						"start": 35403,
 						"end": 35451,
 						"length": 49,
-						"parent_index": 2816
+						"parent_index": 2791
 					},
 					"parameters": {
-						"id": 2844,
+						"id": 2819,
 						"node_type": 43,
 						"src": {
 							"line": 1157,
@@ -483,11 +490,11 @@
 							"start": 35403,
 							"end": 35451,
 							"length": 49,
-							"parent_index": 2843
+							"parent_index": 2818
 						},
 						"parameters": [
 							{
-								"id": 2845,
+								"id": 2820,
 								"node_type": 44,
 								"src": {
 									"line": 1157,
@@ -495,12 +502,12 @@
 									"start": 35438,
 									"end": 35449,
 									"length": 12,
-									"parent_index": 2844
+									"parent_index": 2819
 								},
-								"scope": 2843,
+								"scope": 2818,
 								"name": "enabled",
 								"type_name": {
-									"id": 2846,
+									"id": 2821,
 									"node_type": 30,
 									"src": {
 										"line": 1157,
@@ -508,7 +515,7 @@
 										"start": 35438,
 										"end": 35441,
 										"length": 4,
-										"parent_index": 2845
+										"parent_index": 2820
 									},
 									"name": "bool",
 									"referenced_declaration": 0,
@@ -536,12 +543,12 @@
 					"name": "SwapAndLiquifyEnabledUpdated",
 					"anonymous": false,
 					"type_description": {
-						"type_identifier": "t_event\u0026_LiquidityFeeUSDT_SwapAndLiquifyEnabledUpdated_\u00262843",
+						"type_identifier": "t_event\u0026_LiquidityFeeUSDT_SwapAndLiquifyEnabledUpdated_\u00262818",
 						"type_string": "event LiquidityFeeUSDT.SwapAndLiquifyEnabledUpdated"
 					}
 				},
 				{
-					"id": 2848,
+					"id": 2823,
 					"node_type": 57,
 					"src": {
 						"line": 1158,
@@ -549,10 +556,10 @@
 						"start": 35457,
 						"end": 35579,
 						"length": 123,
-						"parent_index": 2816
+						"parent_index": 2791
 					},
 					"parameters": {
-						"id": 2849,
+						"id": 2824,
 						"node_type": 43,
 						"src": {
 							"line": 1158,
@@ -560,11 +567,11 @@
 							"start": 35457,
 							"end": 35579,
 							"length": 123,
-							"parent_index": 2848
+							"parent_index": 2823
 						},
 						"parameters": [
 							{
-								"id": 2850,
+								"id": 2825,
 								"node_type": 44,
 								"src": {
 									"line": 1159,
@@ -572,12 +579,12 @@
 									"start": 35487,
 									"end": 35507,
 									"length": 21,
-									"parent_index": 2849
+									"parent_index": 2824
 								},
-								"scope": 2848,
+								"scope": 2823,
 								"name": "tokensSwapped",
 								"type_name": {
-									"id": 2851,
+									"id": 2826,
 									"node_type": 30,
 									"src": {
 										"line": 1159,
@@ -585,7 +592,7 @@
 										"start": 35487,
 										"end": 35493,
 										"length": 7,
-										"parent_index": 2850
+										"parent_index": 2825
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -603,7 +610,7 @@
 								}
 							},
 							{
-								"id": 2852,
+								"id": 2827,
 								"node_type": 44,
 								"src": {
 									"line": 1160,
@@ -611,12 +618,12 @@
 									"start": 35518,
 									"end": 35536,
 									"length": 19,
-									"parent_index": 2849
+									"parent_index": 2824
 								},
-								"scope": 2848,
+								"scope": 2823,
 								"name": "ethReceived",
 								"type_name": {
-									"id": 2853,
+									"id": 2828,
 									"node_type": 30,
 									"src": {
 										"line": 1160,
@@ -624,7 +631,7 @@
 										"start": 35518,
 										"end": 35524,
 										"length": 7,
-										"parent_index": 2852
+										"parent_index": 2827
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -642,7 +649,7 @@
 								}
 							},
 							{
-								"id": 2854,
+								"id": 2829,
 								"node_type": 44,
 								"src": {
 									"line": 1161,
@@ -650,12 +657,12 @@
 									"start": 35547,
 									"end": 35572,
 									"length": 26,
-									"parent_index": 2849
+									"parent_index": 2824
 								},
-								"scope": 2848,
+								"scope": 2823,
 								"name": "tokensIntoLiqudity",
 								"type_name": {
-									"id": 2855,
+									"id": 2830,
 									"node_type": 30,
 									"src": {
 										"line": 1161,
@@ -663,7 +670,7 @@
 										"start": 35547,
 										"end": 35553,
 										"length": 7,
-										"parent_index": 2854
+										"parent_index": 2829
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -699,12 +706,12 @@
 					"name": "SwapAndLiquify",
 					"anonymous": false,
 					"type_description": {
-						"type_identifier": "t_event\u0026_LiquidityFeeUSDT_SwapAndLiquify_\u00262848",
+						"type_identifier": "t_event\u0026_LiquidityFeeUSDT_SwapAndLiquify_\u00262823",
 						"type_string": "event LiquidityFeeUSDT.SwapAndLiquify"
 					}
 				},
 				{
-					"id": 2857,
+					"id": 2832,
 					"node_type": 42,
 					"src": {
 						"line": 1164,
@@ -712,7 +719,7 @@
 						"start": 35586,
 						"end": 35898,
 						"length": 313,
-						"parent_index": 2816
+						"parent_index": 2791
 					},
 					"kind": 11,
 					"state_mutability": 4,
@@ -720,7 +727,7 @@
 					"implemented": true,
 					"modifiers": [],
 					"parameters": {
-						"id": 2858,
+						"id": 2833,
 						"node_type": 43,
 						"src": {
 							"line": 1165,
@@ -728,11 +735,11 @@
 							"start": 35607,
 							"end": 35681,
 							"length": 75,
-							"parent_index": 2857
+							"parent_index": 2832
 						},
 						"parameters": [
 							{
-								"id": 2859,
+								"id": 2834,
 								"node_type": 44,
 								"src": {
 									"line": 1165,
@@ -740,12 +747,12 @@
 									"start": 35607,
 									"end": 35644,
 									"length": 38,
-									"parent_index": 2858
+									"parent_index": 2833
 								},
-								"scope": 2857,
+								"scope": 2832,
 								"name": "_numTokensSellToAddToLiquidity",
 								"type_name": {
-									"id": 2860,
+									"id": 2835,
 									"node_type": 30,
 									"src": {
 										"line": 1165,
@@ -753,7 +760,7 @@
 										"start": 35607,
 										"end": 35613,
 										"length": 7,
-										"parent_index": 2859
+										"parent_index": 2834
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -771,7 +778,7 @@
 								}
 							},
 							{
-								"id": 2861,
+								"id": 2836,
 								"node_type": 44,
 								"src": {
 									"line": 1166,
@@ -779,12 +786,12 @@
 									"start": 35655,
 									"end": 35681,
 									"length": 27,
-									"parent_index": 2858
+									"parent_index": 2833
 								},
-								"scope": 2857,
+								"scope": 2832,
 								"name": "_swapAndLiquifyEnabled",
 								"type_name": {
-									"id": 2862,
+									"id": 2837,
 									"node_type": 30,
 									"src": {
 										"line": 1166,
@@ -792,7 +799,7 @@
 										"start": 35655,
 										"end": 35658,
 										"length": 4,
-										"parent_index": 2861
+										"parent_index": 2836
 									},
 									"name": "bool",
 									"referenced_declaration": 0,
@@ -822,7 +829,7 @@
 						]
 					},
 					"return_parameters": {
-						"id": 2863,
+						"id": 2838,
 						"node_type": 43,
 						"src": {
 							"line": 1164,
@@ -830,14 +837,14 @@
 							"start": 35586,
 							"end": 35898,
 							"length": 313,
-							"parent_index": 2857
+							"parent_index": 2832
 						},
 						"parameters": [],
 						"parameter_types": []
 					},
-					"scope": 2816,
+					"scope": 2791,
 					"body": {
-						"id": 2864,
+						"id": 2839,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -846,12 +853,12 @@
 							"start": 35689,
 							"end": 35898,
 							"length": 210,
-							"parent_index": 2857
+							"parent_index": 2832
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 2865,
+								"id": 2840,
 								"node_type": 27,
 								"src": {
 									"line": 1168,
@@ -859,10 +866,10 @@
 									"start": 35699,
 									"end": 35761,
 									"length": 63,
-									"parent_index": 2864
+									"parent_index": 2839
 								},
 								"expression": {
-									"id": 2866,
+									"id": 2841,
 									"node_type": 27,
 									"src": {
 										"line": 1168,
@@ -870,11 +877,11 @@
 										"start": 35699,
 										"end": 35760,
 										"length": 62,
-										"parent_index": 2865
+										"parent_index": 2840
 									},
 									"operator": 11,
 									"left_expression": {
-										"id": 2867,
+										"id": 2842,
 										"node_type": 16,
 										"src": {
 											"line": 1168,
@@ -882,7 +889,7 @@
 											"start": 35699,
 											"end": 35727,
 											"length": 29,
-											"parent_index": 2866
+											"parent_index": 2841
 										},
 										"name": "numTokensSellToAddToLiquidity",
 										"type_description": {
@@ -890,11 +897,12 @@
 											"type_string": "int_const 1"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 2828,
-										"is_pure": false
+										"referenced_declaration": 2803,
+										"is_pure": false,
+										"text": "numTokensSellToAddToLiquidity"
 									},
 									"right_expression": {
-										"id": 2868,
+										"id": 2843,
 										"node_type": 16,
 										"src": {
 											"line": 1168,
@@ -902,7 +910,7 @@
 											"start": 35731,
 											"end": 35760,
 											"length": 30,
-											"parent_index": 2866
+											"parent_index": 2841
 										},
 										"name": "_numTokensSellToAddToLiquidity",
 										"type_description": {
@@ -910,8 +918,9 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 2868,
-										"is_pure": false
+										"referenced_declaration": 2843,
+										"is_pure": false,
+										"text": "_numTokensSellToAddToLiquidity"
 									},
 									"type_description": {
 										"type_identifier": "t_rational_1_by_1",
@@ -921,10 +930,11 @@
 								"type_description": {
 									"type_identifier": "t_rational_1_by_1",
 									"type_string": "int_const 1"
-								}
+								},
+								"text": "numTokensSellToAddToLiquidity=_numTokensSellToAddToLiquidity;"
 							},
 							{
-								"id": 2869,
+								"id": 2844,
 								"node_type": 27,
 								"src": {
 									"line": 1169,
@@ -932,10 +942,10 @@
 									"start": 35771,
 									"end": 35817,
 									"length": 47,
-									"parent_index": 2864
+									"parent_index": 2839
 								},
 								"expression": {
-									"id": 2870,
+									"id": 2845,
 									"node_type": 27,
 									"src": {
 										"line": 1169,
@@ -943,11 +953,11 @@
 										"start": 35771,
 										"end": 35816,
 										"length": 46,
-										"parent_index": 2869
+										"parent_index": 2844
 									},
 									"operator": 11,
 									"left_expression": {
-										"id": 2871,
+										"id": 2846,
 										"node_type": 16,
 										"src": {
 											"line": 1169,
@@ -955,7 +965,7 @@
 											"start": 35771,
 											"end": 35791,
 											"length": 21,
-											"parent_index": 2870
+											"parent_index": 2845
 										},
 										"name": "swapAndLiquifyEnabled",
 										"type_description": {
@@ -963,11 +973,12 @@
 											"type_string": "bool"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 2824,
-										"is_pure": false
+										"referenced_declaration": 2799,
+										"is_pure": false,
+										"text": "swapAndLiquifyEnabled"
 									},
 									"right_expression": {
-										"id": 2872,
+										"id": 2847,
 										"node_type": 16,
 										"src": {
 											"line": 1169,
@@ -975,7 +986,7 @@
 											"start": 35795,
 											"end": 35816,
 											"length": 22,
-											"parent_index": 2870
+											"parent_index": 2845
 										},
 										"name": "_swapAndLiquifyEnabled",
 										"type_description": {
@@ -983,8 +994,9 @@
 											"type_string": "bool"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 2872,
-										"is_pure": false
+										"referenced_declaration": 2847,
+										"is_pure": false,
+										"text": "_swapAndLiquifyEnabled"
 									},
 									"type_description": {
 										"type_identifier": "t_bool",
@@ -994,10 +1006,11 @@
 								"type_description": {
 									"type_identifier": "t_bool",
 									"type_string": "bool"
-								}
+								},
+								"text": "swapAndLiquifyEnabled=_swapAndLiquifyEnabled;"
 							},
 							{
-								"id": 2873,
+								"id": 2848,
 								"node_type": 24,
 								"kind": 24,
 								"src": {
@@ -1006,7 +1019,7 @@
 									"start": 35827,
 									"end": 35891,
 									"length": 65,
-									"parent_index": 2864
+									"parent_index": 2839
 								},
 								"argument_types": [
 									{
@@ -1020,7 +1033,7 @@
 								],
 								"arguments": [
 									{
-										"id": 2878,
+										"id": 2853,
 										"node_type": 24,
 										"kind": 24,
 										"src": {
@@ -1029,7 +1042,7 @@
 											"start": 35848,
 											"end": 35871,
 											"length": 24,
-											"parent_index": 2873
+											"parent_index": 2848
 										},
 										"argument_types": [
 											{
@@ -1039,7 +1052,7 @@
 										],
 										"arguments": [
 											{
-												"id": 2881,
+												"id": 2856,
 												"node_type": 16,
 												"src": {
 													"line": 1170,
@@ -1047,7 +1060,7 @@
 													"start": 35856,
 													"end": 35870,
 													"length": 15,
-													"parent_index": 2878
+													"parent_index": 2853
 												},
 												"name": "uniswapV2Router",
 												"type_description": {
@@ -1056,11 +1069,12 @@
 												},
 												"overloaded_declarations": [],
 												"referenced_declaration": 0,
-												"is_pure": false
+												"is_pure": false,
+												"text": "uniswapV2Router"
 											}
 										],
 										"expression": {
-											"id": 2879,
+											"id": 2854,
 											"node_type": 16,
 											"src": {
 												"line": 1170,
@@ -1068,11 +1082,11 @@
 												"start": 35848,
 												"end": 35854,
 												"length": 7,
-												"parent_index": 2878
+												"parent_index": 2853
 											},
 											"name": "address",
 											"type_name": {
-												"id": 2880,
+												"id": 2855,
 												"node_type": 30,
 												"src": {
 													"line": 1170,
@@ -1080,7 +1094,7 @@
 													"start": 35848,
 													"end": 35854,
 													"length": 7,
-													"parent_index": 2879
+													"parent_index": 2854
 												},
 												"name": "address",
 												"state_mutability": 4,
@@ -1102,7 +1116,8 @@
 													"type_identifier": "t_address",
 													"type_string": "address"
 												}
-											]
+											],
+											"text": "address"
 										},
 										"type_description": {
 											"type_identifier": "t_function_$_t_function_$",
@@ -1110,7 +1125,7 @@
 										}
 									},
 									{
-										"id": 2882,
+										"id": 2857,
 										"is_constant": false,
 										"is_l_value": false,
 										"is_pure": false,
@@ -1122,7 +1137,7 @@
 											"start": 35874,
 											"end": 35890,
 											"length": 17,
-											"parent_index": 2873
+											"parent_index": 2848
 										},
 										"member_location": {
 											"line": 1170,
@@ -1130,10 +1145,10 @@
 											"start": 35888,
 											"end": 35890,
 											"length": 3,
-											"parent_index": 2882
+											"parent_index": 2857
 										},
 										"expression": {
-											"id": 2883,
+											"id": 2858,
 											"node_type": 16,
 											"name": "type",
 											"src": {
@@ -1142,7 +1157,7 @@
 												"start": 35874,
 												"end": 35886,
 												"length": 13,
-												"parent_index": 2882
+												"parent_index": 2857
 											},
 											"type_description": {
 												"type_identifier": "",
@@ -1159,11 +1174,12 @@
 										"type_description": {
 											"type_identifier": "",
 											"type_string": "type"
-										}
+										},
+										"text": "type(uint256).max"
 									}
 								],
 								"expression": {
-									"id": 2874,
+									"id": 2849,
 									"is_constant": false,
 									"is_l_value": false,
 									"is_pure": false,
@@ -1175,7 +1191,7 @@
 										"start": 35827,
 										"end": 35846,
 										"length": 20,
-										"parent_index": 2873
+										"parent_index": 2848
 									},
 									"member_location": {
 										"line": 1170,
@@ -1183,10 +1199,10 @@
 										"start": 35840,
 										"end": 35846,
 										"length": 7,
-										"parent_index": 2874
+										"parent_index": 2849
 									},
 									"expression": {
-										"id": 2875,
+										"id": 2850,
 										"node_type": 24,
 										"kind": 24,
 										"src": {
@@ -1195,7 +1211,7 @@
 											"start": 35827,
 											"end": 35838,
 											"length": 12,
-											"parent_index": 2874
+											"parent_index": 2849
 										},
 										"argument_types": [
 											{
@@ -1205,7 +1221,7 @@
 										],
 										"arguments": [
 											{
-												"id": 2877,
+												"id": 2852,
 												"node_type": 16,
 												"src": {
 													"line": 1170,
@@ -1213,7 +1229,7 @@
 													"start": 35834,
 													"end": 35837,
 													"length": 4,
-													"parent_index": 2875
+													"parent_index": 2850
 												},
 												"name": "USDT",
 												"type_description": {
@@ -1222,11 +1238,12 @@
 												},
 												"overloaded_declarations": [],
 												"referenced_declaration": 0,
-												"is_pure": false
+												"is_pure": false,
+												"text": "USDT"
 											}
 										],
 										"expression": {
-											"id": 2876,
+											"id": 2851,
 											"node_type": 16,
 											"src": {
 												"line": 1170,
@@ -1234,7 +1251,7 @@
 												"start": 35827,
 												"end": 35832,
 												"length": 6,
-												"parent_index": 2875
+												"parent_index": 2850
 											},
 											"name": "IERC20",
 											"type_description": {
@@ -1243,7 +1260,8 @@
 											},
 											"overloaded_declarations": [],
 											"referenced_declaration": 0,
-											"is_pure": false
+											"is_pure": false,
+											"text": "IERC20"
 										},
 										"type_description": {
 											"type_identifier": "t_function_$_t_function_$",
@@ -1255,7 +1273,8 @@
 									"type_description": {
 										"type_identifier": "t_function_$_t_function_$",
 										"type_string": "function(function())"
-									}
+									},
+									"text": "IERC20(USDT).approve"
 								},
 								"type_description": {
 									"type_identifier": "t_function_$_t_function_$_t_function_$_$",
@@ -1266,7 +1285,7 @@
 					}
 				},
 				{
-					"id": 2885,
+					"id": 2860,
 					"name": "_takeliquidityFee",
 					"node_type": 42,
 					"kind": 41,
@@ -1276,7 +1295,7 @@
 						"start": 35905,
 						"end": 36182,
 						"length": 278,
-						"parent_index": 2816
+						"parent_index": 2791
 					},
 					"name_location": {
 						"line": 1173,
@@ -1284,10 +1303,10 @@
 						"start": 35914,
 						"end": 35930,
 						"length": 17,
-						"parent_index": 2885
+						"parent_index": 2860
 					},
 					"body": {
-						"id": 2894,
+						"id": 2869,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -1296,12 +1315,12 @@
 							"start": 36013,
 							"end": 36182,
 							"length": 170,
-							"parent_index": 2885
+							"parent_index": 2860
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 2895,
+								"id": 2870,
 								"node_type": 44,
 								"src": {
 									"line": 1177,
@@ -1309,25 +1328,25 @@
 									"start": 36023,
 									"end": 36079,
 									"length": 57,
-									"parent_index": 2894
+									"parent_index": 2869
 								},
 								"assignments": [
-									2896
+									2871
 								],
 								"declarations": [
 									{
-										"id": 2896,
+										"id": 2871,
 										"state_mutability": 1,
 										"name": "liquidityAmount",
 										"node_type": 44,
-										"scope": 2894,
+										"scope": 2869,
 										"src": {
 											"line": 1177,
 											"column": 8,
 											"start": 36023,
 											"end": 36045,
 											"length": 23,
-											"parent_index": 2895
+											"parent_index": 2870
 										},
 										"name_location": {
 											"line": 1177,
@@ -1335,12 +1354,12 @@
 											"start": 36031,
 											"end": 36045,
 											"length": 15,
-											"parent_index": 2896
+											"parent_index": 2871
 										},
 										"is_state_variable": false,
 										"storage_location": 1,
 										"type_name": {
-											"id": 2897,
+											"id": 2872,
 											"node_type": 30,
 											"src": {
 												"line": 1177,
@@ -1348,7 +1367,7 @@
 												"start": 36023,
 												"end": 36029,
 												"length": 7,
-												"parent_index": 2896
+												"parent_index": 2871
 											},
 											"name": "uint256",
 											"referenced_declaration": 0,
@@ -1361,7 +1380,7 @@
 									}
 								],
 								"initial_value": {
-									"id": 2898,
+									"id": 2873,
 									"is_constant": false,
 									"is_pure": false,
 									"node_type": 19,
@@ -1371,11 +1390,11 @@
 										"start": 36049,
 										"end": 36078,
 										"length": 30,
-										"parent_index": 2895
+										"parent_index": 2870
 									},
 									"operator": 4,
 									"left_expression": {
-										"id": 2899,
+										"id": 2874,
 										"node_type": 60,
 										"src": {
 											"line": 1177,
@@ -1383,13 +1402,13 @@
 											"start": 36049,
 											"end": 36071,
 											"length": 23,
-											"parent_index": 2898
+											"parent_index": 2873
 										},
 										"is_constant": false,
 										"is_pure": false,
 										"components": [
 											{
-												"id": 2900,
+												"id": 2875,
 												"is_constant": false,
 												"is_pure": false,
 												"node_type": 19,
@@ -1399,11 +1418,11 @@
 													"start": 36050,
 													"end": 36070,
 													"length": 21,
-													"parent_index": 2899
+													"parent_index": 2874
 												},
 												"operator": 3,
 												"left_expression": {
-													"id": 2901,
+													"id": 2876,
 													"node_type": 16,
 													"src": {
 														"line": 1177,
@@ -1411,7 +1430,7 @@
 														"start": 36050,
 														"end": 36055,
 														"length": 6,
-														"parent_index": 2900
+														"parent_index": 2875
 													},
 													"name": "amount",
 													"type_description": {
@@ -1419,11 +1438,12 @@
 														"type_string": "uint256"
 													},
 													"overloaded_declarations": [],
-													"referenced_declaration": 2901,
-													"is_pure": false
+													"referenced_declaration": 2876,
+													"is_pure": false,
+													"text": "amount"
 												},
 												"right_expression": {
-													"id": 2902,
+													"id": 2877,
 													"node_type": 16,
 													"src": {
 														"line": 1177,
@@ -1431,7 +1451,7 @@
 														"start": 36059,
 														"end": 36070,
 														"length": 12,
-														"parent_index": 2900
+														"parent_index": 2875
 													},
 													"name": "liquidityFee",
 													"type_description": {
@@ -1439,8 +1459,9 @@
 														"type_string": "int_const 5"
 													},
 													"overloaded_declarations": [],
-													"referenced_declaration": 2243,
-													"is_pure": false
+													"referenced_declaration": 2218,
+													"is_pure": false,
+													"text": "liquidityFee"
 												},
 												"type_description": {
 													"type_identifier": "t_uint256",
@@ -1454,7 +1475,7 @@
 										}
 									},
 									"right_expression": {
-										"id": 2903,
+										"id": 2878,
 										"node_type": 17,
 										"kind": 49,
 										"value": "1000",
@@ -1465,7 +1486,7 @@
 											"start": 36075,
 											"end": 36078,
 											"length": 4,
-											"parent_index": 2898
+											"parent_index": 2873
 										},
 										"type_description": {
 											"type_identifier": "t_rational_1000_by_1",
@@ -1473,7 +1494,8 @@
 										},
 										"overloaded_declarations": [],
 										"referenced_declaration": 0,
-										"is_pure": true
+										"is_pure": true,
+										"text": "1000"
 									},
 									"type_description": {
 										"type_identifier": "t_tuple_$_t_uint256$",
@@ -1482,7 +1504,7 @@
 								}
 							},
 							{
-								"id": 2904,
+								"id": 2879,
 								"node_type": 24,
 								"kind": 24,
 								"src": {
@@ -1491,7 +1513,7 @@
 									"start": 36089,
 									"end": 36143,
 									"length": 55,
-									"parent_index": 2894
+									"parent_index": 2869
 								},
 								"argument_types": [
 									{
@@ -1509,7 +1531,7 @@
 								],
 								"arguments": [
 									{
-										"id": 2907,
+										"id": 2882,
 										"node_type": 16,
 										"src": {
 											"line": 1178,
@@ -1517,7 +1539,7 @@
 											"start": 36105,
 											"end": 36110,
 											"length": 6,
-											"parent_index": 2904
+											"parent_index": 2879
 										},
 										"name": "sender",
 										"type_description": {
@@ -1525,11 +1547,12 @@
 											"type_string": "address"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 2907,
-										"is_pure": false
+										"referenced_declaration": 2882,
+										"is_pure": false,
+										"text": "sender"
 									},
 									{
-										"id": 2908,
+										"id": 2883,
 										"node_type": 24,
 										"kind": 24,
 										"src": {
@@ -1538,17 +1561,17 @@
 											"start": 36113,
 											"end": 36125,
 											"length": 13,
-											"parent_index": 2904
+											"parent_index": 2879
 										},
 										"argument_types": [
 											{
-												"type_identifier": "t_contract$_LiquidityFeeUSDT_$2814",
+												"type_identifier": "t_contract$_LiquidityFeeUSDT_$2789",
 												"type_string": "contract LiquidityFeeUSDT"
 											}
 										],
 										"arguments": [
 											{
-												"id": 2911,
+												"id": 2886,
 												"node_type": 16,
 												"src": {
 													"line": 1178,
@@ -1556,20 +1579,21 @@
 													"start": 36121,
 													"end": 36124,
 													"length": 4,
-													"parent_index": 2908
+													"parent_index": 2883
 												},
 												"name": "this",
 												"type_description": {
-													"type_identifier": "t_contract$_LiquidityFeeUSDT_$2814",
+													"type_identifier": "t_contract$_LiquidityFeeUSDT_$2789",
 													"type_string": "contract LiquidityFeeUSDT"
 												},
 												"overloaded_declarations": [],
 												"referenced_declaration": 0,
-												"is_pure": false
+												"is_pure": false,
+												"text": "this"
 											}
 										],
 										"expression": {
-											"id": 2909,
+											"id": 2884,
 											"node_type": 16,
 											"src": {
 												"line": 1178,
@@ -1577,11 +1601,11 @@
 												"start": 36113,
 												"end": 36119,
 												"length": 7,
-												"parent_index": 2908
+												"parent_index": 2883
 											},
 											"name": "address",
 											"type_name": {
-												"id": 2910,
+												"id": 2885,
 												"node_type": 30,
 												"src": {
 													"line": 1178,
@@ -1589,7 +1613,7 @@
 													"start": 36113,
 													"end": 36119,
 													"length": 7,
-													"parent_index": 2909
+													"parent_index": 2884
 												},
 												"name": "address",
 												"state_mutability": 4,
@@ -1611,7 +1635,8 @@
 													"type_identifier": "t_address",
 													"type_string": "address"
 												}
-											]
+											],
+											"text": "address"
 										},
 										"type_description": {
 											"type_identifier": "t_function_$_t_address$",
@@ -1619,7 +1644,7 @@
 										}
 									},
 									{
-										"id": 2912,
+										"id": 2887,
 										"node_type": 16,
 										"src": {
 											"line": 1178,
@@ -1627,7 +1652,7 @@
 											"start": 36128,
 											"end": 36142,
 											"length": 15,
-											"parent_index": 2904
+											"parent_index": 2879
 										},
 										"name": "liquidityAmount",
 										"type_description": {
@@ -1635,7 +1660,7 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 2895,
+										"referenced_declaration": 2870,
 										"is_pure": false,
 										"argument_types": [
 											{
@@ -1646,11 +1671,12 @@
 												"type_identifier": "t_function_$_t_address$",
 												"type_string": "function(address)"
 											}
-										]
+										],
+										"text": "liquidityAmount"
 									}
 								],
 								"expression": {
-									"id": 2905,
+									"id": 2880,
 									"is_constant": false,
 									"is_l_value": false,
 									"is_pure": false,
@@ -1662,7 +1688,7 @@
 										"start": 36089,
 										"end": 36103,
 										"length": 15,
-										"parent_index": 2904
+										"parent_index": 2879
 									},
 									"member_location": {
 										"line": 1178,
@@ -1670,10 +1696,10 @@
 										"start": 36095,
 										"end": 36103,
 										"length": 9,
-										"parent_index": 2905
+										"parent_index": 2880
 									},
 									"expression": {
-										"id": 2906,
+										"id": 2881,
 										"node_type": 16,
 										"src": {
 											"line": 1178,
@@ -1681,7 +1707,7 @@
 											"start": 36089,
 											"end": 36093,
 											"length": 5,
-											"parent_index": 2905
+											"parent_index": 2880
 										},
 										"name": "super",
 										"type_description": {
@@ -1690,14 +1716,16 @@
 										},
 										"overloaded_declarations": [],
 										"referenced_declaration": 0,
-										"is_pure": false
+										"is_pure": false,
+										"text": "super"
 									},
 									"member_name": "_transfer",
 									"argument_types": [],
 									"type_description": {
 										"type_identifier": "t_magic_super",
 										"type_string": "super"
-									}
+									},
+									"text": "super._transfer"
 								},
 								"type_description": {
 									"type_identifier": "t_function_$_t_address$_t_function_$_t_address$_t_uint256$",
@@ -1705,7 +1733,7 @@
 								}
 							},
 							{
-								"id": 2913,
+								"id": 2888,
 								"node_type": 47,
 								"src": {
 									"line": 1179,
@@ -1713,11 +1741,11 @@
 									"start": 36154,
 									"end": 36176,
 									"length": 23,
-									"parent_index": 2885
+									"parent_index": 2860
 								},
-								"function_return_parameters": 2885,
+								"function_return_parameters": 2860,
 								"expression": {
-									"id": 2914,
+									"id": 2889,
 									"node_type": 16,
 									"src": {
 										"line": 1179,
@@ -1725,7 +1753,7 @@
 										"start": 36161,
 										"end": 36175,
 										"length": 15,
-										"parent_index": 2913
+										"parent_index": 2888
 									},
 									"name": "liquidityAmount",
 									"type_description": {
@@ -1733,8 +1761,9 @@
 										"type_string": "uint256"
 									},
 									"overloaded_declarations": [],
-									"referenced_declaration": 2895,
-									"is_pure": false
+									"referenced_declaration": 2870,
+									"is_pure": false,
+									"text": "liquidityAmount"
 								}
 							}
 						]
@@ -1746,7 +1775,7 @@
 					"modifiers": [],
 					"overrides": [],
 					"parameters": {
-						"id": 2886,
+						"id": 2861,
 						"node_type": 43,
 						"src": {
 							"line": 1174,
@@ -1754,11 +1783,11 @@
 							"start": 35941,
 							"end": 35978,
 							"length": 38,
-							"parent_index": 2885
+							"parent_index": 2860
 						},
 						"parameters": [
 							{
-								"id": 2887,
+								"id": 2862,
 								"node_type": 44,
 								"src": {
 									"line": 1174,
@@ -1766,12 +1795,12 @@
 									"start": 35941,
 									"end": 35954,
 									"length": 14,
-									"parent_index": 2886
+									"parent_index": 2861
 								},
-								"scope": 2885,
+								"scope": 2860,
 								"name": "sender",
 								"type_name": {
-									"id": 2888,
+									"id": 2863,
 									"node_type": 30,
 									"src": {
 										"line": 1174,
@@ -1779,7 +1808,7 @@
 										"start": 35941,
 										"end": 35947,
 										"length": 7,
-										"parent_index": 2887
+										"parent_index": 2862
 									},
 									"name": "address",
 									"state_mutability": 4,
@@ -1798,7 +1827,7 @@
 								}
 							},
 							{
-								"id": 2889,
+								"id": 2864,
 								"node_type": 44,
 								"src": {
 									"line": 1175,
@@ -1806,12 +1835,12 @@
 									"start": 35965,
 									"end": 35978,
 									"length": 14,
-									"parent_index": 2886
+									"parent_index": 2861
 								},
-								"scope": 2885,
+								"scope": 2860,
 								"name": "amount",
 								"type_name": {
-									"id": 2890,
+									"id": 2865,
 									"node_type": 30,
 									"src": {
 										"line": 1175,
@@ -1819,7 +1848,7 @@
 										"start": 35965,
 										"end": 35971,
 										"length": 7,
-										"parent_index": 2889
+										"parent_index": 2864
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -1849,7 +1878,7 @@
 						]
 					},
 					"return_parameters": {
-						"id": 2891,
+						"id": 2866,
 						"node_type": 43,
 						"src": {
 							"line": 1176,
@@ -1857,11 +1886,11 @@
 							"start": 36004,
 							"end": 36010,
 							"length": 7,
-							"parent_index": 2885
+							"parent_index": 2860
 						},
 						"parameters": [
 							{
-								"id": 2892,
+								"id": 2867,
 								"node_type": 44,
 								"src": {
 									"line": 1176,
@@ -1869,12 +1898,12 @@
 									"start": 36004,
 									"end": 36010,
 									"length": 7,
-									"parent_index": 2891
+									"parent_index": 2866
 								},
-								"scope": 2885,
+								"scope": 2860,
 								"name": "",
 								"type_name": {
-									"id": 2893,
+									"id": 2868,
 									"node_type": 30,
 									"src": {
 										"line": 1176,
@@ -1882,7 +1911,7 @@
 										"start": 36004,
 										"end": 36010,
 										"length": 7,
-										"parent_index": 2892
+										"parent_index": 2867
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -1907,16 +1936,17 @@
 							}
 						]
 					},
-					"signature_raw": "_takeliquidityFee(address, uint256)",
-					"signature": "b6656e06",
-					"scope": 2816,
+					"signature_raw": "_takeliquidityFee(address,uint256)",
+					"signature": "ecd2eef0",
+					"scope": 2791,
 					"type_description": {
 						"type_identifier": "t_function_$_t_address$_t_uint256$",
 						"type_string": "function(address,uint256)"
-					}
+					},
+					"text": "function_takeliquidityFee(addresssender,uint256amount)internalreturns(uint256){uint256liquidityAmount=(amount*liquidityFee)/1000;super._transfer(sender,address(this),liquidityAmount);returnliquidityAmount;}"
 				},
 				{
-					"id": 2916,
+					"id": 2891,
 					"name": "shouldSwapAndLiquify",
 					"node_type": 42,
 					"kind": 41,
@@ -1926,7 +1956,7 @@
 						"start": 36189,
 						"end": 36673,
 						"length": 485,
-						"parent_index": 2816
+						"parent_index": 2791
 					},
 					"name_location": {
 						"line": 1182,
@@ -1934,10 +1964,10 @@
 						"start": 36198,
 						"end": 36217,
 						"length": 20,
-						"parent_index": 2916
+						"parent_index": 2891
 					},
 					"body": {
-						"id": 2923,
+						"id": 2898,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -1946,12 +1976,12 @@
 							"start": 36264,
 							"end": 36673,
 							"length": 410,
-							"parent_index": 2916
+							"parent_index": 2891
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 2924,
+								"id": 2899,
 								"node_type": 44,
 								"src": {
 									"line": 1183,
@@ -1959,25 +1989,25 @@
 									"start": 36274,
 									"end": 36329,
 									"length": 56,
-									"parent_index": 2923
+									"parent_index": 2898
 								},
 								"assignments": [
-									2925
+									2900
 								],
 								"declarations": [
 									{
-										"id": 2925,
+										"id": 2900,
 										"state_mutability": 1,
 										"name": "contractTokenBalance",
 										"node_type": 44,
-										"scope": 2923,
+										"scope": 2898,
 										"src": {
 											"line": 1183,
 											"column": 8,
 											"start": 36274,
 											"end": 36301,
 											"length": 28,
-											"parent_index": 2924
+											"parent_index": 2899
 										},
 										"name_location": {
 											"line": 1183,
@@ -1985,12 +2015,12 @@
 											"start": 36282,
 											"end": 36301,
 											"length": 20,
-											"parent_index": 2925
+											"parent_index": 2900
 										},
 										"is_state_variable": false,
 										"storage_location": 1,
 										"type_name": {
-											"id": 2926,
+											"id": 2901,
 											"node_type": 30,
 											"src": {
 												"line": 1183,
@@ -1998,7 +2028,7 @@
 												"start": 36274,
 												"end": 36280,
 												"length": 7,
-												"parent_index": 2925
+												"parent_index": 2900
 											},
 											"name": "uint256",
 											"referenced_declaration": 0,
@@ -2011,7 +2041,7 @@
 									}
 								],
 								"initial_value": {
-									"id": 2927,
+									"id": 2902,
 									"node_type": 22,
 									"src": {
 										"line": 1183,
@@ -2019,30 +2049,10 @@
 										"start": 36305,
 										"end": 36328,
 										"length": 24,
-										"parent_index": 2924
+										"parent_index": 2899
 									},
 									"index_expression": {
-										"id": 2928,
-										"node_type": 16,
-										"src": {
-											"line": 1183,
-											"column": 39,
-											"start": 36305,
-											"end": 36313,
-											"length": 9,
-											"parent_index": 2927
-										},
-										"name": "balanceOf",
-										"type_description": {
-											"type_identifier": "t_mapping_$t_address_$t_uint256$",
-											"type_string": "mapping(address=\u003euint256)"
-										},
-										"overloaded_declarations": [],
-										"referenced_declaration": 442,
-										"is_pure": false
-									},
-									"base_expression": {
-										"id": 2929,
+										"id": 2904,
 										"node_type": 24,
 										"kind": 24,
 										"src": {
@@ -2051,17 +2061,17 @@
 											"start": 36315,
 											"end": 36327,
 											"length": 13,
-											"parent_index": 2924
+											"parent_index": 2899
 										},
 										"argument_types": [
 											{
-												"type_identifier": "t_contract$_LiquidityFeeUSDT_$2814",
+												"type_identifier": "t_contract$_LiquidityFeeUSDT_$2789",
 												"type_string": "contract LiquidityFeeUSDT"
 											}
 										],
 										"arguments": [
 											{
-												"id": 2932,
+												"id": 2907,
 												"node_type": 16,
 												"src": {
 													"line": 1183,
@@ -2069,20 +2079,21 @@
 													"start": 36323,
 													"end": 36326,
 													"length": 4,
-													"parent_index": 2929
+													"parent_index": 2904
 												},
 												"name": "this",
 												"type_description": {
-													"type_identifier": "t_contract$_LiquidityFeeUSDT_$2814",
+													"type_identifier": "t_contract$_LiquidityFeeUSDT_$2789",
 													"type_string": "contract LiquidityFeeUSDT"
 												},
 												"overloaded_declarations": [],
 												"referenced_declaration": 0,
-												"is_pure": false
+												"is_pure": false,
+												"text": "this"
 											}
 										],
 										"expression": {
-											"id": 2930,
+											"id": 2905,
 											"node_type": 16,
 											"src": {
 												"line": 1183,
@@ -2090,11 +2101,11 @@
 												"start": 36315,
 												"end": 36321,
 												"length": 7,
-												"parent_index": 2929
+												"parent_index": 2904
 											},
 											"name": "address",
 											"type_name": {
-												"id": 2931,
+												"id": 2906,
 												"node_type": 30,
 												"src": {
 													"line": 1183,
@@ -2102,7 +2113,7 @@
 													"start": 36315,
 													"end": 36321,
 													"length": 7,
-													"parent_index": 2930
+													"parent_index": 2905
 												},
 												"name": "address",
 												"state_mutability": 4,
@@ -2124,31 +2135,49 @@
 													"type_identifier": "t_address",
 													"type_string": "address"
 												}
-											]
+											],
+											"text": "address"
 										},
 										"type_description": {
 											"type_identifier": "t_function_$_t_address$",
 											"type_string": "function(address)"
 										}
 									},
-									"type_descriptions": [
-										{
+									"base_expression": {
+										"id": 2903,
+										"node_type": 16,
+										"src": {
+											"line": 1183,
+											"column": 39,
+											"start": 36305,
+											"end": 36313,
+											"length": 9,
+											"parent_index": 2902
+										},
+										"name": "balanceOf",
+										"type_description": {
 											"type_identifier": "t_mapping_$t_address_$t_uint256$",
 											"type_string": "mapping(address=\u003euint256)"
 										},
+										"overloaded_declarations": [],
+										"referenced_declaration": 440,
+										"is_pure": false,
+										"text": "balanceOf"
+									},
+									"type_descriptions": [
 										{
 											"type_identifier": "t_function_$_t_address$",
 											"type_string": "function(address)"
 										}
 									],
 									"type_description": {
-										"type_identifier": "t_[_[$_t_mapping_$t_address_$t_uint256$]$_t_function_$_t_address$",
-										"type_string": "index[mapping(address=\u003euint256):function(address)]"
+										"type_identifier": "t_[_[$_t_function_$_t_address$",
+										"type_string": "index[function(address)]"
 									}
 								}
 							},
 							{
-								"id": 2933,
+								"id": 2908,
 								"node_type": 44,
 								"src": {
 									"line": 1184,
@@ -2156,25 +2185,25 @@
 									"start": 36339,
 									"end": 36431,
 									"length": 93,
-									"parent_index": 2923
+									"parent_index": 2898
 								},
 								"assignments": [
-									2934
+									2909
 								],
 								"declarations": [
 									{
-										"id": 2934,
+										"id": 2909,
 										"state_mutability": 1,
 										"name": "overMinTokenBalance",
 										"node_type": 44,
-										"scope": 2923,
+										"scope": 2898,
 										"src": {
 											"line": 1184,
 											"column": 8,
 											"start": 36339,
 											"end": 36362,
 											"length": 24,
-											"parent_index": 2933
+											"parent_index": 2908
 										},
 										"name_location": {
 											"line": 1184,
@@ -2182,12 +2211,12 @@
 											"start": 36344,
 											"end": 36362,
 											"length": 19,
-											"parent_index": 2934
+											"parent_index": 2909
 										},
 										"is_state_variable": false,
 										"storage_location": 1,
 										"type_name": {
-											"id": 2935,
+											"id": 2910,
 											"node_type": 30,
 											"src": {
 												"line": 1184,
@@ -2195,7 +2224,7 @@
 												"start": 36339,
 												"end": 36342,
 												"length": 4,
-												"parent_index": 2934
+												"parent_index": 2909
 											},
 											"name": "bool",
 											"referenced_declaration": 0,
@@ -2208,7 +2237,7 @@
 									}
 								],
 								"initial_value": {
-									"id": 2936,
+									"id": 2911,
 									"is_constant": false,
 									"is_pure": false,
 									"node_type": 19,
@@ -2218,11 +2247,11 @@
 										"start": 36366,
 										"end": 36430,
 										"length": 65,
-										"parent_index": 2933
+										"parent_index": 2908
 									},
 									"operator": 8,
 									"left_expression": {
-										"id": 2937,
+										"id": 2912,
 										"node_type": 16,
 										"src": {
 											"line": 1184,
@@ -2230,7 +2259,7 @@
 											"start": 36366,
 											"end": 36385,
 											"length": 20,
-											"parent_index": 2936
+											"parent_index": 2911
 										},
 										"name": "contractTokenBalance",
 										"type_description": {
@@ -2238,11 +2267,12 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 2924,
-										"is_pure": false
+										"referenced_declaration": 2899,
+										"is_pure": false,
+										"text": "contractTokenBalance"
 									},
 									"right_expression": {
-										"id": 2938,
+										"id": 2913,
 										"node_type": 16,
 										"src": {
 											"line": 1185,
@@ -2250,7 +2280,7 @@
 											"start": 36402,
 											"end": 36430,
 											"length": 29,
-											"parent_index": 2936
+											"parent_index": 2911
 										},
 										"name": "numTokensSellToAddToLiquidity",
 										"type_description": {
@@ -2258,8 +2288,9 @@
 											"type_string": "int_const 1"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 2828,
-										"is_pure": false
+										"referenced_declaration": 2803,
+										"is_pure": false,
+										"text": "numTokensSellToAddToLiquidity"
 									},
 									"type_description": {
 										"type_identifier": "t_bool",
@@ -2268,7 +2299,7 @@
 								}
 							},
 							{
-								"id": 2939,
+								"id": 2914,
 								"node_type": 48,
 								"src": {
 									"line": 1186,
@@ -2276,10 +2307,10 @@
 									"start": 36441,
 									"end": 36667,
 									"length": 227,
-									"parent_index": 2923
+									"parent_index": 2898
 								},
 								"condition": {
-									"id": 2941,
+									"id": 2916,
 									"node_type": 96,
 									"src": {
 										"line": 1187,
@@ -2287,11 +2318,11 @@
 										"start": 36458,
 										"end": 36577,
 										"length": 120,
-										"parent_index": 2939
+										"parent_index": 2914
 									},
 									"expressions": [
 										{
-											"id": 2943,
+											"id": 2918,
 											"node_type": 96,
 											"src": {
 												"line": 1187,
@@ -2299,11 +2330,11 @@
 												"start": 36458,
 												"end": 36540,
 												"length": 83,
-												"parent_index": 2941
+												"parent_index": 2916
 											},
 											"expressions": [
 												{
-													"id": 2945,
+													"id": 2920,
 													"node_type": 96,
 													"src": {
 														"line": 1187,
@@ -2311,11 +2342,11 @@
 														"start": 36458,
 														"end": 36501,
 														"length": 44,
-														"parent_index": 2943
+														"parent_index": 2918
 													},
 													"expressions": [
 														{
-															"id": 2946,
+															"id": 2921,
 															"node_type": 16,
 															"src": {
 																"line": 1187,
@@ -2323,7 +2354,7 @@
 																"start": 36458,
 																"end": 36476,
 																"length": 19,
-																"parent_index": 2945
+																"parent_index": 2920
 															},
 															"name": "overMinTokenBalance",
 															"type_description": {
@@ -2331,11 +2362,12 @@
 																"type_string": "bool"
 															},
 															"overloaded_declarations": [],
-															"referenced_declaration": 2933,
-															"is_pure": false
+															"referenced_declaration": 2908,
+															"is_pure": false,
+															"text": "overMinTokenBalance"
 														},
 														{
-															"id": 2947,
+															"id": 2922,
 															"node_type": 18,
 															"kind": 104,
 															"src": {
@@ -2344,7 +2376,7 @@
 																"start": 36493,
 																"end": 36501,
 																"length": 9,
-																"parent_index": 2916
+																"parent_index": 2891
 															},
 															"operator": 31,
 															"prefix": false,
@@ -2353,7 +2385,7 @@
 															"is_pure": false,
 															"l_value_requested": false,
 															"expression": {
-																"id": 2948,
+																"id": 2923,
 																"node_type": 16,
 																"src": {
 																	"line": 1188,
@@ -2361,7 +2393,7 @@
 																	"start": 36494,
 																	"end": 36501,
 																	"length": 8,
-																	"parent_index": 2947
+																	"parent_index": 2922
 																},
 																"name": "inisSwap",
 																"type_description": {
@@ -2369,8 +2401,9 @@
 																	"type_string": "bool"
 																},
 																"overloaded_declarations": [],
-																"referenced_declaration": 2222,
-																"is_pure": false
+																"referenced_declaration": 2197,
+																"is_pure": false,
+																"text": "inisSwap"
 															},
 															"type_description": {
 																"type_identifier": "t_bool",
@@ -2390,7 +2423,7 @@
 													]
 												},
 												{
-													"id": 2949,
+													"id": 2924,
 													"is_constant": false,
 													"is_pure": false,
 													"node_type": 19,
@@ -2400,11 +2433,11 @@
 														"start": 36518,
 														"end": 36540,
 														"length": 23,
-														"parent_index": 2943
+														"parent_index": 2918
 													},
 													"operator": 12,
 													"left_expression": {
-														"id": 2950,
+														"id": 2925,
 														"node_type": 16,
 														"src": {
 															"line": 1189,
@@ -2412,7 +2445,7 @@
 															"start": 36518,
 															"end": 36523,
 															"length": 6,
-															"parent_index": 2949
+															"parent_index": 2924
 														},
 														"name": "sender",
 														"type_description": {
@@ -2420,11 +2453,12 @@
 															"type_string": "address"
 														},
 														"overloaded_declarations": [],
-														"referenced_declaration": 2950,
-														"is_pure": false
+														"referenced_declaration": 2925,
+														"is_pure": false,
+														"text": "sender"
 													},
 													"right_expression": {
-														"id": 2951,
+														"id": 2926,
 														"node_type": 16,
 														"src": {
 															"line": 1189,
@@ -2432,7 +2466,7 @@
 															"start": 36528,
 															"end": 36540,
 															"length": 13,
-															"parent_index": 2949
+															"parent_index": 2924
 														},
 														"name": "uniswapV2Pair",
 														"type_description": {
@@ -2440,8 +2474,9 @@
 															"type_string": "address"
 														},
 														"overloaded_declarations": [],
-														"referenced_declaration": 2232,
-														"is_pure": false
+														"referenced_declaration": 2207,
+														"is_pure": false,
+														"text": "uniswapV2Pair"
 													},
 													"type_description": {
 														"type_identifier": "t_bool",
@@ -2461,7 +2496,7 @@
 											]
 										},
 										{
-											"id": 2952,
+											"id": 2927,
 											"node_type": 16,
 											"src": {
 												"line": 1190,
@@ -2469,7 +2504,7 @@
 												"start": 36557,
 												"end": 36577,
 												"length": 21,
-												"parent_index": 2941
+												"parent_index": 2916
 											},
 											"name": "swapAndLiquifyEnabled",
 											"type_description": {
@@ -2477,8 +2512,9 @@
 												"type_string": "bool"
 											},
 											"overloaded_declarations": [],
-											"referenced_declaration": 2824,
-											"is_pure": false
+											"referenced_declaration": 2799,
+											"is_pure": false,
+											"text": "swapAndLiquifyEnabled"
 										}
 									],
 									"type_descriptions": [
@@ -2493,7 +2529,7 @@
 									]
 								},
 								"body": {
-									"id": 2953,
+									"id": 2928,
 									"node_type": 46,
 									"kind": 0,
 									"src": {
@@ -2502,12 +2538,12 @@
 										"start": 36589,
 										"end": 36624,
 										"length": 36,
-										"parent_index": 2916
+										"parent_index": 2891
 									},
 									"implemented": true,
 									"statements": [
 										{
-											"id": 2954,
+											"id": 2929,
 											"node_type": 47,
 											"src": {
 												"line": 1192,
@@ -2515,11 +2551,11 @@
 												"start": 36603,
 												"end": 36614,
 												"length": 12,
-												"parent_index": 2916
+												"parent_index": 2891
 											},
-											"function_return_parameters": 2916,
+											"function_return_parameters": 2891,
 											"expression": {
-												"id": 2955,
+												"id": 2930,
 												"node_type": 17,
 												"kind": 61,
 												"value": "true",
@@ -2530,7 +2566,7 @@
 													"start": 36610,
 													"end": 36613,
 													"length": 4,
-													"parent_index": 2954
+													"parent_index": 2929
 												},
 												"type_description": {
 													"type_identifier": "t_bool",
@@ -2538,7 +2574,8 @@
 												},
 												"overloaded_declarations": [],
 												"referenced_declaration": 0,
-												"is_pure": true
+												"is_pure": true,
+												"text": "true"
 											}
 										}
 									]
@@ -2553,7 +2590,7 @@
 					"modifiers": [],
 					"overrides": [],
 					"parameters": {
-						"id": 2917,
+						"id": 2892,
 						"node_type": 43,
 						"src": {
 							"line": 1182,
@@ -2561,11 +2598,11 @@
 							"start": 36219,
 							"end": 36232,
 							"length": 14,
-							"parent_index": 2916
+							"parent_index": 2891
 						},
 						"parameters": [
 							{
-								"id": 2918,
+								"id": 2893,
 								"node_type": 44,
 								"src": {
 									"line": 1182,
@@ -2573,12 +2610,12 @@
 									"start": 36219,
 									"end": 36232,
 									"length": 14,
-									"parent_index": 2917
+									"parent_index": 2892
 								},
-								"scope": 2916,
+								"scope": 2891,
 								"name": "sender",
 								"type_name": {
-									"id": 2919,
+									"id": 2894,
 									"node_type": 30,
 									"src": {
 										"line": 1182,
@@ -2586,7 +2623,7 @@
 										"start": 36219,
 										"end": 36225,
 										"length": 7,
-										"parent_index": 2918
+										"parent_index": 2893
 									},
 									"name": "address",
 									"state_mutability": 4,
@@ -2613,7 +2650,7 @@
 						]
 					},
 					"return_parameters": {
-						"id": 2920,
+						"id": 2895,
 						"node_type": 43,
 						"src": {
 							"line": 1182,
@@ -2621,11 +2658,11 @@
 							"start": 36258,
 							"end": 36261,
 							"length": 4,
-							"parent_index": 2916
+							"parent_index": 2891
 						},
 						"parameters": [
 							{
-								"id": 2921,
+								"id": 2896,
 								"node_type": 44,
 								"src": {
 									"line": 1182,
@@ -2633,12 +2670,12 @@
 									"start": 36258,
 									"end": 36261,
 									"length": 4,
-									"parent_index": 2920
+									"parent_index": 2895
 								},
-								"scope": 2916,
+								"scope": 2891,
 								"name": "",
 								"type_name": {
-									"id": 2922,
+									"id": 2897,
 									"node_type": 30,
 									"src": {
 										"line": 1182,
@@ -2646,7 +2683,7 @@
 										"start": 36258,
 										"end": 36261,
 										"length": 4,
-										"parent_index": 2921
+										"parent_index": 2896
 									},
 									"name": "bool",
 									"referenced_declaration": 0,
@@ -2673,14 +2710,15 @@
 					},
 					"signature_raw": "shouldSwapAndLiquify(address)",
 					"signature": "7c9da33a",
-					"scope": 2816,
+					"scope": 2791,
 					"type_description": {
 						"type_identifier": "t_function_$_t_address$",
 						"type_string": "function(address)"
-					}
+					},
+					"text": "functionshouldSwapAndLiquify(addresssender)internalviewreturns(bool){uint256contractTokenBalance=balanceOf[address(this)];booloverMinTokenBalance=contractTokenBalance\u003e=numTokensSellToAddToLiquidity;if(overMinTokenBalance\u0026\u0026!inisSwap\u0026\u0026sender!=uniswapV2Pair\u0026\u0026swapAndLiquifyEnabled){returntrue;}else{returnfalse;}}"
 				},
 				{
-					"id": 2957,
+					"id": 2932,
 					"name": "swapAndLiquify",
 					"node_type": 42,
 					"kind": 41,
@@ -2690,7 +2728,7 @@
 						"start": 36680,
 						"end": 37610,
 						"length": 931,
-						"parent_index": 2816
+						"parent_index": 2791
 					},
 					"name_location": {
 						"line": 1198,
@@ -2698,10 +2736,10 @@
 						"start": 36689,
 						"end": 36702,
 						"length": 14,
-						"parent_index": 2957
+						"parent_index": 2932
 					},
 					"body": {
-						"id": 2964,
+						"id": 2939,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -2710,12 +2748,12 @@
 							"start": 36750,
 							"end": 37610,
 							"length": 861,
-							"parent_index": 2957
+							"parent_index": 2932
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 2965,
+								"id": 2940,
 								"node_type": 44,
 								"src": {
 									"line": 1200,
@@ -2723,25 +2761,25 @@
 									"start": 36810,
 									"end": 36849,
 									"length": 40,
-									"parent_index": 2964
+									"parent_index": 2939
 								},
 								"assignments": [
-									2966
+									2941
 								],
 								"declarations": [
 									{
-										"id": 2966,
+										"id": 2941,
 										"state_mutability": 1,
 										"name": "half",
 										"node_type": 44,
-										"scope": 2964,
+										"scope": 2939,
 										"src": {
 											"line": 1200,
 											"column": 8,
 											"start": 36810,
 											"end": 36821,
 											"length": 12,
-											"parent_index": 2965
+											"parent_index": 2940
 										},
 										"name_location": {
 											"line": 1200,
@@ -2749,12 +2787,12 @@
 											"start": 36818,
 											"end": 36821,
 											"length": 4,
-											"parent_index": 2966
+											"parent_index": 2941
 										},
 										"is_state_variable": false,
 										"storage_location": 1,
 										"type_name": {
-											"id": 2967,
+											"id": 2942,
 											"node_type": 30,
 											"src": {
 												"line": 1200,
@@ -2762,7 +2800,7 @@
 												"start": 36810,
 												"end": 36816,
 												"length": 7,
-												"parent_index": 2966
+												"parent_index": 2941
 											},
 											"name": "uint256",
 											"referenced_declaration": 0,
@@ -2775,7 +2813,7 @@
 									}
 								],
 								"initial_value": {
-									"id": 2968,
+									"id": 2943,
 									"is_constant": false,
 									"is_pure": false,
 									"node_type": 19,
@@ -2785,11 +2823,11 @@
 										"start": 36825,
 										"end": 36848,
 										"length": 24,
-										"parent_index": 2965
+										"parent_index": 2940
 									},
 									"operator": 4,
 									"left_expression": {
-										"id": 2969,
+										"id": 2944,
 										"node_type": 16,
 										"src": {
 											"line": 1200,
@@ -2797,7 +2835,7 @@
 											"start": 36825,
 											"end": 36844,
 											"length": 20,
-											"parent_index": 2968
+											"parent_index": 2943
 										},
 										"name": "contractTokenBalance",
 										"type_description": {
@@ -2805,11 +2843,12 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 2969,
-										"is_pure": false
+										"referenced_declaration": 2944,
+										"is_pure": false,
+										"text": "contractTokenBalance"
 									},
 									"right_expression": {
-										"id": 2970,
+										"id": 2945,
 										"node_type": 17,
 										"kind": 49,
 										"value": "2",
@@ -2820,7 +2859,7 @@
 											"start": 36848,
 											"end": 36848,
 											"length": 1,
-											"parent_index": 2968
+											"parent_index": 2943
 										},
 										"type_description": {
 											"type_identifier": "t_rational_2_by_1",
@@ -2828,7 +2867,8 @@
 										},
 										"overloaded_declarations": [],
 										"referenced_declaration": 0,
-										"is_pure": true
+										"is_pure": true,
+										"text": "2"
 									},
 									"type_description": {
 										"type_identifier": "t_uint256",
@@ -2837,7 +2877,7 @@
 								}
 							},
 							{
-								"id": 2971,
+								"id": 2946,
 								"node_type": 44,
 								"src": {
 									"line": 1201,
@@ -2845,25 +2885,25 @@
 									"start": 36859,
 									"end": 36906,
 									"length": 48,
-									"parent_index": 2964
+									"parent_index": 2939
 								},
 								"assignments": [
-									2972
+									2947
 								],
 								"declarations": [
 									{
-										"id": 2972,
+										"id": 2947,
 										"state_mutability": 1,
 										"name": "otherHalf",
 										"node_type": 44,
-										"scope": 2964,
+										"scope": 2939,
 										"src": {
 											"line": 1201,
 											"column": 8,
 											"start": 36859,
 											"end": 36875,
 											"length": 17,
-											"parent_index": 2971
+											"parent_index": 2946
 										},
 										"name_location": {
 											"line": 1201,
@@ -2871,12 +2911,12 @@
 											"start": 36867,
 											"end": 36875,
 											"length": 9,
-											"parent_index": 2972
+											"parent_index": 2947
 										},
 										"is_state_variable": false,
 										"storage_location": 1,
 										"type_name": {
-											"id": 2973,
+											"id": 2948,
 											"node_type": 30,
 											"src": {
 												"line": 1201,
@@ -2884,7 +2924,7 @@
 												"start": 36859,
 												"end": 36865,
 												"length": 7,
-												"parent_index": 2972
+												"parent_index": 2947
 											},
 											"name": "uint256",
 											"referenced_declaration": 0,
@@ -2897,7 +2937,7 @@
 									}
 								],
 								"initial_value": {
-									"id": 2974,
+									"id": 2949,
 									"is_constant": false,
 									"is_pure": false,
 									"node_type": 19,
@@ -2907,11 +2947,11 @@
 										"start": 36879,
 										"end": 36905,
 										"length": 27,
-										"parent_index": 2971
+										"parent_index": 2946
 									},
 									"operator": 2,
 									"left_expression": {
-										"id": 2975,
+										"id": 2950,
 										"node_type": 16,
 										"src": {
 											"line": 1201,
@@ -2919,7 +2959,7 @@
 											"start": 36879,
 											"end": 36898,
 											"length": 20,
-											"parent_index": 2974
+											"parent_index": 2949
 										},
 										"name": "contractTokenBalance",
 										"type_description": {
@@ -2927,11 +2967,12 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 2975,
-										"is_pure": false
+										"referenced_declaration": 2950,
+										"is_pure": false,
+										"text": "contractTokenBalance"
 									},
 									"right_expression": {
-										"id": 2976,
+										"id": 2951,
 										"node_type": 16,
 										"src": {
 											"line": 1201,
@@ -2939,7 +2980,7 @@
 											"start": 36902,
 											"end": 36905,
 											"length": 4,
-											"parent_index": 2974
+											"parent_index": 2949
 										},
 										"name": "half",
 										"type_description": {
@@ -2947,8 +2988,9 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 2965,
-										"is_pure": false
+										"referenced_declaration": 2940,
+										"is_pure": false,
+										"text": "half"
 									},
 									"type_description": {
 										"type_identifier": "t_uint256",
@@ -2957,7 +2999,7 @@
 								}
 							},
 							{
-								"id": 2977,
+								"id": 2952,
 								"node_type": 44,
 								"src": {
 									"line": 1207,
@@ -2965,25 +3007,25 @@
 									"start": 37178,
 									"end": 37240,
 									"length": 63,
-									"parent_index": 2964
+									"parent_index": 2939
 								},
 								"assignments": [
-									2978
+									2953
 								],
 								"declarations": [
 									{
-										"id": 2978,
+										"id": 2953,
 										"state_mutability": 1,
 										"name": "initialBalance",
 										"node_type": 44,
-										"scope": 2964,
+										"scope": 2939,
 										"src": {
 											"line": 1207,
 											"column": 8,
 											"start": 37178,
 											"end": 37199,
 											"length": 22,
-											"parent_index": 2977
+											"parent_index": 2952
 										},
 										"name_location": {
 											"line": 1207,
@@ -2991,12 +3033,12 @@
 											"start": 37186,
 											"end": 37199,
 											"length": 14,
-											"parent_index": 2978
+											"parent_index": 2953
 										},
 										"is_state_variable": false,
 										"storage_location": 1,
 										"type_name": {
-											"id": 2979,
+											"id": 2954,
 											"node_type": 30,
 											"src": {
 												"line": 1207,
@@ -3004,7 +3046,7 @@
 												"start": 37178,
 												"end": 37184,
 												"length": 7,
-												"parent_index": 2978
+												"parent_index": 2953
 											},
 											"name": "uint256",
 											"referenced_declaration": 0,
@@ -3017,7 +3059,7 @@
 									}
 								],
 								"initial_value": {
-									"id": 2980,
+									"id": 2955,
 									"node_type": 24,
 									"kind": 24,
 									"src": {
@@ -3026,7 +3068,7 @@
 										"start": 37203,
 										"end": 37239,
 										"length": 37,
-										"parent_index": 2977
+										"parent_index": 2952
 									},
 									"argument_types": [
 										{
@@ -3036,7 +3078,7 @@
 									],
 									"arguments": [
 										{
-											"id": 2985,
+											"id": 2960,
 											"node_type": 24,
 											"kind": 24,
 											"src": {
@@ -3045,17 +3087,17 @@
 												"start": 37226,
 												"end": 37238,
 												"length": 13,
-												"parent_index": 2980
+												"parent_index": 2955
 											},
 											"argument_types": [
 												{
-													"type_identifier": "t_contract$_LiquidityFeeUSDT_$2814",
+													"type_identifier": "t_contract$_LiquidityFeeUSDT_$2789",
 													"type_string": "contract LiquidityFeeUSDT"
 												}
 											],
 											"arguments": [
 												{
-													"id": 2988,
+													"id": 2963,
 													"node_type": 16,
 													"src": {
 														"line": 1207,
@@ -3063,20 +3105,21 @@
 														"start": 37234,
 														"end": 37237,
 														"length": 4,
-														"parent_index": 2985
+														"parent_index": 2960
 													},
 													"name": "this",
 													"type_description": {
-														"type_identifier": "t_contract$_LiquidityFeeUSDT_$2814",
+														"type_identifier": "t_contract$_LiquidityFeeUSDT_$2789",
 														"type_string": "contract LiquidityFeeUSDT"
 													},
 													"overloaded_declarations": [],
 													"referenced_declaration": 0,
-													"is_pure": false
+													"is_pure": false,
+													"text": "this"
 												}
 											],
 											"expression": {
-												"id": 2986,
+												"id": 2961,
 												"node_type": 16,
 												"src": {
 													"line": 1207,
@@ -3084,11 +3127,11 @@
 													"start": 37226,
 													"end": 37232,
 													"length": 7,
-													"parent_index": 2985
+													"parent_index": 2960
 												},
 												"name": "address",
 												"type_name": {
-													"id": 2987,
+													"id": 2962,
 													"node_type": 30,
 													"src": {
 														"line": 1207,
@@ -3096,7 +3139,7 @@
 														"start": 37226,
 														"end": 37232,
 														"length": 7,
-														"parent_index": 2986
+														"parent_index": 2961
 													},
 													"name": "address",
 													"state_mutability": 4,
@@ -3118,7 +3161,8 @@
 														"type_identifier": "t_address",
 														"type_string": "address"
 													}
-												]
+												],
+												"text": "address"
 											},
 											"type_description": {
 												"type_identifier": "t_function_$_t_address$",
@@ -3127,7 +3171,7 @@
 										}
 									],
 									"expression": {
-										"id": 2981,
+										"id": 2956,
 										"is_constant": false,
 										"is_l_value": false,
 										"is_pure": false,
@@ -3139,7 +3183,7 @@
 											"start": 37203,
 											"end": 37224,
 											"length": 22,
-											"parent_index": 2980
+											"parent_index": 2955
 										},
 										"member_location": {
 											"line": 1207,
@@ -3147,10 +3191,10 @@
 											"start": 37216,
 											"end": 37224,
 											"length": 9,
-											"parent_index": 2981
+											"parent_index": 2956
 										},
 										"expression": {
-											"id": 2982,
+											"id": 2957,
 											"node_type": 24,
 											"kind": 24,
 											"src": {
@@ -3159,7 +3203,7 @@
 												"start": 37203,
 												"end": 37214,
 												"length": 12,
-												"parent_index": 2981
+												"parent_index": 2956
 											},
 											"argument_types": [
 												{
@@ -3169,7 +3213,7 @@
 											],
 											"arguments": [
 												{
-													"id": 2984,
+													"id": 2959,
 													"node_type": 16,
 													"src": {
 														"line": 1207,
@@ -3177,7 +3221,7 @@
 														"start": 37210,
 														"end": 37213,
 														"length": 4,
-														"parent_index": 2982
+														"parent_index": 2957
 													},
 													"name": "USDT",
 													"type_description": {
@@ -3186,11 +3230,12 @@
 													},
 													"overloaded_declarations": [],
 													"referenced_declaration": 0,
-													"is_pure": false
+													"is_pure": false,
+													"text": "USDT"
 												}
 											],
 											"expression": {
-												"id": 2983,
+												"id": 2958,
 												"node_type": 16,
 												"src": {
 													"line": 1207,
@@ -3198,7 +3243,7 @@
 													"start": 37203,
 													"end": 37208,
 													"length": 6,
-													"parent_index": 2982
+													"parent_index": 2957
 												},
 												"name": "IERC20",
 												"type_description": {
@@ -3207,7 +3252,8 @@
 												},
 												"overloaded_declarations": [],
 												"referenced_declaration": 0,
-												"is_pure": false
+												"is_pure": false,
+												"text": "IERC20"
 											},
 											"type_description": {
 												"type_identifier": "t_function_$_t_function_$",
@@ -3219,7 +3265,8 @@
 										"type_description": {
 											"type_identifier": "t_function_$_t_function_$",
 											"type_string": "function(function())"
-										}
+										},
+										"text": "IERC20(USDT).balanceOf"
 									},
 									"type_description": {
 										"type_identifier": "t_function_$_t_function_$_t_address$",
@@ -3228,7 +3275,7 @@
 								}
 							},
 							{
-								"id": 2989,
+								"id": 2964,
 								"node_type": 24,
 								"kind": 24,
 								"src": {
@@ -3237,7 +3284,7 @@
 									"start": 37282,
 									"end": 37306,
 									"length": 25,
-									"parent_index": 2964
+									"parent_index": 2939
 								},
 								"argument_types": [
 									{
@@ -3247,7 +3294,7 @@
 								],
 								"arguments": [
 									{
-										"id": 2991,
+										"id": 2966,
 										"node_type": 16,
 										"src": {
 											"line": 1210,
@@ -3255,7 +3302,7 @@
 											"start": 37302,
 											"end": 37305,
 											"length": 4,
-											"parent_index": 2989
+											"parent_index": 2964
 										},
 										"name": "half",
 										"type_description": {
@@ -3263,12 +3310,13 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 2965,
-										"is_pure": false
+										"referenced_declaration": 2940,
+										"is_pure": false,
+										"text": "half"
 									}
 								],
 								"expression": {
-									"id": 2990,
+									"id": 2965,
 									"node_type": 16,
 									"src": {
 										"line": 1210,
@@ -3276,7 +3324,7 @@
 										"start": 37282,
 										"end": 37300,
 										"length": 19,
-										"parent_index": 2989
+										"parent_index": 2964
 									},
 									"name": "swapTokensForTokens",
 									"type_description": {
@@ -3285,7 +3333,8 @@
 									},
 									"overloaded_declarations": [],
 									"referenced_declaration": 0,
-									"is_pure": false
+									"is_pure": false,
+									"text": "swapTokensForTokens"
 								},
 								"type_description": {
 									"type_identifier": "t_function_$_t_uint256$",
@@ -3293,7 +3342,7 @@
 								}
 							},
 							{
-								"id": 2992,
+								"id": 2967,
 								"node_type": 44,
 								"src": {
 									"line": 1213,
@@ -3301,25 +3350,25 @@
 									"start": 37435,
 									"end": 37522,
 									"length": 88,
-									"parent_index": 2964
+									"parent_index": 2939
 								},
 								"assignments": [
-									2993
+									2968
 								],
 								"declarations": [
 									{
-										"id": 2993,
+										"id": 2968,
 										"state_mutability": 1,
 										"name": "newBalance",
 										"node_type": 44,
-										"scope": 2964,
+										"scope": 2939,
 										"src": {
 											"line": 1213,
 											"column": 8,
 											"start": 37435,
 											"end": 37452,
 											"length": 18,
-											"parent_index": 2992
+											"parent_index": 2967
 										},
 										"name_location": {
 											"line": 1213,
@@ -3327,12 +3376,12 @@
 											"start": 37443,
 											"end": 37452,
 											"length": 10,
-											"parent_index": 2993
+											"parent_index": 2968
 										},
 										"is_state_variable": false,
 										"storage_location": 1,
 										"type_name": {
-											"id": 2994,
+											"id": 2969,
 											"node_type": 30,
 											"src": {
 												"line": 1213,
@@ -3340,7 +3389,7 @@
 												"start": 37435,
 												"end": 37441,
 												"length": 7,
-												"parent_index": 2993
+												"parent_index": 2968
 											},
 											"name": "uint256",
 											"referenced_declaration": 0,
@@ -3353,7 +3402,7 @@
 									}
 								],
 								"initial_value": {
-									"id": 2995,
+									"id": 2970,
 									"is_constant": false,
 									"is_pure": false,
 									"node_type": 19,
@@ -3363,11 +3412,11 @@
 										"start": 37456,
 										"end": 37521,
 										"length": 66,
-										"parent_index": 2992
+										"parent_index": 2967
 									},
 									"operator": 2,
 									"left_expression": {
-										"id": 2996,
+										"id": 2971,
 										"node_type": 24,
 										"kind": 24,
 										"src": {
@@ -3376,7 +3425,7 @@
 											"start": 37456,
 											"end": 37492,
 											"length": 37,
-											"parent_index": 2992
+											"parent_index": 2967
 										},
 										"argument_types": [
 											{
@@ -3386,7 +3435,7 @@
 										],
 										"arguments": [
 											{
-												"id": 3001,
+												"id": 2976,
 												"node_type": 24,
 												"kind": 24,
 												"src": {
@@ -3395,17 +3444,17 @@
 													"start": 37479,
 													"end": 37491,
 													"length": 13,
-													"parent_index": 2996
+													"parent_index": 2971
 												},
 												"argument_types": [
 													{
-														"type_identifier": "t_contract$_LiquidityFeeUSDT_$2814",
+														"type_identifier": "t_contract$_LiquidityFeeUSDT_$2789",
 														"type_string": "contract LiquidityFeeUSDT"
 													}
 												],
 												"arguments": [
 													{
-														"id": 3004,
+														"id": 2979,
 														"node_type": 16,
 														"src": {
 															"line": 1213,
@@ -3413,20 +3462,21 @@
 															"start": 37487,
 															"end": 37490,
 															"length": 4,
-															"parent_index": 3001
+															"parent_index": 2976
 														},
 														"name": "this",
 														"type_description": {
-															"type_identifier": "t_contract$_LiquidityFeeUSDT_$2814",
+															"type_identifier": "t_contract$_LiquidityFeeUSDT_$2789",
 															"type_string": "contract LiquidityFeeUSDT"
 														},
 														"overloaded_declarations": [],
 														"referenced_declaration": 0,
-														"is_pure": false
+														"is_pure": false,
+														"text": "this"
 													}
 												],
 												"expression": {
-													"id": 3002,
+													"id": 2977,
 													"node_type": 16,
 													"src": {
 														"line": 1213,
@@ -3434,11 +3484,11 @@
 														"start": 37479,
 														"end": 37485,
 														"length": 7,
-														"parent_index": 3001
+														"parent_index": 2976
 													},
 													"name": "address",
 													"type_name": {
-														"id": 3003,
+														"id": 2978,
 														"node_type": 30,
 														"src": {
 															"line": 1213,
@@ -3446,7 +3496,7 @@
 															"start": 37479,
 															"end": 37485,
 															"length": 7,
-															"parent_index": 3002
+															"parent_index": 2977
 														},
 														"name": "address",
 														"state_mutability": 4,
@@ -3468,7 +3518,8 @@
 															"type_identifier": "t_address",
 															"type_string": "address"
 														}
-													]
+													],
+													"text": "address"
 												},
 												"type_description": {
 													"type_identifier": "t_function_$_t_address$",
@@ -3477,7 +3528,7 @@
 											}
 										],
 										"expression": {
-											"id": 2997,
+											"id": 2972,
 											"is_constant": false,
 											"is_l_value": false,
 											"is_pure": false,
@@ -3489,7 +3540,7 @@
 												"start": 37456,
 												"end": 37477,
 												"length": 22,
-												"parent_index": 2996
+												"parent_index": 2971
 											},
 											"member_location": {
 												"line": 1213,
@@ -3497,10 +3548,10 @@
 												"start": 37469,
 												"end": 37477,
 												"length": 9,
-												"parent_index": 2997
+												"parent_index": 2972
 											},
 											"expression": {
-												"id": 2998,
+												"id": 2973,
 												"node_type": 24,
 												"kind": 24,
 												"src": {
@@ -3509,7 +3560,7 @@
 													"start": 37456,
 													"end": 37467,
 													"length": 12,
-													"parent_index": 2997
+													"parent_index": 2972
 												},
 												"argument_types": [
 													{
@@ -3519,7 +3570,7 @@
 												],
 												"arguments": [
 													{
-														"id": 3000,
+														"id": 2975,
 														"node_type": 16,
 														"src": {
 															"line": 1213,
@@ -3527,7 +3578,7 @@
 															"start": 37463,
 															"end": 37466,
 															"length": 4,
-															"parent_index": 2998
+															"parent_index": 2973
 														},
 														"name": "USDT",
 														"type_description": {
@@ -3536,11 +3587,12 @@
 														},
 														"overloaded_declarations": [],
 														"referenced_declaration": 0,
-														"is_pure": false
+														"is_pure": false,
+														"text": "USDT"
 													}
 												],
 												"expression": {
-													"id": 2999,
+													"id": 2974,
 													"node_type": 16,
 													"src": {
 														"line": 1213,
@@ -3548,7 +3600,7 @@
 														"start": 37456,
 														"end": 37461,
 														"length": 6,
-														"parent_index": 2998
+														"parent_index": 2973
 													},
 													"name": "IERC20",
 													"type_description": {
@@ -3557,7 +3609,8 @@
 													},
 													"overloaded_declarations": [],
 													"referenced_declaration": 0,
-													"is_pure": false
+													"is_pure": false,
+													"text": "IERC20"
 												},
 												"type_description": {
 													"type_identifier": "t_function_$_t_function_$",
@@ -3569,7 +3622,8 @@
 											"type_description": {
 												"type_identifier": "t_function_$_t_function_$",
 												"type_string": "function(function())"
-											}
+											},
+											"text": "IERC20(USDT).balanceOf"
 										},
 										"type_description": {
 											"type_identifier": "t_function_$_t_function_$_t_address$",
@@ -3577,7 +3631,7 @@
 										}
 									},
 									"right_expression": {
-										"id": 3005,
+										"id": 2980,
 										"node_type": 16,
 										"src": {
 											"line": 1214,
@@ -3585,7 +3639,7 @@
 											"start": 37508,
 											"end": 37521,
 											"length": 14,
-											"parent_index": 2995
+											"parent_index": 2970
 										},
 										"name": "initialBalance",
 										"type_description": {
@@ -3593,8 +3647,9 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 2977,
-										"is_pure": false
+										"referenced_declaration": 2952,
+										"is_pure": false,
+										"text": "initialBalance"
 									},
 									"type_description": {
 										"type_identifier": "t_function_$_t_function_$_t_address$",
@@ -3603,7 +3658,7 @@
 								}
 							},
 							{
-								"id": 3006,
+								"id": 2981,
 								"node_type": 24,
 								"kind": 24,
 								"src": {
@@ -3612,7 +3667,7 @@
 									"start": 37569,
 									"end": 37603,
 									"length": 35,
-									"parent_index": 2964
+									"parent_index": 2939
 								},
 								"argument_types": [
 									{
@@ -3626,7 +3681,7 @@
 								],
 								"arguments": [
 									{
-										"id": 3008,
+										"id": 2983,
 										"node_type": 16,
 										"src": {
 											"line": 1217,
@@ -3634,7 +3689,7 @@
 											"start": 37582,
 											"end": 37590,
 											"length": 9,
-											"parent_index": 3006
+											"parent_index": 2981
 										},
 										"name": "otherHalf",
 										"type_description": {
@@ -3642,11 +3697,12 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 2971,
-										"is_pure": false
+										"referenced_declaration": 2946,
+										"is_pure": false,
+										"text": "otherHalf"
 									},
 									{
-										"id": 3009,
+										"id": 2984,
 										"node_type": 16,
 										"src": {
 											"line": 1217,
@@ -3654,7 +3710,7 @@
 											"start": 37593,
 											"end": 37602,
 											"length": 10,
-											"parent_index": 3006
+											"parent_index": 2981
 										},
 										"name": "newBalance",
 										"type_description": {
@@ -3662,18 +3718,19 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 2992,
+										"referenced_declaration": 2967,
 										"is_pure": false,
 										"argument_types": [
 											{
 												"type_identifier": "t_uint256",
 												"type_string": "uint256"
 											}
-										]
+										],
+										"text": "newBalance"
 									}
 								],
 								"expression": {
-									"id": 3007,
+									"id": 2982,
 									"node_type": 16,
 									"src": {
 										"line": 1217,
@@ -3681,7 +3738,7 @@
 										"start": 37569,
 										"end": 37580,
 										"length": 12,
-										"parent_index": 3006
+										"parent_index": 2981
 									},
 									"name": "addLiquidity",
 									"type_description": {
@@ -3690,7 +3747,8 @@
 									},
 									"overloaded_declarations": [],
 									"referenced_declaration": 0,
-									"is_pure": false
+									"is_pure": false,
+									"text": "addLiquidity"
 								},
 								"type_description": {
 									"type_identifier": "t_function_$_t_uint256$_t_uint256$",
@@ -3705,7 +3763,7 @@
 					"virtual": false,
 					"modifiers": [
 						{
-							"id": 2961,
+							"id": 2936,
 							"name": "isSwap",
 							"node_type": 72,
 							"kind": 72,
@@ -3715,12 +3773,12 @@
 								"start": 36743,
 								"end": 36748,
 								"length": 6,
-								"parent_index": 2957
+								"parent_index": 2932
 							},
 							"argument_types": [],
 							"arguments": [],
 							"modifier_name": {
-								"id": 2962,
+								"id": 2937,
 								"name": "isSwap",
 								"node_type": 0,
 								"src": {
@@ -3729,14 +3787,14 @@
 									"start": 36743,
 									"end": 36748,
 									"length": 6,
-									"parent_index": 2961
+									"parent_index": 2936
 								}
 							}
 						}
 					],
 					"overrides": [],
 					"parameters": {
-						"id": 2958,
+						"id": 2933,
 						"node_type": 43,
 						"src": {
 							"line": 1198,
@@ -3744,11 +3802,11 @@
 							"start": 36704,
 							"end": 36731,
 							"length": 28,
-							"parent_index": 2957
+							"parent_index": 2932
 						},
 						"parameters": [
 							{
-								"id": 2959,
+								"id": 2934,
 								"node_type": 44,
 								"src": {
 									"line": 1198,
@@ -3756,12 +3814,12 @@
 									"start": 36704,
 									"end": 36731,
 									"length": 28,
-									"parent_index": 2958
+									"parent_index": 2933
 								},
-								"scope": 2957,
+								"scope": 2932,
 								"name": "contractTokenBalance",
 								"type_name": {
-									"id": 2960,
+									"id": 2935,
 									"node_type": 30,
 									"src": {
 										"line": 1198,
@@ -3769,7 +3827,7 @@
 										"start": 36704,
 										"end": 36710,
 										"length": 7,
-										"parent_index": 2959
+										"parent_index": 2934
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -3795,7 +3853,7 @@
 						]
 					},
 					"return_parameters": {
-						"id": 2963,
+						"id": 2938,
 						"node_type": 43,
 						"src": {
 							"line": 1198,
@@ -3803,21 +3861,22 @@
 							"start": 36680,
 							"end": 37610,
 							"length": 931,
-							"parent_index": 2957
+							"parent_index": 2932
 						},
 						"parameters": [],
 						"parameter_types": []
 					},
 					"signature_raw": "swapAndLiquify(uint256)",
 					"signature": "173865ad",
-					"scope": 2816,
+					"scope": 2791,
 					"type_description": {
 						"type_identifier": "t_function_$_t_uint256$",
 						"type_string": "function(uint256)"
-					}
+					},
+					"text": "functionswapAndLiquify(uint256contractTokenBalance)internalisSwap{uint256half=contractTokenBalance/2;uint256otherHalf=contractTokenBalance-half;uint256initialBalance=IERC20(USDT).balanceOf(address(this));swapTokensForTokens(half);uint256newBalance=IERC20(USDT).balanceOf(address(this))-initialBalance;addLiquidity(otherHalf,newBalance);}"
 				},
 				{
-					"id": 3011,
+					"id": 2986,
 					"name": "swapTokensForTokens",
 					"node_type": 42,
 					"kind": 41,
@@ -3827,7 +3886,7 @@
 						"start": 37617,
 						"end": 38248,
 						"length": 632,
-						"parent_index": 2816
+						"parent_index": 2791
 					},
 					"name_location": {
 						"line": 1220,
@@ -3835,10 +3894,10 @@
 						"start": 37626,
 						"end": 37644,
 						"length": 19,
-						"parent_index": 3011
+						"parent_index": 2986
 					},
 					"body": {
-						"id": 3016,
+						"id": 2991,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -3847,12 +3906,12 @@
 							"start": 37676,
 							"end": 38248,
 							"length": 573,
-							"parent_index": 3011
+							"parent_index": 2986
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 3017,
+								"id": 2992,
 								"node_type": 44,
 								"src": {
 									"line": 1222,
@@ -3860,25 +3919,25 @@
 									"start": 37745,
 									"end": 37785,
 									"length": 41,
-									"parent_index": 3016
+									"parent_index": 2991
 								},
 								"assignments": [
-									3018
+									2993
 								],
 								"declarations": [
 									{
-										"id": 3018,
+										"id": 2993,
 										"state_mutability": 1,
 										"name": "path",
 										"node_type": 44,
-										"scope": 3016,
+										"scope": 2991,
 										"src": {
 											"line": 1222,
 											"column": 8,
 											"start": 37745,
 											"end": 37765,
 											"length": 21,
-											"parent_index": 3017
+											"parent_index": 2992
 										},
 										"name_location": {
 											"line": 1222,
@@ -3886,33 +3945,33 @@
 											"start": 37762,
 											"end": 37765,
 											"length": 4,
-											"parent_index": 3018
+											"parent_index": 2993
 										},
 										"is_state_variable": false,
 										"storage_location": 2,
 										"type_name": {
-											"id": 3019,
-											"node_type": 16,
+											"id": 2994,
+											"node_type": 30,
 											"src": {
 												"line": 1222,
 												"column": 8,
 												"start": 37745,
-												"end": 37751,
-												"length": 7,
-												"parent_index": 3018
+												"end": 37753,
+												"length": 9,
+												"parent_index": 2993
 											},
-											"name": "address",
+											"name": "address[]",
 											"referenced_declaration": 0,
 											"type_description": {
-												"type_identifier": "t_address",
-												"type_string": "address"
+												"type_identifier": "t_address_array",
+												"type_string": "address[]"
 											}
 										},
 										"visibility": 1
 									}
 								],
 								"initial_value": {
-									"id": 3020,
+									"id": 2995,
 									"node_type": 24,
 									"kind": 24,
 									"src": {
@@ -3921,7 +3980,7 @@
 										"start": 37769,
 										"end": 37784,
 										"length": 16,
-										"parent_index": 3017
+										"parent_index": 2992
 									},
 									"argument_types": [
 										{
@@ -3931,7 +3990,7 @@
 									],
 									"arguments": [
 										{
-											"id": 3023,
+											"id": 2998,
 											"node_type": 17,
 											"kind": 49,
 											"value": "2",
@@ -3942,7 +4001,7 @@
 												"start": 37783,
 												"end": 37783,
 												"length": 1,
-												"parent_index": 3020
+												"parent_index": 2995
 											},
 											"type_description": {
 												"type_identifier": "t_rational_2_by_1",
@@ -3950,11 +4009,12 @@
 											},
 											"overloaded_declarations": [],
 											"referenced_declaration": 0,
-											"is_pure": true
+											"is_pure": true,
+											"text": "2"
 										}
 									],
 									"expression": {
-										"id": 3021,
+										"id": 2996,
 										"node_type": 25,
 										"src": {
 											"line": 1222,
@@ -3962,30 +4022,30 @@
 											"start": 37769,
 											"end": 37781,
 											"length": 13,
-											"parent_index": 3020
+											"parent_index": 2995
 										},
 										"argument_types": [],
 										"type_name": {
-											"id": 3022,
-											"node_type": 16,
+											"id": 2997,
+											"node_type": 30,
 											"src": {
 												"line": 1222,
 												"column": 36,
 												"start": 37773,
-												"end": 37779,
-												"length": 7,
-												"parent_index": 3021
+												"end": 37781,
+												"length": 9,
+												"parent_index": 2996
 											},
-											"name": "address",
+											"name": "address[]",
 											"referenced_declaration": 0,
 											"type_description": {
-												"type_identifier": "t_address",
-												"type_string": "address"
+												"type_identifier": "t_address_array",
+												"type_string": "address[]"
 											}
 										},
 										"type_description": {
-											"type_identifier": "t_address",
-											"type_string": "address"
+											"type_identifier": "t_address_array",
+											"type_string": "address[]"
 										}
 									},
 									"type_description": {
@@ -3995,7 +4055,7 @@
 								}
 							},
 							{
-								"id": 3024,
+								"id": 2999,
 								"node_type": 27,
 								"src": {
 									"line": 1223,
@@ -4003,10 +4063,10 @@
 									"start": 37795,
 									"end": 37818,
 									"length": 24,
-									"parent_index": 3016
+									"parent_index": 2991
 								},
 								"expression": {
-									"id": 3025,
+									"id": 3000,
 									"node_type": 27,
 									"src": {
 										"line": 1223,
@@ -4014,11 +4074,11 @@
 										"start": 37795,
 										"end": 37817,
 										"length": 23,
-										"parent_index": 3024
+										"parent_index": 2999
 									},
 									"operator": 11,
 									"left_expression": {
-										"id": 3026,
+										"id": 3001,
 										"node_type": 22,
 										"src": {
 											"line": 1223,
@@ -4026,30 +4086,10 @@
 											"start": 37795,
 											"end": 37801,
 											"length": 7,
-											"parent_index": 3025
+											"parent_index": 3000
 										},
 										"index_expression": {
-											"id": 3027,
-											"node_type": 16,
-											"src": {
-												"line": 1223,
-												"column": 8,
-												"start": 37795,
-												"end": 37798,
-												"length": 4,
-												"parent_index": 3026
-											},
-											"name": "path",
-											"type_description": {
-												"type_identifier": "t_address",
-												"type_string": "address"
-											},
-											"overloaded_declarations": [],
-											"referenced_declaration": 3017,
-											"is_pure": false
-										},
-										"base_expression": {
-											"id": 3028,
+											"id": 3003,
 											"node_type": 17,
 											"kind": 49,
 											"value": "0",
@@ -4060,7 +4100,7 @@
 												"start": 37800,
 												"end": 37800,
 												"length": 1,
-												"parent_index": 3026
+												"parent_index": 3001
 											},
 											"type_description": {
 												"type_identifier": "t_rational_0_by_1",
@@ -4068,25 +4108,43 @@
 											},
 											"overloaded_declarations": [],
 											"referenced_declaration": 0,
-											"is_pure": true
+											"is_pure": true,
+											"text": "0"
+										},
+										"base_expression": {
+											"id": 3002,
+											"node_type": 16,
+											"src": {
+												"line": 1223,
+												"column": 8,
+												"start": 37795,
+												"end": 37798,
+												"length": 4,
+												"parent_index": 3001
+											},
+											"name": "path",
+											"type_description": {
+												"type_identifier": "t_address_array",
+												"type_string": "address[]"
+											},
+											"overloaded_declarations": [],
+											"referenced_declaration": 2992,
+											"is_pure": false,
+											"text": "path"
 										},
 										"type_descriptions": [
-											{
-												"type_identifier": "t_address",
-												"type_string": "address"
-											},
 											{
 												"type_identifier": "t_rational_0_by_1",
 												"type_string": "int_const 0"
 											}
 										],
 										"type_description": {
-											"type_identifier": "t_[_[$_t_address]$_t_rational_0_by_1]$",
-											"type_string": "index[address:int_const 0]"
+											"type_identifier": "t_[_[$_t_rational_0_by_1]$",
+											"type_string": "index[int_const 0]"
 										}
 									},
 									"right_expression": {
-										"id": 3029,
+										"id": 3004,
 										"node_type": 24,
 										"kind": 24,
 										"src": {
@@ -4095,17 +4153,17 @@
 											"start": 37805,
 											"end": 37817,
 											"length": 13,
-											"parent_index": 3025
+											"parent_index": 3000
 										},
 										"argument_types": [
 											{
-												"type_identifier": "t_contract$_LiquidityFeeUSDT_$2814",
+												"type_identifier": "t_contract$_LiquidityFeeUSDT_$2789",
 												"type_string": "contract LiquidityFeeUSDT"
 											}
 										],
 										"arguments": [
 											{
-												"id": 3032,
+												"id": 3007,
 												"node_type": 16,
 												"src": {
 													"line": 1223,
@@ -4113,20 +4171,21 @@
 													"start": 37813,
 													"end": 37816,
 													"length": 4,
-													"parent_index": 3029
+													"parent_index": 3004
 												},
 												"name": "this",
 												"type_description": {
-													"type_identifier": "t_contract$_LiquidityFeeUSDT_$2814",
+													"type_identifier": "t_contract$_LiquidityFeeUSDT_$2789",
 													"type_string": "contract LiquidityFeeUSDT"
 												},
 												"overloaded_declarations": [],
 												"referenced_declaration": 0,
-												"is_pure": false
+												"is_pure": false,
+												"text": "this"
 											}
 										],
 										"expression": {
-											"id": 3030,
+											"id": 3005,
 											"node_type": 16,
 											"src": {
 												"line": 1223,
@@ -4134,11 +4193,11 @@
 												"start": 37805,
 												"end": 37811,
 												"length": 7,
-												"parent_index": 3029
+												"parent_index": 3004
 											},
 											"name": "address",
 											"type_name": {
-												"id": 3031,
+												"id": 3006,
 												"node_type": 30,
 												"src": {
 													"line": 1223,
@@ -4146,7 +4205,7 @@
 													"start": 37805,
 													"end": 37811,
 													"length": 7,
-													"parent_index": 3030
+													"parent_index": 3005
 												},
 												"name": "address",
 												"state_mutability": 4,
@@ -4168,7 +4227,8 @@
 													"type_identifier": "t_address",
 													"type_string": "address"
 												}
-											]
+											],
+											"text": "address"
 										},
 										"type_description": {
 											"type_identifier": "t_function_$_t_address$",
@@ -4176,17 +4236,18 @@
 										}
 									},
 									"type_description": {
-										"type_identifier": "t_[_[$_t_address]$_t_rational_0_by_1]$",
-										"type_string": "index[address:int_const 0]"
+										"type_identifier": "t_[_[$_t_rational_0_by_1]$",
+										"type_string": "index[int_const 0]"
 									}
 								},
 								"type_description": {
-									"type_identifier": "t_[_[$_t_address]$_t_rational_0_by_1]$",
-									"type_string": "index[address:int_const 0]"
-								}
+									"type_identifier": "t_[_[$_t_rational_0_by_1]$",
+									"type_string": "index[int_const 0]"
+								},
+								"text": "path[0]=address(this);"
 							},
 							{
-								"id": 3033,
+								"id": 3008,
 								"node_type": 27,
 								"src": {
 									"line": 1224,
@@ -4194,10 +4255,10 @@
 									"start": 37828,
 									"end": 37851,
 									"length": 24,
-									"parent_index": 3016
+									"parent_index": 2991
 								},
 								"expression": {
-									"id": 3034,
+									"id": 3009,
 									"node_type": 27,
 									"src": {
 										"line": 1224,
@@ -4205,11 +4266,11 @@
 										"start": 37828,
 										"end": 37850,
 										"length": 23,
-										"parent_index": 3033
+										"parent_index": 3008
 									},
 									"operator": 11,
 									"left_expression": {
-										"id": 3035,
+										"id": 3010,
 										"node_type": 22,
 										"src": {
 											"line": 1224,
@@ -4217,30 +4278,10 @@
 											"start": 37828,
 											"end": 37834,
 											"length": 7,
-											"parent_index": 3034
+											"parent_index": 3009
 										},
 										"index_expression": {
-											"id": 3036,
-											"node_type": 16,
-											"src": {
-												"line": 1224,
-												"column": 8,
-												"start": 37828,
-												"end": 37831,
-												"length": 4,
-												"parent_index": 3035
-											},
-											"name": "path",
-											"type_description": {
-												"type_identifier": "t_address",
-												"type_string": "address"
-											},
-											"overloaded_declarations": [],
-											"referenced_declaration": 3017,
-											"is_pure": false
-										},
-										"base_expression": {
-											"id": 3037,
+											"id": 3012,
 											"node_type": 17,
 											"kind": 49,
 											"value": "1",
@@ -4251,7 +4292,7 @@
 												"start": 37833,
 												"end": 37833,
 												"length": 1,
-												"parent_index": 3035
+												"parent_index": 3010
 											},
 											"type_description": {
 												"type_identifier": "t_rational_1_by_1",
@@ -4259,25 +4300,43 @@
 											},
 											"overloaded_declarations": [],
 											"referenced_declaration": 0,
-											"is_pure": true
+											"is_pure": true,
+											"text": "1"
+										},
+										"base_expression": {
+											"id": 3011,
+											"node_type": 16,
+											"src": {
+												"line": 1224,
+												"column": 8,
+												"start": 37828,
+												"end": 37831,
+												"length": 4,
+												"parent_index": 3010
+											},
+											"name": "path",
+											"type_description": {
+												"type_identifier": "t_address_array",
+												"type_string": "address[]"
+											},
+											"overloaded_declarations": [],
+											"referenced_declaration": 2992,
+											"is_pure": false,
+											"text": "path"
 										},
 										"type_descriptions": [
-											{
-												"type_identifier": "t_address",
-												"type_string": "address"
-											},
 											{
 												"type_identifier": "t_rational_1_by_1",
 												"type_string": "int_const 1"
 											}
 										],
 										"type_description": {
-											"type_identifier": "t_[_[$_t_address]$_t_rational_1_by_1]$",
-											"type_string": "index[address:int_const 1]"
+											"type_identifier": "t_[_[$_t_rational_1_by_1]$",
+											"type_string": "index[int_const 1]"
 										}
 									},
 									"right_expression": {
-										"id": 3038,
+										"id": 3013,
 										"node_type": 24,
 										"kind": 24,
 										"src": {
@@ -4286,7 +4345,7 @@
 											"start": 37838,
 											"end": 37850,
 											"length": 13,
-											"parent_index": 3034
+											"parent_index": 3009
 										},
 										"argument_types": [
 											{
@@ -4296,7 +4355,7 @@
 										],
 										"arguments": [
 											{
-												"id": 3041,
+												"id": 3016,
 												"node_type": 16,
 												"src": {
 													"line": 1224,
@@ -4304,7 +4363,7 @@
 													"start": 37846,
 													"end": 37849,
 													"length": 4,
-													"parent_index": 3038
+													"parent_index": 3013
 												},
 												"name": "USDT",
 												"type_description": {
@@ -4313,11 +4372,12 @@
 												},
 												"overloaded_declarations": [],
 												"referenced_declaration": 0,
-												"is_pure": false
+												"is_pure": false,
+												"text": "USDT"
 											}
 										],
 										"expression": {
-											"id": 3039,
+											"id": 3014,
 											"node_type": 16,
 											"src": {
 												"line": 1224,
@@ -4325,11 +4385,11 @@
 												"start": 37838,
 												"end": 37844,
 												"length": 7,
-												"parent_index": 3038
+												"parent_index": 3013
 											},
 											"name": "address",
 											"type_name": {
-												"id": 3040,
+												"id": 3015,
 												"node_type": 30,
 												"src": {
 													"line": 1224,
@@ -4337,7 +4397,7 @@
 													"start": 37838,
 													"end": 37844,
 													"length": 7,
-													"parent_index": 3039
+													"parent_index": 3014
 												},
 												"name": "address",
 												"state_mutability": 4,
@@ -4359,7 +4419,8 @@
 													"type_identifier": "t_address",
 													"type_string": "address"
 												}
-											]
+											],
+											"text": "address"
 										},
 										"type_description": {
 											"type_identifier": "t_function_$_t_function_$",
@@ -4367,17 +4428,18 @@
 										}
 									},
 									"type_description": {
-										"type_identifier": "t_[_[$_t_address]$_t_rational_1_by_1]$",
-										"type_string": "index[address:int_const 1]"
+										"type_identifier": "t_[_[$_t_rational_1_by_1]$",
+										"type_string": "index[int_const 1]"
 									}
 								},
 								"type_description": {
-									"type_identifier": "t_[_[$_t_address]$_t_rational_1_by_1]$",
-									"type_string": "index[address:int_const 1]"
-								}
+									"type_identifier": "t_[_[$_t_rational_1_by_1]$",
+									"type_string": "index[int_const 1]"
+								},
+								"text": "path[1]=address(USDT);"
 							},
 							{
-								"id": 3042,
+								"id": 3017,
 								"node_type": 24,
 								"kind": 24,
 								"src": {
@@ -4386,7 +4448,7 @@
 									"start": 37886,
 									"end": 38113,
 									"length": 228,
-									"parent_index": 3016
+									"parent_index": 2991
 								},
 								"argument_types": [
 									{
@@ -4398,8 +4460,8 @@
 										"type_string": "int_const 0"
 									},
 									{
-										"type_identifier": "t_address",
-										"type_string": "address"
+										"type_identifier": "t_address_array",
+										"type_string": "address[]"
 									},
 									{
 										"type_identifier": "t_function_$_t_function_$",
@@ -4412,7 +4474,7 @@
 								],
 								"arguments": [
 									{
-										"id": 3045,
+										"id": 3020,
 										"node_type": 16,
 										"src": {
 											"line": 1227,
@@ -4420,7 +4482,7 @@
 											"start": 37969,
 											"end": 37979,
 											"length": 11,
-											"parent_index": 3042
+											"parent_index": 3017
 										},
 										"name": "tokenAmount",
 										"type_description": {
@@ -4428,11 +4490,12 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 3045,
-										"is_pure": false
+										"referenced_declaration": 3020,
+										"is_pure": false,
+										"text": "tokenAmount"
 									},
 									{
-										"id": 3046,
+										"id": 3021,
 										"node_type": 17,
 										"kind": 49,
 										"value": "0",
@@ -4443,7 +4506,7 @@
 											"start": 37994,
 											"end": 37994,
 											"length": 1,
-											"parent_index": 3042
+											"parent_index": 3017
 										},
 										"type_description": {
 											"type_identifier": "t_rational_0_by_1",
@@ -4457,10 +4520,11 @@
 												"type_identifier": "t_uint256",
 												"type_string": "uint256"
 											}
-										]
+										],
+										"text": "0"
 									},
 									{
-										"id": 3047,
+										"id": 3022,
 										"node_type": 16,
 										"src": {
 											"line": 1229,
@@ -4468,15 +4532,15 @@
 											"start": 38037,
 											"end": 38040,
 											"length": 4,
-											"parent_index": 3042
+											"parent_index": 3017
 										},
 										"name": "path",
 										"type_description": {
-											"type_identifier": "t_address",
-											"type_string": "address"
+											"type_identifier": "t_address_array",
+											"type_string": "address[]"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 3017,
+										"referenced_declaration": 2992,
 										"is_pure": false,
 										"argument_types": [
 											{
@@ -4487,10 +4551,11 @@
 												"type_identifier": "t_rational_0_by_1",
 												"type_string": "int_const 0"
 											}
-										]
+										],
+										"text": "path"
 									},
 									{
-										"id": 3048,
+										"id": 3023,
 										"node_type": 24,
 										"kind": 24,
 										"src": {
@@ -4499,7 +4564,7 @@
 											"start": 38055,
 											"end": 38074,
 											"length": 20,
-											"parent_index": 3042
+											"parent_index": 3017
 										},
 										"argument_types": [
 											{
@@ -4509,7 +4574,7 @@
 										],
 										"arguments": [
 											{
-												"id": 3051,
+												"id": 3026,
 												"node_type": 16,
 												"src": {
 													"line": 1230,
@@ -4517,7 +4582,7 @@
 													"start": 38063,
 													"end": 38073,
 													"length": 11,
-													"parent_index": 3048
+													"parent_index": 3023
 												},
 												"name": "distributor",
 												"type_description": {
@@ -4526,11 +4591,12 @@
 												},
 												"overloaded_declarations": [],
 												"referenced_declaration": 0,
-												"is_pure": false
+												"is_pure": false,
+												"text": "distributor"
 											}
 										],
 										"expression": {
-											"id": 3049,
+											"id": 3024,
 											"node_type": 16,
 											"src": {
 												"line": 1230,
@@ -4538,11 +4604,11 @@
 												"start": 38055,
 												"end": 38061,
 												"length": 7,
-												"parent_index": 3048
+												"parent_index": 3023
 											},
 											"name": "address",
 											"type_name": {
-												"id": 3050,
+												"id": 3025,
 												"node_type": 30,
 												"src": {
 													"line": 1230,
@@ -4550,7 +4616,7 @@
 													"start": 38055,
 													"end": 38061,
 													"length": 7,
-													"parent_index": 3049
+													"parent_index": 3024
 												},
 												"name": "address",
 												"state_mutability": 4,
@@ -4572,7 +4638,8 @@
 													"type_identifier": "t_address",
 													"type_string": "address"
 												}
-											]
+											],
+											"text": "address"
 										},
 										"type_description": {
 											"type_identifier": "t_function_$_t_function_$",
@@ -4580,7 +4647,7 @@
 										}
 									},
 									{
-										"id": 3052,
+										"id": 3027,
 										"is_constant": false,
 										"is_l_value": false,
 										"is_pure": false,
@@ -4592,7 +4659,7 @@
 											"start": 38089,
 											"end": 38103,
 											"length": 15,
-											"parent_index": 3042
+											"parent_index": 3017
 										},
 										"member_location": {
 											"line": 1231,
@@ -4600,10 +4667,10 @@
 											"start": 38095,
 											"end": 38103,
 											"length": 9,
-											"parent_index": 3052
+											"parent_index": 3027
 										},
 										"expression": {
-											"id": 3053,
+											"id": 3028,
 											"node_type": 16,
 											"src": {
 												"line": 1231,
@@ -4611,7 +4678,7 @@
 												"start": 38089,
 												"end": 38093,
 												"length": 5,
-												"parent_index": 3052
+												"parent_index": 3027
 											},
 											"name": "block",
 											"type_description": {
@@ -4620,7 +4687,8 @@
 											},
 											"overloaded_declarations": [],
 											"referenced_declaration": 0,
-											"is_pure": false
+											"is_pure": false,
+											"text": "block"
 										},
 										"member_name": "timestamp",
 										"argument_types": [
@@ -4633,8 +4701,8 @@
 												"type_string": "int_const 0"
 											},
 											{
-												"type_identifier": "t_address",
-												"type_string": "address"
+												"type_identifier": "t_address_array",
+												"type_string": "address[]"
 											},
 											{
 												"type_identifier": "t_function_$_t_function_$",
@@ -4644,11 +4712,12 @@
 										"type_description": {
 											"type_identifier": "t_uint256",
 											"type_string": "uint256"
-										}
+										},
+										"text": "block.timestamp"
 									}
 								],
 								"expression": {
-									"id": 3043,
+									"id": 3018,
 									"is_constant": false,
 									"is_l_value": false,
 									"is_pure": false,
@@ -4660,7 +4729,7 @@
 										"start": 37886,
 										"end": 37954,
 										"length": 69,
-										"parent_index": 3042
+										"parent_index": 3017
 									},
 									"member_location": {
 										"line": 1226,
@@ -4668,10 +4737,10 @@
 										"start": 37902,
 										"end": 37954,
 										"length": 53,
-										"parent_index": 3043
+										"parent_index": 3018
 									},
 									"expression": {
-										"id": 3044,
+										"id": 3019,
 										"node_type": 16,
 										"src": {
 											"line": 1226,
@@ -4679,7 +4748,7 @@
 											"start": 37886,
 											"end": 37900,
 											"length": 15,
-											"parent_index": 3043
+											"parent_index": 3018
 										},
 										"name": "uniswapV2Router",
 										"type_description": {
@@ -4687,23 +4756,25 @@
 											"type_string": "function(function())"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 2225,
-										"is_pure": false
+										"referenced_declaration": 2200,
+										"is_pure": false,
+										"text": "uniswapV2Router"
 									},
 									"member_name": "swapExactTokensForTokensSupportingFeeOnTransferTokens",
 									"argument_types": [],
 									"type_description": {
 										"type_identifier": "t_function_$_t_function_$",
 										"type_string": "function(function())"
-									}
+									},
+									"text": "uniswapV2Router.swapExactTokensForTokensSupportingFeeOnTransferTokens"
 								},
 								"type_description": {
-									"type_identifier": "t_function_$_t_uint256$_t_rational_0_by_1$_t_address$_t_function_$_t_function_$_t_uint256$",
-									"type_string": "function(uint256,int_const 0,address,function(function()),uint256)"
+									"type_identifier": "t_function_$_t_uint256$_t_rational_0_by_1$_t_address_array$_t_function_$_t_function_$_t_uint256$",
+									"type_string": "function(uint256,int_const 0,address[],function(function()),uint256)"
 								}
 							},
 							{
-								"id": 3054,
+								"id": 3029,
 								"node_type": 44,
 								"src": {
 									"line": 1233,
@@ -4711,25 +4782,25 @@
 									"start": 38124,
 									"end": 38185,
 									"length": 62,
-									"parent_index": 3016
+									"parent_index": 2991
 								},
 								"assignments": [
-									3055
+									3030
 								],
 								"declarations": [
 									{
-										"id": 3055,
+										"id": 3030,
 										"state_mutability": 1,
 										"name": "amount",
 										"node_type": 44,
-										"scope": 3016,
+										"scope": 2991,
 										"src": {
 											"line": 1233,
 											"column": 8,
 											"start": 38124,
 											"end": 38137,
 											"length": 14,
-											"parent_index": 3054
+											"parent_index": 3029
 										},
 										"name_location": {
 											"line": 1233,
@@ -4737,12 +4808,12 @@
 											"start": 38132,
 											"end": 38137,
 											"length": 6,
-											"parent_index": 3055
+											"parent_index": 3030
 										},
 										"is_state_variable": false,
 										"storage_location": 1,
 										"type_name": {
-											"id": 3056,
+											"id": 3031,
 											"node_type": 30,
 											"src": {
 												"line": 1233,
@@ -4750,7 +4821,7 @@
 												"start": 38124,
 												"end": 38130,
 												"length": 7,
-												"parent_index": 3055
+												"parent_index": 3030
 											},
 											"name": "uint256",
 											"referenced_declaration": 0,
@@ -4763,7 +4834,7 @@
 									}
 								],
 								"initial_value": {
-									"id": 3057,
+									"id": 3032,
 									"node_type": 24,
 									"kind": 24,
 									"src": {
@@ -4772,7 +4843,7 @@
 										"start": 38141,
 										"end": 38184,
 										"length": 44,
-										"parent_index": 3054
+										"parent_index": 3029
 									},
 									"argument_types": [
 										{
@@ -4782,7 +4853,7 @@
 									],
 									"arguments": [
 										{
-											"id": 3062,
+											"id": 3037,
 											"node_type": 24,
 											"kind": 24,
 											"src": {
@@ -4791,7 +4862,7 @@
 												"start": 38164,
 												"end": 38183,
 												"length": 20,
-												"parent_index": 3057
+												"parent_index": 3032
 											},
 											"argument_types": [
 												{
@@ -4801,7 +4872,7 @@
 											],
 											"arguments": [
 												{
-													"id": 3065,
+													"id": 3040,
 													"node_type": 16,
 													"src": {
 														"line": 1233,
@@ -4809,7 +4880,7 @@
 														"start": 38172,
 														"end": 38182,
 														"length": 11,
-														"parent_index": 3062
+														"parent_index": 3037
 													},
 													"name": "distributor",
 													"type_description": {
@@ -4818,11 +4889,12 @@
 													},
 													"overloaded_declarations": [],
 													"referenced_declaration": 0,
-													"is_pure": false
+													"is_pure": false,
+													"text": "distributor"
 												}
 											],
 											"expression": {
-												"id": 3063,
+												"id": 3038,
 												"node_type": 16,
 												"src": {
 													"line": 1233,
@@ -4830,11 +4902,11 @@
 													"start": 38164,
 													"end": 38170,
 													"length": 7,
-													"parent_index": 3062
+													"parent_index": 3037
 												},
 												"name": "address",
 												"type_name": {
-													"id": 3064,
+													"id": 3039,
 													"node_type": 30,
 													"src": {
 														"line": 1233,
@@ -4842,7 +4914,7 @@
 														"start": 38164,
 														"end": 38170,
 														"length": 7,
-														"parent_index": 3063
+														"parent_index": 3038
 													},
 													"name": "address",
 													"state_mutability": 4,
@@ -4864,7 +4936,8 @@
 														"type_identifier": "t_address",
 														"type_string": "address"
 													}
-												]
+												],
+												"text": "address"
 											},
 											"type_description": {
 												"type_identifier": "t_function_$_t_function_$",
@@ -4873,7 +4946,7 @@
 										}
 									],
 									"expression": {
-										"id": 3058,
+										"id": 3033,
 										"is_constant": false,
 										"is_l_value": false,
 										"is_pure": false,
@@ -4885,7 +4958,7 @@
 											"start": 38141,
 											"end": 38162,
 											"length": 22,
-											"parent_index": 3057
+											"parent_index": 3032
 										},
 										"member_location": {
 											"line": 1233,
@@ -4893,10 +4966,10 @@
 											"start": 38154,
 											"end": 38162,
 											"length": 9,
-											"parent_index": 3058
+											"parent_index": 3033
 										},
 										"expression": {
-											"id": 3059,
+											"id": 3034,
 											"node_type": 24,
 											"kind": 24,
 											"src": {
@@ -4905,7 +4978,7 @@
 												"start": 38141,
 												"end": 38152,
 												"length": 12,
-												"parent_index": 3058
+												"parent_index": 3033
 											},
 											"argument_types": [
 												{
@@ -4915,7 +4988,7 @@
 											],
 											"arguments": [
 												{
-													"id": 3061,
+													"id": 3036,
 													"node_type": 16,
 													"src": {
 														"line": 1233,
@@ -4923,7 +4996,7 @@
 														"start": 38148,
 														"end": 38151,
 														"length": 4,
-														"parent_index": 3059
+														"parent_index": 3034
 													},
 													"name": "USDT",
 													"type_description": {
@@ -4932,11 +5005,12 @@
 													},
 													"overloaded_declarations": [],
 													"referenced_declaration": 0,
-													"is_pure": false
+													"is_pure": false,
+													"text": "USDT"
 												}
 											],
 											"expression": {
-												"id": 3060,
+												"id": 3035,
 												"node_type": 16,
 												"src": {
 													"line": 1233,
@@ -4944,7 +5018,7 @@
 													"start": 38141,
 													"end": 38146,
 													"length": 6,
-													"parent_index": 3059
+													"parent_index": 3034
 												},
 												"name": "IERC20",
 												"type_description": {
@@ -4953,7 +5027,8 @@
 												},
 												"overloaded_declarations": [],
 												"referenced_declaration": 0,
-												"is_pure": false
+												"is_pure": false,
+												"text": "IERC20"
 											},
 											"type_description": {
 												"type_identifier": "t_function_$_t_function_$",
@@ -4965,7 +5040,8 @@
 										"type_description": {
 											"type_identifier": "t_function_$_t_function_$",
 											"type_string": "function(function())"
-										}
+										},
+										"text": "IERC20(USDT).balanceOf"
 									},
 									"type_description": {
 										"type_identifier": "t_function_$_t_function_$_t_function_$",
@@ -4974,7 +5050,7 @@
 								}
 							},
 							{
-								"id": 3066,
+								"id": 3041,
 								"node_type": 24,
 								"kind": 24,
 								"src": {
@@ -4983,7 +5059,7 @@
 									"start": 38195,
 									"end": 38241,
 									"length": 47,
-									"parent_index": 3016
+									"parent_index": 2991
 								},
 								"argument_types": [
 									{
@@ -4997,7 +5073,7 @@
 								],
 								"arguments": [
 									{
-										"id": 3069,
+										"id": 3044,
 										"node_type": 24,
 										"kind": 24,
 										"src": {
@@ -5006,17 +5082,17 @@
 											"start": 38220,
 											"end": 38232,
 											"length": 13,
-											"parent_index": 3066
+											"parent_index": 3041
 										},
 										"argument_types": [
 											{
-												"type_identifier": "t_contract$_LiquidityFeeUSDT_$2814",
+												"type_identifier": "t_contract$_LiquidityFeeUSDT_$2789",
 												"type_string": "contract LiquidityFeeUSDT"
 											}
 										],
 										"arguments": [
 											{
-												"id": 3072,
+												"id": 3047,
 												"node_type": 16,
 												"src": {
 													"line": 1234,
@@ -5024,20 +5100,21 @@
 													"start": 38228,
 													"end": 38231,
 													"length": 4,
-													"parent_index": 3069
+													"parent_index": 3044
 												},
 												"name": "this",
 												"type_description": {
-													"type_identifier": "t_contract$_LiquidityFeeUSDT_$2814",
+													"type_identifier": "t_contract$_LiquidityFeeUSDT_$2789",
 													"type_string": "contract LiquidityFeeUSDT"
 												},
 												"overloaded_declarations": [],
 												"referenced_declaration": 0,
-												"is_pure": false
+												"is_pure": false,
+												"text": "this"
 											}
 										],
 										"expression": {
-											"id": 3070,
+											"id": 3045,
 											"node_type": 16,
 											"src": {
 												"line": 1234,
@@ -5045,11 +5122,11 @@
 												"start": 38220,
 												"end": 38226,
 												"length": 7,
-												"parent_index": 3069
+												"parent_index": 3044
 											},
 											"name": "address",
 											"type_name": {
-												"id": 3071,
+												"id": 3046,
 												"node_type": 30,
 												"src": {
 													"line": 1234,
@@ -5057,7 +5134,7 @@
 													"start": 38220,
 													"end": 38226,
 													"length": 7,
-													"parent_index": 3070
+													"parent_index": 3045
 												},
 												"name": "address",
 												"state_mutability": 4,
@@ -5079,7 +5156,8 @@
 													"type_identifier": "t_address",
 													"type_string": "address"
 												}
-											]
+											],
+											"text": "address"
 										},
 										"type_description": {
 											"type_identifier": "t_function_$_t_address$",
@@ -5087,7 +5165,7 @@
 										}
 									},
 									{
-										"id": 3073,
+										"id": 3048,
 										"node_type": 16,
 										"src": {
 											"line": 1234,
@@ -5095,7 +5173,7 @@
 											"start": 38235,
 											"end": 38240,
 											"length": 6,
-											"parent_index": 3066
+											"parent_index": 3041
 										},
 										"name": "amount",
 										"type_description": {
@@ -5103,18 +5181,19 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 3054,
+										"referenced_declaration": 3029,
 										"is_pure": false,
 										"argument_types": [
 											{
 												"type_identifier": "t_function_$_t_address$",
 												"type_string": "function(address)"
 											}
-										]
+										],
+										"text": "amount"
 									}
 								],
 								"expression": {
-									"id": 3067,
+									"id": 3042,
 									"is_constant": false,
 									"is_l_value": false,
 									"is_pure": false,
@@ -5126,7 +5205,7 @@
 										"start": 38195,
 										"end": 38218,
 										"length": 24,
-										"parent_index": 3066
+										"parent_index": 3041
 									},
 									"member_location": {
 										"line": 1234,
@@ -5134,10 +5213,10 @@
 										"start": 38207,
 										"end": 38218,
 										"length": 12,
-										"parent_index": 3067
+										"parent_index": 3042
 									},
 									"expression": {
-										"id": 3068,
+										"id": 3043,
 										"node_type": 16,
 										"src": {
 											"line": 1234,
@@ -5145,23 +5224,25 @@
 											"start": 38195,
 											"end": 38205,
 											"length": 11,
-											"parent_index": 3067
+											"parent_index": 3042
 										},
 										"name": "distributor",
 										"type_description": {
-											"type_identifier": "t_contract$_DividendDistributor_$1436",
+											"type_identifier": "t_contract$_DividendDistributor_$1421",
 											"type_string": "contract DividendDistributor"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 2235,
-										"is_pure": false
+										"referenced_declaration": 2210,
+										"is_pure": false,
+										"text": "distributor"
 									},
 									"member_name": "transferUSDT",
 									"argument_types": [],
 									"type_description": {
-										"type_identifier": "t_contract$_DividendDistributor_$1436",
+										"type_identifier": "t_contract$_DividendDistributor_$1421",
 										"type_string": "contract DividendDistributor"
-									}
+									},
+									"text": "distributor.transferUSDT"
 								},
 								"type_description": {
 									"type_identifier": "t_function_$_t_function_$_t_address$_t_uint256$",
@@ -5177,7 +5258,7 @@
 					"modifiers": [],
 					"overrides": [],
 					"parameters": {
-						"id": 3012,
+						"id": 2987,
 						"node_type": 43,
 						"src": {
 							"line": 1220,
@@ -5185,11 +5266,11 @@
 							"start": 37646,
 							"end": 37664,
 							"length": 19,
-							"parent_index": 3011
+							"parent_index": 2986
 						},
 						"parameters": [
 							{
-								"id": 3013,
+								"id": 2988,
 								"node_type": 44,
 								"src": {
 									"line": 1220,
@@ -5197,12 +5278,12 @@
 									"start": 37646,
 									"end": 37664,
 									"length": 19,
-									"parent_index": 3012
+									"parent_index": 2987
 								},
-								"scope": 3011,
+								"scope": 2986,
 								"name": "tokenAmount",
 								"type_name": {
-									"id": 3014,
+									"id": 2989,
 									"node_type": 30,
 									"src": {
 										"line": 1220,
@@ -5210,7 +5291,7 @@
 										"start": 37646,
 										"end": 37652,
 										"length": 7,
-										"parent_index": 3013
+										"parent_index": 2988
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -5236,7 +5317,7 @@
 						]
 					},
 					"return_parameters": {
-						"id": 3015,
+						"id": 2990,
 						"node_type": 43,
 						"src": {
 							"line": 1220,
@@ -5244,21 +5325,22 @@
 							"start": 37617,
 							"end": 38248,
 							"length": 632,
-							"parent_index": 3011
+							"parent_index": 2986
 						},
 						"parameters": [],
 						"parameter_types": []
 					},
 					"signature_raw": "swapTokensForTokens(uint256)",
 					"signature": "25007a0f",
-					"scope": 2816,
+					"scope": 2791,
 					"type_description": {
 						"type_identifier": "t_function_$_t_uint256$",
 						"type_string": "function(uint256)"
-					}
+					},
+					"text": "functionswapTokensForTokens(uint256tokenAmount)internal{address[]memorypath=newaddress[](2);path[0]=address(this);path[1]=address(USDT);uniswapV2Router.swapExactTokensForTokensSupportingFeeOnTransferTokens(tokenAmount,0,path,address(distributor),block.timestamp);uint256amount=IERC20(USDT).balanceOf(address(distributor));distributor.transferUSDT(address(this),amount);}"
 				},
 				{
-					"id": 3075,
+					"id": 3050,
 					"name": "addLiquidity",
 					"node_type": 42,
 					"kind": 41,
@@ -5268,7 +5350,7 @@
 						"start": 38255,
 						"end": 38644,
 						"length": 390,
-						"parent_index": 2816
+						"parent_index": 2791
 					},
 					"name_location": {
 						"line": 1237,
@@ -5276,10 +5358,10 @@
 						"start": 38264,
 						"end": 38275,
 						"length": 12,
-						"parent_index": 3075
+						"parent_index": 3050
 					},
 					"body": {
-						"id": 3082,
+						"id": 3057,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -5288,12 +5370,12 @@
 							"start": 38325,
 							"end": 38644,
 							"length": 320,
-							"parent_index": 3075
+							"parent_index": 3050
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 3083,
+								"id": 3058,
 								"node_type": 24,
 								"kind": 24,
 								"src": {
@@ -5302,7 +5384,7 @@
 									"start": 38365,
 									"end": 38637,
 									"length": 273,
-									"parent_index": 3082
+									"parent_index": 3057
 								},
 								"argument_types": [
 									{
@@ -5340,7 +5422,7 @@
 								],
 								"arguments": [
 									{
-										"id": 3086,
+										"id": 3061,
 										"node_type": 24,
 										"kind": 24,
 										"src": {
@@ -5349,17 +5431,17 @@
 											"start": 38407,
 											"end": 38419,
 											"length": 13,
-											"parent_index": 3083
+											"parent_index": 3058
 										},
 										"argument_types": [
 											{
-												"type_identifier": "t_contract$_LiquidityFeeUSDT_$2814",
+												"type_identifier": "t_contract$_LiquidityFeeUSDT_$2789",
 												"type_string": "contract LiquidityFeeUSDT"
 											}
 										],
 										"arguments": [
 											{
-												"id": 3089,
+												"id": 3064,
 												"node_type": 16,
 												"src": {
 													"line": 1241,
@@ -5367,20 +5449,21 @@
 													"start": 38415,
 													"end": 38418,
 													"length": 4,
-													"parent_index": 3086
+													"parent_index": 3061
 												},
 												"name": "this",
 												"type_description": {
-													"type_identifier": "t_contract$_LiquidityFeeUSDT_$2814",
+													"type_identifier": "t_contract$_LiquidityFeeUSDT_$2789",
 													"type_string": "contract LiquidityFeeUSDT"
 												},
 												"overloaded_declarations": [],
 												"referenced_declaration": 0,
-												"is_pure": false
+												"is_pure": false,
+												"text": "this"
 											}
 										],
 										"expression": {
-											"id": 3087,
+											"id": 3062,
 											"node_type": 16,
 											"src": {
 												"line": 1241,
@@ -5388,11 +5471,11 @@
 												"start": 38407,
 												"end": 38413,
 												"length": 7,
-												"parent_index": 3086
+												"parent_index": 3061
 											},
 											"name": "address",
 											"type_name": {
-												"id": 3088,
+												"id": 3063,
 												"node_type": 30,
 												"src": {
 													"line": 1241,
@@ -5400,7 +5483,7 @@
 													"start": 38407,
 													"end": 38413,
 													"length": 7,
-													"parent_index": 3087
+													"parent_index": 3062
 												},
 												"name": "address",
 												"state_mutability": 4,
@@ -5422,7 +5505,8 @@
 													"type_identifier": "t_address",
 													"type_string": "address"
 												}
-											]
+											],
+											"text": "address"
 										},
 										"type_description": {
 											"type_identifier": "t_function_$_t_address$",
@@ -5430,7 +5514,7 @@
 										}
 									},
 									{
-										"id": 3090,
+										"id": 3065,
 										"node_type": 24,
 										"kind": 24,
 										"src": {
@@ -5439,7 +5523,7 @@
 											"start": 38434,
 											"end": 38446,
 											"length": 13,
-											"parent_index": 3083
+											"parent_index": 3058
 										},
 										"argument_types": [
 											{
@@ -5449,7 +5533,7 @@
 										],
 										"arguments": [
 											{
-												"id": 3093,
+												"id": 3068,
 												"node_type": 16,
 												"src": {
 													"line": 1242,
@@ -5457,7 +5541,7 @@
 													"start": 38442,
 													"end": 38445,
 													"length": 4,
-													"parent_index": 3090
+													"parent_index": 3065
 												},
 												"name": "USDT",
 												"type_description": {
@@ -5466,11 +5550,12 @@
 												},
 												"overloaded_declarations": [],
 												"referenced_declaration": 0,
-												"is_pure": false
+												"is_pure": false,
+												"text": "USDT"
 											}
 										],
 										"expression": {
-											"id": 3091,
+											"id": 3066,
 											"node_type": 16,
 											"src": {
 												"line": 1242,
@@ -5478,11 +5563,11 @@
 												"start": 38434,
 												"end": 38440,
 												"length": 7,
-												"parent_index": 3090
+												"parent_index": 3065
 											},
 											"name": "address",
 											"type_name": {
-												"id": 3092,
+												"id": 3067,
 												"node_type": 30,
 												"src": {
 													"line": 1242,
@@ -5490,7 +5575,7 @@
 													"start": 38434,
 													"end": 38440,
 													"length": 7,
-													"parent_index": 3091
+													"parent_index": 3066
 												},
 												"name": "address",
 												"state_mutability": 4,
@@ -5512,7 +5597,8 @@
 													"type_identifier": "t_address",
 													"type_string": "address"
 												}
-											]
+											],
+											"text": "address"
 										},
 										"type_description": {
 											"type_identifier": "t_function_$_t_function_$",
@@ -5520,7 +5606,7 @@
 										}
 									},
 									{
-										"id": 3094,
+										"id": 3069,
 										"node_type": 16,
 										"src": {
 											"line": 1243,
@@ -5528,7 +5614,7 @@
 											"start": 38461,
 											"end": 38471,
 											"length": 11,
-											"parent_index": 3083
+											"parent_index": 3058
 										},
 										"name": "tokenAmount",
 										"type_description": {
@@ -5536,7 +5622,7 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 3094,
+										"referenced_declaration": 3069,
 										"is_pure": false,
 										"argument_types": [
 											{
@@ -5547,10 +5633,11 @@
 												"type_identifier": "t_function_$_t_function_$",
 												"type_string": "function(function())"
 											}
-										]
+										],
+										"text": "tokenAmount"
 									},
 									{
-										"id": 3095,
+										"id": 3070,
 										"node_type": 16,
 										"src": {
 											"line": 1244,
@@ -5558,7 +5645,7 @@
 											"start": 38486,
 											"end": 38495,
 											"length": 10,
-											"parent_index": 3083
+											"parent_index": 3058
 										},
 										"name": "usdtAmount",
 										"type_description": {
@@ -5566,7 +5653,7 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 3095,
+										"referenced_declaration": 3070,
 										"is_pure": false,
 										"argument_types": [
 											{
@@ -5581,10 +5668,11 @@
 												"type_identifier": "t_uint256",
 												"type_string": "uint256"
 											}
-										]
+										],
+										"text": "usdtAmount"
 									},
 									{
-										"id": 3096,
+										"id": 3071,
 										"node_type": 17,
 										"kind": 49,
 										"value": "0",
@@ -5595,7 +5683,7 @@
 											"start": 38510,
 											"end": 38510,
 											"length": 1,
-											"parent_index": 3083
+											"parent_index": 3058
 										},
 										"type_description": {
 											"type_identifier": "t_rational_0_by_1",
@@ -5621,10 +5709,11 @@
 												"type_identifier": "t_uint256",
 												"type_string": "uint256"
 											}
-										]
+										],
+										"text": "0"
 									},
 									{
-										"id": 3097,
+										"id": 3072,
 										"node_type": 17,
 										"kind": 49,
 										"value": "0",
@@ -5635,7 +5724,7 @@
 											"start": 38552,
 											"end": 38552,
 											"length": 1,
-											"parent_index": 3083
+											"parent_index": 3058
 										},
 										"type_description": {
 											"type_identifier": "t_rational_0_by_1",
@@ -5665,10 +5754,11 @@
 												"type_identifier": "t_rational_0_by_1",
 												"type_string": "int_const 0"
 											}
-										]
+										],
+										"text": "0"
 									},
 									{
-										"id": 3098,
+										"id": 3073,
 										"node_type": 16,
 										"src": {
 											"line": 1247,
@@ -5676,7 +5766,7 @@
 											"start": 38594,
 											"end": 38598,
 											"length": 5,
-											"parent_index": 3083
+											"parent_index": 3058
 										},
 										"name": "lpRec",
 										"type_description": {
@@ -5711,10 +5801,11 @@
 												"type_identifier": "t_rational_0_by_1",
 												"type_string": "int_const 0"
 											}
-										]
+										],
+										"text": "lpRec"
 									},
 									{
-										"id": 3099,
+										"id": 3074,
 										"is_constant": false,
 										"is_l_value": false,
 										"is_pure": false,
@@ -5726,7 +5817,7 @@
 											"start": 38613,
 											"end": 38627,
 											"length": 15,
-											"parent_index": 3083
+											"parent_index": 3058
 										},
 										"member_location": {
 											"line": 1248,
@@ -5734,10 +5825,10 @@
 											"start": 38619,
 											"end": 38627,
 											"length": 9,
-											"parent_index": 3099
+											"parent_index": 3074
 										},
 										"expression": {
-											"id": 3100,
+											"id": 3075,
 											"node_type": 16,
 											"src": {
 												"line": 1248,
@@ -5745,7 +5836,7 @@
 												"start": 38613,
 												"end": 38617,
 												"length": 5,
-												"parent_index": 3099
+												"parent_index": 3074
 											},
 											"name": "block",
 											"type_description": {
@@ -5754,7 +5845,8 @@
 											},
 											"overloaded_declarations": [],
 											"referenced_declaration": 0,
-											"is_pure": false
+											"is_pure": false,
+											"text": "block"
 										},
 										"member_name": "timestamp",
 										"argument_types": [
@@ -5790,11 +5882,12 @@
 										"type_description": {
 											"type_identifier": "t_uint256",
 											"type_string": "uint256"
-										}
+										},
+										"text": "block.timestamp"
 									}
 								],
 								"expression": {
-									"id": 3084,
+									"id": 3059,
 									"is_constant": false,
 									"is_l_value": false,
 									"is_pure": false,
@@ -5806,7 +5899,7 @@
 										"start": 38365,
 										"end": 38392,
 										"length": 28,
-										"parent_index": 3083
+										"parent_index": 3058
 									},
 									"member_location": {
 										"line": 1240,
@@ -5814,10 +5907,10 @@
 										"start": 38381,
 										"end": 38392,
 										"length": 12,
-										"parent_index": 3084
+										"parent_index": 3059
 									},
 									"expression": {
-										"id": 3085,
+										"id": 3060,
 										"node_type": 16,
 										"src": {
 											"line": 1240,
@@ -5825,7 +5918,7 @@
 											"start": 38365,
 											"end": 38379,
 											"length": 15,
-											"parent_index": 3084
+											"parent_index": 3059
 										},
 										"name": "uniswapV2Router",
 										"type_description": {
@@ -5833,15 +5926,17 @@
 											"type_string": "function(function())"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 2225,
-										"is_pure": false
+										"referenced_declaration": 2200,
+										"is_pure": false,
+										"text": "uniswapV2Router"
 									},
 									"member_name": "addLiquidity",
 									"argument_types": [],
 									"type_description": {
 										"type_identifier": "t_function_$_t_function_$",
 										"type_string": "function(function())"
-									}
+									},
+									"text": "uniswapV2Router.addLiquidity"
 								},
 								"type_description": {
 									"type_identifier": "t_function_$_t_function_$_t_address$_t_function_$_t_function_$_t_uint256$_t_uint256$_t_rational_0_by_1$_t_rational_0_by_1$_t_function_$_t_function_$_t_address$_t_function_$_t_function_$_t_uint256$_t_uint256$_t_rational_0_by_1$_t_rational_0_by_1$_t_uint256$",
@@ -5857,7 +5952,7 @@
 					"modifiers": [],
 					"overrides": [],
 					"parameters": {
-						"id": 3076,
+						"id": 3051,
 						"node_type": 43,
 						"src": {
 							"line": 1237,
@@ -5865,11 +5960,11 @@
 							"start": 38277,
 							"end": 38315,
 							"length": 39,
-							"parent_index": 3075
+							"parent_index": 3050
 						},
 						"parameters": [
 							{
-								"id": 3077,
+								"id": 3052,
 								"node_type": 44,
 								"src": {
 									"line": 1237,
@@ -5877,12 +5972,12 @@
 									"start": 38277,
 									"end": 38295,
 									"length": 19,
-									"parent_index": 3076
+									"parent_index": 3051
 								},
-								"scope": 3075,
+								"scope": 3050,
 								"name": "tokenAmount",
 								"type_name": {
-									"id": 3078,
+									"id": 3053,
 									"node_type": 30,
 									"src": {
 										"line": 1237,
@@ -5890,7 +5985,7 @@
 										"start": 38277,
 										"end": 38283,
 										"length": 7,
-										"parent_index": 3077
+										"parent_index": 3052
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -5908,7 +6003,7 @@
 								}
 							},
 							{
-								"id": 3079,
+								"id": 3054,
 								"node_type": 44,
 								"src": {
 									"line": 1237,
@@ -5916,18 +6011,253 @@
 									"start": 38298,
 									"end": 38315,
 									"length": 18,
-									"parent_index": 3076
+									"parent_index": 3051
 								},
-								"scope": 3075,
+								"scope": 3050,
 								"name": "usdtAmount",
 								"type_name": {
-									"id": 3080,
+									"id": 3055,
 									"node_type": 30,
 									"src": {
 										"line": 1237,
 										"column": 47,
 										"start": 38298,
 										"end": 38304,
+										"length": 7,
+										"parent_index": 3054
+									},
+									"name": "uint256",
+									"referenced_declaration": 0,
+									"type_description": {
+										"type_identifier": "t_uint256",
+										"type_string": "uint256"
+									}
+								},
+								"storage_location": 2,
+								"visibility": 1,
+								"state_mutability": 1,
+								"type_description": {
+									"type_identifier": "t_uint256",
+									"type_string": "uint256"
+								}
+							}
+						],
+						"parameter_types": [
+							{
+								"type_identifier": "t_uint256",
+								"type_string": "uint256"
+							},
+							{
+								"type_identifier": "t_uint256",
+								"type_string": "uint256"
+							}
+						]
+					},
+					"return_parameters": {
+						"id": 3056,
+						"node_type": 43,
+						"src": {
+							"line": 1237,
+							"column": 4,
+							"start": 38255,
+							"end": 38644,
+							"length": 390,
+							"parent_index": 3050
+						},
+						"parameters": [],
+						"parameter_types": []
+					},
+					"signature_raw": "addLiquidity(uint256,uint256)",
+					"signature": "9cd441da",
+					"scope": 2791,
+					"type_description": {
+						"type_identifier": "t_function_$_t_uint256$_t_uint256$",
+						"type_string": "function(uint256,uint256)"
+					},
+					"text": "functionaddLiquidity(uint256tokenAmount,uint256usdtAmount)public{uniswapV2Router.addLiquidity(address(this),address(USDT),tokenAmount,usdtAmount,0,0,lpRec,block.timestamp);}"
+				},
+				{
+					"id": 3077,
+					"name": "setNumTokensToAddToLiquidity",
+					"node_type": 42,
+					"kind": 41,
+					"src": {
+						"line": 1252,
+						"column": 4,
+						"start": 38651,
+						"end": 38774,
+						"length": 124,
+						"parent_index": 2791
+					},
+					"name_location": {
+						"line": 1252,
+						"column": 13,
+						"start": 38660,
+						"end": 38687,
+						"length": 28,
+						"parent_index": 3077
+					},
+					"body": {
+						"id": 3084,
+						"node_type": 46,
+						"kind": 0,
+						"src": {
+							"line": 1252,
+							"column": 75,
+							"start": 38722,
+							"end": 38774,
+							"length": 53,
+							"parent_index": 3077
+						},
+						"implemented": true,
+						"statements": [
+							{
+								"id": 3085,
+								"node_type": 27,
+								"src": {
+									"line": 1253,
+									"column": 8,
+									"start": 38732,
+									"end": 38768,
+									"length": 37,
+									"parent_index": 3084
+								},
+								"expression": {
+									"id": 3086,
+									"node_type": 27,
+									"src": {
+										"line": 1253,
+										"column": 8,
+										"start": 38732,
+										"end": 38767,
+										"length": 36,
+										"parent_index": 3085
+									},
+									"operator": 11,
+									"left_expression": {
+										"id": 3087,
+										"node_type": 16,
+										"src": {
+											"line": 1253,
+											"column": 8,
+											"start": 38732,
+											"end": 38760,
+											"length": 29,
+											"parent_index": 3086
+										},
+										"name": "numTokensSellToAddToLiquidity",
+										"type_description": {
+											"type_identifier": "t_rational_1_by_1",
+											"type_string": "int_const 1"
+										},
+										"overloaded_declarations": [],
+										"referenced_declaration": 2803,
+										"is_pure": false,
+										"text": "numTokensSellToAddToLiquidity"
+									},
+									"right_expression": {
+										"id": 3088,
+										"node_type": 16,
+										"src": {
+											"line": 1253,
+											"column": 40,
+											"start": 38764,
+											"end": 38767,
+											"length": 4,
+											"parent_index": 3086
+										},
+										"name": "_num",
+										"type_description": {
+											"type_identifier": "t_uint256",
+											"type_string": "uint256"
+										},
+										"overloaded_declarations": [],
+										"referenced_declaration": 3088,
+										"is_pure": false,
+										"text": "_num"
+									},
+									"type_description": {
+										"type_identifier": "t_rational_1_by_1",
+										"type_string": "int_const 1"
+									}
+								},
+								"type_description": {
+									"type_identifier": "t_rational_1_by_1",
+									"type_string": "int_const 1"
+								},
+								"text": "numTokensSellToAddToLiquidity=_num;"
+							}
+						]
+					},
+					"implemented": true,
+					"visibility": 4,
+					"state_mutability": 4,
+					"virtual": false,
+					"modifiers": [
+						{
+							"id": 3081,
+							"name": "onlyOwner",
+							"node_type": 72,
+							"kind": 72,
+							"src": {
+								"line": 1252,
+								"column": 65,
+								"start": 38712,
+								"end": 38720,
+								"length": 9,
+								"parent_index": 3077
+							},
+							"argument_types": [],
+							"arguments": [],
+							"modifier_name": {
+								"id": 3082,
+								"name": "onlyOwner",
+								"node_type": 0,
+								"src": {
+									"line": 1252,
+									"column": 65,
+									"start": 38712,
+									"end": 38720,
+									"length": 9,
+									"parent_index": 3081
+								}
+							}
+						}
+					],
+					"overrides": [],
+					"parameters": {
+						"id": 3078,
+						"node_type": 43,
+						"src": {
+							"line": 1252,
+							"column": 42,
+							"start": 38689,
+							"end": 38700,
+							"length": 12,
+							"parent_index": 3077
+						},
+						"parameters": [
+							{
+								"id": 3079,
+								"node_type": 44,
+								"src": {
+									"line": 1252,
+									"column": 42,
+									"start": 38689,
+									"end": 38700,
+									"length": 12,
+									"parent_index": 3078
+								},
+								"scope": 3077,
+								"name": "_num",
+								"type_name": {
+									"id": 3080,
+									"node_type": 30,
+									"src": {
+										"line": 1252,
+										"column": 42,
+										"start": 38689,
+										"end": 38695,
 										"length": 7,
 										"parent_index": 3079
 									},
@@ -5951,242 +6281,11 @@
 							{
 								"type_identifier": "t_uint256",
 								"type_string": "uint256"
-							},
-							{
-								"type_identifier": "t_uint256",
-								"type_string": "uint256"
 							}
 						]
 					},
 					"return_parameters": {
-						"id": 3081,
-						"node_type": 43,
-						"src": {
-							"line": 1237,
-							"column": 4,
-							"start": 38255,
-							"end": 38644,
-							"length": 390,
-							"parent_index": 3075
-						},
-						"parameters": [],
-						"parameter_types": []
-					},
-					"signature_raw": "addLiquidity(uint256, uint256)",
-					"signature": "946ae00e",
-					"scope": 2816,
-					"type_description": {
-						"type_identifier": "t_function_$_t_uint256$_t_uint256$",
-						"type_string": "function(uint256,uint256)"
-					}
-				},
-				{
-					"id": 3102,
-					"name": "setNumTokensToAddToLiquidity",
-					"node_type": 42,
-					"kind": 41,
-					"src": {
-						"line": 1252,
-						"column": 4,
-						"start": 38651,
-						"end": 38774,
-						"length": 124,
-						"parent_index": 2816
-					},
-					"name_location": {
-						"line": 1252,
-						"column": 13,
-						"start": 38660,
-						"end": 38687,
-						"length": 28,
-						"parent_index": 3102
-					},
-					"body": {
-						"id": 3109,
-						"node_type": 46,
-						"kind": 0,
-						"src": {
-							"line": 1252,
-							"column": 75,
-							"start": 38722,
-							"end": 38774,
-							"length": 53,
-							"parent_index": 3102
-						},
-						"implemented": true,
-						"statements": [
-							{
-								"id": 3110,
-								"node_type": 27,
-								"src": {
-									"line": 1253,
-									"column": 8,
-									"start": 38732,
-									"end": 38768,
-									"length": 37,
-									"parent_index": 3109
-								},
-								"expression": {
-									"id": 3111,
-									"node_type": 27,
-									"src": {
-										"line": 1253,
-										"column": 8,
-										"start": 38732,
-										"end": 38767,
-										"length": 36,
-										"parent_index": 3110
-									},
-									"operator": 11,
-									"left_expression": {
-										"id": 3112,
-										"node_type": 16,
-										"src": {
-											"line": 1253,
-											"column": 8,
-											"start": 38732,
-											"end": 38760,
-											"length": 29,
-											"parent_index": 3111
-										},
-										"name": "numTokensSellToAddToLiquidity",
-										"type_description": {
-											"type_identifier": "t_rational_1_by_1",
-											"type_string": "int_const 1"
-										},
-										"overloaded_declarations": [],
-										"referenced_declaration": 2828,
-										"is_pure": false
-									},
-									"right_expression": {
-										"id": 3113,
-										"node_type": 16,
-										"src": {
-											"line": 1253,
-											"column": 40,
-											"start": 38764,
-											"end": 38767,
-											"length": 4,
-											"parent_index": 3111
-										},
-										"name": "_num",
-										"type_description": {
-											"type_identifier": "t_uint256",
-											"type_string": "uint256"
-										},
-										"overloaded_declarations": [],
-										"referenced_declaration": 3113,
-										"is_pure": false
-									},
-									"type_description": {
-										"type_identifier": "t_rational_1_by_1",
-										"type_string": "int_const 1"
-									}
-								},
-								"type_description": {
-									"type_identifier": "t_rational_1_by_1",
-									"type_string": "int_const 1"
-								}
-							}
-						]
-					},
-					"implemented": true,
-					"visibility": 4,
-					"state_mutability": 4,
-					"virtual": false,
-					"modifiers": [
-						{
-							"id": 3106,
-							"name": "onlyOwner",
-							"node_type": 72,
-							"kind": 72,
-							"src": {
-								"line": 1252,
-								"column": 65,
-								"start": 38712,
-								"end": 38720,
-								"length": 9,
-								"parent_index": 3102
-							},
-							"argument_types": [],
-							"arguments": [],
-							"modifier_name": {
-								"id": 3107,
-								"name": "onlyOwner",
-								"node_type": 0,
-								"src": {
-									"line": 1252,
-									"column": 65,
-									"start": 38712,
-									"end": 38720,
-									"length": 9,
-									"parent_index": 3106
-								}
-							}
-						}
-					],
-					"overrides": [],
-					"parameters": {
-						"id": 3103,
-						"node_type": 43,
-						"src": {
-							"line": 1252,
-							"column": 42,
-							"start": 38689,
-							"end": 38700,
-							"length": 12,
-							"parent_index": 3102
-						},
-						"parameters": [
-							{
-								"id": 3104,
-								"node_type": 44,
-								"src": {
-									"line": 1252,
-									"column": 42,
-									"start": 38689,
-									"end": 38700,
-									"length": 12,
-									"parent_index": 3103
-								},
-								"scope": 3102,
-								"name": "_num",
-								"type_name": {
-									"id": 3105,
-									"node_type": 30,
-									"src": {
-										"line": 1252,
-										"column": 42,
-										"start": 38689,
-										"end": 38695,
-										"length": 7,
-										"parent_index": 3104
-									},
-									"name": "uint256",
-									"referenced_declaration": 0,
-									"type_description": {
-										"type_identifier": "t_uint256",
-										"type_string": "uint256"
-									}
-								},
-								"storage_location": 2,
-								"visibility": 1,
-								"state_mutability": 1,
-								"type_description": {
-									"type_identifier": "t_uint256",
-									"type_string": "uint256"
-								}
-							}
-						],
-						"parameter_types": [
-							{
-								"type_identifier": "t_uint256",
-								"type_string": "uint256"
-							}
-						]
-					},
-					"return_parameters": {
-						"id": 3108,
+						"id": 3083,
 						"node_type": 43,
 						"src": {
 							"line": 1252,
@@ -6194,21 +6293,22 @@
 							"start": 38651,
 							"end": 38774,
 							"length": 124,
-							"parent_index": 3102
+							"parent_index": 3077
 						},
 						"parameters": [],
 						"parameter_types": []
 					},
 					"signature_raw": "setNumTokensToAddToLiquidity(uint256)",
 					"signature": "e640e321",
-					"scope": 2816,
+					"scope": 2791,
 					"type_description": {
 						"type_identifier": "t_function_$_t_uint256$",
 						"type_string": "function(uint256)"
-					}
+					},
+					"text": "functionsetNumTokensToAddToLiquidity(uint256_num)externalonlyOwner{numTokensSellToAddToLiquidity=_num;}"
 				},
 				{
-					"id": 3115,
+					"id": 3090,
 					"name": "setSwapAndLiquifyEnabled",
 					"node_type": 42,
 					"kind": 41,
@@ -6218,7 +6318,7 @@
 						"start": 38781,
 						"end": 38885,
 						"length": 105,
-						"parent_index": 2816
+						"parent_index": 2791
 					},
 					"name_location": {
 						"line": 1256,
@@ -6226,10 +6326,10 @@
 						"start": 38790,
 						"end": 38813,
 						"length": 24,
-						"parent_index": 3115
+						"parent_index": 3090
 					},
 					"body": {
-						"id": 3122,
+						"id": 3097,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -6238,12 +6338,12 @@
 							"start": 38843,
 							"end": 38885,
 							"length": 43,
-							"parent_index": 3115
+							"parent_index": 3090
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 3123,
+								"id": 3098,
 								"node_type": 27,
 								"src": {
 									"line": 1257,
@@ -6251,10 +6351,10 @@
 									"start": 38853,
 									"end": 38879,
 									"length": 27,
-									"parent_index": 3122
+									"parent_index": 3097
 								},
 								"expression": {
-									"id": 3124,
+									"id": 3099,
 									"node_type": 27,
 									"src": {
 										"line": 1257,
@@ -6262,11 +6362,11 @@
 										"start": 38853,
 										"end": 38878,
 										"length": 26,
-										"parent_index": 3123
+										"parent_index": 3098
 									},
 									"operator": 11,
 									"left_expression": {
-										"id": 3125,
+										"id": 3100,
 										"node_type": 16,
 										"src": {
 											"line": 1257,
@@ -6274,7 +6374,7 @@
 											"start": 38853,
 											"end": 38873,
 											"length": 21,
-											"parent_index": 3124
+											"parent_index": 3099
 										},
 										"name": "swapAndLiquifyEnabled",
 										"type_description": {
@@ -6282,11 +6382,12 @@
 											"type_string": "bool"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 2824,
-										"is_pure": false
+										"referenced_declaration": 2799,
+										"is_pure": false,
+										"text": "swapAndLiquifyEnabled"
 									},
 									"right_expression": {
-										"id": 3126,
+										"id": 3101,
 										"node_type": 16,
 										"src": {
 											"line": 1257,
@@ -6294,7 +6395,7 @@
 											"start": 38877,
 											"end": 38878,
 											"length": 2,
-											"parent_index": 3124
+											"parent_index": 3099
 										},
 										"name": "_n",
 										"type_description": {
@@ -6302,8 +6403,9 @@
 											"type_string": "bool"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 3126,
-										"is_pure": false
+										"referenced_declaration": 3101,
+										"is_pure": false,
+										"text": "_n"
 									},
 									"type_description": {
 										"type_identifier": "t_bool",
@@ -6313,7 +6415,8 @@
 								"type_description": {
 									"type_identifier": "t_bool",
 									"type_string": "bool"
-								}
+								},
+								"text": "swapAndLiquifyEnabled=_n;"
 							}
 						]
 					},
@@ -6323,7 +6426,7 @@
 					"virtual": false,
 					"modifiers": [
 						{
-							"id": 3119,
+							"id": 3094,
 							"name": "onlyOwner",
 							"node_type": 72,
 							"kind": 72,
@@ -6333,12 +6436,12 @@
 								"start": 38833,
 								"end": 38841,
 								"length": 9,
-								"parent_index": 3115
+								"parent_index": 3090
 							},
 							"argument_types": [],
 							"arguments": [],
 							"modifier_name": {
-								"id": 3120,
+								"id": 3095,
 								"name": "onlyOwner",
 								"node_type": 0,
 								"src": {
@@ -6347,14 +6450,14 @@
 									"start": 38833,
 									"end": 38841,
 									"length": 9,
-									"parent_index": 3119
+									"parent_index": 3094
 								}
 							}
 						}
 					],
 					"overrides": [],
 					"parameters": {
-						"id": 3116,
+						"id": 3091,
 						"node_type": 43,
 						"src": {
 							"line": 1256,
@@ -6362,11 +6465,11 @@
 							"start": 38815,
 							"end": 38821,
 							"length": 7,
-							"parent_index": 3115
+							"parent_index": 3090
 						},
 						"parameters": [
 							{
-								"id": 3117,
+								"id": 3092,
 								"node_type": 44,
 								"src": {
 									"line": 1256,
@@ -6374,12 +6477,12 @@
 									"start": 38815,
 									"end": 38821,
 									"length": 7,
-									"parent_index": 3116
+									"parent_index": 3091
 								},
-								"scope": 3115,
+								"scope": 3090,
 								"name": "_n",
 								"type_name": {
-									"id": 3118,
+									"id": 3093,
 									"node_type": 30,
 									"src": {
 										"line": 1256,
@@ -6387,7 +6490,7 @@
 										"start": 38815,
 										"end": 38818,
 										"length": 4,
-										"parent_index": 3117
+										"parent_index": 3092
 									},
 									"name": "bool",
 									"referenced_declaration": 0,
@@ -6413,7 +6516,7 @@
 						]
 					},
 					"return_parameters": {
-						"id": 3121,
+						"id": 3096,
 						"node_type": 43,
 						"src": {
 							"line": 1256,
@@ -6421,21 +6524,22 @@
 							"start": 38781,
 							"end": 38885,
 							"length": 105,
-							"parent_index": 3115
+							"parent_index": 3090
 						},
 						"parameters": [],
 						"parameter_types": []
 					},
 					"signature_raw": "setSwapAndLiquifyEnabled(bool)",
 					"signature": "c49b9a80",
-					"scope": 2816,
+					"scope": 2791,
 					"type_description": {
 						"type_identifier": "t_function_$_t_bool$",
 						"type_string": "function(bool)"
-					}
+					},
+					"text": "functionsetSwapAndLiquifyEnabled(bool_n)externalonlyOwner{swapAndLiquifyEnabled=_n;}"
 				},
 				{
-					"id": 3128,
+					"id": 3103,
 					"name": "setLpRec",
 					"node_type": 42,
 					"kind": 41,
@@ -6445,7 +6549,7 @@
 						"start": 38892,
 						"end": 38975,
 						"length": 84,
-						"parent_index": 2816
+						"parent_index": 2791
 					},
 					"name_location": {
 						"line": 1260,
@@ -6453,10 +6557,10 @@
 						"start": 38901,
 						"end": 38908,
 						"length": 8,
-						"parent_index": 3128
+						"parent_index": 3103
 					},
 					"body": {
-						"id": 3135,
+						"id": 3110,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -6465,12 +6569,12 @@
 							"start": 38945,
 							"end": 38975,
 							"length": 31,
-							"parent_index": 3128
+							"parent_index": 3103
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 3136,
+								"id": 3111,
 								"node_type": 27,
 								"src": {
 									"line": 1261,
@@ -6478,10 +6582,10 @@
 									"start": 38955,
 									"end": 38969,
 									"length": 15,
-									"parent_index": 3135
+									"parent_index": 3110
 								},
 								"expression": {
-									"id": 3137,
+									"id": 3112,
 									"node_type": 27,
 									"src": {
 										"line": 1261,
@@ -6489,11 +6593,11 @@
 										"start": 38955,
 										"end": 38968,
 										"length": 14,
-										"parent_index": 3136
+										"parent_index": 3111
 									},
 									"operator": 11,
 									"left_expression": {
-										"id": 3138,
+										"id": 3113,
 										"node_type": 16,
 										"src": {
 											"line": 1261,
@@ -6501,7 +6605,7 @@
 											"start": 38955,
 											"end": 38959,
 											"length": 5,
-											"parent_index": 3137
+											"parent_index": 3112
 										},
 										"name": "lpRec",
 										"type_description": {
@@ -6509,11 +6613,12 @@
 											"type_string": "int_const 0x714675834Fc80Ff85f892840d7940496C52b1BA8"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 2834,
-										"is_pure": false
+										"referenced_declaration": 2809,
+										"is_pure": false,
+										"text": "lpRec"
 									},
 									"right_expression": {
-										"id": 3139,
+										"id": 3114,
 										"node_type": 16,
 										"src": {
 											"line": 1261,
@@ -6521,7 +6626,7 @@
 											"start": 38963,
 											"end": 38968,
 											"length": 6,
-											"parent_index": 3137
+											"parent_index": 3112
 										},
 										"name": "_lpRec",
 										"type_description": {
@@ -6529,8 +6634,9 @@
 											"type_string": "address"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 3139,
-										"is_pure": false
+										"referenced_declaration": 3114,
+										"is_pure": false,
+										"text": "_lpRec"
 									},
 									"type_description": {
 										"type_identifier": "t_rational_0_by_1",
@@ -6540,7 +6646,8 @@
 								"type_description": {
 									"type_identifier": "t_rational_0_by_1",
 									"type_string": "int_const 0x714675834Fc80Ff85f892840d7940496C52b1BA8"
-								}
+								},
+								"text": "lpRec=_lpRec;"
 							}
 						]
 					},
@@ -6550,7 +6657,7 @@
 					"virtual": false,
 					"modifiers": [
 						{
-							"id": 3132,
+							"id": 3107,
 							"name": "onlyOwner",
 							"node_type": 72,
 							"kind": 72,
@@ -6560,12 +6667,12 @@
 								"start": 38935,
 								"end": 38943,
 								"length": 9,
-								"parent_index": 3128
+								"parent_index": 3103
 							},
 							"argument_types": [],
 							"arguments": [],
 							"modifier_name": {
-								"id": 3133,
+								"id": 3108,
 								"name": "onlyOwner",
 								"node_type": 0,
 								"src": {
@@ -6574,14 +6681,14 @@
 									"start": 38935,
 									"end": 38943,
 									"length": 9,
-									"parent_index": 3132
+									"parent_index": 3107
 								}
 							}
 						}
 					],
 					"overrides": [],
 					"parameters": {
-						"id": 3129,
+						"id": 3104,
 						"node_type": 43,
 						"src": {
 							"line": 1260,
@@ -6589,11 +6696,11 @@
 							"start": 38910,
 							"end": 38923,
 							"length": 14,
-							"parent_index": 3128
+							"parent_index": 3103
 						},
 						"parameters": [
 							{
-								"id": 3130,
+								"id": 3105,
 								"node_type": 44,
 								"src": {
 									"line": 1260,
@@ -6601,12 +6708,12 @@
 									"start": 38910,
 									"end": 38923,
 									"length": 14,
-									"parent_index": 3129
+									"parent_index": 3104
 								},
-								"scope": 3128,
+								"scope": 3103,
 								"name": "_lpRec",
 								"type_name": {
-									"id": 3131,
+									"id": 3106,
 									"node_type": 30,
 									"src": {
 										"line": 1260,
@@ -6614,7 +6721,7 @@
 										"start": 38910,
 										"end": 38916,
 										"length": 7,
-										"parent_index": 3130
+										"parent_index": 3105
 									},
 									"name": "address",
 									"state_mutability": 4,
@@ -6641,7 +6748,7 @@
 						]
 					},
 					"return_parameters": {
-						"id": 3134,
+						"id": 3109,
 						"node_type": 43,
 						"src": {
 							"line": 1260,
@@ -6649,29 +6756,30 @@
 							"start": 38892,
 							"end": 38975,
 							"length": 84,
-							"parent_index": 3128
+							"parent_index": 3103
 						},
 						"parameters": [],
 						"parameter_types": []
 					},
 					"signature_raw": "setLpRec(address)",
 					"signature": "e7fb55ac",
-					"scope": 2816,
+					"scope": 2791,
 					"type_description": {
 						"type_identifier": "t_function_$_t_address$",
 						"type_string": "function(address)"
-					}
+					},
+					"text": "functionsetLpRec(address_lpRec)externalonlyOwner{lpRec=_lpRec;}"
 				}
 			],
 			"linearized_base_contracts": [
 				88,
-				2218,
-				408,
-				2816
+				2193,
+				406,
+				2791
 			],
 			"base_contracts": [
 				{
-					"id": 2817,
+					"id": 2792,
 					"node_type": 62,
 					"src": {
 						"line": 1151,
@@ -6679,10 +6787,10 @@
 						"start": 35123,
 						"end": 35129,
 						"length": 7,
-						"parent_index": 2816
+						"parent_index": 2791
 					},
 					"base_name": {
-						"id": 2818,
+						"id": 2793,
 						"node_type": 52,
 						"src": {
 							"line": 1151,
@@ -6690,14 +6798,15 @@
 							"start": 35123,
 							"end": 35129,
 							"length": 7,
-							"parent_index": 2816
+							"parent_index": 2791
 						},
 						"name": "Ownable",
-						"referenced_declaration": 88
+						"referenced_declaration": 88,
+						"contract_referenced_declaration": 0
 					}
 				},
 				{
-					"id": 2819,
+					"id": 2794,
 					"node_type": 62,
 					"src": {
 						"line": 1151,
@@ -6705,10 +6814,10 @@
 						"start": 35132,
 						"end": 35142,
 						"length": 11,
-						"parent_index": 2816
+						"parent_index": 2791
 					},
 					"base_name": {
-						"id": 2820,
+						"id": 2795,
 						"node_type": 52,
 						"src": {
 							"line": 1151,
@@ -6716,14 +6825,15 @@
 							"start": 35132,
 							"end": 35142,
 							"length": 11,
-							"parent_index": 2816
+							"parent_index": 2791
 						},
 						"name": "DexBaseUSDT",
-						"referenced_declaration": 2218
+						"referenced_declaration": 2193,
+						"contract_referenced_declaration": 0
 					}
 				},
 				{
-					"id": 2821,
+					"id": 2796,
 					"node_type": 62,
 					"src": {
 						"line": 1151,
@@ -6731,10 +6841,10 @@
 						"start": 35145,
 						"end": 35149,
 						"length": 5,
-						"parent_index": 2816
+						"parent_index": 2791
 					},
 					"base_name": {
-						"id": 2822,
+						"id": 2797,
 						"node_type": 52,
 						"src": {
 							"line": 1151,
@@ -6742,17 +6852,18 @@
 							"start": 35145,
 							"end": 35149,
 							"length": 5,
-							"parent_index": 2816
+							"parent_index": 2791
 						},
 						"name": "ERC20",
-						"referenced_declaration": 408
+						"referenced_declaration": 406,
+						"contract_referenced_declaration": 0
 					}
 				}
 			],
 			"contract_dependencies": [
 				88,
-				2218,
-				408
+				2193,
+				406
 			]
 		}
 	],

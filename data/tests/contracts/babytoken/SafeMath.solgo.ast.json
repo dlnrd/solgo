@@ -1,20 +1,20 @@
 {
-	"id": 1616,
+	"id": 1609,
 	"base_contracts": [],
 	"license": "MIT",
 	"exported_symbols": [
 		{
-			"id": 1616,
+			"id": 1609,
 			"name": "SafeMath",
-			"absolute_path": ""
+			"absolute_path": "Token.sol"
 		}
 	],
-	"absolute_path": "",
+	"absolute_path": "Token.sol",
 	"name": "SafeMath",
 	"node_type": 1,
 	"nodes": [
 		{
-			"id": 1617,
+			"id": 1610,
 			"name": "SafeMath",
 			"node_type": 35,
 			"src": {
@@ -23,7 +23,7 @@
 				"start": 30834,
 				"end": 37134,
 				"length": 6301,
-				"parent_index": 1616
+				"parent_index": 1609
 			},
 			"name_location": {
 				"line": 913,
@@ -31,14 +31,14 @@
 				"start": 30842,
 				"end": 30849,
 				"length": 8,
-				"parent_index": 1617
+				"parent_index": 1610
 			},
 			"abstract": false,
 			"kind": 37,
 			"fully_implemented": true,
 			"nodes": [
 				{
-					"id": 1619,
+					"id": 1612,
 					"name": "tryAdd",
 					"node_type": 42,
 					"kind": 41,
@@ -48,7 +48,7 @@
 						"start": 30993,
 						"end": 31208,
 						"length": 216,
-						"parent_index": 1617
+						"parent_index": 1610
 					},
 					"name_location": {
 						"line": 919,
@@ -56,10 +56,10 @@
 						"start": 31002,
 						"end": 31007,
 						"length": 6,
-						"parent_index": 1619
+						"parent_index": 1612
 					},
 					"body": {
-						"id": 1630,
+						"id": 1623,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -68,12 +68,12 @@
 							"start": 31069,
 							"end": 31208,
 							"length": 140,
-							"parent_index": 1619
+							"parent_index": 1612
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 1631,
+								"id": 1624,
 								"node_type": 59,
 								"kind": 0,
 								"src": {
@@ -82,12 +82,12 @@
 									"start": 31079,
 									"end": 31202,
 									"length": 124,
-									"parent_index": 1617
+									"parent_index": 1610
 								},
 								"implemented": false,
 								"statements": [
 									{
-										"id": 1632,
+										"id": 1625,
 										"node_type": 44,
 										"src": {
 											"line": 921,
@@ -95,25 +95,25 @@
 											"start": 31103,
 											"end": 31120,
 											"length": 18,
-											"parent_index": 1631
+											"parent_index": 1624
 										},
 										"assignments": [
-											1633
+											1626
 										],
 										"declarations": [
 											{
-												"id": 1633,
+												"id": 1626,
 												"state_mutability": 1,
 												"name": "c",
 												"node_type": 44,
-												"scope": 1631,
+												"scope": 1624,
 												"src": {
 													"line": 921,
 													"column": 12,
 													"start": 31103,
 													"end": 31111,
 													"length": 9,
-													"parent_index": 1632
+													"parent_index": 1625
 												},
 												"name_location": {
 													"line": 921,
@@ -121,12 +121,12 @@
 													"start": 31111,
 													"end": 31111,
 													"length": 1,
-													"parent_index": 1633
+													"parent_index": 1626
 												},
 												"is_state_variable": false,
 												"storage_location": 1,
 												"type_name": {
-													"id": 1634,
+													"id": 1627,
 													"node_type": 30,
 													"src": {
 														"line": 921,
@@ -134,7 +134,7 @@
 														"start": 31103,
 														"end": 31109,
 														"length": 7,
-														"parent_index": 1633
+														"parent_index": 1626
 													},
 													"name": "uint256",
 													"referenced_declaration": 0,
@@ -147,7 +147,7 @@
 											}
 										],
 										"initial_value": {
-											"id": 1635,
+											"id": 1628,
 											"is_constant": false,
 											"is_pure": false,
 											"node_type": 19,
@@ -157,11 +157,11 @@
 												"start": 31115,
 												"end": 31119,
 												"length": 5,
-												"parent_index": 1632
+												"parent_index": 1625
 											},
 											"operator": 1,
 											"left_expression": {
-												"id": 1636,
+												"id": 1629,
 												"node_type": 16,
 												"src": {
 													"line": 921,
@@ -169,7 +169,7 @@
 													"start": 31115,
 													"end": 31115,
 													"length": 1,
-													"parent_index": 1635
+													"parent_index": 1628
 												},
 												"name": "a",
 												"type_description": {
@@ -177,11 +177,12 @@
 													"type_string": "uint256"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 1636,
-												"is_pure": false
+												"referenced_declaration": 1629,
+												"is_pure": false,
+												"text": "a"
 											},
 											"right_expression": {
-												"id": 1637,
+												"id": 1630,
 												"node_type": 16,
 												"src": {
 													"line": 921,
@@ -189,7 +190,7 @@
 													"start": 31119,
 													"end": 31119,
 													"length": 1,
-													"parent_index": 1635
+													"parent_index": 1628
 												},
 												"name": "b",
 												"type_description": {
@@ -197,8 +198,9 @@
 													"type_string": "uint256"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 1637,
-												"is_pure": false
+												"referenced_declaration": 1630,
+												"is_pure": false,
+												"text": "b"
 											},
 											"type_description": {
 												"type_identifier": "t_uint256",
@@ -207,7 +209,7 @@
 										}
 									},
 									{
-										"id": 1638,
+										"id": 1631,
 										"node_type": 48,
 										"src": {
 											"line": 922,
@@ -215,10 +217,10 @@
 											"start": 31134,
 											"end": 31162,
 											"length": 29,
-											"parent_index": 1631
+											"parent_index": 1624
 										},
 										"condition": {
-											"id": 1639,
+											"id": 1632,
 											"is_constant": false,
 											"is_pure": false,
 											"node_type": 19,
@@ -228,11 +230,11 @@
 												"start": 31138,
 												"end": 31142,
 												"length": 5,
-												"parent_index": 1638
+												"parent_index": 1631
 											},
 											"operator": 9,
 											"left_expression": {
-												"id": 1640,
+												"id": 1633,
 												"node_type": 16,
 												"src": {
 													"line": 922,
@@ -240,7 +242,7 @@
 													"start": 31138,
 													"end": 31138,
 													"length": 1,
-													"parent_index": 1639
+													"parent_index": 1632
 												},
 												"name": "c",
 												"type_description": {
@@ -248,11 +250,12 @@
 													"type_string": "uint256"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 1632,
-												"is_pure": false
+												"referenced_declaration": 1625,
+												"is_pure": false,
+												"text": "c"
 											},
 											"right_expression": {
-												"id": 1641,
+												"id": 1634,
 												"node_type": 16,
 												"src": {
 													"line": 922,
@@ -260,7 +263,7 @@
 													"start": 31142,
 													"end": 31142,
 													"length": 1,
-													"parent_index": 1639
+													"parent_index": 1632
 												},
 												"name": "a",
 												"type_description": {
@@ -268,8 +271,9 @@
 													"type_string": "uint256"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 1641,
-												"is_pure": false
+												"referenced_declaration": 1634,
+												"is_pure": false,
+												"text": "a"
 											},
 											"type_description": {
 												"type_identifier": "t_bool",
@@ -277,7 +281,7 @@
 											}
 										},
 										"body": {
-											"id": 1642,
+											"id": 1635,
 											"node_type": 46,
 											"kind": 0,
 											"src": {
@@ -292,7 +296,7 @@
 										}
 									},
 									{
-										"id": 1643,
+										"id": 1636,
 										"node_type": 47,
 										"src": {
 											"line": 923,
@@ -300,11 +304,11 @@
 											"start": 31176,
 											"end": 31192,
 											"length": 17,
-											"parent_index": 1619
+											"parent_index": 1612
 										},
-										"function_return_parameters": 1619,
+										"function_return_parameters": 1612,
 										"expression": {
-											"id": 1644,
+											"id": 1637,
 											"node_type": 60,
 											"src": {
 												"line": 923,
@@ -312,13 +316,13 @@
 												"start": 31183,
 												"end": 31191,
 												"length": 9,
-												"parent_index": 1643
+												"parent_index": 1636
 											},
 											"is_constant": false,
 											"is_pure": true,
 											"components": [
 												{
-													"id": 1645,
+													"id": 1638,
 													"node_type": 17,
 													"kind": 61,
 													"value": "true",
@@ -329,7 +333,7 @@
 														"start": 31184,
 														"end": 31187,
 														"length": 4,
-														"parent_index": 1644
+														"parent_index": 1637
 													},
 													"type_description": {
 														"type_identifier": "t_bool",
@@ -337,10 +341,11 @@
 													},
 													"overloaded_declarations": [],
 													"referenced_declaration": 0,
-													"is_pure": true
+													"is_pure": true,
+													"text": "true"
 												},
 												{
-													"id": 1646,
+													"id": 1639,
 													"node_type": 16,
 													"src": {
 														"line": 923,
@@ -348,7 +353,7 @@
 														"start": 31190,
 														"end": 31190,
 														"length": 1,
-														"parent_index": 1644
+														"parent_index": 1637
 													},
 													"name": "c",
 													"type_description": {
@@ -356,8 +361,9 @@
 														"type_string": "uint256"
 													},
 													"overloaded_declarations": [],
-													"referenced_declaration": 1632,
-													"is_pure": false
+													"referenced_declaration": 1625,
+													"is_pure": false,
+													"text": "c"
 												}
 											],
 											"type_description": {
@@ -377,7 +383,7 @@
 					"modifiers": [],
 					"overrides": [],
 					"parameters": {
-						"id": 1620,
+						"id": 1613,
 						"node_type": 43,
 						"src": {
 							"line": 919,
@@ -385,11 +391,11 @@
 							"start": 31009,
 							"end": 31028,
 							"length": 20,
-							"parent_index": 1619
+							"parent_index": 1612
 						},
 						"parameters": [
 							{
-								"id": 1621,
+								"id": 1614,
 								"node_type": 44,
 								"src": {
 									"line": 919,
@@ -397,18 +403,159 @@
 									"start": 31009,
 									"end": 31017,
 									"length": 9,
-									"parent_index": 1620
+									"parent_index": 1613
 								},
-								"scope": 1619,
+								"scope": 1612,
 								"name": "a",
 								"type_name": {
-									"id": 1622,
+									"id": 1615,
 									"node_type": 30,
 									"src": {
 										"line": 919,
 										"column": 20,
 										"start": 31009,
 										"end": 31015,
+										"length": 7,
+										"parent_index": 1614
+									},
+									"name": "uint256",
+									"referenced_declaration": 0,
+									"type_description": {
+										"type_identifier": "t_uint256",
+										"type_string": "uint256"
+									}
+								},
+								"storage_location": 2,
+								"visibility": 1,
+								"state_mutability": 1,
+								"type_description": {
+									"type_identifier": "t_uint256",
+									"type_string": "uint256"
+								}
+							},
+							{
+								"id": 1616,
+								"node_type": 44,
+								"src": {
+									"line": 919,
+									"column": 31,
+									"start": 31020,
+									"end": 31028,
+									"length": 9,
+									"parent_index": 1613
+								},
+								"scope": 1612,
+								"name": "b",
+								"type_name": {
+									"id": 1617,
+									"node_type": 30,
+									"src": {
+										"line": 919,
+										"column": 31,
+										"start": 31020,
+										"end": 31026,
+										"length": 7,
+										"parent_index": 1616
+									},
+									"name": "uint256",
+									"referenced_declaration": 0,
+									"type_description": {
+										"type_identifier": "t_uint256",
+										"type_string": "uint256"
+									}
+								},
+								"storage_location": 2,
+								"visibility": 1,
+								"state_mutability": 1,
+								"type_description": {
+									"type_identifier": "t_uint256",
+									"type_string": "uint256"
+								}
+							}
+						],
+						"parameter_types": [
+							{
+								"type_identifier": "t_uint256",
+								"type_string": "uint256"
+							},
+							{
+								"type_identifier": "t_uint256",
+								"type_string": "uint256"
+							}
+						]
+					},
+					"return_parameters": {
+						"id": 1618,
+						"node_type": 43,
+						"src": {
+							"line": 919,
+							"column": 65,
+							"start": 31054,
+							"end": 31066,
+							"length": 13,
+							"parent_index": 1612
+						},
+						"parameters": [
+							{
+								"id": 1619,
+								"node_type": 44,
+								"src": {
+									"line": 919,
+									"column": 65,
+									"start": 31054,
+									"end": 31057,
+									"length": 4,
+									"parent_index": 1618
+								},
+								"scope": 1612,
+								"name": "",
+								"type_name": {
+									"id": 1620,
+									"node_type": 30,
+									"src": {
+										"line": 919,
+										"column": 65,
+										"start": 31054,
+										"end": 31057,
+										"length": 4,
+										"parent_index": 1619
+									},
+									"name": "bool",
+									"referenced_declaration": 0,
+									"type_description": {
+										"type_identifier": "t_bool",
+										"type_string": "bool"
+									}
+								},
+								"storage_location": 2,
+								"visibility": 1,
+								"state_mutability": 1,
+								"type_description": {
+									"type_identifier": "t_bool",
+									"type_string": "bool"
+								}
+							},
+							{
+								"id": 1621,
+								"node_type": 44,
+								"src": {
+									"line": 919,
+									"column": 71,
+									"start": 31060,
+									"end": 31066,
+									"length": 7,
+									"parent_index": 1618
+								},
+								"scope": 1612,
+								"name": "",
+								"type_name": {
+									"id": 1622,
+									"node_type": 30,
+									"src": {
+										"line": 919,
+										"column": 71,
+										"start": 31060,
+										"end": 31066,
 										"length": 7,
 										"parent_index": 1621
 									},
@@ -426,30 +573,365 @@
 									"type_identifier": "t_uint256",
 									"type_string": "uint256"
 								}
+							}
+						],
+						"parameter_types": [
+							{
+								"type_identifier": "t_bool",
+								"type_string": "bool"
 							},
 							{
-								"id": 1623,
+								"type_identifier": "t_uint256",
+								"type_string": "uint256"
+							}
+						]
+					},
+					"signature_raw": "tryAdd(uint256,uint256)",
+					"signature": "884557bf",
+					"scope": 1610,
+					"type_description": {
+						"type_identifier": "t_function_$_t_uint256$_t_uint256$",
+						"type_string": "function(uint256,uint256)"
+					},
+					"text": "functiontryAdd(uint256a,uint256b)internalpurereturns(bool,uint256){unchecked{uint256c=a+b;if(c\u003ca)return(false,0);return(true,c);}}"
+				},
+				{
+					"id": 1641,
+					"name": "trySub",
+					"node_type": 42,
+					"kind": 41,
+					"src": {
+						"line": 932,
+						"column": 4,
+						"start": 31355,
+						"end": 31543,
+						"length": 189,
+						"parent_index": 1610
+					},
+					"name_location": {
+						"line": 932,
+						"column": 13,
+						"start": 31364,
+						"end": 31369,
+						"length": 6,
+						"parent_index": 1641
+					},
+					"body": {
+						"id": 1652,
+						"node_type": 46,
+						"kind": 0,
+						"src": {
+							"line": 932,
+							"column": 80,
+							"start": 31431,
+							"end": 31543,
+							"length": 113,
+							"parent_index": 1641
+						},
+						"implemented": true,
+						"statements": [
+							{
+								"id": 1653,
+								"node_type": 59,
+								"kind": 0,
+								"src": {
+									"line": 933,
+									"column": 8,
+									"start": 31441,
+									"end": 31537,
+									"length": 97,
+									"parent_index": 1610
+								},
+								"implemented": false,
+								"statements": [
+									{
+										"id": 1654,
+										"node_type": 48,
+										"src": {
+											"line": 934,
+											"column": 0,
+											"start": 31465,
+											"end": 31493,
+											"length": 29,
+											"parent_index": 1653
+										},
+										"condition": {
+											"id": 1655,
+											"is_constant": false,
+											"is_pure": false,
+											"node_type": 19,
+											"src": {
+												"line": 934,
+												"column": 16,
+												"start": 31469,
+												"end": 31473,
+												"length": 5,
+												"parent_index": 1654
+											},
+											"operator": 7,
+											"left_expression": {
+												"id": 1656,
+												"node_type": 16,
+												"src": {
+													"line": 934,
+													"column": 16,
+													"start": 31469,
+													"end": 31469,
+													"length": 1,
+													"parent_index": 1655
+												},
+												"name": "b",
+												"type_description": {
+													"type_identifier": "t_uint256",
+													"type_string": "uint256"
+												},
+												"overloaded_declarations": [],
+												"referenced_declaration": 1656,
+												"is_pure": false,
+												"text": "b"
+											},
+											"right_expression": {
+												"id": 1657,
+												"node_type": 16,
+												"src": {
+													"line": 934,
+													"column": 20,
+													"start": 31473,
+													"end": 31473,
+													"length": 1,
+													"parent_index": 1655
+												},
+												"name": "a",
+												"type_description": {
+													"type_identifier": "t_uint256",
+													"type_string": "uint256"
+												},
+												"overloaded_declarations": [],
+												"referenced_declaration": 1657,
+												"is_pure": false,
+												"text": "a"
+											},
+											"type_description": {
+												"type_identifier": "t_bool",
+												"type_string": "bool"
+											}
+										},
+										"body": {
+											"id": 1658,
+											"node_type": 46,
+											"kind": 0,
+											"src": {
+												"line": 0,
+												"column": 0,
+												"start": 0,
+												"end": 0,
+												"length": 0
+											},
+											"implemented": false,
+											"statements": []
+										}
+									},
+									{
+										"id": 1659,
+										"node_type": 47,
+										"src": {
+											"line": 935,
+											"column": 12,
+											"start": 31507,
+											"end": 31527,
+											"length": 21,
+											"parent_index": 1641
+										},
+										"function_return_parameters": 1641,
+										"expression": {
+											"id": 1660,
+											"node_type": 60,
+											"src": {
+												"line": 935,
+												"column": 19,
+												"start": 31514,
+												"end": 31526,
+												"length": 13,
+												"parent_index": 1659
+											},
+											"is_constant": false,
+											"is_pure": true,
+											"components": [
+												{
+													"id": 1661,
+													"node_type": 17,
+													"kind": 61,
+													"value": "true",
+													"hex_value": "74727565",
+													"src": {
+														"line": 935,
+														"column": 20,
+														"start": 31515,
+														"end": 31518,
+														"length": 4,
+														"parent_index": 1660
+													},
+													"type_description": {
+														"type_identifier": "t_bool",
+														"type_string": "bool"
+													},
+													"overloaded_declarations": [],
+													"referenced_declaration": 0,
+													"is_pure": true,
+													"text": "true"
+												},
+												{
+													"id": 1662,
+													"is_constant": false,
+													"is_pure": false,
+													"node_type": 19,
+													"src": {
+														"line": 935,
+														"column": 26,
+														"start": 31521,
+														"end": 31525,
+														"length": 5,
+														"parent_index": 1660
+													},
+													"operator": 2,
+													"left_expression": {
+														"id": 1663,
+														"node_type": 16,
+														"src": {
+															"line": 935,
+															"column": 26,
+															"start": 31521,
+															"end": 31521,
+															"length": 1,
+															"parent_index": 1662
+														},
+														"name": "a",
+														"type_description": {
+															"type_identifier": "t_uint256",
+															"type_string": "uint256"
+														},
+														"overloaded_declarations": [],
+														"referenced_declaration": 1663,
+														"is_pure": false,
+														"text": "a"
+													},
+													"right_expression": {
+														"id": 1664,
+														"node_type": 16,
+														"src": {
+															"line": 935,
+															"column": 30,
+															"start": 31525,
+															"end": 31525,
+															"length": 1,
+															"parent_index": 1662
+														},
+														"name": "b",
+														"type_description": {
+															"type_identifier": "t_uint256",
+															"type_string": "uint256"
+														},
+														"overloaded_declarations": [],
+														"referenced_declaration": 1664,
+														"is_pure": false,
+														"text": "b"
+													},
+													"type_description": {
+														"type_identifier": "t_uint256",
+														"type_string": "uint256"
+													}
+												}
+											],
+											"type_description": {
+												"type_identifier": "t_tuple_$_t_bool_$_t_uint256$",
+												"type_string": "tuple(bool,uint256)"
+											}
+										}
+									}
+								]
+							}
+						]
+					},
+					"implemented": false,
+					"visibility": 1,
+					"state_mutability": 6,
+					"virtual": false,
+					"modifiers": [],
+					"overrides": [],
+					"parameters": {
+						"id": 1642,
+						"node_type": 43,
+						"src": {
+							"line": 932,
+							"column": 20,
+							"start": 31371,
+							"end": 31390,
+							"length": 20,
+							"parent_index": 1641
+						},
+						"parameters": [
+							{
+								"id": 1643,
 								"node_type": 44,
 								"src": {
-									"line": 919,
-									"column": 31,
-									"start": 31020,
-									"end": 31028,
+									"line": 932,
+									"column": 20,
+									"start": 31371,
+									"end": 31379,
 									"length": 9,
-									"parent_index": 1620
+									"parent_index": 1642
 								},
-								"scope": 1619,
-								"name": "b",
+								"scope": 1641,
+								"name": "a",
 								"type_name": {
-									"id": 1624,
+									"id": 1644,
 									"node_type": 30,
 									"src": {
-										"line": 919,
-										"column": 31,
-										"start": 31020,
-										"end": 31026,
+										"line": 932,
+										"column": 20,
+										"start": 31371,
+										"end": 31377,
 										"length": 7,
-										"parent_index": 1623
+										"parent_index": 1643
+									},
+									"name": "uint256",
+									"referenced_declaration": 0,
+									"type_description": {
+										"type_identifier": "t_uint256",
+										"type_string": "uint256"
+									}
+								},
+								"storage_location": 2,
+								"visibility": 1,
+								"state_mutability": 1,
+								"type_description": {
+									"type_identifier": "t_uint256",
+									"type_string": "uint256"
+								}
+							},
+							{
+								"id": 1645,
+								"node_type": 44,
+								"src": {
+									"line": 932,
+									"column": 31,
+									"start": 31382,
+									"end": 31390,
+									"length": 9,
+									"parent_index": 1642
+								},
+								"scope": 1641,
+								"name": "b",
+								"type_name": {
+									"id": 1646,
+									"node_type": 30,
+									"src": {
+										"line": 932,
+										"column": 31,
+										"start": 31382,
+										"end": 31388,
+										"length": 7,
+										"parent_index": 1645
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -479,40 +961,40 @@
 						]
 					},
 					"return_parameters": {
-						"id": 1625,
+						"id": 1647,
 						"node_type": 43,
 						"src": {
-							"line": 919,
+							"line": 932,
 							"column": 65,
-							"start": 31054,
-							"end": 31066,
+							"start": 31416,
+							"end": 31428,
 							"length": 13,
-							"parent_index": 1619
+							"parent_index": 1641
 						},
 						"parameters": [
 							{
-								"id": 1626,
+								"id": 1648,
 								"node_type": 44,
 								"src": {
-									"line": 919,
+									"line": 932,
 									"column": 65,
-									"start": 31054,
-									"end": 31057,
+									"start": 31416,
+									"end": 31419,
 									"length": 4,
-									"parent_index": 1625
+									"parent_index": 1647
 								},
-								"scope": 1619,
+								"scope": 1641,
 								"name": "",
 								"type_name": {
-									"id": 1627,
+									"id": 1649,
 									"node_type": 30,
 									"src": {
-										"line": 919,
+										"line": 932,
 										"column": 65,
-										"start": 31054,
-										"end": 31057,
+										"start": 31416,
+										"end": 31419,
 										"length": 4,
-										"parent_index": 1626
+										"parent_index": 1648
 									},
 									"name": "bool",
 									"referenced_declaration": 0,
@@ -530,355 +1012,26 @@
 								}
 							},
 							{
-								"id": 1628,
-								"node_type": 44,
-								"src": {
-									"line": 919,
-									"column": 71,
-									"start": 31060,
-									"end": 31066,
-									"length": 7,
-									"parent_index": 1625
-								},
-								"scope": 1619,
-								"name": "",
-								"type_name": {
-									"id": 1629,
-									"node_type": 30,
-									"src": {
-										"line": 919,
-										"column": 71,
-										"start": 31060,
-										"end": 31066,
-										"length": 7,
-										"parent_index": 1628
-									},
-									"name": "uint256",
-									"referenced_declaration": 0,
-									"type_description": {
-										"type_identifier": "t_uint256",
-										"type_string": "uint256"
-									}
-								},
-								"storage_location": 2,
-								"visibility": 1,
-								"state_mutability": 1,
-								"type_description": {
-									"type_identifier": "t_uint256",
-									"type_string": "uint256"
-								}
-							}
-						],
-						"parameter_types": [
-							{
-								"type_identifier": "t_bool",
-								"type_string": "bool"
-							},
-							{
-								"type_identifier": "t_uint256",
-								"type_string": "uint256"
-							}
-						]
-					},
-					"signature_raw": "tryAdd(uint256, uint256)",
-					"signature": "d730d6d4",
-					"scope": 1617,
-					"type_description": {
-						"type_identifier": "t_function_$_t_uint256$_t_uint256$",
-						"type_string": "function(uint256,uint256)"
-					}
-				},
-				{
-					"id": 1648,
-					"name": "trySub",
-					"node_type": 42,
-					"kind": 41,
-					"src": {
-						"line": 932,
-						"column": 4,
-						"start": 31355,
-						"end": 31543,
-						"length": 189,
-						"parent_index": 1617
-					},
-					"name_location": {
-						"line": 932,
-						"column": 13,
-						"start": 31364,
-						"end": 31369,
-						"length": 6,
-						"parent_index": 1648
-					},
-					"body": {
-						"id": 1659,
-						"node_type": 46,
-						"kind": 0,
-						"src": {
-							"line": 932,
-							"column": 80,
-							"start": 31431,
-							"end": 31543,
-							"length": 113,
-							"parent_index": 1648
-						},
-						"implemented": true,
-						"statements": [
-							{
-								"id": 1660,
-								"node_type": 59,
-								"kind": 0,
-								"src": {
-									"line": 933,
-									"column": 8,
-									"start": 31441,
-									"end": 31537,
-									"length": 97,
-									"parent_index": 1617
-								},
-								"implemented": false,
-								"statements": [
-									{
-										"id": 1661,
-										"node_type": 48,
-										"src": {
-											"line": 934,
-											"column": 0,
-											"start": 31465,
-											"end": 31493,
-											"length": 29,
-											"parent_index": 1660
-										},
-										"condition": {
-											"id": 1662,
-											"is_constant": false,
-											"is_pure": false,
-											"node_type": 19,
-											"src": {
-												"line": 934,
-												"column": 16,
-												"start": 31469,
-												"end": 31473,
-												"length": 5,
-												"parent_index": 1661
-											},
-											"operator": 7,
-											"left_expression": {
-												"id": 1663,
-												"node_type": 16,
-												"src": {
-													"line": 934,
-													"column": 16,
-													"start": 31469,
-													"end": 31469,
-													"length": 1,
-													"parent_index": 1662
-												},
-												"name": "b",
-												"type_description": {
-													"type_identifier": "t_uint256",
-													"type_string": "uint256"
-												},
-												"overloaded_declarations": [],
-												"referenced_declaration": 1663,
-												"is_pure": false
-											},
-											"right_expression": {
-												"id": 1664,
-												"node_type": 16,
-												"src": {
-													"line": 934,
-													"column": 20,
-													"start": 31473,
-													"end": 31473,
-													"length": 1,
-													"parent_index": 1662
-												},
-												"name": "a",
-												"type_description": {
-													"type_identifier": "t_uint256",
-													"type_string": "uint256"
-												},
-												"overloaded_declarations": [],
-												"referenced_declaration": 1664,
-												"is_pure": false
-											},
-											"type_description": {
-												"type_identifier": "t_bool",
-												"type_string": "bool"
-											}
-										},
-										"body": {
-											"id": 1665,
-											"node_type": 46,
-											"kind": 0,
-											"src": {
-												"line": 0,
-												"column": 0,
-												"start": 0,
-												"end": 0,
-												"length": 0
-											},
-											"implemented": false,
-											"statements": []
-										}
-									},
-									{
-										"id": 1666,
-										"node_type": 47,
-										"src": {
-											"line": 935,
-											"column": 12,
-											"start": 31507,
-											"end": 31527,
-											"length": 21,
-											"parent_index": 1648
-										},
-										"function_return_parameters": 1648,
-										"expression": {
-											"id": 1667,
-											"node_type": 60,
-											"src": {
-												"line": 935,
-												"column": 19,
-												"start": 31514,
-												"end": 31526,
-												"length": 13,
-												"parent_index": 1666
-											},
-											"is_constant": false,
-											"is_pure": true,
-											"components": [
-												{
-													"id": 1668,
-													"node_type": 17,
-													"kind": 61,
-													"value": "true",
-													"hex_value": "74727565",
-													"src": {
-														"line": 935,
-														"column": 20,
-														"start": 31515,
-														"end": 31518,
-														"length": 4,
-														"parent_index": 1667
-													},
-													"type_description": {
-														"type_identifier": "t_bool",
-														"type_string": "bool"
-													},
-													"overloaded_declarations": [],
-													"referenced_declaration": 0,
-													"is_pure": true
-												},
-												{
-													"id": 1669,
-													"is_constant": false,
-													"is_pure": false,
-													"node_type": 19,
-													"src": {
-														"line": 935,
-														"column": 26,
-														"start": 31521,
-														"end": 31525,
-														"length": 5,
-														"parent_index": 1667
-													},
-													"operator": 2,
-													"left_expression": {
-														"id": 1670,
-														"node_type": 16,
-														"src": {
-															"line": 935,
-															"column": 26,
-															"start": 31521,
-															"end": 31521,
-															"length": 1,
-															"parent_index": 1669
-														},
-														"name": "a",
-														"type_description": {
-															"type_identifier": "t_uint256",
-															"type_string": "uint256"
-														},
-														"overloaded_declarations": [],
-														"referenced_declaration": 1670,
-														"is_pure": false
-													},
-													"right_expression": {
-														"id": 1671,
-														"node_type": 16,
-														"src": {
-															"line": 935,
-															"column": 30,
-															"start": 31525,
-															"end": 31525,
-															"length": 1,
-															"parent_index": 1669
-														},
-														"name": "b",
-														"type_description": {
-															"type_identifier": "t_uint256",
-															"type_string": "uint256"
-														},
-														"overloaded_declarations": [],
-														"referenced_declaration": 1671,
-														"is_pure": false
-													},
-													"type_description": {
-														"type_identifier": "t_uint256",
-														"type_string": "uint256"
-													}
-												}
-											],
-											"type_description": {
-												"type_identifier": "t_tuple_$_t_bool_$_t_uint256$",
-												"type_string": "tuple(bool,uint256)"
-											}
-										}
-									}
-								]
-							}
-						]
-					},
-					"implemented": false,
-					"visibility": 1,
-					"state_mutability": 6,
-					"virtual": false,
-					"modifiers": [],
-					"overrides": [],
-					"parameters": {
-						"id": 1649,
-						"node_type": 43,
-						"src": {
-							"line": 932,
-							"column": 20,
-							"start": 31371,
-							"end": 31390,
-							"length": 20,
-							"parent_index": 1648
-						},
-						"parameters": [
-							{
 								"id": 1650,
 								"node_type": 44,
 								"src": {
 									"line": 932,
-									"column": 20,
-									"start": 31371,
-									"end": 31379,
-									"length": 9,
-									"parent_index": 1649
+									"column": 71,
+									"start": 31422,
+									"end": 31428,
+									"length": 7,
+									"parent_index": 1647
 								},
-								"scope": 1648,
-								"name": "a",
+								"scope": 1641,
+								"name": "",
 								"type_name": {
 									"id": 1651,
 									"node_type": 30,
 									"src": {
 										"line": 932,
-										"column": 20,
-										"start": 31371,
-										"end": 31377,
+										"column": 71,
+										"start": 31422,
+										"end": 31428,
 										"length": 7,
 										"parent_index": 1650
 									},
@@ -896,30 +1049,576 @@
 									"type_identifier": "t_uint256",
 									"type_string": "uint256"
 								}
+							}
+						],
+						"parameter_types": [
+							{
+								"type_identifier": "t_bool",
+								"type_string": "bool"
 							},
 							{
-								"id": 1652,
+								"type_identifier": "t_uint256",
+								"type_string": "uint256"
+							}
+						]
+					},
+					"signature_raw": "trySub(uint256,uint256)",
+					"signature": "a29962b1",
+					"scope": 1610,
+					"type_description": {
+						"type_identifier": "t_function_$_t_uint256$_t_uint256$",
+						"type_string": "function(uint256,uint256)"
+					},
+					"text": "functiontrySub(uint256a,uint256b)internalpurereturns(bool,uint256){unchecked{if(b\u003ea)return(false,0);return(true,a-b);}}"
+				},
+				{
+					"id": 1666,
+					"name": "tryMul",
+					"node_type": 42,
+					"kind": 41,
+					"src": {
+						"line": 944,
+						"column": 4,
+						"start": 31692,
+						"end": 32184,
+						"length": 493,
+						"parent_index": 1610
+					},
+					"name_location": {
+						"line": 944,
+						"column": 13,
+						"start": 31701,
+						"end": 31706,
+						"length": 6,
+						"parent_index": 1666
+					},
+					"body": {
+						"id": 1677,
+						"node_type": 46,
+						"kind": 0,
+						"src": {
+							"line": 944,
+							"column": 80,
+							"start": 31768,
+							"end": 32184,
+							"length": 417,
+							"parent_index": 1666
+						},
+						"implemented": true,
+						"statements": [
+							{
+								"id": 1678,
+								"node_type": 59,
+								"kind": 0,
+								"src": {
+									"line": 945,
+									"column": 8,
+									"start": 31778,
+									"end": 32178,
+									"length": 401,
+									"parent_index": 1610
+								},
+								"implemented": false,
+								"statements": [
+									{
+										"id": 1679,
+										"node_type": 48,
+										"src": {
+											"line": 949,
+											"column": 0,
+											"start": 32032,
+											"end": 32060,
+											"length": 29,
+											"parent_index": 1678
+										},
+										"condition": {
+											"id": 1680,
+											"is_constant": false,
+											"is_pure": false,
+											"node_type": 19,
+											"src": {
+												"line": 949,
+												"column": 16,
+												"start": 32036,
+												"end": 32041,
+												"length": 6,
+												"parent_index": 1679
+											},
+											"operator": 11,
+											"left_expression": {
+												"id": 1681,
+												"node_type": 16,
+												"src": {
+													"line": 949,
+													"column": 16,
+													"start": 32036,
+													"end": 32036,
+													"length": 1,
+													"parent_index": 1680
+												},
+												"name": "a",
+												"type_description": {
+													"type_identifier": "t_uint256",
+													"type_string": "uint256"
+												},
+												"overloaded_declarations": [],
+												"referenced_declaration": 1681,
+												"is_pure": false,
+												"text": "a"
+											},
+											"right_expression": {
+												"id": 1682,
+												"node_type": 17,
+												"kind": 49,
+												"value": "0",
+												"hex_value": "30",
+												"src": {
+													"line": 949,
+													"column": 21,
+													"start": 32041,
+													"end": 32041,
+													"length": 1,
+													"parent_index": 1680
+												},
+												"type_description": {
+													"type_identifier": "t_rational_0_by_1",
+													"type_string": "int_const 0"
+												},
+												"overloaded_declarations": [],
+												"referenced_declaration": 0,
+												"is_pure": true,
+												"text": "0"
+											},
+											"type_description": {
+												"type_identifier": "t_bool",
+												"type_string": "bool"
+											}
+										},
+										"body": {
+											"id": 1683,
+											"node_type": 46,
+											"kind": 0,
+											"src": {
+												"line": 0,
+												"column": 0,
+												"start": 0,
+												"end": 0,
+												"length": 0
+											},
+											"implemented": false,
+											"statements": []
+										}
+									},
+									{
+										"id": 1684,
+										"node_type": 44,
+										"src": {
+											"line": 950,
+											"column": 12,
+											"start": 32074,
+											"end": 32091,
+											"length": 18,
+											"parent_index": 1678
+										},
+										"assignments": [
+											1685
+										],
+										"declarations": [
+											{
+												"id": 1685,
+												"state_mutability": 1,
+												"name": "c",
+												"node_type": 44,
+												"scope": 1678,
+												"src": {
+													"line": 950,
+													"column": 12,
+													"start": 32074,
+													"end": 32082,
+													"length": 9,
+													"parent_index": 1684
+												},
+												"name_location": {
+													"line": 950,
+													"column": 20,
+													"start": 32082,
+													"end": 32082,
+													"length": 1,
+													"parent_index": 1685
+												},
+												"is_state_variable": false,
+												"storage_location": 1,
+												"type_name": {
+													"id": 1686,
+													"node_type": 30,
+													"src": {
+														"line": 950,
+														"column": 12,
+														"start": 32074,
+														"end": 32080,
+														"length": 7,
+														"parent_index": 1685
+													},
+													"name": "uint256",
+													"referenced_declaration": 0,
+													"type_description": {
+														"type_identifier": "t_uint256",
+														"type_string": "uint256"
+													}
+												},
+												"visibility": 1
+											}
+										],
+										"initial_value": {
+											"id": 1687,
+											"is_constant": false,
+											"is_pure": false,
+											"node_type": 19,
+											"src": {
+												"line": 950,
+												"column": 24,
+												"start": 32086,
+												"end": 32090,
+												"length": 5,
+												"parent_index": 1684
+											},
+											"operator": 3,
+											"left_expression": {
+												"id": 1688,
+												"node_type": 16,
+												"src": {
+													"line": 950,
+													"column": 24,
+													"start": 32086,
+													"end": 32086,
+													"length": 1,
+													"parent_index": 1687
+												},
+												"name": "a",
+												"type_description": {
+													"type_identifier": "t_uint256",
+													"type_string": "uint256"
+												},
+												"overloaded_declarations": [],
+												"referenced_declaration": 1688,
+												"is_pure": false,
+												"text": "a"
+											},
+											"right_expression": {
+												"id": 1689,
+												"node_type": 16,
+												"src": {
+													"line": 950,
+													"column": 28,
+													"start": 32090,
+													"end": 32090,
+													"length": 1,
+													"parent_index": 1687
+												},
+												"name": "b",
+												"type_description": {
+													"type_identifier": "t_uint256",
+													"type_string": "uint256"
+												},
+												"overloaded_declarations": [],
+												"referenced_declaration": 1689,
+												"is_pure": false,
+												"text": "b"
+											},
+											"type_description": {
+												"type_identifier": "t_uint256",
+												"type_string": "uint256"
+											}
+										}
+									},
+									{
+										"id": 1690,
+										"node_type": 48,
+										"src": {
+											"line": 951,
+											"column": 0,
+											"start": 32105,
+											"end": 32138,
+											"length": 34,
+											"parent_index": 1678
+										},
+										"condition": {
+											"id": 1691,
+											"is_constant": false,
+											"is_pure": false,
+											"node_type": 19,
+											"src": {
+												"line": 951,
+												"column": 16,
+												"start": 32109,
+												"end": 32118,
+												"length": 10,
+												"parent_index": 1690
+											},
+											"operator": 12,
+											"left_expression": {
+												"id": 1692,
+												"is_constant": false,
+												"is_pure": false,
+												"node_type": 19,
+												"src": {
+													"line": 951,
+													"column": 16,
+													"start": 32109,
+													"end": 32113,
+													"length": 5,
+													"parent_index": 1691
+												},
+												"operator": 4,
+												"left_expression": {
+													"id": 1693,
+													"node_type": 16,
+													"src": {
+														"line": 951,
+														"column": 16,
+														"start": 32109,
+														"end": 32109,
+														"length": 1,
+														"parent_index": 1692
+													},
+													"name": "c",
+													"type_description": {
+														"type_identifier": "t_uint256",
+														"type_string": "uint256"
+													},
+													"overloaded_declarations": [],
+													"referenced_declaration": 1684,
+													"is_pure": false,
+													"text": "c"
+												},
+												"right_expression": {
+													"id": 1694,
+													"node_type": 16,
+													"src": {
+														"line": 951,
+														"column": 20,
+														"start": 32113,
+														"end": 32113,
+														"length": 1,
+														"parent_index": 1692
+													},
+													"name": "a",
+													"type_description": {
+														"type_identifier": "t_uint256",
+														"type_string": "uint256"
+													},
+													"overloaded_declarations": [],
+													"referenced_declaration": 1694,
+													"is_pure": false,
+													"text": "a"
+												},
+												"type_description": {
+													"type_identifier": "t_uint256",
+													"type_string": "uint256"
+												}
+											},
+											"right_expression": {
+												"id": 1695,
+												"node_type": 16,
+												"src": {
+													"line": 951,
+													"column": 25,
+													"start": 32118,
+													"end": 32118,
+													"length": 1,
+													"parent_index": 1691
+												},
+												"name": "b",
+												"type_description": {
+													"type_identifier": "t_uint256",
+													"type_string": "uint256"
+												},
+												"overloaded_declarations": [],
+												"referenced_declaration": 1695,
+												"is_pure": false,
+												"text": "b"
+											},
+											"type_description": {
+												"type_identifier": "t_bool",
+												"type_string": "bool"
+											}
+										},
+										"body": {
+											"id": 1696,
+											"node_type": 46,
+											"kind": 0,
+											"src": {
+												"line": 0,
+												"column": 0,
+												"start": 0,
+												"end": 0,
+												"length": 0
+											},
+											"implemented": false,
+											"statements": []
+										}
+									},
+									{
+										"id": 1697,
+										"node_type": 47,
+										"src": {
+											"line": 952,
+											"column": 12,
+											"start": 32152,
+											"end": 32168,
+											"length": 17,
+											"parent_index": 1666
+										},
+										"function_return_parameters": 1666,
+										"expression": {
+											"id": 1698,
+											"node_type": 60,
+											"src": {
+												"line": 952,
+												"column": 19,
+												"start": 32159,
+												"end": 32167,
+												"length": 9,
+												"parent_index": 1697
+											},
+											"is_constant": false,
+											"is_pure": true,
+											"components": [
+												{
+													"id": 1699,
+													"node_type": 17,
+													"kind": 61,
+													"value": "true",
+													"hex_value": "74727565",
+													"src": {
+														"line": 952,
+														"column": 20,
+														"start": 32160,
+														"end": 32163,
+														"length": 4,
+														"parent_index": 1698
+													},
+													"type_description": {
+														"type_identifier": "t_bool",
+														"type_string": "bool"
+													},
+													"overloaded_declarations": [],
+													"referenced_declaration": 0,
+													"is_pure": true,
+													"text": "true"
+												},
+												{
+													"id": 1700,
+													"node_type": 16,
+													"src": {
+														"line": 952,
+														"column": 26,
+														"start": 32166,
+														"end": 32166,
+														"length": 1,
+														"parent_index": 1698
+													},
+													"name": "c",
+													"type_description": {
+														"type_identifier": "t_uint256",
+														"type_string": "uint256"
+													},
+													"overloaded_declarations": [],
+													"referenced_declaration": 1684,
+													"is_pure": false,
+													"text": "c"
+												}
+											],
+											"type_description": {
+												"type_identifier": "t_tuple_$_t_bool_$_t_uint256$",
+												"type_string": "tuple(bool,uint256)"
+											}
+										}
+									}
+								]
+							}
+						]
+					},
+					"implemented": false,
+					"visibility": 1,
+					"state_mutability": 6,
+					"virtual": false,
+					"modifiers": [],
+					"overrides": [],
+					"parameters": {
+						"id": 1667,
+						"node_type": 43,
+						"src": {
+							"line": 944,
+							"column": 20,
+							"start": 31708,
+							"end": 31727,
+							"length": 20,
+							"parent_index": 1666
+						},
+						"parameters": [
+							{
+								"id": 1668,
 								"node_type": 44,
 								"src": {
-									"line": 932,
-									"column": 31,
-									"start": 31382,
-									"end": 31390,
+									"line": 944,
+									"column": 20,
+									"start": 31708,
+									"end": 31716,
 									"length": 9,
-									"parent_index": 1649
+									"parent_index": 1667
 								},
-								"scope": 1648,
-								"name": "b",
+								"scope": 1666,
+								"name": "a",
 								"type_name": {
-									"id": 1653,
+									"id": 1669,
 									"node_type": 30,
 									"src": {
-										"line": 932,
-										"column": 31,
-										"start": 31382,
-										"end": 31388,
+										"line": 944,
+										"column": 20,
+										"start": 31708,
+										"end": 31714,
 										"length": 7,
-										"parent_index": 1652
+										"parent_index": 1668
+									},
+									"name": "uint256",
+									"referenced_declaration": 0,
+									"type_description": {
+										"type_identifier": "t_uint256",
+										"type_string": "uint256"
+									}
+								},
+								"storage_location": 2,
+								"visibility": 1,
+								"state_mutability": 1,
+								"type_description": {
+									"type_identifier": "t_uint256",
+									"type_string": "uint256"
+								}
+							},
+							{
+								"id": 1670,
+								"node_type": 44,
+								"src": {
+									"line": 944,
+									"column": 31,
+									"start": 31719,
+									"end": 31727,
+									"length": 9,
+									"parent_index": 1667
+								},
+								"scope": 1666,
+								"name": "b",
+								"type_name": {
+									"id": 1671,
+									"node_type": 30,
+									"src": {
+										"line": 944,
+										"column": 31,
+										"start": 31719,
+										"end": 31725,
+										"length": 7,
+										"parent_index": 1670
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -949,40 +1648,40 @@
 						]
 					},
 					"return_parameters": {
-						"id": 1654,
+						"id": 1672,
 						"node_type": 43,
 						"src": {
-							"line": 932,
+							"line": 944,
 							"column": 65,
-							"start": 31416,
-							"end": 31428,
+							"start": 31753,
+							"end": 31765,
 							"length": 13,
-							"parent_index": 1648
+							"parent_index": 1666
 						},
 						"parameters": [
 							{
-								"id": 1655,
+								"id": 1673,
 								"node_type": 44,
 								"src": {
-									"line": 932,
+									"line": 944,
 									"column": 65,
-									"start": 31416,
-									"end": 31419,
+									"start": 31753,
+									"end": 31756,
 									"length": 4,
-									"parent_index": 1654
+									"parent_index": 1672
 								},
-								"scope": 1648,
+								"scope": 1666,
 								"name": "",
 								"type_name": {
-									"id": 1656,
+									"id": 1674,
 									"node_type": 30,
 									"src": {
-										"line": 932,
+										"line": 944,
 										"column": 65,
-										"start": 31416,
-										"end": 31419,
+										"start": 31753,
+										"end": 31756,
 										"length": 4,
-										"parent_index": 1655
+										"parent_index": 1673
 									},
 									"name": "bool",
 									"referenced_declaration": 0,
@@ -1000,562 +1699,26 @@
 								}
 							},
 							{
-								"id": 1657,
-								"node_type": 44,
-								"src": {
-									"line": 932,
-									"column": 71,
-									"start": 31422,
-									"end": 31428,
-									"length": 7,
-									"parent_index": 1654
-								},
-								"scope": 1648,
-								"name": "",
-								"type_name": {
-									"id": 1658,
-									"node_type": 30,
-									"src": {
-										"line": 932,
-										"column": 71,
-										"start": 31422,
-										"end": 31428,
-										"length": 7,
-										"parent_index": 1657
-									},
-									"name": "uint256",
-									"referenced_declaration": 0,
-									"type_description": {
-										"type_identifier": "t_uint256",
-										"type_string": "uint256"
-									}
-								},
-								"storage_location": 2,
-								"visibility": 1,
-								"state_mutability": 1,
-								"type_description": {
-									"type_identifier": "t_uint256",
-									"type_string": "uint256"
-								}
-							}
-						],
-						"parameter_types": [
-							{
-								"type_identifier": "t_bool",
-								"type_string": "bool"
-							},
-							{
-								"type_identifier": "t_uint256",
-								"type_string": "uint256"
-							}
-						]
-					},
-					"signature_raw": "trySub(uint256, uint256)",
-					"signature": "9f7e8c62",
-					"scope": 1617,
-					"type_description": {
-						"type_identifier": "t_function_$_t_uint256$_t_uint256$",
-						"type_string": "function(uint256,uint256)"
-					}
-				},
-				{
-					"id": 1673,
-					"name": "tryMul",
-					"node_type": 42,
-					"kind": 41,
-					"src": {
-						"line": 944,
-						"column": 4,
-						"start": 31692,
-						"end": 32184,
-						"length": 493,
-						"parent_index": 1617
-					},
-					"name_location": {
-						"line": 944,
-						"column": 13,
-						"start": 31701,
-						"end": 31706,
-						"length": 6,
-						"parent_index": 1673
-					},
-					"body": {
-						"id": 1684,
-						"node_type": 46,
-						"kind": 0,
-						"src": {
-							"line": 944,
-							"column": 80,
-							"start": 31768,
-							"end": 32184,
-							"length": 417,
-							"parent_index": 1673
-						},
-						"implemented": true,
-						"statements": [
-							{
-								"id": 1685,
-								"node_type": 59,
-								"kind": 0,
-								"src": {
-									"line": 945,
-									"column": 8,
-									"start": 31778,
-									"end": 32178,
-									"length": 401,
-									"parent_index": 1617
-								},
-								"implemented": false,
-								"statements": [
-									{
-										"id": 1686,
-										"node_type": 48,
-										"src": {
-											"line": 949,
-											"column": 0,
-											"start": 32032,
-											"end": 32060,
-											"length": 29,
-											"parent_index": 1685
-										},
-										"condition": {
-											"id": 1687,
-											"is_constant": false,
-											"is_pure": false,
-											"node_type": 19,
-											"src": {
-												"line": 949,
-												"column": 16,
-												"start": 32036,
-												"end": 32041,
-												"length": 6,
-												"parent_index": 1686
-											},
-											"operator": 11,
-											"left_expression": {
-												"id": 1688,
-												"node_type": 16,
-												"src": {
-													"line": 949,
-													"column": 16,
-													"start": 32036,
-													"end": 32036,
-													"length": 1,
-													"parent_index": 1687
-												},
-												"name": "a",
-												"type_description": {
-													"type_identifier": "t_uint256",
-													"type_string": "uint256"
-												},
-												"overloaded_declarations": [],
-												"referenced_declaration": 1688,
-												"is_pure": false
-											},
-											"right_expression": {
-												"id": 1689,
-												"node_type": 17,
-												"kind": 49,
-												"value": "0",
-												"hex_value": "30",
-												"src": {
-													"line": 949,
-													"column": 21,
-													"start": 32041,
-													"end": 32041,
-													"length": 1,
-													"parent_index": 1687
-												},
-												"type_description": {
-													"type_identifier": "t_rational_0_by_1",
-													"type_string": "int_const 0"
-												},
-												"overloaded_declarations": [],
-												"referenced_declaration": 0,
-												"is_pure": true
-											},
-											"type_description": {
-												"type_identifier": "t_bool",
-												"type_string": "bool"
-											}
-										},
-										"body": {
-											"id": 1690,
-											"node_type": 46,
-											"kind": 0,
-											"src": {
-												"line": 0,
-												"column": 0,
-												"start": 0,
-												"end": 0,
-												"length": 0
-											},
-											"implemented": false,
-											"statements": []
-										}
-									},
-									{
-										"id": 1691,
-										"node_type": 44,
-										"src": {
-											"line": 950,
-											"column": 12,
-											"start": 32074,
-											"end": 32091,
-											"length": 18,
-											"parent_index": 1685
-										},
-										"assignments": [
-											1692
-										],
-										"declarations": [
-											{
-												"id": 1692,
-												"state_mutability": 1,
-												"name": "c",
-												"node_type": 44,
-												"scope": 1685,
-												"src": {
-													"line": 950,
-													"column": 12,
-													"start": 32074,
-													"end": 32082,
-													"length": 9,
-													"parent_index": 1691
-												},
-												"name_location": {
-													"line": 950,
-													"column": 20,
-													"start": 32082,
-													"end": 32082,
-													"length": 1,
-													"parent_index": 1692
-												},
-												"is_state_variable": false,
-												"storage_location": 1,
-												"type_name": {
-													"id": 1693,
-													"node_type": 30,
-													"src": {
-														"line": 950,
-														"column": 12,
-														"start": 32074,
-														"end": 32080,
-														"length": 7,
-														"parent_index": 1692
-													},
-													"name": "uint256",
-													"referenced_declaration": 0,
-													"type_description": {
-														"type_identifier": "t_uint256",
-														"type_string": "uint256"
-													}
-												},
-												"visibility": 1
-											}
-										],
-										"initial_value": {
-											"id": 1694,
-											"is_constant": false,
-											"is_pure": false,
-											"node_type": 19,
-											"src": {
-												"line": 950,
-												"column": 24,
-												"start": 32086,
-												"end": 32090,
-												"length": 5,
-												"parent_index": 1691
-											},
-											"operator": 3,
-											"left_expression": {
-												"id": 1695,
-												"node_type": 16,
-												"src": {
-													"line": 950,
-													"column": 24,
-													"start": 32086,
-													"end": 32086,
-													"length": 1,
-													"parent_index": 1694
-												},
-												"name": "a",
-												"type_description": {
-													"type_identifier": "t_uint256",
-													"type_string": "uint256"
-												},
-												"overloaded_declarations": [],
-												"referenced_declaration": 1695,
-												"is_pure": false
-											},
-											"right_expression": {
-												"id": 1696,
-												"node_type": 16,
-												"src": {
-													"line": 950,
-													"column": 28,
-													"start": 32090,
-													"end": 32090,
-													"length": 1,
-													"parent_index": 1694
-												},
-												"name": "b",
-												"type_description": {
-													"type_identifier": "t_uint256",
-													"type_string": "uint256"
-												},
-												"overloaded_declarations": [],
-												"referenced_declaration": 1696,
-												"is_pure": false
-											},
-											"type_description": {
-												"type_identifier": "t_uint256",
-												"type_string": "uint256"
-											}
-										}
-									},
-									{
-										"id": 1697,
-										"node_type": 48,
-										"src": {
-											"line": 951,
-											"column": 0,
-											"start": 32105,
-											"end": 32138,
-											"length": 34,
-											"parent_index": 1685
-										},
-										"condition": {
-											"id": 1698,
-											"is_constant": false,
-											"is_pure": false,
-											"node_type": 19,
-											"src": {
-												"line": 951,
-												"column": 16,
-												"start": 32109,
-												"end": 32118,
-												"length": 10,
-												"parent_index": 1697
-											},
-											"operator": 12,
-											"left_expression": {
-												"id": 1699,
-												"is_constant": false,
-												"is_pure": false,
-												"node_type": 19,
-												"src": {
-													"line": 951,
-													"column": 16,
-													"start": 32109,
-													"end": 32113,
-													"length": 5,
-													"parent_index": 1698
-												},
-												"operator": 4,
-												"left_expression": {
-													"id": 1700,
-													"node_type": 16,
-													"src": {
-														"line": 951,
-														"column": 16,
-														"start": 32109,
-														"end": 32109,
-														"length": 1,
-														"parent_index": 1699
-													},
-													"name": "c",
-													"type_description": {
-														"type_identifier": "t_uint256",
-														"type_string": "uint256"
-													},
-													"overloaded_declarations": [],
-													"referenced_declaration": 1691,
-													"is_pure": false
-												},
-												"right_expression": {
-													"id": 1701,
-													"node_type": 16,
-													"src": {
-														"line": 951,
-														"column": 20,
-														"start": 32113,
-														"end": 32113,
-														"length": 1,
-														"parent_index": 1699
-													},
-													"name": "a",
-													"type_description": {
-														"type_identifier": "t_uint256",
-														"type_string": "uint256"
-													},
-													"overloaded_declarations": [],
-													"referenced_declaration": 1701,
-													"is_pure": false
-												},
-												"type_description": {
-													"type_identifier": "t_uint256",
-													"type_string": "uint256"
-												}
-											},
-											"right_expression": {
-												"id": 1702,
-												"node_type": 16,
-												"src": {
-													"line": 951,
-													"column": 25,
-													"start": 32118,
-													"end": 32118,
-													"length": 1,
-													"parent_index": 1698
-												},
-												"name": "b",
-												"type_description": {
-													"type_identifier": "t_uint256",
-													"type_string": "uint256"
-												},
-												"overloaded_declarations": [],
-												"referenced_declaration": 1702,
-												"is_pure": false
-											},
-											"type_description": {
-												"type_identifier": "t_bool",
-												"type_string": "bool"
-											}
-										},
-										"body": {
-											"id": 1703,
-											"node_type": 46,
-											"kind": 0,
-											"src": {
-												"line": 0,
-												"column": 0,
-												"start": 0,
-												"end": 0,
-												"length": 0
-											},
-											"implemented": false,
-											"statements": []
-										}
-									},
-									{
-										"id": 1704,
-										"node_type": 47,
-										"src": {
-											"line": 952,
-											"column": 12,
-											"start": 32152,
-											"end": 32168,
-											"length": 17,
-											"parent_index": 1673
-										},
-										"function_return_parameters": 1673,
-										"expression": {
-											"id": 1705,
-											"node_type": 60,
-											"src": {
-												"line": 952,
-												"column": 19,
-												"start": 32159,
-												"end": 32167,
-												"length": 9,
-												"parent_index": 1704
-											},
-											"is_constant": false,
-											"is_pure": true,
-											"components": [
-												{
-													"id": 1706,
-													"node_type": 17,
-													"kind": 61,
-													"value": "true",
-													"hex_value": "74727565",
-													"src": {
-														"line": 952,
-														"column": 20,
-														"start": 32160,
-														"end": 32163,
-														"length": 4,
-														"parent_index": 1705
-													},
-													"type_description": {
-														"type_identifier": "t_bool",
-														"type_string": "bool"
-													},
-													"overloaded_declarations": [],
-													"referenced_declaration": 0,
-													"is_pure": true
-												},
-												{
-													"id": 1707,
-													"node_type": 16,
-													"src": {
-														"line": 952,
-														"column": 26,
-														"start": 32166,
-														"end": 32166,
-														"length": 1,
-														"parent_index": 1705
-													},
-													"name": "c",
-													"type_description": {
-														"type_identifier": "t_uint256",
-														"type_string": "uint256"
-													},
-													"overloaded_declarations": [],
-													"referenced_declaration": 1691,
-													"is_pure": false
-												}
-											],
-											"type_description": {
-												"type_identifier": "t_tuple_$_t_bool_$_t_uint256$",
-												"type_string": "tuple(bool,uint256)"
-											}
-										}
-									}
-								]
-							}
-						]
-					},
-					"implemented": false,
-					"visibility": 1,
-					"state_mutability": 6,
-					"virtual": false,
-					"modifiers": [],
-					"overrides": [],
-					"parameters": {
-						"id": 1674,
-						"node_type": 43,
-						"src": {
-							"line": 944,
-							"column": 20,
-							"start": 31708,
-							"end": 31727,
-							"length": 20,
-							"parent_index": 1673
-						},
-						"parameters": [
-							{
 								"id": 1675,
 								"node_type": 44,
 								"src": {
 									"line": 944,
-									"column": 20,
-									"start": 31708,
-									"end": 31716,
-									"length": 9,
-									"parent_index": 1674
+									"column": 71,
+									"start": 31759,
+									"end": 31765,
+									"length": 7,
+									"parent_index": 1672
 								},
-								"scope": 1673,
-								"name": "a",
+								"scope": 1666,
+								"name": "",
 								"type_name": {
 									"id": 1676,
 									"node_type": 30,
 									"src": {
 										"line": 944,
-										"column": 20,
-										"start": 31708,
-										"end": 31714,
+										"column": 71,
+										"start": 31759,
+										"end": 31765,
 										"length": 7,
 										"parent_index": 1675
 									},
@@ -1573,30 +1736,367 @@
 									"type_identifier": "t_uint256",
 									"type_string": "uint256"
 								}
+							}
+						],
+						"parameter_types": [
+							{
+								"type_identifier": "t_bool",
+								"type_string": "bool"
 							},
 							{
-								"id": 1677,
+								"type_identifier": "t_uint256",
+								"type_string": "uint256"
+							}
+						]
+					},
+					"signature_raw": "tryMul(uint256,uint256)",
+					"signature": "6281efa4",
+					"scope": 1610,
+					"type_description": {
+						"type_identifier": "t_function_$_t_uint256$_t_uint256$",
+						"type_string": "function(uint256,uint256)"
+					},
+					"text": "functiontryMul(uint256a,uint256b)internalpurereturns(bool,uint256){unchecked{if(a==0)return(true,0);uint256c=a*b;if(c/a!=b)return(false,0);return(true,c);}}"
+				},
+				{
+					"id": 1702,
+					"name": "tryDiv",
+					"node_type": 42,
+					"kind": 41,
+					"src": {
+						"line": 961,
+						"column": 4,
+						"start": 32334,
+						"end": 32523,
+						"length": 190,
+						"parent_index": 1610
+					},
+					"name_location": {
+						"line": 961,
+						"column": 13,
+						"start": 32343,
+						"end": 32348,
+						"length": 6,
+						"parent_index": 1702
+					},
+					"body": {
+						"id": 1713,
+						"node_type": 46,
+						"kind": 0,
+						"src": {
+							"line": 961,
+							"column": 80,
+							"start": 32410,
+							"end": 32523,
+							"length": 114,
+							"parent_index": 1702
+						},
+						"implemented": true,
+						"statements": [
+							{
+								"id": 1714,
+								"node_type": 59,
+								"kind": 0,
+								"src": {
+									"line": 962,
+									"column": 8,
+									"start": 32420,
+									"end": 32517,
+									"length": 98,
+									"parent_index": 1610
+								},
+								"implemented": false,
+								"statements": [
+									{
+										"id": 1715,
+										"node_type": 48,
+										"src": {
+											"line": 963,
+											"column": 0,
+											"start": 32444,
+											"end": 32473,
+											"length": 30,
+											"parent_index": 1714
+										},
+										"condition": {
+											"id": 1716,
+											"is_constant": false,
+											"is_pure": false,
+											"node_type": 19,
+											"src": {
+												"line": 963,
+												"column": 16,
+												"start": 32448,
+												"end": 32453,
+												"length": 6,
+												"parent_index": 1715
+											},
+											"operator": 11,
+											"left_expression": {
+												"id": 1717,
+												"node_type": 16,
+												"src": {
+													"line": 963,
+													"column": 16,
+													"start": 32448,
+													"end": 32448,
+													"length": 1,
+													"parent_index": 1716
+												},
+												"name": "b",
+												"type_description": {
+													"type_identifier": "t_uint256",
+													"type_string": "uint256"
+												},
+												"overloaded_declarations": [],
+												"referenced_declaration": 1717,
+												"is_pure": false,
+												"text": "b"
+											},
+											"right_expression": {
+												"id": 1718,
+												"node_type": 17,
+												"kind": 49,
+												"value": "0",
+												"hex_value": "30",
+												"src": {
+													"line": 963,
+													"column": 21,
+													"start": 32453,
+													"end": 32453,
+													"length": 1,
+													"parent_index": 1716
+												},
+												"type_description": {
+													"type_identifier": "t_rational_0_by_1",
+													"type_string": "int_const 0"
+												},
+												"overloaded_declarations": [],
+												"referenced_declaration": 0,
+												"is_pure": true,
+												"text": "0"
+											},
+											"type_description": {
+												"type_identifier": "t_bool",
+												"type_string": "bool"
+											}
+										},
+										"body": {
+											"id": 1719,
+											"node_type": 46,
+											"kind": 0,
+											"src": {
+												"line": 0,
+												"column": 0,
+												"start": 0,
+												"end": 0,
+												"length": 0
+											},
+											"implemented": false,
+											"statements": []
+										}
+									},
+									{
+										"id": 1720,
+										"node_type": 47,
+										"src": {
+											"line": 964,
+											"column": 12,
+											"start": 32487,
+											"end": 32507,
+											"length": 21,
+											"parent_index": 1702
+										},
+										"function_return_parameters": 1702,
+										"expression": {
+											"id": 1721,
+											"node_type": 60,
+											"src": {
+												"line": 964,
+												"column": 19,
+												"start": 32494,
+												"end": 32506,
+												"length": 13,
+												"parent_index": 1720
+											},
+											"is_constant": false,
+											"is_pure": true,
+											"components": [
+												{
+													"id": 1722,
+													"node_type": 17,
+													"kind": 61,
+													"value": "true",
+													"hex_value": "74727565",
+													"src": {
+														"line": 964,
+														"column": 20,
+														"start": 32495,
+														"end": 32498,
+														"length": 4,
+														"parent_index": 1721
+													},
+													"type_description": {
+														"type_identifier": "t_bool",
+														"type_string": "bool"
+													},
+													"overloaded_declarations": [],
+													"referenced_declaration": 0,
+													"is_pure": true,
+													"text": "true"
+												},
+												{
+													"id": 1723,
+													"is_constant": false,
+													"is_pure": false,
+													"node_type": 19,
+													"src": {
+														"line": 964,
+														"column": 26,
+														"start": 32501,
+														"end": 32505,
+														"length": 5,
+														"parent_index": 1721
+													},
+													"operator": 4,
+													"left_expression": {
+														"id": 1724,
+														"node_type": 16,
+														"src": {
+															"line": 964,
+															"column": 26,
+															"start": 32501,
+															"end": 32501,
+															"length": 1,
+															"parent_index": 1723
+														},
+														"name": "a",
+														"type_description": {
+															"type_identifier": "t_uint256",
+															"type_string": "uint256"
+														},
+														"overloaded_declarations": [],
+														"referenced_declaration": 1724,
+														"is_pure": false,
+														"text": "a"
+													},
+													"right_expression": {
+														"id": 1725,
+														"node_type": 16,
+														"src": {
+															"line": 964,
+															"column": 30,
+															"start": 32505,
+															"end": 32505,
+															"length": 1,
+															"parent_index": 1723
+														},
+														"name": "b",
+														"type_description": {
+															"type_identifier": "t_uint256",
+															"type_string": "uint256"
+														},
+														"overloaded_declarations": [],
+														"referenced_declaration": 1725,
+														"is_pure": false,
+														"text": "b"
+													},
+													"type_description": {
+														"type_identifier": "t_uint256",
+														"type_string": "uint256"
+													}
+												}
+											],
+											"type_description": {
+												"type_identifier": "t_tuple_$_t_bool_$_t_uint256$",
+												"type_string": "tuple(bool,uint256)"
+											}
+										}
+									}
+								]
+							}
+						]
+					},
+					"implemented": false,
+					"visibility": 1,
+					"state_mutability": 6,
+					"virtual": false,
+					"modifiers": [],
+					"overrides": [],
+					"parameters": {
+						"id": 1703,
+						"node_type": 43,
+						"src": {
+							"line": 961,
+							"column": 20,
+							"start": 32350,
+							"end": 32369,
+							"length": 20,
+							"parent_index": 1702
+						},
+						"parameters": [
+							{
+								"id": 1704,
 								"node_type": 44,
 								"src": {
-									"line": 944,
-									"column": 31,
-									"start": 31719,
-									"end": 31727,
+									"line": 961,
+									"column": 20,
+									"start": 32350,
+									"end": 32358,
 									"length": 9,
-									"parent_index": 1674
+									"parent_index": 1703
 								},
-								"scope": 1673,
-								"name": "b",
+								"scope": 1702,
+								"name": "a",
 								"type_name": {
-									"id": 1678,
+									"id": 1705,
 									"node_type": 30,
 									"src": {
-										"line": 944,
-										"column": 31,
-										"start": 31719,
-										"end": 31725,
+										"line": 961,
+										"column": 20,
+										"start": 32350,
+										"end": 32356,
 										"length": 7,
-										"parent_index": 1677
+										"parent_index": 1704
+									},
+									"name": "uint256",
+									"referenced_declaration": 0,
+									"type_description": {
+										"type_identifier": "t_uint256",
+										"type_string": "uint256"
+									}
+								},
+								"storage_location": 2,
+								"visibility": 1,
+								"state_mutability": 1,
+								"type_description": {
+									"type_identifier": "t_uint256",
+									"type_string": "uint256"
+								}
+							},
+							{
+								"id": 1706,
+								"node_type": 44,
+								"src": {
+									"line": 961,
+									"column": 31,
+									"start": 32361,
+									"end": 32369,
+									"length": 9,
+									"parent_index": 1703
+								},
+								"scope": 1702,
+								"name": "b",
+								"type_name": {
+									"id": 1707,
+									"node_type": 30,
+									"src": {
+										"line": 961,
+										"column": 31,
+										"start": 32361,
+										"end": 32367,
+										"length": 7,
+										"parent_index": 1706
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -1626,40 +2126,40 @@
 						]
 					},
 					"return_parameters": {
-						"id": 1679,
+						"id": 1708,
 						"node_type": 43,
 						"src": {
-							"line": 944,
+							"line": 961,
 							"column": 65,
-							"start": 31753,
-							"end": 31765,
+							"start": 32395,
+							"end": 32407,
 							"length": 13,
-							"parent_index": 1673
+							"parent_index": 1702
 						},
 						"parameters": [
 							{
-								"id": 1680,
+								"id": 1709,
 								"node_type": 44,
 								"src": {
-									"line": 944,
+									"line": 961,
 									"column": 65,
-									"start": 31753,
-									"end": 31756,
+									"start": 32395,
+									"end": 32398,
 									"length": 4,
-									"parent_index": 1679
+									"parent_index": 1708
 								},
-								"scope": 1673,
+								"scope": 1702,
 								"name": "",
 								"type_name": {
-									"id": 1681,
+									"id": 1710,
 									"node_type": 30,
 									"src": {
-										"line": 944,
+										"line": 961,
 										"column": 65,
-										"start": 31753,
-										"end": 31756,
+										"start": 32395,
+										"end": 32398,
 										"length": 4,
-										"parent_index": 1680
+										"parent_index": 1709
 									},
 									"name": "bool",
 									"referenced_declaration": 0,
@@ -1677,357 +2177,26 @@
 								}
 							},
 							{
-								"id": 1682,
-								"node_type": 44,
-								"src": {
-									"line": 944,
-									"column": 71,
-									"start": 31759,
-									"end": 31765,
-									"length": 7,
-									"parent_index": 1679
-								},
-								"scope": 1673,
-								"name": "",
-								"type_name": {
-									"id": 1683,
-									"node_type": 30,
-									"src": {
-										"line": 944,
-										"column": 71,
-										"start": 31759,
-										"end": 31765,
-										"length": 7,
-										"parent_index": 1682
-									},
-									"name": "uint256",
-									"referenced_declaration": 0,
-									"type_description": {
-										"type_identifier": "t_uint256",
-										"type_string": "uint256"
-									}
-								},
-								"storage_location": 2,
-								"visibility": 1,
-								"state_mutability": 1,
-								"type_description": {
-									"type_identifier": "t_uint256",
-									"type_string": "uint256"
-								}
-							}
-						],
-						"parameter_types": [
-							{
-								"type_identifier": "t_bool",
-								"type_string": "bool"
-							},
-							{
-								"type_identifier": "t_uint256",
-								"type_string": "uint256"
-							}
-						]
-					},
-					"signature_raw": "tryMul(uint256, uint256)",
-					"signature": "72cd6357",
-					"scope": 1617,
-					"type_description": {
-						"type_identifier": "t_function_$_t_uint256$_t_uint256$",
-						"type_string": "function(uint256,uint256)"
-					}
-				},
-				{
-					"id": 1709,
-					"name": "tryDiv",
-					"node_type": 42,
-					"kind": 41,
-					"src": {
-						"line": 961,
-						"column": 4,
-						"start": 32334,
-						"end": 32523,
-						"length": 190,
-						"parent_index": 1617
-					},
-					"name_location": {
-						"line": 961,
-						"column": 13,
-						"start": 32343,
-						"end": 32348,
-						"length": 6,
-						"parent_index": 1709
-					},
-					"body": {
-						"id": 1720,
-						"node_type": 46,
-						"kind": 0,
-						"src": {
-							"line": 961,
-							"column": 80,
-							"start": 32410,
-							"end": 32523,
-							"length": 114,
-							"parent_index": 1709
-						},
-						"implemented": true,
-						"statements": [
-							{
-								"id": 1721,
-								"node_type": 59,
-								"kind": 0,
-								"src": {
-									"line": 962,
-									"column": 8,
-									"start": 32420,
-									"end": 32517,
-									"length": 98,
-									"parent_index": 1617
-								},
-								"implemented": false,
-								"statements": [
-									{
-										"id": 1722,
-										"node_type": 48,
-										"src": {
-											"line": 963,
-											"column": 0,
-											"start": 32444,
-											"end": 32473,
-											"length": 30,
-											"parent_index": 1721
-										},
-										"condition": {
-											"id": 1723,
-											"is_constant": false,
-											"is_pure": false,
-											"node_type": 19,
-											"src": {
-												"line": 963,
-												"column": 16,
-												"start": 32448,
-												"end": 32453,
-												"length": 6,
-												"parent_index": 1722
-											},
-											"operator": 11,
-											"left_expression": {
-												"id": 1724,
-												"node_type": 16,
-												"src": {
-													"line": 963,
-													"column": 16,
-													"start": 32448,
-													"end": 32448,
-													"length": 1,
-													"parent_index": 1723
-												},
-												"name": "b",
-												"type_description": {
-													"type_identifier": "t_uint256",
-													"type_string": "uint256"
-												},
-												"overloaded_declarations": [],
-												"referenced_declaration": 1724,
-												"is_pure": false
-											},
-											"right_expression": {
-												"id": 1725,
-												"node_type": 17,
-												"kind": 49,
-												"value": "0",
-												"hex_value": "30",
-												"src": {
-													"line": 963,
-													"column": 21,
-													"start": 32453,
-													"end": 32453,
-													"length": 1,
-													"parent_index": 1723
-												},
-												"type_description": {
-													"type_identifier": "t_rational_0_by_1",
-													"type_string": "int_const 0"
-												},
-												"overloaded_declarations": [],
-												"referenced_declaration": 0,
-												"is_pure": true
-											},
-											"type_description": {
-												"type_identifier": "t_bool",
-												"type_string": "bool"
-											}
-										},
-										"body": {
-											"id": 1726,
-											"node_type": 46,
-											"kind": 0,
-											"src": {
-												"line": 0,
-												"column": 0,
-												"start": 0,
-												"end": 0,
-												"length": 0
-											},
-											"implemented": false,
-											"statements": []
-										}
-									},
-									{
-										"id": 1727,
-										"node_type": 47,
-										"src": {
-											"line": 964,
-											"column": 12,
-											"start": 32487,
-											"end": 32507,
-											"length": 21,
-											"parent_index": 1709
-										},
-										"function_return_parameters": 1709,
-										"expression": {
-											"id": 1728,
-											"node_type": 60,
-											"src": {
-												"line": 964,
-												"column": 19,
-												"start": 32494,
-												"end": 32506,
-												"length": 13,
-												"parent_index": 1727
-											},
-											"is_constant": false,
-											"is_pure": true,
-											"components": [
-												{
-													"id": 1729,
-													"node_type": 17,
-													"kind": 61,
-													"value": "true",
-													"hex_value": "74727565",
-													"src": {
-														"line": 964,
-														"column": 20,
-														"start": 32495,
-														"end": 32498,
-														"length": 4,
-														"parent_index": 1728
-													},
-													"type_description": {
-														"type_identifier": "t_bool",
-														"type_string": "bool"
-													},
-													"overloaded_declarations": [],
-													"referenced_declaration": 0,
-													"is_pure": true
-												},
-												{
-													"id": 1730,
-													"is_constant": false,
-													"is_pure": false,
-													"node_type": 19,
-													"src": {
-														"line": 964,
-														"column": 26,
-														"start": 32501,
-														"end": 32505,
-														"length": 5,
-														"parent_index": 1728
-													},
-													"operator": 4,
-													"left_expression": {
-														"id": 1731,
-														"node_type": 16,
-														"src": {
-															"line": 964,
-															"column": 26,
-															"start": 32501,
-															"end": 32501,
-															"length": 1,
-															"parent_index": 1730
-														},
-														"name": "a",
-														"type_description": {
-															"type_identifier": "t_uint256",
-															"type_string": "uint256"
-														},
-														"overloaded_declarations": [],
-														"referenced_declaration": 1731,
-														"is_pure": false
-													},
-													"right_expression": {
-														"id": 1732,
-														"node_type": 16,
-														"src": {
-															"line": 964,
-															"column": 30,
-															"start": 32505,
-															"end": 32505,
-															"length": 1,
-															"parent_index": 1730
-														},
-														"name": "b",
-														"type_description": {
-															"type_identifier": "t_uint256",
-															"type_string": "uint256"
-														},
-														"overloaded_declarations": [],
-														"referenced_declaration": 1732,
-														"is_pure": false
-													},
-													"type_description": {
-														"type_identifier": "t_uint256",
-														"type_string": "uint256"
-													}
-												}
-											],
-											"type_description": {
-												"type_identifier": "t_tuple_$_t_bool_$_t_uint256$",
-												"type_string": "tuple(bool,uint256)"
-											}
-										}
-									}
-								]
-							}
-						]
-					},
-					"implemented": false,
-					"visibility": 1,
-					"state_mutability": 6,
-					"virtual": false,
-					"modifiers": [],
-					"overrides": [],
-					"parameters": {
-						"id": 1710,
-						"node_type": 43,
-						"src": {
-							"line": 961,
-							"column": 20,
-							"start": 32350,
-							"end": 32369,
-							"length": 20,
-							"parent_index": 1709
-						},
-						"parameters": [
-							{
 								"id": 1711,
 								"node_type": 44,
 								"src": {
 									"line": 961,
-									"column": 20,
-									"start": 32350,
-									"end": 32358,
-									"length": 9,
-									"parent_index": 1710
+									"column": 71,
+									"start": 32401,
+									"end": 32407,
+									"length": 7,
+									"parent_index": 1708
 								},
-								"scope": 1709,
-								"name": "a",
+								"scope": 1702,
+								"name": "",
 								"type_name": {
 									"id": 1712,
 									"node_type": 30,
 									"src": {
 										"line": 961,
-										"column": 20,
-										"start": 32350,
-										"end": 32356,
+										"column": 71,
+										"start": 32401,
+										"end": 32407,
 										"length": 7,
 										"parent_index": 1711
 									},
@@ -2045,147 +2214,6 @@
 									"type_identifier": "t_uint256",
 									"type_string": "uint256"
 								}
-							},
-							{
-								"id": 1713,
-								"node_type": 44,
-								"src": {
-									"line": 961,
-									"column": 31,
-									"start": 32361,
-									"end": 32369,
-									"length": 9,
-									"parent_index": 1710
-								},
-								"scope": 1709,
-								"name": "b",
-								"type_name": {
-									"id": 1714,
-									"node_type": 30,
-									"src": {
-										"line": 961,
-										"column": 31,
-										"start": 32361,
-										"end": 32367,
-										"length": 7,
-										"parent_index": 1713
-									},
-									"name": "uint256",
-									"referenced_declaration": 0,
-									"type_description": {
-										"type_identifier": "t_uint256",
-										"type_string": "uint256"
-									}
-								},
-								"storage_location": 2,
-								"visibility": 1,
-								"state_mutability": 1,
-								"type_description": {
-									"type_identifier": "t_uint256",
-									"type_string": "uint256"
-								}
-							}
-						],
-						"parameter_types": [
-							{
-								"type_identifier": "t_uint256",
-								"type_string": "uint256"
-							},
-							{
-								"type_identifier": "t_uint256",
-								"type_string": "uint256"
-							}
-						]
-					},
-					"return_parameters": {
-						"id": 1715,
-						"node_type": 43,
-						"src": {
-							"line": 961,
-							"column": 65,
-							"start": 32395,
-							"end": 32407,
-							"length": 13,
-							"parent_index": 1709
-						},
-						"parameters": [
-							{
-								"id": 1716,
-								"node_type": 44,
-								"src": {
-									"line": 961,
-									"column": 65,
-									"start": 32395,
-									"end": 32398,
-									"length": 4,
-									"parent_index": 1715
-								},
-								"scope": 1709,
-								"name": "",
-								"type_name": {
-									"id": 1717,
-									"node_type": 30,
-									"src": {
-										"line": 961,
-										"column": 65,
-										"start": 32395,
-										"end": 32398,
-										"length": 4,
-										"parent_index": 1716
-									},
-									"name": "bool",
-									"referenced_declaration": 0,
-									"type_description": {
-										"type_identifier": "t_bool",
-										"type_string": "bool"
-									}
-								},
-								"storage_location": 2,
-								"visibility": 1,
-								"state_mutability": 1,
-								"type_description": {
-									"type_identifier": "t_bool",
-									"type_string": "bool"
-								}
-							},
-							{
-								"id": 1718,
-								"node_type": 44,
-								"src": {
-									"line": 961,
-									"column": 71,
-									"start": 32401,
-									"end": 32407,
-									"length": 7,
-									"parent_index": 1715
-								},
-								"scope": 1709,
-								"name": "",
-								"type_name": {
-									"id": 1719,
-									"node_type": 30,
-									"src": {
-										"line": 961,
-										"column": 71,
-										"start": 32401,
-										"end": 32407,
-										"length": 7,
-										"parent_index": 1718
-									},
-									"name": "uint256",
-									"referenced_declaration": 0,
-									"type_description": {
-										"type_identifier": "t_uint256",
-										"type_string": "uint256"
-									}
-								},
-								"storage_location": 2,
-								"visibility": 1,
-								"state_mutability": 1,
-								"type_description": {
-									"type_identifier": "t_uint256",
-									"type_string": "uint256"
-								}
 							}
 						],
 						"parameter_types": [
@@ -2199,16 +2227,17 @@
 							}
 						]
 					},
-					"signature_raw": "tryDiv(uint256, uint256)",
-					"signature": "8b61a525",
-					"scope": 1617,
+					"signature_raw": "tryDiv(uint256,uint256)",
+					"signature": "736ecb18",
+					"scope": 1610,
 					"type_description": {
 						"type_identifier": "t_function_$_t_uint256$_t_uint256$",
 						"type_string": "function(uint256,uint256)"
-					}
+					},
+					"text": "functiontryDiv(uint256a,uint256b)internalpurereturns(bool,uint256){unchecked{if(b==0)return(false,0);return(true,a/b);}}"
 				},
 				{
-					"id": 1734,
+					"id": 1727,
 					"name": "tryMod",
 					"node_type": 42,
 					"kind": 41,
@@ -2218,7 +2247,7 @@
 						"start": 32683,
 						"end": 32872,
 						"length": 190,
-						"parent_index": 1617
+						"parent_index": 1610
 					},
 					"name_location": {
 						"line": 973,
@@ -2226,10 +2255,10 @@
 						"start": 32692,
 						"end": 32697,
 						"length": 6,
-						"parent_index": 1734
+						"parent_index": 1727
 					},
 					"body": {
-						"id": 1745,
+						"id": 1738,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -2238,12 +2267,12 @@
 							"start": 32759,
 							"end": 32872,
 							"length": 114,
-							"parent_index": 1734
+							"parent_index": 1727
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 1746,
+								"id": 1739,
 								"node_type": 59,
 								"kind": 0,
 								"src": {
@@ -2252,12 +2281,12 @@
 									"start": 32769,
 									"end": 32866,
 									"length": 98,
-									"parent_index": 1617
+									"parent_index": 1610
 								},
 								"implemented": false,
 								"statements": [
 									{
-										"id": 1747,
+										"id": 1740,
 										"node_type": 48,
 										"src": {
 											"line": 975,
@@ -2265,10 +2294,10 @@
 											"start": 32793,
 											"end": 32822,
 											"length": 30,
-											"parent_index": 1746
+											"parent_index": 1739
 										},
 										"condition": {
-											"id": 1748,
+											"id": 1741,
 											"is_constant": false,
 											"is_pure": false,
 											"node_type": 19,
@@ -2278,11 +2307,11 @@
 												"start": 32797,
 												"end": 32802,
 												"length": 6,
-												"parent_index": 1747
+												"parent_index": 1740
 											},
 											"operator": 11,
 											"left_expression": {
-												"id": 1749,
+												"id": 1742,
 												"node_type": 16,
 												"src": {
 													"line": 975,
@@ -2290,7 +2319,7 @@
 													"start": 32797,
 													"end": 32797,
 													"length": 1,
-													"parent_index": 1748
+													"parent_index": 1741
 												},
 												"name": "b",
 												"type_description": {
@@ -2298,11 +2327,12 @@
 													"type_string": "uint256"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 1749,
-												"is_pure": false
+												"referenced_declaration": 1742,
+												"is_pure": false,
+												"text": "b"
 											},
 											"right_expression": {
-												"id": 1750,
+												"id": 1743,
 												"node_type": 17,
 												"kind": 49,
 												"value": "0",
@@ -2313,7 +2343,7 @@
 													"start": 32802,
 													"end": 32802,
 													"length": 1,
-													"parent_index": 1748
+													"parent_index": 1741
 												},
 												"type_description": {
 													"type_identifier": "t_rational_0_by_1",
@@ -2321,7 +2351,8 @@
 												},
 												"overloaded_declarations": [],
 												"referenced_declaration": 0,
-												"is_pure": true
+												"is_pure": true,
+												"text": "0"
 											},
 											"type_description": {
 												"type_identifier": "t_bool",
@@ -2329,7 +2360,7 @@
 											}
 										},
 										"body": {
-											"id": 1751,
+											"id": 1744,
 											"node_type": 46,
 											"kind": 0,
 											"src": {
@@ -2344,7 +2375,7 @@
 										}
 									},
 									{
-										"id": 1752,
+										"id": 1745,
 										"node_type": 47,
 										"src": {
 											"line": 976,
@@ -2352,11 +2383,11 @@
 											"start": 32836,
 											"end": 32856,
 											"length": 21,
-											"parent_index": 1734
+											"parent_index": 1727
 										},
-										"function_return_parameters": 1734,
+										"function_return_parameters": 1727,
 										"expression": {
-											"id": 1753,
+											"id": 1746,
 											"node_type": 60,
 											"src": {
 												"line": 976,
@@ -2364,13 +2395,13 @@
 												"start": 32843,
 												"end": 32855,
 												"length": 13,
-												"parent_index": 1752
+												"parent_index": 1745
 											},
 											"is_constant": false,
 											"is_pure": true,
 											"components": [
 												{
-													"id": 1754,
+													"id": 1747,
 													"node_type": 17,
 													"kind": 61,
 													"value": "true",
@@ -2381,7 +2412,7 @@
 														"start": 32844,
 														"end": 32847,
 														"length": 4,
-														"parent_index": 1753
+														"parent_index": 1746
 													},
 													"type_description": {
 														"type_identifier": "t_bool",
@@ -2389,10 +2420,11 @@
 													},
 													"overloaded_declarations": [],
 													"referenced_declaration": 0,
-													"is_pure": true
+													"is_pure": true,
+													"text": "true"
 												},
 												{
-													"id": 1755,
+													"id": 1748,
 													"is_constant": false,
 													"is_pure": false,
 													"node_type": 19,
@@ -2402,11 +2434,11 @@
 														"start": 32850,
 														"end": 32854,
 														"length": 5,
-														"parent_index": 1753
+														"parent_index": 1746
 													},
 													"operator": 5,
 													"left_expression": {
-														"id": 1756,
+														"id": 1749,
 														"node_type": 16,
 														"src": {
 															"line": 976,
@@ -2414,7 +2446,7 @@
 															"start": 32850,
 															"end": 32850,
 															"length": 1,
-															"parent_index": 1755
+															"parent_index": 1748
 														},
 														"name": "a",
 														"type_description": {
@@ -2422,11 +2454,12 @@
 															"type_string": "uint256"
 														},
 														"overloaded_declarations": [],
-														"referenced_declaration": 1756,
-														"is_pure": false
+														"referenced_declaration": 1749,
+														"is_pure": false,
+														"text": "a"
 													},
 													"right_expression": {
-														"id": 1757,
+														"id": 1750,
 														"node_type": 16,
 														"src": {
 															"line": 976,
@@ -2434,7 +2467,7 @@
 															"start": 32854,
 															"end": 32854,
 															"length": 1,
-															"parent_index": 1755
+															"parent_index": 1748
 														},
 														"name": "b",
 														"type_description": {
@@ -2442,8 +2475,9 @@
 															"type_string": "uint256"
 														},
 														"overloaded_declarations": [],
-														"referenced_declaration": 1757,
-														"is_pure": false
+														"referenced_declaration": 1750,
+														"is_pure": false,
+														"text": "b"
 													},
 													"type_description": {
 														"type_identifier": "t_uint256",
@@ -2468,7 +2502,7 @@
 					"modifiers": [],
 					"overrides": [],
 					"parameters": {
-						"id": 1735,
+						"id": 1728,
 						"node_type": 43,
 						"src": {
 							"line": 973,
@@ -2476,11 +2510,11 @@
 							"start": 32699,
 							"end": 32718,
 							"length": 20,
-							"parent_index": 1734
+							"parent_index": 1727
 						},
 						"parameters": [
 							{
-								"id": 1736,
+								"id": 1729,
 								"node_type": 44,
 								"src": {
 									"line": 973,
@@ -2488,12 +2522,12 @@
 									"start": 32699,
 									"end": 32707,
 									"length": 9,
-									"parent_index": 1735
+									"parent_index": 1728
 								},
-								"scope": 1734,
+								"scope": 1727,
 								"name": "a",
 								"type_name": {
-									"id": 1737,
+									"id": 1730,
 									"node_type": 30,
 									"src": {
 										"line": 973,
@@ -2501,7 +2535,7 @@
 										"start": 32699,
 										"end": 32705,
 										"length": 7,
-										"parent_index": 1736
+										"parent_index": 1729
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -2519,7 +2553,7 @@
 								}
 							},
 							{
-								"id": 1738,
+								"id": 1731,
 								"node_type": 44,
 								"src": {
 									"line": 973,
@@ -2527,12 +2561,12 @@
 									"start": 32710,
 									"end": 32718,
 									"length": 9,
-									"parent_index": 1735
+									"parent_index": 1728
 								},
-								"scope": 1734,
+								"scope": 1727,
 								"name": "b",
 								"type_name": {
-									"id": 1739,
+									"id": 1732,
 									"node_type": 30,
 									"src": {
 										"line": 973,
@@ -2540,7 +2574,7 @@
 										"start": 32710,
 										"end": 32716,
 										"length": 7,
-										"parent_index": 1738
+										"parent_index": 1731
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -2570,7 +2604,7 @@
 						]
 					},
 					"return_parameters": {
-						"id": 1740,
+						"id": 1733,
 						"node_type": 43,
 						"src": {
 							"line": 973,
@@ -2578,11 +2612,11 @@
 							"start": 32744,
 							"end": 32756,
 							"length": 13,
-							"parent_index": 1734
+							"parent_index": 1727
 						},
 						"parameters": [
 							{
-								"id": 1741,
+								"id": 1734,
 								"node_type": 44,
 								"src": {
 									"line": 973,
@@ -2590,12 +2624,12 @@
 									"start": 32744,
 									"end": 32747,
 									"length": 4,
-									"parent_index": 1740
+									"parent_index": 1733
 								},
-								"scope": 1734,
+								"scope": 1727,
 								"name": "",
 								"type_name": {
-									"id": 1742,
+									"id": 1735,
 									"node_type": 30,
 									"src": {
 										"line": 973,
@@ -2603,7 +2637,7 @@
 										"start": 32744,
 										"end": 32747,
 										"length": 4,
-										"parent_index": 1741
+										"parent_index": 1734
 									},
 									"name": "bool",
 									"referenced_declaration": 0,
@@ -2621,7 +2655,7 @@
 								}
 							},
 							{
-								"id": 1743,
+								"id": 1736,
 								"node_type": 44,
 								"src": {
 									"line": 973,
@@ -2629,12 +2663,12 @@
 									"start": 32750,
 									"end": 32756,
 									"length": 7,
-									"parent_index": 1740
+									"parent_index": 1733
 								},
-								"scope": 1734,
+								"scope": 1727,
 								"name": "",
 								"type_name": {
-									"id": 1744,
+									"id": 1737,
 									"node_type": 30,
 									"src": {
 										"line": 973,
@@ -2642,7 +2676,7 @@
 										"start": 32750,
 										"end": 32756,
 										"length": 7,
-										"parent_index": 1743
+										"parent_index": 1736
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -2671,16 +2705,17 @@
 							}
 						]
 					},
-					"signature_raw": "tryMod(uint256, uint256)",
-					"signature": "4ed783cc",
-					"scope": 1617,
+					"signature_raw": "tryMod(uint256,uint256)",
+					"signature": "38dc0867",
+					"scope": 1610,
 					"type_description": {
 						"type_identifier": "t_function_$_t_uint256$_t_uint256$",
 						"type_string": "function(uint256,uint256)"
-					}
+					},
+					"text": "functiontryMod(uint256a,uint256b)internalpurereturns(bool,uint256){unchecked{if(b==0)return(false,0);return(true,a%b);}}"
 				},
 				{
-					"id": 1759,
+					"id": 1752,
 					"name": "add",
 					"node_type": 42,
 					"kind": 41,
@@ -2690,7 +2725,7 @@
 						"start": 33108,
 						"end": 33203,
 						"length": 96,
-						"parent_index": 1617
+						"parent_index": 1610
 					},
 					"name_location": {
 						"line": 990,
@@ -2698,10 +2733,10 @@
 						"start": 33117,
 						"end": 33119,
 						"length": 3,
-						"parent_index": 1759
+						"parent_index": 1752
 					},
 					"body": {
-						"id": 1768,
+						"id": 1761,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -2710,12 +2745,12 @@
 							"start": 33175,
 							"end": 33203,
 							"length": 29,
-							"parent_index": 1759
+							"parent_index": 1752
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 1769,
+								"id": 1762,
 								"node_type": 47,
 								"src": {
 									"line": 991,
@@ -2723,11 +2758,11 @@
 									"start": 33185,
 									"end": 33197,
 									"length": 13,
-									"parent_index": 1759
+									"parent_index": 1752
 								},
-								"function_return_parameters": 1759,
+								"function_return_parameters": 1752,
 								"expression": {
-									"id": 1770,
+									"id": 1763,
 									"is_constant": false,
 									"is_pure": false,
 									"node_type": 19,
@@ -2737,11 +2772,11 @@
 										"start": 33192,
 										"end": 33196,
 										"length": 5,
-										"parent_index": 1769
+										"parent_index": 1762
 									},
 									"operator": 1,
 									"left_expression": {
-										"id": 1771,
+										"id": 1764,
 										"node_type": 16,
 										"src": {
 											"line": 991,
@@ -2749,7 +2784,7 @@
 											"start": 33192,
 											"end": 33192,
 											"length": 1,
-											"parent_index": 1770
+											"parent_index": 1763
 										},
 										"name": "a",
 										"type_description": {
@@ -2757,11 +2792,12 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 1771,
-										"is_pure": false
+										"referenced_declaration": 1764,
+										"is_pure": false,
+										"text": "a"
 									},
 									"right_expression": {
-										"id": 1772,
+										"id": 1765,
 										"node_type": 16,
 										"src": {
 											"line": 991,
@@ -2769,7 +2805,7 @@
 											"start": 33196,
 											"end": 33196,
 											"length": 1,
-											"parent_index": 1770
+											"parent_index": 1763
 										},
 										"name": "b",
 										"type_description": {
@@ -2777,8 +2813,9 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 1772,
-										"is_pure": false
+										"referenced_declaration": 1765,
+										"is_pure": false,
+										"text": "b"
 									},
 									"type_description": {
 										"type_identifier": "t_uint256",
@@ -2795,7 +2832,7 @@
 					"modifiers": [],
 					"overrides": [],
 					"parameters": {
-						"id": 1760,
+						"id": 1753,
 						"node_type": 43,
 						"src": {
 							"line": 990,
@@ -2803,11 +2840,11 @@
 							"start": 33121,
 							"end": 33140,
 							"length": 20,
-							"parent_index": 1759
+							"parent_index": 1752
 						},
 						"parameters": [
 							{
-								"id": 1761,
+								"id": 1754,
 								"node_type": 44,
 								"src": {
 									"line": 990,
@@ -2815,12 +2852,12 @@
 									"start": 33121,
 									"end": 33129,
 									"length": 9,
-									"parent_index": 1760
+									"parent_index": 1753
 								},
-								"scope": 1759,
+								"scope": 1752,
 								"name": "a",
 								"type_name": {
-									"id": 1762,
+									"id": 1755,
 									"node_type": 30,
 									"src": {
 										"line": 990,
@@ -2828,7 +2865,7 @@
 										"start": 33121,
 										"end": 33127,
 										"length": 7,
-										"parent_index": 1761
+										"parent_index": 1754
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -2846,7 +2883,7 @@
 								}
 							},
 							{
-								"id": 1763,
+								"id": 1756,
 								"node_type": 44,
 								"src": {
 									"line": 990,
@@ -2854,12 +2891,12 @@
 									"start": 33132,
 									"end": 33140,
 									"length": 9,
-									"parent_index": 1760
+									"parent_index": 1753
 								},
-								"scope": 1759,
+								"scope": 1752,
 								"name": "b",
 								"type_name": {
-									"id": 1764,
+									"id": 1757,
 									"node_type": 30,
 									"src": {
 										"line": 990,
@@ -2867,7 +2904,7 @@
 										"start": 33132,
 										"end": 33138,
 										"length": 7,
-										"parent_index": 1763
+										"parent_index": 1756
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -2897,7 +2934,7 @@
 						]
 					},
 					"return_parameters": {
-						"id": 1765,
+						"id": 1758,
 						"node_type": 43,
 						"src": {
 							"line": 990,
@@ -2905,11 +2942,11 @@
 							"start": 33166,
 							"end": 33172,
 							"length": 7,
-							"parent_index": 1759
+							"parent_index": 1752
 						},
 						"parameters": [
 							{
-								"id": 1766,
+								"id": 1759,
 								"node_type": 44,
 								"src": {
 									"line": 990,
@@ -2917,12 +2954,12 @@
 									"start": 33166,
 									"end": 33172,
 									"length": 7,
-									"parent_index": 1765
+									"parent_index": 1758
 								},
-								"scope": 1759,
+								"scope": 1752,
 								"name": "",
 								"type_name": {
-									"id": 1767,
+									"id": 1760,
 									"node_type": 30,
 									"src": {
 										"line": 990,
@@ -2930,7 +2967,7 @@
 										"start": 33166,
 										"end": 33172,
 										"length": 7,
-										"parent_index": 1766
+										"parent_index": 1759
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -2955,16 +2992,17 @@
 							}
 						]
 					},
-					"signature_raw": "add(uint256, uint256)",
-					"signature": "f31e4d28",
-					"scope": 1617,
+					"signature_raw": "add(uint256,uint256)",
+					"signature": "771602f7",
+					"scope": 1610,
 					"type_description": {
 						"type_identifier": "t_function_$_t_uint256$_t_uint256$",
 						"type_string": "function(uint256,uint256)"
-					}
+					},
+					"text": "functionadd(uint256a,uint256b)internalpurereturns(uint256){returna+b;}"
 				},
 				{
-					"id": 1774,
+					"id": 1767,
 					"name": "sub",
 					"node_type": 42,
 					"kind": 41,
@@ -2974,7 +3012,7 @@
 						"start": 33475,
 						"end": 33570,
 						"length": 96,
-						"parent_index": 1617
+						"parent_index": 1610
 					},
 					"name_location": {
 						"line": 1004,
@@ -2982,10 +3020,10 @@
 						"start": 33484,
 						"end": 33486,
 						"length": 3,
-						"parent_index": 1774
+						"parent_index": 1767
 					},
 					"body": {
-						"id": 1783,
+						"id": 1776,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -2994,12 +3032,12 @@
 							"start": 33542,
 							"end": 33570,
 							"length": 29,
-							"parent_index": 1774
+							"parent_index": 1767
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 1784,
+								"id": 1777,
 								"node_type": 47,
 								"src": {
 									"line": 1005,
@@ -3007,11 +3045,11 @@
 									"start": 33552,
 									"end": 33564,
 									"length": 13,
-									"parent_index": 1774
+									"parent_index": 1767
 								},
-								"function_return_parameters": 1774,
+								"function_return_parameters": 1767,
 								"expression": {
-									"id": 1785,
+									"id": 1778,
 									"is_constant": false,
 									"is_pure": false,
 									"node_type": 19,
@@ -3021,11 +3059,11 @@
 										"start": 33559,
 										"end": 33563,
 										"length": 5,
-										"parent_index": 1784
+										"parent_index": 1777
 									},
 									"operator": 2,
 									"left_expression": {
-										"id": 1786,
+										"id": 1779,
 										"node_type": 16,
 										"src": {
 											"line": 1005,
@@ -3033,7 +3071,7 @@
 											"start": 33559,
 											"end": 33559,
 											"length": 1,
-											"parent_index": 1785
+											"parent_index": 1778
 										},
 										"name": "a",
 										"type_description": {
@@ -3041,11 +3079,12 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 1786,
-										"is_pure": false
+										"referenced_declaration": 1779,
+										"is_pure": false,
+										"text": "a"
 									},
 									"right_expression": {
-										"id": 1787,
+										"id": 1780,
 										"node_type": 16,
 										"src": {
 											"line": 1005,
@@ -3053,7 +3092,7 @@
 											"start": 33563,
 											"end": 33563,
 											"length": 1,
-											"parent_index": 1785
+											"parent_index": 1778
 										},
 										"name": "b",
 										"type_description": {
@@ -3061,8 +3100,9 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 1787,
-										"is_pure": false
+										"referenced_declaration": 1780,
+										"is_pure": false,
+										"text": "b"
 									},
 									"type_description": {
 										"type_identifier": "t_uint256",
@@ -3079,7 +3119,7 @@
 					"modifiers": [],
 					"overrides": [],
 					"parameters": {
-						"id": 1775,
+						"id": 1768,
 						"node_type": 43,
 						"src": {
 							"line": 1004,
@@ -3087,11 +3127,11 @@
 							"start": 33488,
 							"end": 33507,
 							"length": 20,
-							"parent_index": 1774
+							"parent_index": 1767
 						},
 						"parameters": [
 							{
-								"id": 1776,
+								"id": 1769,
 								"node_type": 44,
 								"src": {
 									"line": 1004,
@@ -3099,12 +3139,12 @@
 									"start": 33488,
 									"end": 33496,
 									"length": 9,
-									"parent_index": 1775
+									"parent_index": 1768
 								},
-								"scope": 1774,
+								"scope": 1767,
 								"name": "a",
 								"type_name": {
-									"id": 1777,
+									"id": 1770,
 									"node_type": 30,
 									"src": {
 										"line": 1004,
@@ -3112,7 +3152,7 @@
 										"start": 33488,
 										"end": 33494,
 										"length": 7,
-										"parent_index": 1776
+										"parent_index": 1769
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -3130,7 +3170,7 @@
 								}
 							},
 							{
-								"id": 1778,
+								"id": 1771,
 								"node_type": 44,
 								"src": {
 									"line": 1004,
@@ -3138,12 +3178,12 @@
 									"start": 33499,
 									"end": 33507,
 									"length": 9,
-									"parent_index": 1775
+									"parent_index": 1768
 								},
-								"scope": 1774,
+								"scope": 1767,
 								"name": "b",
 								"type_name": {
-									"id": 1779,
+									"id": 1772,
 									"node_type": 30,
 									"src": {
 										"line": 1004,
@@ -3151,7 +3191,7 @@
 										"start": 33499,
 										"end": 33505,
 										"length": 7,
-										"parent_index": 1778
+										"parent_index": 1771
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -3181,7 +3221,7 @@
 						]
 					},
 					"return_parameters": {
-						"id": 1780,
+						"id": 1773,
 						"node_type": 43,
 						"src": {
 							"line": 1004,
@@ -3189,11 +3229,11 @@
 							"start": 33533,
 							"end": 33539,
 							"length": 7,
-							"parent_index": 1774
+							"parent_index": 1767
 						},
 						"parameters": [
 							{
-								"id": 1781,
+								"id": 1774,
 								"node_type": 44,
 								"src": {
 									"line": 1004,
@@ -3201,12 +3241,12 @@
 									"start": 33533,
 									"end": 33539,
 									"length": 7,
-									"parent_index": 1780
+									"parent_index": 1773
 								},
-								"scope": 1774,
+								"scope": 1767,
 								"name": "",
 								"type_name": {
-									"id": 1782,
+									"id": 1775,
 									"node_type": 30,
 									"src": {
 										"line": 1004,
@@ -3214,7 +3254,7 @@
 										"start": 33533,
 										"end": 33539,
 										"length": 7,
-										"parent_index": 1781
+										"parent_index": 1774
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -3239,16 +3279,17 @@
 							}
 						]
 					},
-					"signature_raw": "sub(uint256, uint256)",
-					"signature": "bf3b2b28",
-					"scope": 1617,
+					"signature_raw": "sub(uint256,uint256)",
+					"signature": "b67d77c5",
+					"scope": 1610,
 					"type_description": {
 						"type_identifier": "t_function_$_t_uint256$_t_uint256$",
 						"type_string": "function(uint256,uint256)"
-					}
+					},
+					"text": "functionsub(uint256a,uint256b)internalpurereturns(uint256){returna-b;}"
 				},
 				{
-					"id": 1789,
+					"id": 1782,
 					"name": "mul",
 					"node_type": 42,
 					"kind": 41,
@@ -3258,7 +3299,7 @@
 						"start": 33818,
 						"end": 33913,
 						"length": 96,
-						"parent_index": 1617
+						"parent_index": 1610
 					},
 					"name_location": {
 						"line": 1018,
@@ -3266,10 +3307,10 @@
 						"start": 33827,
 						"end": 33829,
 						"length": 3,
-						"parent_index": 1789
+						"parent_index": 1782
 					},
 					"body": {
-						"id": 1798,
+						"id": 1791,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -3278,12 +3319,12 @@
 							"start": 33885,
 							"end": 33913,
 							"length": 29,
-							"parent_index": 1789
+							"parent_index": 1782
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 1799,
+								"id": 1792,
 								"node_type": 47,
 								"src": {
 									"line": 1019,
@@ -3291,11 +3332,11 @@
 									"start": 33895,
 									"end": 33907,
 									"length": 13,
-									"parent_index": 1789
+									"parent_index": 1782
 								},
-								"function_return_parameters": 1789,
+								"function_return_parameters": 1782,
 								"expression": {
-									"id": 1800,
+									"id": 1793,
 									"is_constant": false,
 									"is_pure": false,
 									"node_type": 19,
@@ -3305,11 +3346,11 @@
 										"start": 33902,
 										"end": 33906,
 										"length": 5,
-										"parent_index": 1799
+										"parent_index": 1792
 									},
 									"operator": 3,
 									"left_expression": {
-										"id": 1801,
+										"id": 1794,
 										"node_type": 16,
 										"src": {
 											"line": 1019,
@@ -3317,7 +3358,7 @@
 											"start": 33902,
 											"end": 33902,
 											"length": 1,
-											"parent_index": 1800
+											"parent_index": 1793
 										},
 										"name": "a",
 										"type_description": {
@@ -3325,11 +3366,12 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 1801,
-										"is_pure": false
+										"referenced_declaration": 1794,
+										"is_pure": false,
+										"text": "a"
 									},
 									"right_expression": {
-										"id": 1802,
+										"id": 1795,
 										"node_type": 16,
 										"src": {
 											"line": 1019,
@@ -3337,7 +3379,7 @@
 											"start": 33906,
 											"end": 33906,
 											"length": 1,
-											"parent_index": 1800
+											"parent_index": 1793
 										},
 										"name": "b",
 										"type_description": {
@@ -3345,8 +3387,9 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 1802,
-										"is_pure": false
+										"referenced_declaration": 1795,
+										"is_pure": false,
+										"text": "b"
 									},
 									"type_description": {
 										"type_identifier": "t_uint256",
@@ -3363,7 +3406,7 @@
 					"modifiers": [],
 					"overrides": [],
 					"parameters": {
-						"id": 1790,
+						"id": 1783,
 						"node_type": 43,
 						"src": {
 							"line": 1018,
@@ -3371,11 +3414,11 @@
 							"start": 33831,
 							"end": 33850,
 							"length": 20,
-							"parent_index": 1789
+							"parent_index": 1782
 						},
 						"parameters": [
 							{
-								"id": 1791,
+								"id": 1784,
 								"node_type": 44,
 								"src": {
 									"line": 1018,
@@ -3383,12 +3426,12 @@
 									"start": 33831,
 									"end": 33839,
 									"length": 9,
-									"parent_index": 1790
+									"parent_index": 1783
 								},
-								"scope": 1789,
+								"scope": 1782,
 								"name": "a",
 								"type_name": {
-									"id": 1792,
+									"id": 1785,
 									"node_type": 30,
 									"src": {
 										"line": 1018,
@@ -3396,7 +3439,7 @@
 										"start": 33831,
 										"end": 33837,
 										"length": 7,
-										"parent_index": 1791
+										"parent_index": 1784
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -3414,7 +3457,7 @@
 								}
 							},
 							{
-								"id": 1793,
+								"id": 1786,
 								"node_type": 44,
 								"src": {
 									"line": 1018,
@@ -3422,12 +3465,12 @@
 									"start": 33842,
 									"end": 33850,
 									"length": 9,
-									"parent_index": 1790
+									"parent_index": 1783
 								},
-								"scope": 1789,
+								"scope": 1782,
 								"name": "b",
 								"type_name": {
-									"id": 1794,
+									"id": 1787,
 									"node_type": 30,
 									"src": {
 										"line": 1018,
@@ -3435,7 +3478,7 @@
 										"start": 33842,
 										"end": 33848,
 										"length": 7,
-										"parent_index": 1793
+										"parent_index": 1786
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -3465,7 +3508,7 @@
 						]
 					},
 					"return_parameters": {
-						"id": 1795,
+						"id": 1788,
 						"node_type": 43,
 						"src": {
 							"line": 1018,
@@ -3473,11 +3516,11 @@
 							"start": 33876,
 							"end": 33882,
 							"length": 7,
-							"parent_index": 1789
+							"parent_index": 1782
 						},
 						"parameters": [
 							{
-								"id": 1796,
+								"id": 1789,
 								"node_type": 44,
 								"src": {
 									"line": 1018,
@@ -3485,12 +3528,12 @@
 									"start": 33876,
 									"end": 33882,
 									"length": 7,
-									"parent_index": 1795
+									"parent_index": 1788
 								},
-								"scope": 1789,
+								"scope": 1782,
 								"name": "",
 								"type_name": {
-									"id": 1797,
+									"id": 1790,
 									"node_type": 30,
 									"src": {
 										"line": 1018,
@@ -3498,7 +3541,7 @@
 										"start": 33876,
 										"end": 33882,
 										"length": 7,
-										"parent_index": 1796
+										"parent_index": 1789
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -3523,16 +3566,17 @@
 							}
 						]
 					},
-					"signature_raw": "mul(uint256, uint256)",
-					"signature": "cd3ef6fa",
-					"scope": 1617,
+					"signature_raw": "mul(uint256,uint256)",
+					"signature": "c8a4ac9c",
+					"scope": 1610,
 					"type_description": {
 						"type_identifier": "t_function_$_t_uint256$_t_uint256$",
 						"type_string": "function(uint256,uint256)"
-					}
+					},
+					"text": "functionmul(uint256a,uint256b)internalpurereturns(uint256){returna*b;}"
 				},
 				{
-					"id": 1804,
+					"id": 1797,
 					"name": "div",
 					"node_type": 42,
 					"kind": 41,
@@ -3542,7 +3586,7 @@
 						"start": 34203,
 						"end": 34298,
 						"length": 96,
-						"parent_index": 1617
+						"parent_index": 1610
 					},
 					"name_location": {
 						"line": 1032,
@@ -3550,10 +3594,10 @@
 						"start": 34212,
 						"end": 34214,
 						"length": 3,
-						"parent_index": 1804
+						"parent_index": 1797
 					},
 					"body": {
-						"id": 1813,
+						"id": 1806,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -3562,12 +3606,12 @@
 							"start": 34270,
 							"end": 34298,
 							"length": 29,
-							"parent_index": 1804
+							"parent_index": 1797
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 1814,
+								"id": 1807,
 								"node_type": 47,
 								"src": {
 									"line": 1033,
@@ -3575,11 +3619,11 @@
 									"start": 34280,
 									"end": 34292,
 									"length": 13,
-									"parent_index": 1804
+									"parent_index": 1797
 								},
-								"function_return_parameters": 1804,
+								"function_return_parameters": 1797,
 								"expression": {
-									"id": 1815,
+									"id": 1808,
 									"is_constant": false,
 									"is_pure": false,
 									"node_type": 19,
@@ -3589,11 +3633,11 @@
 										"start": 34287,
 										"end": 34291,
 										"length": 5,
-										"parent_index": 1814
+										"parent_index": 1807
 									},
 									"operator": 4,
 									"left_expression": {
-										"id": 1816,
+										"id": 1809,
 										"node_type": 16,
 										"src": {
 											"line": 1033,
@@ -3601,7 +3645,7 @@
 											"start": 34287,
 											"end": 34287,
 											"length": 1,
-											"parent_index": 1815
+											"parent_index": 1808
 										},
 										"name": "a",
 										"type_description": {
@@ -3609,11 +3653,12 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 1816,
-										"is_pure": false
+										"referenced_declaration": 1809,
+										"is_pure": false,
+										"text": "a"
 									},
 									"right_expression": {
-										"id": 1817,
+										"id": 1810,
 										"node_type": 16,
 										"src": {
 											"line": 1033,
@@ -3621,7 +3666,7 @@
 											"start": 34291,
 											"end": 34291,
 											"length": 1,
-											"parent_index": 1815
+											"parent_index": 1808
 										},
 										"name": "b",
 										"type_description": {
@@ -3629,8 +3674,9 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 1817,
-										"is_pure": false
+										"referenced_declaration": 1810,
+										"is_pure": false,
+										"text": "b"
 									},
 									"type_description": {
 										"type_identifier": "t_uint256",
@@ -3647,7 +3693,7 @@
 					"modifiers": [],
 					"overrides": [],
 					"parameters": {
-						"id": 1805,
+						"id": 1798,
 						"node_type": 43,
 						"src": {
 							"line": 1032,
@@ -3655,11 +3701,11 @@
 							"start": 34216,
 							"end": 34235,
 							"length": 20,
-							"parent_index": 1804
+							"parent_index": 1797
 						},
 						"parameters": [
 							{
-								"id": 1806,
+								"id": 1799,
 								"node_type": 44,
 								"src": {
 									"line": 1032,
@@ -3667,12 +3713,12 @@
 									"start": 34216,
 									"end": 34224,
 									"length": 9,
-									"parent_index": 1805
+									"parent_index": 1798
 								},
-								"scope": 1804,
+								"scope": 1797,
 								"name": "a",
 								"type_name": {
-									"id": 1807,
+									"id": 1800,
 									"node_type": 30,
 									"src": {
 										"line": 1032,
@@ -3680,7 +3726,7 @@
 										"start": 34216,
 										"end": 34222,
 										"length": 7,
-										"parent_index": 1806
+										"parent_index": 1799
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -3698,7 +3744,7 @@
 								}
 							},
 							{
-								"id": 1808,
+								"id": 1801,
 								"node_type": 44,
 								"src": {
 									"line": 1032,
@@ -3706,12 +3752,12 @@
 									"start": 34227,
 									"end": 34235,
 									"length": 9,
-									"parent_index": 1805
+									"parent_index": 1798
 								},
-								"scope": 1804,
+								"scope": 1797,
 								"name": "b",
 								"type_name": {
-									"id": 1809,
+									"id": 1802,
 									"node_type": 30,
 									"src": {
 										"line": 1032,
@@ -3719,7 +3765,7 @@
 										"start": 34227,
 										"end": 34233,
 										"length": 7,
-										"parent_index": 1808
+										"parent_index": 1801
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -3749,7 +3795,7 @@
 						]
 					},
 					"return_parameters": {
-						"id": 1810,
+						"id": 1803,
 						"node_type": 43,
 						"src": {
 							"line": 1032,
@@ -3757,11 +3803,11 @@
 							"start": 34261,
 							"end": 34267,
 							"length": 7,
-							"parent_index": 1804
+							"parent_index": 1797
 						},
 						"parameters": [
 							{
-								"id": 1811,
+								"id": 1804,
 								"node_type": 44,
 								"src": {
 									"line": 1032,
@@ -3769,12 +3815,12 @@
 									"start": 34261,
 									"end": 34267,
 									"length": 7,
-									"parent_index": 1810
+									"parent_index": 1803
 								},
-								"scope": 1804,
+								"scope": 1797,
 								"name": "",
 								"type_name": {
-									"id": 1812,
+									"id": 1805,
 									"node_type": 30,
 									"src": {
 										"line": 1032,
@@ -3782,7 +3828,7 @@
 										"start": 34261,
 										"end": 34267,
 										"length": 7,
-										"parent_index": 1811
+										"parent_index": 1804
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -3807,16 +3853,17 @@
 							}
 						]
 					},
-					"signature_raw": "div(uint256, uint256)",
-					"signature": "4530da25",
-					"scope": 1617,
+					"signature_raw": "div(uint256,uint256)",
+					"signature": "a391c15b",
+					"scope": 1610,
 					"type_description": {
 						"type_identifier": "t_function_$_t_uint256$_t_uint256$",
 						"type_string": "function(uint256,uint256)"
-					}
+					},
+					"text": "functiondiv(uint256a,uint256b)internalpurereturns(uint256){returna/b;}"
 				},
 				{
-					"id": 1819,
+					"id": 1812,
 					"name": "mod",
 					"node_type": 42,
 					"kind": 41,
@@ -3826,7 +3873,7 @@
 						"start": 34752,
 						"end": 34847,
 						"length": 96,
-						"parent_index": 1617
+						"parent_index": 1610
 					},
 					"name_location": {
 						"line": 1048,
@@ -3834,10 +3881,10 @@
 						"start": 34761,
 						"end": 34763,
 						"length": 3,
-						"parent_index": 1819
+						"parent_index": 1812
 					},
 					"body": {
-						"id": 1828,
+						"id": 1821,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -3846,12 +3893,12 @@
 							"start": 34819,
 							"end": 34847,
 							"length": 29,
-							"parent_index": 1819
+							"parent_index": 1812
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 1829,
+								"id": 1822,
 								"node_type": 47,
 								"src": {
 									"line": 1049,
@@ -3859,11 +3906,11 @@
 									"start": 34829,
 									"end": 34841,
 									"length": 13,
-									"parent_index": 1819
+									"parent_index": 1812
 								},
-								"function_return_parameters": 1819,
+								"function_return_parameters": 1812,
 								"expression": {
-									"id": 1830,
+									"id": 1823,
 									"is_constant": false,
 									"is_pure": false,
 									"node_type": 19,
@@ -3873,11 +3920,11 @@
 										"start": 34836,
 										"end": 34840,
 										"length": 5,
-										"parent_index": 1829
+										"parent_index": 1822
 									},
 									"operator": 5,
 									"left_expression": {
-										"id": 1831,
+										"id": 1824,
 										"node_type": 16,
 										"src": {
 											"line": 1049,
@@ -3885,7 +3932,7 @@
 											"start": 34836,
 											"end": 34836,
 											"length": 1,
-											"parent_index": 1830
+											"parent_index": 1823
 										},
 										"name": "a",
 										"type_description": {
@@ -3893,11 +3940,12 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 1831,
-										"is_pure": false
+										"referenced_declaration": 1824,
+										"is_pure": false,
+										"text": "a"
 									},
 									"right_expression": {
-										"id": 1832,
+										"id": 1825,
 										"node_type": 16,
 										"src": {
 											"line": 1049,
@@ -3905,7 +3953,7 @@
 											"start": 34840,
 											"end": 34840,
 											"length": 1,
-											"parent_index": 1830
+											"parent_index": 1823
 										},
 										"name": "b",
 										"type_description": {
@@ -3913,8 +3961,9 @@
 											"type_string": "uint256"
 										},
 										"overloaded_declarations": [],
-										"referenced_declaration": 1832,
-										"is_pure": false
+										"referenced_declaration": 1825,
+										"is_pure": false,
+										"text": "b"
 									},
 									"type_description": {
 										"type_identifier": "t_uint256",
@@ -3931,7 +3980,7 @@
 					"modifiers": [],
 					"overrides": [],
 					"parameters": {
-						"id": 1820,
+						"id": 1813,
 						"node_type": 43,
 						"src": {
 							"line": 1048,
@@ -3939,11 +3988,11 @@
 							"start": 34765,
 							"end": 34784,
 							"length": 20,
-							"parent_index": 1819
+							"parent_index": 1812
 						},
 						"parameters": [
 							{
-								"id": 1821,
+								"id": 1814,
 								"node_type": 44,
 								"src": {
 									"line": 1048,
@@ -3951,12 +4000,12 @@
 									"start": 34765,
 									"end": 34773,
 									"length": 9,
-									"parent_index": 1820
+									"parent_index": 1813
 								},
-								"scope": 1819,
+								"scope": 1812,
 								"name": "a",
 								"type_name": {
-									"id": 1822,
+									"id": 1815,
 									"node_type": 30,
 									"src": {
 										"line": 1048,
@@ -3964,7 +4013,7 @@
 										"start": 34765,
 										"end": 34771,
 										"length": 7,
-										"parent_index": 1821
+										"parent_index": 1814
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -3982,7 +4031,7 @@
 								}
 							},
 							{
-								"id": 1823,
+								"id": 1816,
 								"node_type": 44,
 								"src": {
 									"line": 1048,
@@ -3990,12 +4039,12 @@
 									"start": 34776,
 									"end": 34784,
 									"length": 9,
-									"parent_index": 1820
+									"parent_index": 1813
 								},
-								"scope": 1819,
+								"scope": 1812,
 								"name": "b",
 								"type_name": {
-									"id": 1824,
+									"id": 1817,
 									"node_type": 30,
 									"src": {
 										"line": 1048,
@@ -4003,7 +4052,7 @@
 										"start": 34776,
 										"end": 34782,
 										"length": 7,
-										"parent_index": 1823
+										"parent_index": 1816
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -4033,7 +4082,7 @@
 						]
 					},
 					"return_parameters": {
-						"id": 1825,
+						"id": 1818,
 						"node_type": 43,
 						"src": {
 							"line": 1048,
@@ -4041,11 +4090,11 @@
 							"start": 34810,
 							"end": 34816,
 							"length": 7,
-							"parent_index": 1819
+							"parent_index": 1812
 						},
 						"parameters": [
 							{
-								"id": 1826,
+								"id": 1819,
 								"node_type": 44,
 								"src": {
 									"line": 1048,
@@ -4053,12 +4102,12 @@
 									"start": 34810,
 									"end": 34816,
 									"length": 7,
-									"parent_index": 1825
+									"parent_index": 1818
 								},
-								"scope": 1819,
+								"scope": 1812,
 								"name": "",
 								"type_name": {
-									"id": 1827,
+									"id": 1820,
 									"node_type": 30,
 									"src": {
 										"line": 1048,
@@ -4066,7 +4115,7 @@
 										"start": 34810,
 										"end": 34816,
 										"length": 7,
-										"parent_index": 1826
+										"parent_index": 1819
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -4091,16 +4140,17 @@
 							}
 						]
 					},
-					"signature_raw": "mod(uint256, uint256)",
-					"signature": "1130353e",
-					"scope": 1617,
+					"signature_raw": "mod(uint256,uint256)",
+					"signature": "f43f523a",
+					"scope": 1610,
 					"type_description": {
 						"type_identifier": "t_function_$_t_uint256$_t_uint256$",
 						"type_string": "function(uint256,uint256)"
-					}
+					},
+					"text": "functionmod(uint256a,uint256b)internalpurereturns(uint256){returna%b;}"
 				},
 				{
-					"id": 1834,
+					"id": 1827,
 					"name": "sub",
 					"node_type": 42,
 					"kind": 41,
@@ -4110,7 +4160,7 @@
 						"start": 35312,
 						"end": 35542,
 						"length": 231,
-						"parent_index": 1617
+						"parent_index": 1610
 					},
 					"name_location": {
 						"line": 1065,
@@ -4118,10 +4168,10 @@
 						"start": 35321,
 						"end": 35323,
 						"length": 3,
-						"parent_index": 1834
+						"parent_index": 1827
 					},
 					"body": {
-						"id": 1845,
+						"id": 1838,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -4130,12 +4180,12 @@
 							"start": 35437,
 							"end": 35542,
 							"length": 106,
-							"parent_index": 1834
+							"parent_index": 1827
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 1846,
+								"id": 1839,
 								"node_type": 59,
 								"kind": 0,
 								"src": {
@@ -4144,12 +4194,12 @@
 									"start": 35447,
 									"end": 35536,
 									"length": 90,
-									"parent_index": 1617
+									"parent_index": 1610
 								},
 								"implemented": false,
 								"statements": [
 									{
-										"id": 1847,
+										"id": 1840,
 										"node_type": 24,
 										"kind": 24,
 										"src": {
@@ -4158,7 +4208,7 @@
 											"start": 35471,
 											"end": 35499,
 											"length": 29,
-											"parent_index": 1846
+											"parent_index": 1839
 										},
 										"argument_types": [
 											{
@@ -4172,7 +4222,7 @@
 										],
 										"arguments": [
 											{
-												"id": 1849,
+												"id": 1842,
 												"is_constant": false,
 												"is_pure": false,
 												"node_type": 19,
@@ -4182,11 +4232,11 @@
 													"start": 35479,
 													"end": 35484,
 													"length": 6,
-													"parent_index": 1847
+													"parent_index": 1840
 												},
 												"operator": 10,
 												"left_expression": {
-													"id": 1850,
+													"id": 1843,
 													"node_type": 16,
 													"src": {
 														"line": 1071,
@@ -4194,7 +4244,7 @@
 														"start": 35479,
 														"end": 35479,
 														"length": 1,
-														"parent_index": 1849
+														"parent_index": 1842
 													},
 													"name": "b",
 													"type_description": {
@@ -4202,11 +4252,12 @@
 														"type_string": "uint256"
 													},
 													"overloaded_declarations": [],
-													"referenced_declaration": 1850,
-													"is_pure": false
+													"referenced_declaration": 1843,
+													"is_pure": false,
+													"text": "b"
 												},
 												"right_expression": {
-													"id": 1851,
+													"id": 1844,
 													"node_type": 16,
 													"src": {
 														"line": 1071,
@@ -4214,7 +4265,7 @@
 														"start": 35484,
 														"end": 35484,
 														"length": 1,
-														"parent_index": 1849
+														"parent_index": 1842
 													},
 													"name": "a",
 													"type_description": {
@@ -4222,8 +4273,9 @@
 														"type_string": "uint256"
 													},
 													"overloaded_declarations": [],
-													"referenced_declaration": 1851,
-													"is_pure": false
+													"referenced_declaration": 1844,
+													"is_pure": false,
+													"text": "a"
 												},
 												"type_description": {
 													"type_identifier": "t_bool",
@@ -4231,7 +4283,7 @@
 												}
 											},
 											{
-												"id": 1852,
+												"id": 1845,
 												"node_type": 16,
 												"src": {
 													"line": 1071,
@@ -4239,7 +4291,7 @@
 													"start": 35487,
 													"end": 35498,
 													"length": 12,
-													"parent_index": 1847
+													"parent_index": 1840
 												},
 												"name": "errorMessage",
 												"type_description": {
@@ -4247,18 +4299,19 @@
 													"type_string": "string"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 1852,
+												"referenced_declaration": 1845,
 												"is_pure": false,
 												"argument_types": [
 													{
 														"type_identifier": "t_bool",
 														"type_string": "bool"
 													}
-												]
+												],
+												"text": "errorMessage"
 											}
 										],
 										"expression": {
-											"id": 1848,
+											"id": 1841,
 											"node_type": 16,
 											"src": {
 												"line": 1071,
@@ -4266,7 +4319,7 @@
 												"start": 35471,
 												"end": 35477,
 												"length": 7,
-												"parent_index": 1847
+												"parent_index": 1840
 											},
 											"name": "require",
 											"type_description": {
@@ -4275,7 +4328,8 @@
 											},
 											"overloaded_declarations": [],
 											"referenced_declaration": 0,
-											"is_pure": true
+											"is_pure": true,
+											"text": "require"
 										},
 										"type_description": {
 											"type_identifier": "t_function_$_t_bool$_t_string$",
@@ -4283,7 +4337,7 @@
 										}
 									},
 									{
-										"id": 1853,
+										"id": 1846,
 										"node_type": 47,
 										"src": {
 											"line": 1072,
@@ -4291,11 +4345,11 @@
 											"start": 35514,
 											"end": 35526,
 											"length": 13,
-											"parent_index": 1834
+											"parent_index": 1827
 										},
-										"function_return_parameters": 1834,
+										"function_return_parameters": 1827,
 										"expression": {
-											"id": 1854,
+											"id": 1847,
 											"is_constant": false,
 											"is_pure": false,
 											"node_type": 19,
@@ -4305,11 +4359,11 @@
 												"start": 35521,
 												"end": 35525,
 												"length": 5,
-												"parent_index": 1853
+												"parent_index": 1846
 											},
 											"operator": 2,
 											"left_expression": {
-												"id": 1855,
+												"id": 1848,
 												"node_type": 16,
 												"src": {
 													"line": 1072,
@@ -4317,7 +4371,7 @@
 													"start": 35521,
 													"end": 35521,
 													"length": 1,
-													"parent_index": 1854
+													"parent_index": 1847
 												},
 												"name": "a",
 												"type_description": {
@@ -4325,11 +4379,12 @@
 													"type_string": "uint256"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 1855,
-												"is_pure": false
+												"referenced_declaration": 1848,
+												"is_pure": false,
+												"text": "a"
 											},
 											"right_expression": {
-												"id": 1856,
+												"id": 1849,
 												"node_type": 16,
 												"src": {
 													"line": 1072,
@@ -4337,7 +4392,7 @@
 													"start": 35525,
 													"end": 35525,
 													"length": 1,
-													"parent_index": 1854
+													"parent_index": 1847
 												},
 												"name": "b",
 												"type_description": {
@@ -4345,8 +4400,9 @@
 													"type_string": "uint256"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 1856,
-												"is_pure": false
+												"referenced_declaration": 1849,
+												"is_pure": false,
+												"text": "b"
 											},
 											"type_description": {
 												"type_identifier": "t_uint256",
@@ -4365,7 +4421,7 @@
 					"modifiers": [],
 					"overrides": [],
 					"parameters": {
-						"id": 1835,
+						"id": 1828,
 						"node_type": 43,
 						"src": {
 							"line": 1066,
@@ -4373,11 +4429,11 @@
 							"start": 35334,
 							"end": 35397,
 							"length": 64,
-							"parent_index": 1834
+							"parent_index": 1827
 						},
 						"parameters": [
 							{
-								"id": 1836,
+								"id": 1829,
 								"node_type": 44,
 								"src": {
 									"line": 1066,
@@ -4385,18 +4441,163 @@
 									"start": 35334,
 									"end": 35342,
 									"length": 9,
-									"parent_index": 1835
+									"parent_index": 1828
 								},
-								"scope": 1834,
+								"scope": 1827,
 								"name": "a",
 								"type_name": {
-									"id": 1837,
+									"id": 1830,
 									"node_type": 30,
 									"src": {
 										"line": 1066,
 										"column": 8,
 										"start": 35334,
 										"end": 35340,
+										"length": 7,
+										"parent_index": 1829
+									},
+									"name": "uint256",
+									"referenced_declaration": 0,
+									"type_description": {
+										"type_identifier": "t_uint256",
+										"type_string": "uint256"
+									}
+								},
+								"storage_location": 2,
+								"visibility": 1,
+								"state_mutability": 1,
+								"type_description": {
+									"type_identifier": "t_uint256",
+									"type_string": "uint256"
+								}
+							},
+							{
+								"id": 1831,
+								"node_type": 44,
+								"src": {
+									"line": 1067,
+									"column": 8,
+									"start": 35353,
+									"end": 35361,
+									"length": 9,
+									"parent_index": 1828
+								},
+								"scope": 1827,
+								"name": "b",
+								"type_name": {
+									"id": 1832,
+									"node_type": 30,
+									"src": {
+										"line": 1067,
+										"column": 8,
+										"start": 35353,
+										"end": 35359,
+										"length": 7,
+										"parent_index": 1831
+									},
+									"name": "uint256",
+									"referenced_declaration": 0,
+									"type_description": {
+										"type_identifier": "t_uint256",
+										"type_string": "uint256"
+									}
+								},
+								"storage_location": 2,
+								"visibility": 1,
+								"state_mutability": 1,
+								"type_description": {
+									"type_identifier": "t_uint256",
+									"type_string": "uint256"
+								}
+							},
+							{
+								"id": 1833,
+								"node_type": 44,
+								"src": {
+									"line": 1068,
+									"column": 8,
+									"start": 35372,
+									"end": 35397,
+									"length": 26,
+									"parent_index": 1828
+								},
+								"scope": 1827,
+								"name": "errorMessage",
+								"type_name": {
+									"id": 1834,
+									"node_type": 30,
+									"src": {
+										"line": 1068,
+										"column": 8,
+										"start": 35372,
+										"end": 35377,
+										"length": 6,
+										"parent_index": 1833
+									},
+									"name": "string",
+									"referenced_declaration": 0,
+									"type_description": {
+										"type_identifier": "t_string",
+										"type_string": "string"
+									}
+								},
+								"storage_location": 2,
+								"visibility": 1,
+								"state_mutability": 1,
+								"type_description": {
+									"type_identifier": "t_string",
+									"type_string": "string"
+								}
+							}
+						],
+						"parameter_types": [
+							{
+								"type_identifier": "t_uint256",
+								"type_string": "uint256"
+							},
+							{
+								"type_identifier": "t_uint256",
+								"type_string": "uint256"
+							},
+							{
+								"type_identifier": "t_string",
+								"type_string": "string"
+							}
+						]
+					},
+					"return_parameters": {
+						"id": 1835,
+						"node_type": 43,
+						"src": {
+							"line": 1069,
+							"column": 29,
+							"start": 35428,
+							"end": 35434,
+							"length": 7,
+							"parent_index": 1827
+						},
+						"parameters": [
+							{
+								"id": 1836,
+								"node_type": 44,
+								"src": {
+									"line": 1069,
+									"column": 29,
+									"start": 35428,
+									"end": 35434,
+									"length": 7,
+									"parent_index": 1835
+								},
+								"scope": 1827,
+								"name": "",
+								"type_name": {
+									"id": 1837,
+									"node_type": 30,
+									"src": {
+										"line": 1069,
+										"column": 29,
+										"start": 35428,
+										"end": 35434,
 										"length": 7,
 										"parent_index": 1836
 									},
@@ -4414,30 +4615,332 @@
 									"type_identifier": "t_uint256",
 									"type_string": "uint256"
 								}
-							},
+							}
+						],
+						"parameter_types": [
 							{
-								"id": 1838,
+								"type_identifier": "t_uint256",
+								"type_string": "uint256"
+							}
+						]
+					},
+					"signature_raw": "sub(uint256,uint256,string)",
+					"signature": "e31bdc0a",
+					"scope": 1610,
+					"type_description": {
+						"type_identifier": "t_function_$_t_uint256$_t_uint256$_t_string$",
+						"type_string": "function(uint256,uint256,string)"
+					},
+					"text": "functionsub(uint256a,uint256b,stringmemoryerrorMessage)internalpurereturns(uint256){unchecked{require(b\u003c=a,errorMessage);returna-b;}}"
+				},
+				{
+					"id": 1851,
+					"name": "div",
+					"node_type": 42,
+					"kind": 41,
+					"src": {
+						"line": 1088,
+						"column": 4,
+						"start": 36027,
+						"end": 36256,
+						"length": 230,
+						"parent_index": 1610
+					},
+					"name_location": {
+						"line": 1088,
+						"column": 13,
+						"start": 36036,
+						"end": 36038,
+						"length": 3,
+						"parent_index": 1851
+					},
+					"body": {
+						"id": 1862,
+						"node_type": 46,
+						"kind": 0,
+						"src": {
+							"line": 1092,
+							"column": 38,
+							"start": 36152,
+							"end": 36256,
+							"length": 105,
+							"parent_index": 1851
+						},
+						"implemented": true,
+						"statements": [
+							{
+								"id": 1863,
+								"node_type": 59,
+								"kind": 0,
+								"src": {
+									"line": 1093,
+									"column": 8,
+									"start": 36162,
+									"end": 36250,
+									"length": 89,
+									"parent_index": 1610
+								},
+								"implemented": false,
+								"statements": [
+									{
+										"id": 1864,
+										"node_type": 24,
+										"kind": 24,
+										"src": {
+											"line": 1094,
+											"column": 12,
+											"start": 36186,
+											"end": 36213,
+											"length": 28,
+											"parent_index": 1863
+										},
+										"argument_types": [
+											{
+												"type_identifier": "t_bool",
+												"type_string": "bool"
+											},
+											{
+												"type_identifier": "t_string",
+												"type_string": "string"
+											}
+										],
+										"arguments": [
+											{
+												"id": 1866,
+												"is_constant": false,
+												"is_pure": false,
+												"node_type": 19,
+												"src": {
+													"line": 1094,
+													"column": 20,
+													"start": 36194,
+													"end": 36198,
+													"length": 5,
+													"parent_index": 1864
+												},
+												"operator": 7,
+												"left_expression": {
+													"id": 1867,
+													"node_type": 16,
+													"src": {
+														"line": 1094,
+														"column": 20,
+														"start": 36194,
+														"end": 36194,
+														"length": 1,
+														"parent_index": 1866
+													},
+													"name": "b",
+													"type_description": {
+														"type_identifier": "t_uint256",
+														"type_string": "uint256"
+													},
+													"overloaded_declarations": [],
+													"referenced_declaration": 1867,
+													"is_pure": false,
+													"text": "b"
+												},
+												"right_expression": {
+													"id": 1868,
+													"node_type": 17,
+													"kind": 49,
+													"value": "0",
+													"hex_value": "30",
+													"src": {
+														"line": 1094,
+														"column": 24,
+														"start": 36198,
+														"end": 36198,
+														"length": 1,
+														"parent_index": 1866
+													},
+													"type_description": {
+														"type_identifier": "t_rational_0_by_1",
+														"type_string": "int_const 0"
+													},
+													"overloaded_declarations": [],
+													"referenced_declaration": 0,
+													"is_pure": true,
+													"text": "0"
+												},
+												"type_description": {
+													"type_identifier": "t_bool",
+													"type_string": "bool"
+												}
+											},
+											{
+												"id": 1869,
+												"node_type": 16,
+												"src": {
+													"line": 1094,
+													"column": 27,
+													"start": 36201,
+													"end": 36212,
+													"length": 12,
+													"parent_index": 1864
+												},
+												"name": "errorMessage",
+												"type_description": {
+													"type_identifier": "t_string",
+													"type_string": "string"
+												},
+												"overloaded_declarations": [],
+												"referenced_declaration": 1869,
+												"is_pure": false,
+												"argument_types": [
+													{
+														"type_identifier": "t_bool",
+														"type_string": "bool"
+													}
+												],
+												"text": "errorMessage"
+											}
+										],
+										"expression": {
+											"id": 1865,
+											"node_type": 16,
+											"src": {
+												"line": 1094,
+												"column": 12,
+												"start": 36186,
+												"end": 36192,
+												"length": 7,
+												"parent_index": 1864
+											},
+											"name": "require",
+											"type_description": {
+												"type_identifier": "t_function_$",
+												"type_string": "function()"
+											},
+											"overloaded_declarations": [],
+											"referenced_declaration": 0,
+											"is_pure": true,
+											"text": "require"
+										},
+										"type_description": {
+											"type_identifier": "t_function_$_t_bool$_t_string$",
+											"type_string": "function(bool,string)"
+										}
+									},
+									{
+										"id": 1870,
+										"node_type": 47,
+										"src": {
+											"line": 1095,
+											"column": 12,
+											"start": 36228,
+											"end": 36240,
+											"length": 13,
+											"parent_index": 1851
+										},
+										"function_return_parameters": 1851,
+										"expression": {
+											"id": 1871,
+											"is_constant": false,
+											"is_pure": false,
+											"node_type": 19,
+											"src": {
+												"line": 1095,
+												"column": 19,
+												"start": 36235,
+												"end": 36239,
+												"length": 5,
+												"parent_index": 1870
+											},
+											"operator": 4,
+											"left_expression": {
+												"id": 1872,
+												"node_type": 16,
+												"src": {
+													"line": 1095,
+													"column": 19,
+													"start": 36235,
+													"end": 36235,
+													"length": 1,
+													"parent_index": 1871
+												},
+												"name": "a",
+												"type_description": {
+													"type_identifier": "t_uint256",
+													"type_string": "uint256"
+												},
+												"overloaded_declarations": [],
+												"referenced_declaration": 1872,
+												"is_pure": false,
+												"text": "a"
+											},
+											"right_expression": {
+												"id": 1873,
+												"node_type": 16,
+												"src": {
+													"line": 1095,
+													"column": 23,
+													"start": 36239,
+													"end": 36239,
+													"length": 1,
+													"parent_index": 1871
+												},
+												"name": "b",
+												"type_description": {
+													"type_identifier": "t_uint256",
+													"type_string": "uint256"
+												},
+												"overloaded_declarations": [],
+												"referenced_declaration": 1873,
+												"is_pure": false,
+												"text": "b"
+											},
+											"type_description": {
+												"type_identifier": "t_uint256",
+												"type_string": "uint256"
+											}
+										}
+									}
+								]
+							}
+						]
+					},
+					"implemented": false,
+					"visibility": 1,
+					"state_mutability": 6,
+					"virtual": false,
+					"modifiers": [],
+					"overrides": [],
+					"parameters": {
+						"id": 1852,
+						"node_type": 43,
+						"src": {
+							"line": 1089,
+							"column": 8,
+							"start": 36049,
+							"end": 36112,
+							"length": 64,
+							"parent_index": 1851
+						},
+						"parameters": [
+							{
+								"id": 1853,
 								"node_type": 44,
 								"src": {
-									"line": 1067,
+									"line": 1089,
 									"column": 8,
-									"start": 35353,
-									"end": 35361,
+									"start": 36049,
+									"end": 36057,
 									"length": 9,
-									"parent_index": 1835
+									"parent_index": 1852
 								},
-								"scope": 1834,
-								"name": "b",
+								"scope": 1851,
+								"name": "a",
 								"type_name": {
-									"id": 1839,
+									"id": 1854,
 									"node_type": 30,
 									"src": {
-										"line": 1067,
+										"line": 1089,
 										"column": 8,
-										"start": 35353,
-										"end": 35359,
+										"start": 36049,
+										"end": 36055,
 										"length": 7,
-										"parent_index": 1838
+										"parent_index": 1853
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -4455,28 +4958,67 @@
 								}
 							},
 							{
-								"id": 1840,
+								"id": 1855,
 								"node_type": 44,
 								"src": {
-									"line": 1068,
+									"line": 1090,
 									"column": 8,
-									"start": 35372,
-									"end": 35397,
-									"length": 26,
-									"parent_index": 1835
+									"start": 36068,
+									"end": 36076,
+									"length": 9,
+									"parent_index": 1852
 								},
-								"scope": 1834,
-								"name": "errorMessage",
+								"scope": 1851,
+								"name": "b",
 								"type_name": {
-									"id": 1841,
+									"id": 1856,
 									"node_type": 30,
 									"src": {
-										"line": 1068,
+										"line": 1090,
 										"column": 8,
-										"start": 35372,
-										"end": 35377,
+										"start": 36068,
+										"end": 36074,
+										"length": 7,
+										"parent_index": 1855
+									},
+									"name": "uint256",
+									"referenced_declaration": 0,
+									"type_description": {
+										"type_identifier": "t_uint256",
+										"type_string": "uint256"
+									}
+								},
+								"storage_location": 2,
+								"visibility": 1,
+								"state_mutability": 1,
+								"type_description": {
+									"type_identifier": "t_uint256",
+									"type_string": "uint256"
+								}
+							},
+							{
+								"id": 1857,
+								"node_type": 44,
+								"src": {
+									"line": 1091,
+									"column": 8,
+									"start": 36087,
+									"end": 36112,
+									"length": 26,
+									"parent_index": 1852
+								},
+								"scope": 1851,
+								"name": "errorMessage",
+								"type_name": {
+									"id": 1858,
+									"node_type": 30,
+									"src": {
+										"line": 1091,
+										"column": 8,
+										"start": 36087,
+										"end": 36092,
 										"length": 6,
-										"parent_index": 1840
+										"parent_index": 1857
 									},
 									"name": "string",
 									"referenced_declaration": 0,
@@ -4510,372 +5052,38 @@
 						]
 					},
 					"return_parameters": {
-						"id": 1842,
-						"node_type": 43,
-						"src": {
-							"line": 1069,
-							"column": 29,
-							"start": 35428,
-							"end": 35434,
-							"length": 7,
-							"parent_index": 1834
-						},
-						"parameters": [
-							{
-								"id": 1843,
-								"node_type": 44,
-								"src": {
-									"line": 1069,
-									"column": 29,
-									"start": 35428,
-									"end": 35434,
-									"length": 7,
-									"parent_index": 1842
-								},
-								"scope": 1834,
-								"name": "",
-								"type_name": {
-									"id": 1844,
-									"node_type": 30,
-									"src": {
-										"line": 1069,
-										"column": 29,
-										"start": 35428,
-										"end": 35434,
-										"length": 7,
-										"parent_index": 1843
-									},
-									"name": "uint256",
-									"referenced_declaration": 0,
-									"type_description": {
-										"type_identifier": "t_uint256",
-										"type_string": "uint256"
-									}
-								},
-								"storage_location": 2,
-								"visibility": 1,
-								"state_mutability": 1,
-								"type_description": {
-									"type_identifier": "t_uint256",
-									"type_string": "uint256"
-								}
-							}
-						],
-						"parameter_types": [
-							{
-								"type_identifier": "t_uint256",
-								"type_string": "uint256"
-							}
-						]
-					},
-					"signature_raw": "sub(uint256, uint256, string)",
-					"signature": "2a4c5531",
-					"scope": 1617,
-					"type_description": {
-						"type_identifier": "t_function_$_t_uint256$_t_uint256$_t_string$",
-						"type_string": "function(uint256,uint256,string)"
-					}
-				},
-				{
-					"id": 1858,
-					"name": "div",
-					"node_type": 42,
-					"kind": 41,
-					"src": {
-						"line": 1088,
-						"column": 4,
-						"start": 36027,
-						"end": 36256,
-						"length": 230,
-						"parent_index": 1617
-					},
-					"name_location": {
-						"line": 1088,
-						"column": 13,
-						"start": 36036,
-						"end": 36038,
-						"length": 3,
-						"parent_index": 1858
-					},
-					"body": {
-						"id": 1869,
-						"node_type": 46,
-						"kind": 0,
-						"src": {
-							"line": 1092,
-							"column": 38,
-							"start": 36152,
-							"end": 36256,
-							"length": 105,
-							"parent_index": 1858
-						},
-						"implemented": true,
-						"statements": [
-							{
-								"id": 1870,
-								"node_type": 59,
-								"kind": 0,
-								"src": {
-									"line": 1093,
-									"column": 8,
-									"start": 36162,
-									"end": 36250,
-									"length": 89,
-									"parent_index": 1617
-								},
-								"implemented": false,
-								"statements": [
-									{
-										"id": 1871,
-										"node_type": 24,
-										"kind": 24,
-										"src": {
-											"line": 1094,
-											"column": 12,
-											"start": 36186,
-											"end": 36213,
-											"length": 28,
-											"parent_index": 1870
-										},
-										"argument_types": [
-											{
-												"type_identifier": "t_bool",
-												"type_string": "bool"
-											},
-											{
-												"type_identifier": "t_string",
-												"type_string": "string"
-											}
-										],
-										"arguments": [
-											{
-												"id": 1873,
-												"is_constant": false,
-												"is_pure": false,
-												"node_type": 19,
-												"src": {
-													"line": 1094,
-													"column": 20,
-													"start": 36194,
-													"end": 36198,
-													"length": 5,
-													"parent_index": 1871
-												},
-												"operator": 7,
-												"left_expression": {
-													"id": 1874,
-													"node_type": 16,
-													"src": {
-														"line": 1094,
-														"column": 20,
-														"start": 36194,
-														"end": 36194,
-														"length": 1,
-														"parent_index": 1873
-													},
-													"name": "b",
-													"type_description": {
-														"type_identifier": "t_uint256",
-														"type_string": "uint256"
-													},
-													"overloaded_declarations": [],
-													"referenced_declaration": 1874,
-													"is_pure": false
-												},
-												"right_expression": {
-													"id": 1875,
-													"node_type": 17,
-													"kind": 49,
-													"value": "0",
-													"hex_value": "30",
-													"src": {
-														"line": 1094,
-														"column": 24,
-														"start": 36198,
-														"end": 36198,
-														"length": 1,
-														"parent_index": 1873
-													},
-													"type_description": {
-														"type_identifier": "t_rational_0_by_1",
-														"type_string": "int_const 0"
-													},
-													"overloaded_declarations": [],
-													"referenced_declaration": 0,
-													"is_pure": true
-												},
-												"type_description": {
-													"type_identifier": "t_bool",
-													"type_string": "bool"
-												}
-											},
-											{
-												"id": 1876,
-												"node_type": 16,
-												"src": {
-													"line": 1094,
-													"column": 27,
-													"start": 36201,
-													"end": 36212,
-													"length": 12,
-													"parent_index": 1871
-												},
-												"name": "errorMessage",
-												"type_description": {
-													"type_identifier": "t_string",
-													"type_string": "string"
-												},
-												"overloaded_declarations": [],
-												"referenced_declaration": 1876,
-												"is_pure": false,
-												"argument_types": [
-													{
-														"type_identifier": "t_bool",
-														"type_string": "bool"
-													}
-												]
-											}
-										],
-										"expression": {
-											"id": 1872,
-											"node_type": 16,
-											"src": {
-												"line": 1094,
-												"column": 12,
-												"start": 36186,
-												"end": 36192,
-												"length": 7,
-												"parent_index": 1871
-											},
-											"name": "require",
-											"type_description": {
-												"type_identifier": "t_function_$",
-												"type_string": "function()"
-											},
-											"overloaded_declarations": [],
-											"referenced_declaration": 0,
-											"is_pure": true
-										},
-										"type_description": {
-											"type_identifier": "t_function_$_t_bool$_t_string$",
-											"type_string": "function(bool,string)"
-										}
-									},
-									{
-										"id": 1877,
-										"node_type": 47,
-										"src": {
-											"line": 1095,
-											"column": 12,
-											"start": 36228,
-											"end": 36240,
-											"length": 13,
-											"parent_index": 1858
-										},
-										"function_return_parameters": 1858,
-										"expression": {
-											"id": 1878,
-											"is_constant": false,
-											"is_pure": false,
-											"node_type": 19,
-											"src": {
-												"line": 1095,
-												"column": 19,
-												"start": 36235,
-												"end": 36239,
-												"length": 5,
-												"parent_index": 1877
-											},
-											"operator": 4,
-											"left_expression": {
-												"id": 1879,
-												"node_type": 16,
-												"src": {
-													"line": 1095,
-													"column": 19,
-													"start": 36235,
-													"end": 36235,
-													"length": 1,
-													"parent_index": 1878
-												},
-												"name": "a",
-												"type_description": {
-													"type_identifier": "t_uint256",
-													"type_string": "uint256"
-												},
-												"overloaded_declarations": [],
-												"referenced_declaration": 1879,
-												"is_pure": false
-											},
-											"right_expression": {
-												"id": 1880,
-												"node_type": 16,
-												"src": {
-													"line": 1095,
-													"column": 23,
-													"start": 36239,
-													"end": 36239,
-													"length": 1,
-													"parent_index": 1878
-												},
-												"name": "b",
-												"type_description": {
-													"type_identifier": "t_uint256",
-													"type_string": "uint256"
-												},
-												"overloaded_declarations": [],
-												"referenced_declaration": 1880,
-												"is_pure": false
-											},
-											"type_description": {
-												"type_identifier": "t_uint256",
-												"type_string": "uint256"
-											}
-										}
-									}
-								]
-							}
-						]
-					},
-					"implemented": false,
-					"visibility": 1,
-					"state_mutability": 6,
-					"virtual": false,
-					"modifiers": [],
-					"overrides": [],
-					"parameters": {
 						"id": 1859,
 						"node_type": 43,
 						"src": {
-							"line": 1089,
-							"column": 8,
-							"start": 36049,
-							"end": 36112,
-							"length": 64,
-							"parent_index": 1858
+							"line": 1092,
+							"column": 29,
+							"start": 36143,
+							"end": 36149,
+							"length": 7,
+							"parent_index": 1851
 						},
 						"parameters": [
 							{
 								"id": 1860,
 								"node_type": 44,
 								"src": {
-									"line": 1089,
-									"column": 8,
-									"start": 36049,
-									"end": 36057,
-									"length": 9,
+									"line": 1092,
+									"column": 29,
+									"start": 36143,
+									"end": 36149,
+									"length": 7,
 									"parent_index": 1859
 								},
-								"scope": 1858,
-								"name": "a",
+								"scope": 1851,
+								"name": "",
 								"type_name": {
 									"id": 1861,
 									"node_type": 30,
 									"src": {
-										"line": 1089,
-										"column": 8,
-										"start": 36049,
-										"end": 36055,
+										"line": 1092,
+										"column": 29,
+										"start": 36143,
+										"end": 36149,
 										"length": 7,
 										"parent_index": 1860
 									},
@@ -4893,151 +5101,6 @@
 									"type_identifier": "t_uint256",
 									"type_string": "uint256"
 								}
-							},
-							{
-								"id": 1862,
-								"node_type": 44,
-								"src": {
-									"line": 1090,
-									"column": 8,
-									"start": 36068,
-									"end": 36076,
-									"length": 9,
-									"parent_index": 1859
-								},
-								"scope": 1858,
-								"name": "b",
-								"type_name": {
-									"id": 1863,
-									"node_type": 30,
-									"src": {
-										"line": 1090,
-										"column": 8,
-										"start": 36068,
-										"end": 36074,
-										"length": 7,
-										"parent_index": 1862
-									},
-									"name": "uint256",
-									"referenced_declaration": 0,
-									"type_description": {
-										"type_identifier": "t_uint256",
-										"type_string": "uint256"
-									}
-								},
-								"storage_location": 2,
-								"visibility": 1,
-								"state_mutability": 1,
-								"type_description": {
-									"type_identifier": "t_uint256",
-									"type_string": "uint256"
-								}
-							},
-							{
-								"id": 1864,
-								"node_type": 44,
-								"src": {
-									"line": 1091,
-									"column": 8,
-									"start": 36087,
-									"end": 36112,
-									"length": 26,
-									"parent_index": 1859
-								},
-								"scope": 1858,
-								"name": "errorMessage",
-								"type_name": {
-									"id": 1865,
-									"node_type": 30,
-									"src": {
-										"line": 1091,
-										"column": 8,
-										"start": 36087,
-										"end": 36092,
-										"length": 6,
-										"parent_index": 1864
-									},
-									"name": "string",
-									"referenced_declaration": 0,
-									"type_description": {
-										"type_identifier": "t_string",
-										"type_string": "string"
-									}
-								},
-								"storage_location": 2,
-								"visibility": 1,
-								"state_mutability": 1,
-								"type_description": {
-									"type_identifier": "t_string",
-									"type_string": "string"
-								}
-							}
-						],
-						"parameter_types": [
-							{
-								"type_identifier": "t_uint256",
-								"type_string": "uint256"
-							},
-							{
-								"type_identifier": "t_uint256",
-								"type_string": "uint256"
-							},
-							{
-								"type_identifier": "t_string",
-								"type_string": "string"
-							}
-						]
-					},
-					"return_parameters": {
-						"id": 1866,
-						"node_type": 43,
-						"src": {
-							"line": 1092,
-							"column": 29,
-							"start": 36143,
-							"end": 36149,
-							"length": 7,
-							"parent_index": 1858
-						},
-						"parameters": [
-							{
-								"id": 1867,
-								"node_type": 44,
-								"src": {
-									"line": 1092,
-									"column": 29,
-									"start": 36143,
-									"end": 36149,
-									"length": 7,
-									"parent_index": 1866
-								},
-								"scope": 1858,
-								"name": "",
-								"type_name": {
-									"id": 1868,
-									"node_type": 30,
-									"src": {
-										"line": 1092,
-										"column": 29,
-										"start": 36143,
-										"end": 36149,
-										"length": 7,
-										"parent_index": 1867
-									},
-									"name": "uint256",
-									"referenced_declaration": 0,
-									"type_description": {
-										"type_identifier": "t_uint256",
-										"type_string": "uint256"
-									}
-								},
-								"storage_location": 2,
-								"visibility": 1,
-								"state_mutability": 1,
-								"type_description": {
-									"type_identifier": "t_uint256",
-									"type_string": "uint256"
-								}
 							}
 						],
 						"parameter_types": [
@@ -5047,16 +5110,17 @@
 							}
 						]
 					},
-					"signature_raw": "div(uint256, uint256, string)",
-					"signature": "2ed1535b",
-					"scope": 1617,
+					"signature_raw": "div(uint256,uint256,string)",
+					"signature": "b745d336",
+					"scope": 1610,
 					"type_description": {
 						"type_identifier": "t_function_$_t_uint256$_t_uint256$_t_string$",
 						"type_string": "function(uint256,uint256,string)"
-					}
+					},
+					"text": "functiondiv(uint256a,uint256b,stringmemoryerrorMessage)internalpurereturns(uint256){unchecked{require(b\u003e0,errorMessage);returna/b;}}"
 				},
 				{
-					"id": 1882,
+					"id": 1875,
 					"name": "mod",
 					"node_type": 42,
 					"kind": 41,
@@ -5066,7 +5130,7 @@
 						"start": 36903,
 						"end": 37132,
 						"length": 230,
-						"parent_index": 1617
+						"parent_index": 1610
 					},
 					"name_location": {
 						"line": 1114,
@@ -5074,10 +5138,10 @@
 						"start": 36912,
 						"end": 36914,
 						"length": 3,
-						"parent_index": 1882
+						"parent_index": 1875
 					},
 					"body": {
-						"id": 1893,
+						"id": 1886,
 						"node_type": 46,
 						"kind": 0,
 						"src": {
@@ -5086,12 +5150,12 @@
 							"start": 37028,
 							"end": 37132,
 							"length": 105,
-							"parent_index": 1882
+							"parent_index": 1875
 						},
 						"implemented": true,
 						"statements": [
 							{
-								"id": 1894,
+								"id": 1887,
 								"node_type": 59,
 								"kind": 0,
 								"src": {
@@ -5100,12 +5164,12 @@
 									"start": 37038,
 									"end": 37126,
 									"length": 89,
-									"parent_index": 1617
+									"parent_index": 1610
 								},
 								"implemented": false,
 								"statements": [
 									{
-										"id": 1895,
+										"id": 1888,
 										"node_type": 24,
 										"kind": 24,
 										"src": {
@@ -5114,7 +5178,7 @@
 											"start": 37062,
 											"end": 37089,
 											"length": 28,
-											"parent_index": 1894
+											"parent_index": 1887
 										},
 										"argument_types": [
 											{
@@ -5128,7 +5192,7 @@
 										],
 										"arguments": [
 											{
-												"id": 1897,
+												"id": 1890,
 												"is_constant": false,
 												"is_pure": false,
 												"node_type": 19,
@@ -5138,11 +5202,11 @@
 													"start": 37070,
 													"end": 37074,
 													"length": 5,
-													"parent_index": 1895
+													"parent_index": 1888
 												},
 												"operator": 7,
 												"left_expression": {
-													"id": 1898,
+													"id": 1891,
 													"node_type": 16,
 													"src": {
 														"line": 1120,
@@ -5150,7 +5214,7 @@
 														"start": 37070,
 														"end": 37070,
 														"length": 1,
-														"parent_index": 1897
+														"parent_index": 1890
 													},
 													"name": "b",
 													"type_description": {
@@ -5158,11 +5222,12 @@
 														"type_string": "uint256"
 													},
 													"overloaded_declarations": [],
-													"referenced_declaration": 1898,
-													"is_pure": false
+													"referenced_declaration": 1891,
+													"is_pure": false,
+													"text": "b"
 												},
 												"right_expression": {
-													"id": 1899,
+													"id": 1892,
 													"node_type": 17,
 													"kind": 49,
 													"value": "0",
@@ -5173,7 +5238,7 @@
 														"start": 37074,
 														"end": 37074,
 														"length": 1,
-														"parent_index": 1897
+														"parent_index": 1890
 													},
 													"type_description": {
 														"type_identifier": "t_rational_0_by_1",
@@ -5181,7 +5246,8 @@
 													},
 													"overloaded_declarations": [],
 													"referenced_declaration": 0,
-													"is_pure": true
+													"is_pure": true,
+													"text": "0"
 												},
 												"type_description": {
 													"type_identifier": "t_bool",
@@ -5189,7 +5255,7 @@
 												}
 											},
 											{
-												"id": 1900,
+												"id": 1893,
 												"node_type": 16,
 												"src": {
 													"line": 1120,
@@ -5197,7 +5263,7 @@
 													"start": 37077,
 													"end": 37088,
 													"length": 12,
-													"parent_index": 1895
+													"parent_index": 1888
 												},
 												"name": "errorMessage",
 												"type_description": {
@@ -5205,18 +5271,19 @@
 													"type_string": "string"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 1900,
+												"referenced_declaration": 1893,
 												"is_pure": false,
 												"argument_types": [
 													{
 														"type_identifier": "t_bool",
 														"type_string": "bool"
 													}
-												]
+												],
+												"text": "errorMessage"
 											}
 										],
 										"expression": {
-											"id": 1896,
+											"id": 1889,
 											"node_type": 16,
 											"src": {
 												"line": 1120,
@@ -5224,7 +5291,7 @@
 												"start": 37062,
 												"end": 37068,
 												"length": 7,
-												"parent_index": 1895
+												"parent_index": 1888
 											},
 											"name": "require",
 											"type_description": {
@@ -5233,7 +5300,8 @@
 											},
 											"overloaded_declarations": [],
 											"referenced_declaration": 0,
-											"is_pure": true
+											"is_pure": true,
+											"text": "require"
 										},
 										"type_description": {
 											"type_identifier": "t_function_$_t_bool$_t_string$",
@@ -5241,7 +5309,7 @@
 										}
 									},
 									{
-										"id": 1901,
+										"id": 1894,
 										"node_type": 47,
 										"src": {
 											"line": 1121,
@@ -5249,11 +5317,11 @@
 											"start": 37104,
 											"end": 37116,
 											"length": 13,
-											"parent_index": 1882
+											"parent_index": 1875
 										},
-										"function_return_parameters": 1882,
+										"function_return_parameters": 1875,
 										"expression": {
-											"id": 1902,
+											"id": 1895,
 											"is_constant": false,
 											"is_pure": false,
 											"node_type": 19,
@@ -5263,11 +5331,11 @@
 												"start": 37111,
 												"end": 37115,
 												"length": 5,
-												"parent_index": 1901
+												"parent_index": 1894
 											},
 											"operator": 5,
 											"left_expression": {
-												"id": 1903,
+												"id": 1896,
 												"node_type": 16,
 												"src": {
 													"line": 1121,
@@ -5275,7 +5343,7 @@
 													"start": 37111,
 													"end": 37111,
 													"length": 1,
-													"parent_index": 1902
+													"parent_index": 1895
 												},
 												"name": "a",
 												"type_description": {
@@ -5283,11 +5351,12 @@
 													"type_string": "uint256"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 1903,
-												"is_pure": false
+												"referenced_declaration": 1896,
+												"is_pure": false,
+												"text": "a"
 											},
 											"right_expression": {
-												"id": 1904,
+												"id": 1897,
 												"node_type": 16,
 												"src": {
 													"line": 1121,
@@ -5295,7 +5364,7 @@
 													"start": 37115,
 													"end": 37115,
 													"length": 1,
-													"parent_index": 1902
+													"parent_index": 1895
 												},
 												"name": "b",
 												"type_description": {
@@ -5303,8 +5372,9 @@
 													"type_string": "uint256"
 												},
 												"overloaded_declarations": [],
-												"referenced_declaration": 1904,
-												"is_pure": false
+												"referenced_declaration": 1897,
+												"is_pure": false,
+												"text": "b"
 											},
 											"type_description": {
 												"type_identifier": "t_uint256",
@@ -5323,7 +5393,7 @@
 					"modifiers": [],
 					"overrides": [],
 					"parameters": {
-						"id": 1883,
+						"id": 1876,
 						"node_type": 43,
 						"src": {
 							"line": 1115,
@@ -5331,11 +5401,11 @@
 							"start": 36925,
 							"end": 36988,
 							"length": 64,
-							"parent_index": 1882
+							"parent_index": 1875
 						},
 						"parameters": [
 							{
-								"id": 1884,
+								"id": 1877,
 								"node_type": 44,
 								"src": {
 									"line": 1115,
@@ -5343,12 +5413,12 @@
 									"start": 36925,
 									"end": 36933,
 									"length": 9,
-									"parent_index": 1883
+									"parent_index": 1876
 								},
-								"scope": 1882,
+								"scope": 1875,
 								"name": "a",
 								"type_name": {
-									"id": 1885,
+									"id": 1878,
 									"node_type": 30,
 									"src": {
 										"line": 1115,
@@ -5356,7 +5426,7 @@
 										"start": 36925,
 										"end": 36931,
 										"length": 7,
-										"parent_index": 1884
+										"parent_index": 1877
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -5374,7 +5444,7 @@
 								}
 							},
 							{
-								"id": 1886,
+								"id": 1879,
 								"node_type": 44,
 								"src": {
 									"line": 1116,
@@ -5382,12 +5452,12 @@
 									"start": 36944,
 									"end": 36952,
 									"length": 9,
-									"parent_index": 1883
+									"parent_index": 1876
 								},
-								"scope": 1882,
+								"scope": 1875,
 								"name": "b",
 								"type_name": {
-									"id": 1887,
+									"id": 1880,
 									"node_type": 30,
 									"src": {
 										"line": 1116,
@@ -5395,7 +5465,7 @@
 										"start": 36944,
 										"end": 36950,
 										"length": 7,
-										"parent_index": 1886
+										"parent_index": 1879
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -5413,7 +5483,7 @@
 								}
 							},
 							{
-								"id": 1888,
+								"id": 1881,
 								"node_type": 44,
 								"src": {
 									"line": 1117,
@@ -5421,12 +5491,12 @@
 									"start": 36963,
 									"end": 36988,
 									"length": 26,
-									"parent_index": 1883
+									"parent_index": 1876
 								},
-								"scope": 1882,
+								"scope": 1875,
 								"name": "errorMessage",
 								"type_name": {
-									"id": 1889,
+									"id": 1882,
 									"node_type": 30,
 									"src": {
 										"line": 1117,
@@ -5434,7 +5504,7 @@
 										"start": 36963,
 										"end": 36968,
 										"length": 6,
-										"parent_index": 1888
+										"parent_index": 1881
 									},
 									"name": "string",
 									"referenced_declaration": 0,
@@ -5468,7 +5538,7 @@
 						]
 					},
 					"return_parameters": {
-						"id": 1890,
+						"id": 1883,
 						"node_type": 43,
 						"src": {
 							"line": 1118,
@@ -5476,11 +5546,11 @@
 							"start": 37019,
 							"end": 37025,
 							"length": 7,
-							"parent_index": 1882
+							"parent_index": 1875
 						},
 						"parameters": [
 							{
-								"id": 1891,
+								"id": 1884,
 								"node_type": 44,
 								"src": {
 									"line": 1118,
@@ -5488,12 +5558,12 @@
 									"start": 37019,
 									"end": 37025,
 									"length": 7,
-									"parent_index": 1890
+									"parent_index": 1883
 								},
-								"scope": 1882,
+								"scope": 1875,
 								"name": "",
 								"type_name": {
-									"id": 1892,
+									"id": 1885,
 									"node_type": 30,
 									"src": {
 										"line": 1118,
@@ -5501,7 +5571,7 @@
 										"start": 37019,
 										"end": 37025,
 										"length": 7,
-										"parent_index": 1891
+										"parent_index": 1884
 									},
 									"name": "uint256",
 									"referenced_declaration": 0,
@@ -5526,17 +5596,18 @@
 							}
 						]
 					},
-					"signature_raw": "mod(uint256, uint256, string)",
-					"signature": "b44cfd1a",
-					"scope": 1617,
+					"signature_raw": "mod(uint256,uint256,string)",
+					"signature": "71af23e8",
+					"scope": 1610,
 					"type_description": {
 						"type_identifier": "t_function_$_t_uint256$_t_uint256$_t_string$",
 						"type_string": "function(uint256,uint256,string)"
-					}
+					},
+					"text": "functionmod(uint256a,uint256b,stringmemoryerrorMessage)internalpurereturns(uint256){unchecked{require(b\u003e0,errorMessage);returna%b;}}"
 				}
 			],
 			"linearized_base_contracts": [
-				1617
+				1610
 			],
 			"base_contracts": [],
 			"contract_dependencies": []
