@@ -3,6 +3,7 @@ package ast
 import (
 	"bytes"
 	"context"
+
 	"github.com/goccy/go-json"
 
 	ast_pb "github.com/unpackdev/protos/dist/go/ast"
@@ -123,7 +124,7 @@ func (b *ASTBuilder) VisibilityToCode(visibility string) string {
 	case "PRIVATE":
 		return "private"
 	default:
-		return "not recognised visibility"
+		return "not recognised visibility: " + visibility
 	}
 }
 
@@ -142,7 +143,7 @@ func (b *ASTBuilder) StateMutabilityToCode(stateMutability string) string {
 	case "NONPAYABLE":
 		return "nonpayable"
 	default:
-		return "not recognised state mutability"
+		return "not recognised state mutability: " + stateMutability
 	}
 }
 
@@ -157,7 +158,7 @@ func (b *ASTBuilder) StorageLocationToCode(storageLocation string) string {
 	case "CALLDATA":
 		return "calldata"
 	default:
-		return "not recognised storage location"
+		return "not recognised storage location: " + storageLocation
 	}
 }
 

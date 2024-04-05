@@ -446,7 +446,10 @@ func (p *Parameter) getStorageLocationFromCtx(ctx *parser.ParameterDeclarationCo
 
 func (p *Parameter) ToSource() string {
 	typeName := p.TypeName.ToSource()
-	storage := p.StorageLocationToCode(p.StorageLocation.String())
+	storage := ""
+	if p.StorageLocation != ast_pb.StorageLocation_ST_UNKNOWN {
+		storage = p.StorageLocationToCode(p.StorageLocation.String())
+	}
 	ident := p.GetName()
 	code := ""
 	code += typeName

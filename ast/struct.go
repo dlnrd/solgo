@@ -2,6 +2,7 @@ package ast
 
 import (
 	"fmt"
+
 	"github.com/goccy/go-json"
 
 	ast_pb "github.com/unpackdev/protos/dist/go/ast"
@@ -334,7 +335,7 @@ func (b *ASTBuilder) EnterStructDefinition(ctx *parser.StructDefinitionContext) 
 func (f *StructDefinition) ToSource() string {
 	code := fmt.Sprintf("struct %s {\n", f.Name)
 	for _, member := range f.Members {
-		code += member.ToSource()
+		code += member.ToSource() + ";\n"
 	}
 	return code
 }
