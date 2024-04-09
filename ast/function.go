@@ -427,7 +427,7 @@ func (f *Function) Parse(
 
 	// Set function parameters if they exist.
 	params := NewParameterList(f.ASTBuilder)
-	if len(ctx.GetArguments().GetParameters()) > 0 {
+	if ctx.GetArguments() != nil {
 		params.Parse(unit, f, ctx.GetArguments())
 	} else {
 		params.Src = f.Src
@@ -531,7 +531,7 @@ func (f *Function) ParseTypeName(
 
 	// Set function parameters if they exist.
 	params := NewParameterList(f.ASTBuilder)
-	if len(ctx.AllParameterList()) > 0 {
+	if ctx.GetArguments() != nil {
 		params.Parse(unit, f, ctx.GetArguments())
 	} else {
 		params.Src = f.Src
