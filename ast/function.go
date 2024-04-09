@@ -2,9 +2,10 @@ package ast
 
 import (
 	"fmt"
-	"github.com/goccy/go-json"
 	"regexp"
 	"strings"
+
+	"github.com/goccy/go-json"
 
 	"github.com/ethereum/go-ethereum/common"
 	ast_pb "github.com/unpackdev/protos/dist/go/ast"
@@ -706,7 +707,7 @@ func (f *Function) ToSource() string {
 	// override
 
 	stateMutability := ""
-	if f.StateMutability != ast_pb.Mutability_M_DEFAULT {
+	if f.StateMutability != ast_pb.Mutability_M_DEFAULT && f.StateMutability != ast_pb.Mutability_NONPAYABLE {
 		stateMutability = " " + f.StateMutabilityToCode(f.StateMutability.String())
 	}
 
@@ -714,7 +715,9 @@ func (f *Function) ToSource() string {
 	code += visibility + virtual + stateMutability
 
 	if f.GetReturnParameters() != nil {
-		code += " returns (" + f.GetReturnParameters().ToSource() + ")"
+		if f.GetReturnParameters().ToSource() != "" {
+			code += " returns (" + f.GetReturnParameters().ToSource() + ")"
+		}
 	}
 
 	code += " {\n"
