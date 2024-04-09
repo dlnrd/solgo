@@ -427,8 +427,8 @@ func (f *Function) Parse(
 
 	// Set function parameters if they exist.
 	params := NewParameterList(f.ASTBuilder)
-	if len(ctx.AllParameterList()) > 0 {
-		params.Parse(unit, f, ctx.AllParameterList()[0])
+	if len(ctx.GetArguments().GetParameters()) > 0 {
+		params.Parse(unit, f, ctx.GetArguments())
 	} else {
 		params.Src = f.Src
 		params.Src.ParentIndex = f.Id
@@ -532,7 +532,7 @@ func (f *Function) ParseTypeName(
 	// Set function parameters if they exist.
 	params := NewParameterList(f.ASTBuilder)
 	if len(ctx.AllParameterList()) > 0 {
-		params.Parse(unit, f, ctx.AllParameterList()[0])
+		params.Parse(unit, f, ctx.GetArguments())
 	} else {
 		params.Src = f.Src
 		params.Src.ParentIndex = f.Id
