@@ -18,9 +18,9 @@ func printStateVariableDeclaration(node *ast.StateVariableDeclaration, sb *strin
 		typeName = "address"
 		storage = "payable"
 	}
-	if node.Override {
-		override = "override"
-	}
+	// if node.Override {
+		// override = "override"
+	// }
 	writeSeperatedStrings(sb, " ", typeName, visibility, storage, override, ident)
 	if node.GetInitialValue() != nil {
 		sb.WriteString(" = ")
