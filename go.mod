@@ -1,4 +1,4 @@
-module github.com/unpackdev/solgo
+module github.com/dlnrd/solgo
 
 go 1.22
 
